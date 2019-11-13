@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-11-12 23:35+0000\n"
+"POT-Creation-Date: 2019-11-13 08:54+0000\n"
 "PO-Revision-Date: 2019-11-06 06:15+0000\n"
 "Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -21,7 +21,6 @@ msgstr ""
 "X-Generator: Weblate 3.10-dev\n"
 "X-Launchpad-Export-Date: 2014-09-20 14:25+0000\n"
 
-#. Profile: Protocol
 #: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1475
 msgid "Protocol"
 msgstr "協定"
@@ -55,7 +54,6 @@ msgstr "外掛"
 msgid "_OK"
 msgstr "確定(_O)"
 
-#. Profile: Name
 #: src/remmina_plugin_manager.c:458 src/remmina_file_editor.c:1432
 #: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:491
 #: data/ui/remmina_mpc.glade:314
@@ -107,7 +105,6 @@ msgstr "<無>"
 msgid "Cancel"
 msgstr "取消"
 
-#. A button to confirm reading
 #: src/remmina_message_panel.c:199 data/ui/remmina_string_list.glade:8
 #: data/ui/remmina_string_list.glade:9 data/ui/remmina_string_list.glade:63
 #: data/ui/remmina_news.glade:27 data/ui/remmina_preferences.glade:33
@@ -140,9 +137,6 @@ msgstr "網域"
 msgid "Save password"
 msgstr "儲存密碼"
 
-#. Buttons, ok and cancel
-#. gtk_grid_attach(GTK_GRID(grid), button_ok, 0, grid_row, 1, 1);
-#. Buttons, ok and cancel
 #: src/remmina_message_panel.c:452 src/remmina_message_panel.c:624
 #: src/remmina_file_editor.c:160 src/remmina_file_editor.c:364
 #: src/remmina_file_editor.c:1307 src/remmina_sftp_client.c:915
@@ -173,7 +167,6 @@ msgstr "客戶端憑證檔案"
 msgid "Client Certificate Key"
 msgstr "客戶端憑證金鑰"
 
-#. Title
 #: src/remmina_chat_window.c:178
 #, c-format
 msgid "Chat with %s"
@@ -209,7 +202,6 @@ msgstr "縮放時維持比例"
 msgid "Fill client window when scaled"
 msgstr "縮放時填滿用戶端視窗"
 
-#. Add a keystrokes submenu
 #: src/rcw.c:1815 src/remmina_pref_dialog.c:143
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
@@ -386,7 +378,6 @@ msgstr "大小"
 msgid "User"
 msgstr "使用者"
 
-#. Profile: Group
 #: src/remmina_ftp_client.c:930 src/remmina_file_editor.c:1457
 #: data/ui/remmina_main.glade:513 data/ui/remmina_mpc.glade:99
 #: data/ui/remmina_mpc.glade:325
@@ -438,7 +429,6 @@ msgstr "開啟服務偵測功能"
 msgid "_Quit"
 msgstr "離開(_Q)"
 
-#. Refresh it in case translation is updated
 #: src/remmina_icon.c:357 src/remmina_icon.c:539
 msgid "Remmina Applet"
 msgstr "Remmina 面板小程式"
@@ -615,12 +605,10 @@ msgstr "進階"
 msgid "Default settings saved."
 msgstr "預設值已儲存。"
 
-#. Create the editor dialog
 #: src/remmina_file_editor.c:1305
 msgid "Remote Desktop Preference"
 msgstr "遠端桌面偏好設定"
 
-#. Default button
 #: src/remmina_file_editor.c:1311
 msgid "Save as Default"
 msgstr "儲存為預設值"
@@ -654,12 +642,10 @@ msgstr "快速連線"
 msgid "Use '%s' as subgroup delimiter"
 msgstr "使用「%s」作為子群組分隔符"
 
-#. Prior Connection Command
 #: src/remmina_file_editor.c:1489
 msgid "Pre Command"
 msgstr "連接前執行指令"
 
-#. POST Connection Command
 #: src/remmina_file_editor.c:1507
 msgid "Post Command"
 msgstr "連接後執行指令"
@@ -707,7 +693,7 @@ msgstr "SSH 伺服器找不到 %s 指令"
 msgid "Could not run %s command on the SSH server (status = %i)."
 msgstr "無法於 SSH 伺服器執行 %s 指令 (狀態 = %i)。"
 
-#. / TRANSLATORS: %s is a placeholder for an error message
+#. TRANSLATORS: %s is a placeholder for an error message
 #: src/remmina_protocol_widget.c:903
 #, fuzzy, c-format
 msgid "Could not run command: %s"
@@ -775,19 +761,19 @@ msgstr "探尋到的"
 msgid "New Connection"
 msgstr "新的連線"
 
-#. / TRANSLATORS: The placeholder %s is a directory path
+#. TRANSLATORS: The placeholder %s is a directory path
 #: src/remmina_sftp_client.c:171
 #, c-format
 msgid "Error creating directory %s."
 msgstr "建立目錄 %s 時發生錯誤。"
 
-#. / TRANSLATORS: The placeholder %s is a file path
+#. TRANSLATORS: The placeholder %s is a file path
 #: src/remmina_sftp_client.c:179 src/remmina_sftp_client.c:200
 #, c-format
 msgid "Error creating file %s."
 msgstr "建立檔案 %s 時發生錯誤。"
 
-#. / TRANSLATORS: The placeholders %s are a file path and a server name
+#. TRANSLATORS: The placeholders %s are a file path and a server name
 #: src/remmina_sftp_client.c:218
 #, c-format
 msgid "Error opening file %s on server. %s"
@@ -874,18 +860,18 @@ msgstr "已清除最近使用清單。"
 msgid "Configure the keystrokes"
 msgstr "設定自訂快速鍵"
 
-#. / TRANSLATORS: Do not translate libsodium, is the name of a library
+#. TRANSLATORS: Do not translate libsodium, is the name of a library
 #: src/remmina_pref_dialog.c:444
 msgid "libsodium >= 1.9.0 is required to use master password"
 msgstr "需要 libsodium 版本 >= 1.9.0 才能使用主密碼"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:203
 #, c-format
 msgid "SSH password authentication failed: %s"
 msgstr "SSH 密碼核對失敗：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:224 src/remmina_ssh.c:248 src/remmina_ssh.c:257
 #, c-format
 msgid "SSH public key authentication failed: %s"
@@ -895,7 +881,7 @@ msgstr "SSH 公鑰核對失敗：%s"
 msgid "SSH Key file not yet set."
 msgstr "尚未設定 SSH 密鑰檔案。"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:236
 #, c-format
 msgid "SSH public key cannot be imported: %s"
@@ -911,19 +897,19 @@ msgstr "SSH 身份檔案"
 msgid "SSH private key passphrase"
 msgstr "SSH 私鑰密碼"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:299
 #, c-format
 msgid "SSH automatic public key authentication failed: %s"
 msgstr "SSH 自動公鑰核對失敗：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:316
 #, c-format
 msgid "SSH public key authentication with SSH agent failed: %s"
 msgstr "使用 SSH 代理的 SSH 公鑰驗證失敗：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:336
 #, c-format
 msgid "SSH Kerberos/GSSAPI authentication failed: %s"
@@ -933,19 +919,19 @@ msgstr "SSH Kerberos/GSSAPI 驗證失敗：%s"
 msgid "SSH public key has changed!"
 msgstr "SSH 公鑰已變更！"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:441
 #, c-format
 msgid "ssh_get_server_publickey() has failed: %s"
 msgstr "ssh_get_server_publickey() 執行失敗：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:447
 #, c-format
 msgid "ssh_get_publickey() has failed: %s"
 msgstr "ssh_get_publickey() 執行失敗：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:454
 #, c-format
 msgid "ssh_get_publickey_hash() has failed: %s"
@@ -968,7 +954,7 @@ msgstr ""
 "警告：伺服器已變更其公鑰。這代表您可能遭受攻擊，或者管理員已更改金鑰。新的公"
 "鑰指紋為："
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:484
 #, c-format
 msgid "SSH known host checking failed: %s"
@@ -986,25 +972,25 @@ msgstr "SSH Kerberos/GSSAPI"
 msgid "SSH authentication"
 msgstr "SSH 驗證"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:674
 #, c-format
 msgid "Could not start SSH session: %s"
 msgstr "未能啟動 SSH 作業階段：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1033 src/remmina_ssh.c:1095
 #, fuzzy, c-format
 msgid "Could not create channel: %s"
 msgstr "無法建立通道：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1044
 #, fuzzy, c-format
 msgid "Could not connect to the SSH tunnel destination: %s"
 msgstr "無法連接 SSH 通道目的地：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1110 src/remmina_ssh.c:1704
 #, c-format
 msgid "Could not open channel: %s"
@@ -1015,7 +1001,7 @@ msgstr "無法開啟通道：%s"
 msgid "Failed to execute %s on SSH server, %%s"
 msgstr "未能在 SSH 伺服器執行 %s：%%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1154 src/remmina_ssh.c:1175 src/remmina_ssh.c:1184
 #, fuzzy, c-format
 msgid "Could not request port forwarding: %s"
@@ -1030,31 +1016,31 @@ msgstr "伺服器無回應。"
 msgid "Cannot connect to local port %i."
 msgstr "無法連接至本地連接埠 %i。"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1308
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_write(): %s"
 msgstr "無法執行 ssh_channel_write()：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1315
 #, fuzzy, c-format
 msgid "Could not read from tunnel listening socket: %s"
 msgstr "無法讀取通道監聽網路插座：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1335
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_poll(): %s"
 msgstr "無法執行 ssh_channel_poll()：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1342
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_read_nonblocking(): %s"
 msgstr "無法執行 ssh_channel_read_nonblocking()：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1361
 #, fuzzy, c-format
 msgid "Could not send data to tunnel listening socket: %s"
@@ -1076,34 +1062,34 @@ msgstr "無法將伺服器網路插座連結至本地連接埠 %i。"
 msgid "Could not listen to local port."
 msgstr "無法監聽本機連接埠。"
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1473
 msgid "Could not start pthread."
 msgstr "無法啟動 pthread。"
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1490 src/remmina_ssh.c:1525
 msgid "Could not initialize pthread."
 msgstr "無法初始化 pthread。"
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1507
 msgid "Failed to initialize pthread."
 msgstr "無法初始化 pthread。"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1614
 #, c-format
 msgid "Could not create SFTP session: %s"
 msgstr "無法建立 SFTP 作業階段：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1619
 #, c-format
 msgid "Could not initialize SFTP session: %s"
 msgstr "無法初始化 SFTP 作業階段：%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1734
 #, c-format
 msgid "Could not request shell: %s"
@@ -1113,7 +1099,6 @@ msgstr "無法請求 shell：%s"
 msgid "Could not create PTY device."
 msgstr "無法建立 PTY 裝置。"
 
-#. Show in the status bar the total number of connections found
 #: src/remmina_main.c:644
 #, c-format
 msgid "Total %i item."
@@ -1146,85 +1131,85 @@ msgstr "此協定不支援匯出。"
 msgid "Remmina Kiosk"
 msgstr "Remmina 服務台"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:84
 msgid "Show 'About'"
 msgstr "顯示「關於」對話框"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:86 src/remmina.c:88
 msgid ""
 "Connect to desktop described in file (.remmina or type supported by plugin)"
 msgstr "連接到檔案描述的桌面（.remmina 或外掛支援的檔案類型）"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:90
 msgid ""
 "Edit desktop connection described in file (.remmina or type supported by "
 "plugin)"
 msgstr "編輯檔案描述的桌面連接（.remmina 或外掛支援的檔案類型）"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:93
 msgid "Start in kiosk mode"
 msgstr "以服務站(kiosk)模式啟動"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:95
 msgid "Create new connection profile"
 msgstr "建立新的連線設定檔"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:97
 msgid "Show preferences"
 msgstr "顯示偏好設定"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:99
 msgid "Run a plugin"
 msgstr "執行外掛"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:101
 msgid "Quit"
 msgstr "離開"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:103
 msgid "Use default server name (for --new)"
 msgstr "使用預設伺服器名稱（針對 --new）"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:105
 msgid "Use default protocol (for --new)"
 msgstr "使用預設協定（針對 --new）"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:107
 msgid "Start in tray"
 msgstr "以工作列模式啟動"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:109
 msgid "Show the application version"
 msgstr "顯示應用程式版本"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:111
 msgid "Show version of the application and its plugins"
 msgstr "顯示應用程式及外掛版本"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:113
 msgid "Modify connection profile, (requires --set-option)"
 msgstr "修改連線設定檔（需要 --set-option）"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:115
 msgid "Set one or more profile settings, to be used with --update-profile"
 msgstr "設定一個或多個連線設定，與 --update-profile 一起使用"
 
-#. / TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
+#. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
 msgid "translator-credits"
 msgstr ""
@@ -1270,8 +1255,6 @@ msgstr "認證類型"
 msgid "Private key passphrase"
 msgstr "私鑰密碼"
 
-#. Type
-#. Name
 #: src/remmina_sftp_plugin.c:362
 msgid "SFTP - Secure File Transfer"
 msgstr "SFTP - 安全檔案傳輸"
@@ -1379,8 +1362,6 @@ msgstr "停用記住密碼"
 msgid "Strict host key checking"
 msgstr "嚴格的主機金鑰檢查"
 
-#. *< Type
-#. *< Name
 #: src/remmina_ssh_plugin.c:1103
 msgid "SSH - Secure Shell"
 msgstr "SSH - 安全Shell連接"
@@ -1442,26 +1423,14 @@ msgstr "僅檢視"
 msgid "Send Ctrl+Alt+Delete"
 msgstr "傳送 Ctrl+Alt+Delete"
 
-#.
-#. * FIXME: Use the RemminaConnectionWindow as transient parent widget
-#. * (and add the GTK_DIALOG_DESTROY_WITH_PARENT flag) if it becomes
-#. * accessible from the Remmina plugin API.
-#.
 #: plugins/spice/spice_plugin.c:473 plugins/spice/spice_plugin_usb.c:51
 msgid "Select USB devices for redirection"
 msgstr "選擇要重新導向的 USB 裝置"
 
-#. Type
-#. Name
 #: plugins/spice/spice_plugin.c:482
 msgid "SPICE - Simple Protocol for Independent Computing Environments"
 msgstr "SPICE - 獨立運算環境的簡單協定"
 
-#.
-#. * FIXME: Use the RemminaConnectionWindow as transient parent widget
-#. * (and add the GTK_DIALOG_DESTROY_WITH_PARENT flag) if it becomes
-#. * accessible from the Remmina plugin API.
-#.
 #: plugins/spice/spice_plugin_file_transfer.c:82
 msgid "File Transfers"
 msgstr "檔案傳輸"
@@ -1587,7 +1556,6 @@ msgstr ""
 msgid "Unable to establish a connection to RDP server %s."
 msgstr "無法建立至 RDP 伺服器 %s 的連線。"
 
-#. We should never come here
 #: plugins/rdp/rdp_plugin.c:1560
 #, c-format
 msgid "Unable to connect to RDP server %s."
@@ -1611,7 +1579,6 @@ msgstr ""
 msgid "Server %s denied the connection."
 msgstr "伺服器 %s 拒絕連線。"
 
-#. E_PROXY_NAP_ACCESSDENIED https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-tsgu/84cd92e4-592c-4219-95d8-18021ac654b0
 #: plugins/rdp/rdp_plugin.c:1578
 #, c-format
 msgid "The remote desktop gateway %s denied user %s\\%s access due to policy."
@@ -1622,7 +1589,6 @@ msgstr "基於政策，遠端桌面閘道 %s 拒絕了使用者 %s\\%s 的存取
 msgid "Unable to connect to RDP server %s"
 msgstr "無法連接至 RDP 伺服器 %s"
 
-#. 1st one is the default in a new install
 #: plugins/rdp/rdp_plugin.c:1870
 msgid "GFX AVC444 (32 bpp)"
 msgstr "GFX AVC444 (32 bpp)"
@@ -1853,20 +1819,14 @@ msgstr "Relax Order 檢查"
 msgid "Glyph Cache"
 msgstr "字型快取"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2014
 msgid "RDP - Remote Desktop Protocol"
 msgstr "RDP - 遠端桌面協定"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2037
 msgid "RDP - RDP File Handler"
 msgstr "RDP - RDP 檔案處理器"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2052
 msgid "RDP - Preferences"
 msgstr "RDP - 偏好設定"
@@ -1887,7 +1847,6 @@ msgstr "<未設定>"
 msgid "<Choose a quality level to edit…>"
 msgstr "<選擇一個品質等級來編輯…>"
 
-#. Create the content
 #: plugins/rdp/rdp_settings.c:418
 msgid "Keyboard layout"
 msgstr "鍵盤配置"
@@ -1948,7 +1907,6 @@ msgstr "裝置縮放百分比 %"
 msgid "Desktop orientation"
 msgstr "桌面方向"
 
-#. Draw text
 #: plugins/rdp/rdp_event.c:299
 #, c-format
 msgid "Reconnection attempt %d of %d…"
@@ -2019,8 +1977,6 @@ msgstr "停用加密"
 msgid "Use local cursor"
 msgstr "使用本地游標"
 
-#. Type
-#. Name
 #: plugins/nx/nx_plugin.c:761
 msgid "NX - NX Technology"
 msgstr "NX - NX 技術"
@@ -2090,8 +2046,6 @@ msgstr "在首個作業階段之後斷開連線"
 msgid "Listen for TCP connections"
 msgstr "監聽 TCP 連線"
 
-#. Type
-#. Name
 #: plugins/xdmcp/xdmcp_plugin.c:391
 msgid "XDMCP - X Remote Session"
 msgstr "XDMCP - X 遠端作業階段"
@@ -2159,8 +2113,6 @@ msgstr "停用伺服器輸入"
 msgid "Open Chat…"
 msgstr "開啟聊天…"
 
-#. Type
-#. Name
 #: plugins/telepathy/telepathy_plugin.c:57
 msgid "Telepathy - Desktop Sharing"
 msgstr "Telepathy - 桌面共享"
@@ -2767,29 +2719,29 @@ msgstr "SSH 紀錄等級"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1344
-msgid ""
-"The time (in seconds) the connection needs to remain idle before TCP starts "
-"sending keepalive probes."
+#, fuzzy
+msgid "Seconds of connection idleness before TCP keepalive probes are sent."
 msgstr "在 TCP 開始發送 keepalive probes 之前，連線需要處於閒置的時間（秒）。"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1360
-msgid "The time (in seconds) between individual keepalive probes."
+#, fuzzy
+msgid "Seconds between each keepalive probe."
 msgstr "各個 keepalive probes 之間的間隔時間（秒）。"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1376
+#, fuzzy
 msgid ""
-"The maximum number of keepalive probes TCP should send before dropping the "
-"connection."
+"Number of keepalive probes sent via TCP connection before it is dropped."
 msgstr "丟棄連線之前 TCP 應發送的 keepalive probes 數量。"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1392
+#, fuzzy
 msgid ""
-"it specifies the maximum amount of time in milliseconds that transmitted "
-"data may remain unacknowledged before TCP will forcibly close the "
-"corresponding connection."
+"Amount of milliseconds to attempt acknowledging data before closing the "
+"corresponding TCP connection forcibly."
 msgstr ""
 "它指定在 TCP 強制關閉相應連線之前，傳輸數據可能保持未確認狀態的最長時間（毫"
 "秒）。"
@@ -2976,4 +2928,3 @@ msgstr "允許粗體字"
 #: data/ui/remmina_preferences.glade:2183
 msgid "Terminal"
 msgstr "終端機"
-

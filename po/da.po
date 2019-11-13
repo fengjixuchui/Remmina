@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-11-12 23:35+0000\n"
+"POT-Creation-Date: 2019-11-13 08:54+0000\n"
 "PO-Revision-Date: 2019-11-12 11:24+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -19,7 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.10-dev\n"
 
-#. Profile: Protocol
 #: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1475
 msgid "Protocol"
 msgstr "Protokol"
@@ -53,7 +52,6 @@ msgstr "Plugins"
 msgid "_OK"
 msgstr "_OK"
 
-#. Profile: Name
 #: src/remmina_plugin_manager.c:458 src/remmina_file_editor.c:1432
 #: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:491
 #: data/ui/remmina_mpc.glade:314
@@ -105,7 +103,6 @@ msgstr "<ingen>"
 msgid "Cancel"
 msgstr "Annuller"
 
-#. A button to confirm reading
 #: src/remmina_message_panel.c:199 data/ui/remmina_string_list.glade:8
 #: data/ui/remmina_string_list.glade:9 data/ui/remmina_string_list.glade:63
 #: data/ui/remmina_news.glade:27 data/ui/remmina_preferences.glade:33
@@ -138,9 +135,6 @@ msgstr "Domæne"
 msgid "Save password"
 msgstr "Gem adgangskode"
 
-#. Buttons, ok and cancel
-#. gtk_grid_attach(GTK_GRID(grid), button_ok, 0, grid_row, 1, 1);
-#. Buttons, ok and cancel
 #: src/remmina_message_panel.c:452 src/remmina_message_panel.c:624
 #: src/remmina_file_editor.c:160 src/remmina_file_editor.c:364
 #: src/remmina_file_editor.c:1307 src/remmina_sftp_client.c:915
@@ -171,7 +165,6 @@ msgstr "Klient-certifikatfil"
 msgid "Client Certificate Key"
 msgstr "Klient-certifikatnøgle"
 
-#. Title
 #: src/remmina_chat_window.c:178
 #, c-format
 msgid "Chat with %s"
@@ -209,7 +202,6 @@ msgstr "Bevar højde-bredde-forhold når skaleret"
 msgid "Fill client window when scaled"
 msgstr "Udfyld klientens vindue når skaleret"
 
-#. Add a keystrokes submenu
 #: src/rcw.c:1815 src/remmina_pref_dialog.c:143
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
@@ -388,7 +380,6 @@ msgstr "Størrelse"
 msgid "User"
 msgstr "Bruger"
 
-#. Profile: Group
 #: src/remmina_ftp_client.c:930 src/remmina_file_editor.c:1457
 #: data/ui/remmina_main.glade:513 data/ui/remmina_mpc.glade:99
 #: data/ui/remmina_mpc.glade:325
@@ -440,7 +431,6 @@ msgstr "Aktivér opdagelse af tjenester"
 msgid "_Quit"
 msgstr "_Afslut"
 
-#. Refresh it in case translation is updated
 #: src/remmina_icon.c:357 src/remmina_icon.c:539
 msgid "Remmina Applet"
 msgstr "Remmina-applet"
@@ -619,12 +609,10 @@ msgstr "Avanceret"
 msgid "Default settings saved."
 msgstr "Standardindstillinger gemt."
 
-#. Create the editor dialog
 #: src/remmina_file_editor.c:1305
 msgid "Remote Desktop Preference"
 msgstr "Præference for fjernskrivebord"
 
-#. Default button
 #: src/remmina_file_editor.c:1311
 msgid "Save as Default"
 msgstr "Gem som standard"
@@ -660,12 +648,10 @@ msgstr "Hurtig forbindelse"
 msgid "Use '%s' as subgroup delimiter"
 msgstr "Brug '%s' som afgrænser for undergruppe"
 
-#. Prior Connection Command
 #: src/remmina_file_editor.c:1489
 msgid "Pre Command"
 msgstr "Prækommando"
 
-#. POST Connection Command
 #: src/remmina_file_editor.c:1507
 msgid "Post Command"
 msgstr "Efterkommando"
@@ -715,7 +701,7 @@ msgstr "Kommandoen %s ikke fundet på SSH-server"
 msgid "Could not run %s command on the SSH server (status = %i)."
 msgstr "Kommandoen %s mislykkedes på SSH-server (status = %i)."
 
-#. / TRANSLATORS: %s is a placeholder for an error message
+#. TRANSLATORS: %s is a placeholder for an error message
 #: src/remmina_protocol_widget.c:903
 #, fuzzy, c-format
 msgid "Could not run command: %s"
@@ -790,19 +776,19 @@ msgstr "Opdaget"
 msgid "New Connection"
 msgstr "Ny forbindelse"
 
-#. / TRANSLATORS: The placeholder %s is a directory path
+#. TRANSLATORS: The placeholder %s is a directory path
 #: src/remmina_sftp_client.c:171
 #, c-format
 msgid "Error creating directory %s."
 msgstr "Fejl ved oprettelse af mappen %s."
 
-#. / TRANSLATORS: The placeholder %s is a file path
+#. TRANSLATORS: The placeholder %s is a file path
 #: src/remmina_sftp_client.c:179 src/remmina_sftp_client.c:200
 #, c-format
 msgid "Error creating file %s."
 msgstr "Fejl ved oprettelse af filen %s."
 
-#. / TRANSLATORS: The placeholders %s are a file path and a server name
+#. TRANSLATORS: The placeholders %s are a file path and a server name
 #: src/remmina_sftp_client.c:218
 #, c-format
 msgid "Error opening file %s on server. %s"
@@ -889,18 +875,18 @@ msgstr "Seneste-liste ryddet."
 msgid "Configure the keystrokes"
 msgstr "Konfigurer tastetrykkene"
 
-#. / TRANSLATORS: Do not translate libsodium, is the name of a library
+#. TRANSLATORS: Do not translate libsodium, is the name of a library
 #: src/remmina_pref_dialog.c:444
 msgid "libsodium >= 1.9.0 is required to use master password"
 msgstr "libsodium >= 1.9.0 kræves for at bruge hovedadgangskode"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:203
 #, c-format
 msgid "SSH password authentication failed: %s"
 msgstr "Autentifikation af SSH-adgangskode mislykkedes: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:224 src/remmina_ssh.c:248 src/remmina_ssh.c:257
 #, c-format
 msgid "SSH public key authentication failed: %s"
@@ -910,7 +896,7 @@ msgstr "Autentifikation af offentlig nøgle for SSH mislykkedes: %s"
 msgid "SSH Key file not yet set."
 msgstr "SSH-nøglefil ikke valgt."
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:236
 #, c-format
 msgid "SSH public key cannot be imported: %s"
@@ -927,20 +913,20 @@ msgstr "SSH-identitetsfil"
 msgid "SSH private key passphrase"
 msgstr "Nøgleord for privat nøgle for SSH"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:299
 #, c-format
 msgid "SSH automatic public key authentication failed: %s"
 msgstr "Automatisk autentifikation af offentlig nøgle for SSH mislykkedes: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:316
 #, c-format
 msgid "SSH public key authentication with SSH agent failed: %s"
 msgstr ""
 "Autentifikation af offentlig nøgle for SSH med SSH-agent mislykkedes: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:336
 #, c-format
 msgid "SSH Kerberos/GSSAPI authentication failed: %s"
@@ -950,19 +936,19 @@ msgstr "Autentifikation af SSH-Kerberos/GSSAPI mislykkedes: %s"
 msgid "SSH public key has changed!"
 msgstr "Offentlig nøgle for SSH er ændret!"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:441
 #, c-format
 msgid "ssh_get_server_publickey() has failed: %s"
 msgstr "ssh_get_server_publickey() mislykkedes: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:447
 #, c-format
 msgid "ssh_get_publickey() has failed: %s"
 msgstr "ssh_get_publickey() mislykkedes: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:454
 #, c-format
 msgid "ssh_get_publickey_hash() has failed: %s"
@@ -987,7 +973,7 @@ msgstr ""
 "eller at administratoren har ændret nøglen. Det nye fingeraftryk til den "
 "offentlige nøgle er:"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:484
 #, c-format
 msgid "SSH known host checking failed: %s"
@@ -1006,25 +992,25 @@ msgstr "SSH-Kerberos/GSSAPI"
 msgid "SSH authentication"
 msgstr "SSH-autentifikation"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:674
 #, fuzzy, c-format
 msgid "Could not start SSH session: %s"
 msgstr "Kunne ikke åbne SSH-session: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1033 src/remmina_ssh.c:1095
 #, fuzzy, c-format
 msgid "Could not create channel: %s"
 msgstr "Kunne ikke oprette kanal: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1044
 #, fuzzy, c-format
 msgid "Could not connect to the SSH tunnel destination: %s"
 msgstr "Kunne ikke oprette forbindelse til SSH-tunnel destinationen: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1110 src/remmina_ssh.c:1704
 #, fuzzy, c-format
 msgid "Could not open channel: %s"
@@ -1035,7 +1021,7 @@ msgstr "Kunne ikke åbne kanal: %s"
 msgid "Failed to execute %s on SSH server, %%s"
 msgstr "Kunne ikke udføre %s på SSH-server: %%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1154 src/remmina_ssh.c:1175 src/remmina_ssh.c:1184
 #, fuzzy, c-format
 msgid "Could not request port forwarding: %s"
@@ -1050,31 +1036,31 @@ msgstr "Serveren svarte ikke."
 msgid "Cannot connect to local port %i."
 msgstr "Kan ikke oprette forbindelse til porten %i."
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1308
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_write(): %s"
 msgstr "Kunde ikke køre ssh_channel_write(), %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1315
 #, fuzzy, c-format
 msgid "Could not read from tunnel listening socket: %s"
 msgstr "læsning på tunnellyttesokkel returnerede en fejl: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1335
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_poll(): %s"
 msgstr "Kunde ikke køre ssh_channel_poll(), %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1342
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_read_nonblocking(): %s"
 msgstr "ssh_channel_read_nonblocking() returnerede en fejl: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1361
 #, fuzzy, c-format
 msgid "Could not send data to tunnel listening socket: %s"
@@ -1100,36 +1086,36 @@ msgstr "Kan ikke oprette forbindelse til porten %i."
 msgid "Could not listen to local port."
 msgstr "Kunne ikke lytte på lokal port."
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1473
 #, fuzzy
 msgid "Could not start pthread."
 msgstr "Kunne ikke initialisere pthread."
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1490 src/remmina_ssh.c:1525
 #, fuzzy
 msgid "Could not initialize pthread."
 msgstr "Kunne ikke initialisere pthread."
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1507
 msgid "Failed to initialize pthread."
 msgstr "Kunne ikke initialisere pthread."
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1614
 #, fuzzy, c-format
 msgid "Could not create SFTP session: %s"
 msgstr "Kunne ikke oprette sftp-session: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1619
 #, fuzzy, c-format
 msgid "Could not initialize SFTP session: %s"
 msgstr "Kunne ikke initiere sftp-session: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1734
 #, fuzzy, c-format
 msgid "Could not request shell: %s"
@@ -1140,7 +1126,6 @@ msgstr "Kunne ikke anmode skallen: %s"
 msgid "Could not create PTY device."
 msgstr "Kunne ikke oprette pty-enhed."
 
-#. Show in the status bar the total number of connections found
 #: src/remmina_main.c:644
 #, c-format
 msgid "Total %i item."
@@ -1174,13 +1159,13 @@ msgstr "Denne protokol understøtter ikke eksport."
 msgid "Remmina Kiosk"
 msgstr "Remmina-kiosk"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:84
 #, fuzzy
 msgid "Show 'About'"
 msgstr "Vis Om-dialog"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:86 src/remmina.c:88
 #, fuzzy
 msgid ""
@@ -1189,7 +1174,7 @@ msgstr ""
 "Opret forbindelse til skrivebord beskrevet af fil (.remmina eller type der "
 "understøttes af plugin)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:90
 #, fuzzy
 msgid ""
@@ -1199,78 +1184,78 @@ msgstr ""
 "Rediger skrivebordsforbindelse beskrevet af fil (.remmina eller type der "
 "understøttes af plugin)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:93
 #, fuzzy
 msgid "Start in kiosk mode"
 msgstr "Start Remmina i kiosk-tilstand"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:95
 #, fuzzy
 msgid "Create new connection profile"
 msgstr "Opret en ny forbindelsesprofil"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:97
 #, fuzzy
 msgid "Show preferences"
 msgstr "Præferencer"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:99
 #, fuzzy
 msgid "Run a plugin"
 msgstr "Udfør pluginet"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:101
 #, fuzzy
 msgid "Quit"
 msgstr "_Afslut"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:103
 msgid "Use default server name (for --new)"
 msgstr "Brug standardservernavn (til --new)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:105
 msgid "Use default protocol (for --new)"
 msgstr "Brug standardprotokol (til --new)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:107
 #, fuzzy
 msgid "Start in tray"
 msgstr "Start som bakkeikon"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:109
 #, fuzzy
 msgid "Show the application version"
 msgstr "Vis programmets version"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:111
 #, fuzzy
 msgid "Show version of the application and its plugins"
 msgstr "Vis programmets version"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:113
 #, fuzzy
 msgid "Modify connection profile, (requires --set-option)"
 msgstr "Rediger forbindelsesprofil, kræver også --set-option"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:115
 msgid "Set one or more profile settings, to be used with --update-profile"
 msgstr ""
 "Indstil en eller flere profilindstillinger som skal bruges med --update-"
 "profile"
 
-#. / TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
+#. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
 msgid "translator-credits"
 msgstr ""
@@ -1313,8 +1298,6 @@ msgstr "Autentifikationstype"
 msgid "Private key passphrase"
 msgstr "Nøgleord for privat nøgle"
 
-#. Type
-#. Name
 #: src/remmina_sftp_plugin.c:362
 msgid "SFTP - Secure File Transfer"
 msgstr "SFTP - Sikker filoverførsel"
@@ -1422,8 +1405,6 @@ msgstr "Deaktivér lagring af adgangskode"
 msgid "Strict host key checking"
 msgstr "Striks tjek af værtsnøgle"
 
-#. *< Type
-#. *< Name
 #: src/remmina_ssh_plugin.c:1103
 msgid "SSH - Secure Shell"
 msgstr "SSH - Sikker skal"
@@ -1486,26 +1467,14 @@ msgstr "Kun visning"
 msgid "Send Ctrl+Alt+Delete"
 msgstr "Send Ctrl+Alt+Delete"
 
-#.
-#. * FIXME: Use the RemminaConnectionWindow as transient parent widget
-#. * (and add the GTK_DIALOG_DESTROY_WITH_PARENT flag) if it becomes
-#. * accessible from the Remmina plugin API.
-#.
 #: plugins/spice/spice_plugin.c:473 plugins/spice/spice_plugin_usb.c:51
 msgid "Select USB devices for redirection"
 msgstr "Vælg USB-enheder til viderestilling"
 
-#. Type
-#. Name
 #: plugins/spice/spice_plugin.c:482
 msgid "SPICE - Simple Protocol for Independent Computing Environments"
 msgstr "SPICE - Simple Protocol for Independent Computing Environments"
 
-#.
-#. * FIXME: Use the RemminaConnectionWindow as transient parent widget
-#. * (and add the GTK_DIALOG_DESTROY_WITH_PARENT flag) if it becomes
-#. * accessible from the Remmina plugin API.
-#.
 #: plugins/spice/spice_plugin_file_transfer.c:82
 msgid "File Transfers"
 msgstr "Filoverførsler"
@@ -1633,7 +1602,6 @@ msgstr ""
 msgid "Unable to establish a connection to RDP server %s."
 msgstr "Kan ikke etablere en forbindelse til RDP-serveren %s."
 
-#. We should never come here
 #: plugins/rdp/rdp_plugin.c:1560
 #, c-format
 msgid "Unable to connect to RDP server %s."
@@ -1658,7 +1626,6 @@ msgstr ""
 msgid "Server %s denied the connection."
 msgstr "Serveren %s nægtede forbindelsen."
 
-#. E_PROXY_NAP_ACCESSDENIED https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-tsgu/84cd92e4-592c-4219-95d8-18021ac654b0
 #: plugins/rdp/rdp_plugin.c:1578
 #, fuzzy, c-format
 msgid "The remote desktop gateway %s denied user %s\\%s access due to policy."
@@ -1671,7 +1638,6 @@ msgstr ""
 msgid "Unable to connect to RDP server %s"
 msgstr "Kan ikke oprette forbindelse til RDP-serveren %s"
 
-#. 1st one is the default in a new install
 #: plugins/rdp/rdp_plugin.c:1870
 msgid "GFX AVC444 (32 bpp)"
 msgstr "GFX AVC444 (32 bpp)"
@@ -1915,20 +1881,14 @@ msgstr "Afslappet tjek af rækkefølge"
 msgid "Glyph Cache"
 msgstr "Glyf-mellemlager"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2014
 msgid "RDP - Remote Desktop Protocol"
 msgstr "RDP - Fjernskrivebordsprotokol"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2037
 msgid "RDP - RDP File Handler"
 msgstr "RDP - RDP-filhåndterer"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2052
 msgid "RDP - Preferences"
 msgstr "RDP - Præferencer"
@@ -1949,7 +1909,6 @@ msgstr "<ikke sat>"
 msgid "<Choose a quality level to edit…>"
 msgstr "<vælg et kvalitetsniveau for at redigere …>"
 
-#. Create the content
 #: plugins/rdp/rdp_settings.c:418
 msgid "Keyboard layout"
 msgstr "Tastaturlayout"
@@ -2010,7 +1969,6 @@ msgstr "Skaleringsfaktor for enhed %"
 msgid "Desktop orientation"
 msgstr "Orientering af skrivebord"
 
-#. Draw text
 #: plugins/rdp/rdp_event.c:299
 #, fuzzy, c-format
 msgid "Reconnection attempt %d of %d…"
@@ -2086,8 +2044,6 @@ msgstr "Deaktivér kryptering"
 msgid "Use local cursor"
 msgstr "Brug lokal markør"
 
-#. Type
-#. Name
 #: plugins/nx/nx_plugin.c:761
 msgid "NX - NX Technology"
 msgstr "NX - NX-teknologi"
@@ -2159,8 +2115,6 @@ msgstr "Afbryd forbindelsen efter én session"
 msgid "Listen for TCP connections"
 msgstr "Åbn forbindelse"
 
-#. Type
-#. Name
 #: plugins/xdmcp/xdmcp_plugin.c:391
 msgid "XDMCP - X Remote Session"
 msgstr "XDMCP - X-fjernsession"
@@ -2232,8 +2186,6 @@ msgstr "Deaktivér serverinput"
 msgid "Open Chat…"
 msgstr "Åbn chat …"
 
-#. Type
-#. Name
 #: plugins/telepathy/telepathy_plugin.c:57
 msgid "Telepathy - Desktop Sharing"
 msgstr "Telepathy - Skrivebordsdeling"
@@ -2883,33 +2835,33 @@ msgstr "SSH-logniveau"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1344
-msgid ""
-"The time (in seconds) the connection needs to remain idle before TCP starts "
-"sending keepalive probes."
+#, fuzzy
+msgid "Seconds of connection idleness before TCP keepalive probes are sent."
 msgstr ""
 "Tiden (i sekunder) som forbindelsen skal være inaktiv inden TCP begynder at "
 "sende keepalive-sonder."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1360
-msgid "The time (in seconds) between individual keepalive probes."
+#, fuzzy
+msgid "Seconds between each keepalive probe."
 msgstr "Tiden (i sekunder) mellem hver keepalive-sonde."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1376
+#, fuzzy
 msgid ""
-"The maximum number of keepalive probes TCP should send before dropping the "
-"connection."
+"Number of keepalive probes sent via TCP connection before it is dropped."
 msgstr ""
 "Maksimum antal keepalive-sonder som TCP skal sende inden forbindelsen "
 "droppes."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1392
+#, fuzzy
 msgid ""
-"it specifies the maximum amount of time in milliseconds that transmitted "
-"data may remain unacknowledged before TCP will forcibly close the "
-"corresponding connection."
+"Amount of milliseconds to attempt acknowledging data before closing the "
+"corresponding TCP connection forcibly."
 msgstr ""
 "angivet den længste tid i millisekunder som overført data må forblive "
 "ubehandlet inden TCP tvinger den tilhørende forbindelse til at lukke."
@@ -3128,6 +3080,3 @@ msgstr "Tillad fed tekst"
 #: data/ui/remmina_preferences.glade:2183
 msgid "Terminal"
 msgstr "Terminal"
-
-#, fuzzy
-

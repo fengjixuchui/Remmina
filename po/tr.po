@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-11-12 23:35+0000\n"
+"POT-Creation-Date: 2019-11-13 08:54+0000\n"
 "PO-Revision-Date: 2019-11-09 00:04+0000\n"
 "Last-Translator: Serdar Sağlam <teknomobil@msn.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -23,7 +23,6 @@ msgstr ""
 "X-Generator: Weblate 3.10-dev\n"
 "X-Launchpad-Export-Date: 2014-04-10 15:04+0000\n"
 
-#. Profile: Protocol
 #: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1475
 msgid "Protocol"
 msgstr "Protokol"
@@ -57,7 +56,6 @@ msgstr "Eklentiler"
 msgid "_OK"
 msgstr "_Tamam"
 
-#. Profile: Name
 #: src/remmina_plugin_manager.c:458 src/remmina_file_editor.c:1432
 #: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:491
 #: data/ui/remmina_mpc.glade:314
@@ -109,7 +107,6 @@ msgstr "<Yok>"
 msgid "Cancel"
 msgstr "İptal"
 
-#. A button to confirm reading
 #: src/remmina_message_panel.c:199 data/ui/remmina_string_list.glade:8
 #: data/ui/remmina_string_list.glade:9 data/ui/remmina_string_list.glade:63
 #: data/ui/remmina_news.glade:27 data/ui/remmina_preferences.glade:33
@@ -142,9 +139,6 @@ msgstr "Alan adı"
 msgid "Save password"
 msgstr "Parolayı kaydet"
 
-#. Buttons, ok and cancel
-#. gtk_grid_attach(GTK_GRID(grid), button_ok, 0, grid_row, 1, 1);
-#. Buttons, ok and cancel
 #: src/remmina_message_panel.c:452 src/remmina_message_panel.c:624
 #: src/remmina_file_editor.c:160 src/remmina_file_editor.c:364
 #: src/remmina_file_editor.c:1307 src/remmina_sftp_client.c:915
@@ -175,7 +169,6 @@ msgstr "İstemci Sertifika Dosyası"
 msgid "Client Certificate Key"
 msgstr "İstemci Sertifika Anahtarı"
 
-#. Title
 #: src/remmina_chat_window.c:178
 #, c-format
 msgid "Chat with %s"
@@ -212,7 +205,6 @@ msgstr "Ölçeklendiğinde en boy oranını koru"
 msgid "Fill client window when scaled"
 msgstr "Ölçeklendiğinde istemci penceresini doldur"
 
-#. Add a keystrokes submenu
 #: src/rcw.c:1815 src/remmina_pref_dialog.c:143
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
@@ -388,7 +380,6 @@ msgstr "Boyut"
 msgid "User"
 msgstr "Kullanıcı"
 
-#. Profile: Group
 #: src/remmina_ftp_client.c:930 src/remmina_file_editor.c:1457
 #: data/ui/remmina_main.glade:513 data/ui/remmina_mpc.glade:99
 #: data/ui/remmina_mpc.glade:325
@@ -440,7 +431,6 @@ msgstr "Servis Keşfini Aç"
 msgid "_Quit"
 msgstr "_Çık"
 
-#. Refresh it in case translation is updated
 #: src/remmina_icon.c:357 src/remmina_icon.c:539
 msgid "Remmina Applet"
 msgstr "Remmina Küçük Uygulama"
@@ -618,12 +608,10 @@ msgstr "Gelişmiş"
 msgid "Default settings saved."
 msgstr "Öntanımlı ayarlar kaydedildi."
 
-#. Create the editor dialog
 #: src/remmina_file_editor.c:1305
 msgid "Remote Desktop Preference"
 msgstr "Uzak Masaüstü Tercihleri"
 
-#. Default button
 #: src/remmina_file_editor.c:1311
 msgid "Save as Default"
 msgstr "Öntanımlı olarak Kaydet"
@@ -658,12 +646,10 @@ msgstr "Hızlı Bağlantı"
 msgid "Use '%s' as subgroup delimiter"
 msgstr "Kullan '%s' alt grup sınırlayıcı olarak"
 
-#. Prior Connection Command
 #: src/remmina_file_editor.c:1489
 msgid "Pre Command"
 msgstr "Öntanımlı Komut"
 
-#. POST Connection Command
 #: src/remmina_file_editor.c:1507
 msgid "Post Command"
 msgstr "Yazılı Komut"
@@ -711,7 +697,7 @@ msgstr "SSH sunucusunda %s komutu bulunamadı"
 msgid "Could not run %s command on the SSH server (status = %i)."
 msgstr "SSH sunucusunda %s komutu çalıştırılamadı (durum = %i)."
 
-#. / TRANSLATORS: %s is a placeholder for an error message
+#. TRANSLATORS: %s is a placeholder for an error message
 #: src/remmina_protocol_widget.c:903
 #, fuzzy, c-format
 msgid "Could not run command: %s"
@@ -779,19 +765,19 @@ msgstr "Bulundu"
 msgid "New Connection"
 msgstr "Yeni Bağlantı"
 
-#. / TRANSLATORS: The placeholder %s is a directory path
+#. TRANSLATORS: The placeholder %s is a directory path
 #: src/remmina_sftp_client.c:171
 #, c-format
 msgid "Error creating directory %s."
 msgstr "Hata! dizin oluşturulamadı %s."
 
-#. / TRANSLATORS: The placeholder %s is a file path
+#. TRANSLATORS: The placeholder %s is a file path
 #: src/remmina_sftp_client.c:179 src/remmina_sftp_client.c:200
 #, c-format
 msgid "Error creating file %s."
 msgstr "Hata! dosya oluşturulamadı %s."
 
-#. / TRANSLATORS: The placeholders %s are a file path and a server name
+#. TRANSLATORS: The placeholders %s are a file path and a server name
 #: src/remmina_sftp_client.c:218
 #, c-format
 msgid "Error opening file %s on server. %s"
@@ -878,18 +864,18 @@ msgstr "Geçmiş listesi temizlendi."
 msgid "Configure the keystrokes"
 msgstr "Tuş vuruşlarını yapılandır"
 
-#. / TRANSLATORS: Do not translate libsodium, is the name of a library
+#. TRANSLATORS: Do not translate libsodium, is the name of a library
 #: src/remmina_pref_dialog.c:444
 msgid "libsodium >= 1.9.0 is required to use master password"
 msgstr "libsodium > = 1.9.0 ana parolayı kullanmak için gerekli"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:203
 #, c-format
 msgid "SSH password authentication failed: %s"
 msgstr "SSH parola yetkilendirmesi başarısız: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:224 src/remmina_ssh.c:248 src/remmina_ssh.c:257
 #, c-format
 msgid "SSH public key authentication failed: %s"
@@ -899,7 +885,7 @@ msgstr "SSH genel anahtar yetkilendirmesi başarısız: %s"
 msgid "SSH Key file not yet set."
 msgstr "SSH anahtar dosyası belirtilmemiş."
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:236
 #, c-format
 msgid "SSH public key cannot be imported: %s"
@@ -915,19 +901,19 @@ msgstr "SSH kimlik bilgileri"
 msgid "SSH private key passphrase"
 msgstr "SSH özel anahtar passphrase"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:299
 #, c-format
 msgid "SSH automatic public key authentication failed: %s"
 msgstr "SSH otomatik genel anahtar yetkilendirmesi başarısız: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:316
 #, c-format
 msgid "SSH public key authentication with SSH agent failed: %s"
 msgstr "SSH aracı ile SSH ortak anahtar kimlik doğrulaması başarısız: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:336
 #, c-format
 msgid "SSH Kerberos/GSSAPI authentication failed: %s"
@@ -937,19 +923,19 @@ msgstr "SSH Kerberos/GSSAPI kimlik doğrulaması başarısız: %s"
 msgid "SSH public key has changed!"
 msgstr "SSH ortak anahtarı değişti!"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:441
 #, c-format
 msgid "ssh_get_server_publickey() has failed: %s"
 msgstr "ssh_get_server_publickey() başarısız: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:447
 #, c-format
 msgid "ssh_get_publickey() has failed: %s"
 msgstr "ssh_get_publickey() başarısız: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:454
 #, c-format
 msgid "ssh_get_publickey_hash() has failed: %s"
@@ -973,7 +959,7 @@ msgstr ""
 "altındasınız ya da\n"
 "yönetici anahtarı değiştirdi. Yeni genel anahtar parmak izi:"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:484
 #, c-format
 msgid "SSH known host checking failed: %s"
@@ -991,25 +977,25 @@ msgstr "SSH Kerberos/GSSAPI"
 msgid "SSH authentication"
 msgstr "SSH kimlik doğrulaması"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:674
 #, c-format
 msgid "Could not start SSH session: %s"
 msgstr "SSH oturumu başlatılamadı: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1033 src/remmina_ssh.c:1095
 #, fuzzy, c-format
 msgid "Could not create channel: %s"
 msgstr "Kanal oluşturulamadı, %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1044
 #, fuzzy, c-format
 msgid "Could not connect to the SSH tunnel destination: %s"
 msgstr "%s SSH tüneli hedefine bağlanılamadı"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1110 src/remmina_ssh.c:1704
 #, c-format
 msgid "Could not open channel: %s"
@@ -1020,7 +1006,7 @@ msgstr "Kanal açılamadı: %s"
 msgid "Failed to execute %s on SSH server, %%s"
 msgstr "SSH sunucusunda %s çalıştırılamadı, %%s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1154 src/remmina_ssh.c:1175 src/remmina_ssh.c:1184
 #, fuzzy, c-format
 msgid "Could not request port forwarding: %s"
@@ -1035,31 +1021,31 @@ msgstr "Sunucu yanıt vermedi."
 msgid "Cannot connect to local port %i."
 msgstr "Yerel bağlantı noktasına bağlanılamıyor %i."
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1308
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_write(): %s"
 msgstr "ssh_channel_write() çalıştırılamadı, %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1315
 #, fuzzy, c-format
 msgid "Could not read from tunnel listening socket: %s"
 msgstr "Tünel dinleme soketinden okunamadı, %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1335
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_poll(): %s"
 msgstr "ssh_channel_poll() çalıştırılamadı, %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1342
 #, fuzzy, c-format
 msgid "Could not run ssh_channel_read_nonblocking(): %s"
 msgstr "ssh_channel_read_nonblocking() çalıştırılamadı, %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1361
 #, fuzzy, c-format
 msgid "Could not send data to tunnel listening socket: %s"
@@ -1081,34 +1067,34 @@ msgstr "Sunucu soketi yerel porta bağlanamadı."
 msgid "Could not listen to local port."
 msgstr "Yerel port dinlenemedi."
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1473
 msgid "Could not start pthread."
 msgstr "Pthread başlatılamadı."
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1490 src/remmina_ssh.c:1525
 msgid "Could not initialize pthread."
 msgstr "Pthread başlatılamadı."
 
-#. / TRANSLATORS: Do not translate pthread
+#. TRANSLATORS: Do not translate pthread
 #: src/remmina_ssh.c:1507
 msgid "Failed to initialize pthread."
 msgstr "Pthread başlatılamadı."
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1614
 #, c-format
 msgid "Could not create SFTP session: %s"
 msgstr "SFTP oturumu oluşturulamadı: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1619
 #, c-format
 msgid "Could not initialize SFTP session: %s"
 msgstr "SFTP oturumu başlatılamadı: %s"
 
-#. / TRANSLATORS: The placeholder %s is an error message
+#. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1734
 #, c-format
 msgid "Could not request shell: %s"
@@ -1118,7 +1104,6 @@ msgstr "Kabuk istenemedi: %s"
 msgid "Could not create PTY device."
 msgstr "PTY cihazı oluşturulamadı."
 
-#. Show in the status bar the total number of connections found
 #: src/remmina_main.c:644
 #, c-format
 msgid "Total %i item."
@@ -1152,12 +1137,12 @@ msgstr "Bu protokol dışarı çıkartmayı desteklemiyor."
 msgid "Remmina Kiosk"
 msgstr "Remmina Kiosk"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:84
 msgid "Show 'About'"
 msgstr "'Hakkında'yı göster"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:86 src/remmina.c:88
 msgid ""
 "Connect to desktop described in file (.remmina or type supported by plugin)"
@@ -1165,7 +1150,7 @@ msgstr ""
 "Dosyada açıklanan masaüstüne bağlan (.remmina veya eklenti tarafından "
 "desteklenen tür)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:90
 msgid ""
 "Edit desktop connection described in file (.remmina or type supported by "
@@ -1174,68 +1159,68 @@ msgstr ""
 "Dosyada açıklanan masaüstü bağlantısını düzenle (.remmina veya eklenti "
 "tarafından desteklenen tür)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:93
 msgid "Start in kiosk mode"
 msgstr "Kiosk modunda başlat"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:95
 msgid "Create new connection profile"
 msgstr "Yeni bağlantı profili oluştur"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:97
 msgid "Show preferences"
 msgstr "Tercihleri göster"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:99
 msgid "Run a plugin"
 msgstr "Bir eklenti çalıştır"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:101
 msgid "Quit"
 msgstr "Çıkış yap"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:103
 msgid "Use default server name (for --new)"
 msgstr "Öntanımlı sunucu adını kullanın"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:105
 msgid "Use default protocol (for --new)"
 msgstr "Öntanımlı protokolü kullan (--new için)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:107
 msgid "Start in tray"
 msgstr "Sistem tepsisinde başlat"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:109
 msgid "Show the application version"
 msgstr "Uygulama sürümünü göster"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:111
 msgid "Show version of the application and its plugins"
 msgstr "Uygulamanın ve eklentilerinin sürümünü göster"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:113
 msgid "Modify connection profile, (requires --set-option)"
 msgstr "Bağlantı profilini düzenle, (--set-option gerektirir)"
 
-#. / TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
+#. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:115
 msgid "Set one or more profile settings, to be used with --update-profile"
 msgstr ""
 "--update-profile ile kullanılacak bir veya daha fazla profil ayarını yap"
 
-#. / TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
+#. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
 msgid "translator-credits"
 msgstr ""
@@ -1287,8 +1272,6 @@ msgstr "Kimlik doğrulama türü"
 msgid "Private key passphrase"
 msgstr "Özel anahtar passphrase"
 
-#. Type
-#. Name
 #: src/remmina_sftp_plugin.c:362
 msgid "SFTP - Secure File Transfer"
 msgstr "SFTP - Güvenli Dosya Aktarımı"
@@ -1396,8 +1379,6 @@ msgstr "Parola depolamayı devre dışı bırak"
 msgid "Strict host key checking"
 msgstr "Sıkı ana anahtar denetimi"
 
-#. *< Type
-#. *< Name
 #: src/remmina_ssh_plugin.c:1103
 msgid "SSH - Secure Shell"
 msgstr "SSH - Güvenli Kabuk"
@@ -1459,26 +1440,14 @@ msgstr "Sadece görüntüle"
 msgid "Send Ctrl+Alt+Delete"
 msgstr "Gönder Ctrl+Alt+Delete"
 
-#.
-#. * FIXME: Use the RemminaConnectionWindow as transient parent widget
-#. * (and add the GTK_DIALOG_DESTROY_WITH_PARENT flag) if it becomes
-#. * accessible from the Remmina plugin API.
-#.
 #: plugins/spice/spice_plugin.c:473 plugins/spice/spice_plugin_usb.c:51
 msgid "Select USB devices for redirection"
 msgstr "Yönlendirme için USB aygıtlarını seçin"
 
-#. Type
-#. Name
 #: plugins/spice/spice_plugin.c:482
 msgid "SPICE - Simple Protocol for Independent Computing Environments"
 msgstr "SPICE - Bağımsız Bilgi İşlem Ortamları İçin Basit Protokol"
 
-#.
-#. * FIXME: Use the RemminaConnectionWindow as transient parent widget
-#. * (and add the GTK_DIALOG_DESTROY_WITH_PARENT flag) if it becomes
-#. * accessible from the Remmina plugin API.
-#.
 #: plugins/spice/spice_plugin_file_transfer.c:82
 msgid "File Transfers"
 msgstr "Dosya Aktarımları"
@@ -1604,7 +1573,6 @@ msgstr ""
 msgid "Unable to establish a connection to RDP server %s."
 msgstr "RDP sunucu ile %s bağlantı kuramıyor."
 
-#. We should never come here
 #: plugins/rdp/rdp_plugin.c:1560
 #, c-format
 msgid "Unable to connect to RDP server %s."
@@ -1628,7 +1596,6 @@ msgstr ""
 msgid "Server %s denied the connection."
 msgstr "Sunucu %s bağlantıyı reddetti."
 
-#. E_PROXY_NAP_ACCESSDENIED https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-tsgu/84cd92e4-592c-4219-95d8-18021ac654b0
 #: plugins/rdp/rdp_plugin.c:1578
 #, c-format
 msgid "The remote desktop gateway %s denied user %s\\%s access due to policy."
@@ -1641,7 +1608,6 @@ msgstr ""
 msgid "Unable to connect to RDP server %s"
 msgstr "RDP sunucusuna %s bağlanılamıyor"
 
-#. 1st one is the default in a new install
 #: plugins/rdp/rdp_plugin.c:1870
 msgid "GFX AVC444 (32 bpp)"
 msgstr "GFX AVC444 (32 bit)"
@@ -1872,20 +1838,14 @@ msgstr "Rahatlık Kontrolü"
 msgid "Glyph Cache"
 msgstr "Glyph Önbelleği"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2014
 msgid "RDP - Remote Desktop Protocol"
 msgstr "RDP - Uzak Masaüstü Kuralları"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2037
 msgid "RDP - RDP File Handler"
 msgstr "RDP - RDP Dosya İşleyici"
 
-#. Type
-#. Name
 #: plugins/rdp/rdp_plugin.c:2052
 msgid "RDP - Preferences"
 msgstr "RDP - Tercihleri"
@@ -1906,7 +1866,6 @@ msgstr "<Ayarla>"
 msgid "<Choose a quality level to edit…>"
 msgstr "<Bağlantı kalitesi seçin…>"
 
-#. Create the content
 #: plugins/rdp/rdp_settings.c:418
 msgid "Keyboard layout"
 msgstr "Klavye düzeni"
@@ -1967,7 +1926,6 @@ msgstr "Aygıt ölçeği etkeni %"
 msgid "Desktop orientation"
 msgstr "Masaüstü yönlendirmesi"
 
-#. Draw text
 #: plugins/rdp/rdp_event.c:299
 #, c-format
 msgid "Reconnection attempt %d of %d…"
@@ -2039,8 +1997,6 @@ msgstr "Şifrelemeyi devre dışı bırak"
 msgid "Use local cursor"
 msgstr "Yerel imleci kullan"
 
-#. Type
-#. Name
 #: plugins/nx/nx_plugin.c:761
 msgid "NX - NX Technology"
 msgstr "NX - NX Teknolojisi"
@@ -2110,8 +2066,6 @@ msgstr "İlk oturumdan sonra bağlantıyı kes"
 msgid "Listen for TCP connections"
 msgstr "TCP bağlantılarını dinle"
 
-#. Type
-#. Name
 #: plugins/xdmcp/xdmcp_plugin.c:391
 msgid "XDMCP - X Remote Session"
 msgstr "XDMCP - X Uzak Oturumu"
@@ -2179,8 +2133,6 @@ msgstr "Sunucu girdisini etkisizleştir"
 msgid "Open Chat…"
 msgstr "Sohbeti Aç…"
 
-#. Type
-#. Name
 #: plugins/telepathy/telepathy_plugin.c:57
 msgid "Telepathy - Desktop Sharing"
 msgstr "Telepati - Masaüstü Paylaşımı"
@@ -2793,33 +2745,33 @@ msgstr "SSH günlükleri"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1344
-msgid ""
-"The time (in seconds) the connection needs to remain idle before TCP starts "
-"sending keepalive probes."
+#, fuzzy
+msgid "Seconds of connection idleness before TCP keepalive probes are sent."
 msgstr ""
 "TCP başlatılmadan önce bağlantının (saniye olarak) bağlantısının boşta "
 "kalması gerekiyor, kalıcı problar gönder."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1360
-msgid "The time (in seconds) between individual keepalive probes."
+#, fuzzy
+msgid "Seconds between each keepalive probe."
 msgstr "Tekli kalıcı problar arasındaki süre (saniye cinsinden)."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1376
+#, fuzzy
 msgid ""
-"The maximum number of keepalive probes TCP should send before dropping the "
-"connection."
+"Number of keepalive probes sent via TCP connection before it is dropped."
 msgstr ""
 "Bağlantıyı kesmeden önce, azami korunma probu sayısı TCP’nin göndermesi "
 "gerekir."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1392
+#, fuzzy
 msgid ""
-"it specifies the maximum amount of time in milliseconds that transmitted "
-"data may remain unacknowledged before TCP will forcibly close the "
-"corresponding connection."
+"Amount of milliseconds to attempt acknowledging data before closing the "
+"corresponding TCP connection forcibly."
 msgstr ""
 "milisaniye cinsinden iletilen azami süreyi belirtir, ilgili bağlantı TCP "
 "zorla kapatılmadan önce veriler kabul edilmeden kalabilir."
@@ -3006,4 +2958,3 @@ msgstr "Kalın metne izin ver"
 #: data/ui/remmina_preferences.glade:2183
 msgid "Terminal"
 msgstr "Uçbirim"
-
