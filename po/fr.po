@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-11-13 08:54+0000\n"
-"PO-Revision-Date: 2019-11-09 00:04+0000\n"
+"POT-Creation-Date: 2019-11-14 10:16+0000\n"
+"PO-Revision-Date: 2019-11-13 17:15+0000\n"
 "Last-Translator: Davy Defaud <davy.defaud@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/remmina/remmina/"
 "fr/>\n"
@@ -55,7 +55,6 @@ msgstr "_OK"
 
 #: src/remmina_plugin_manager.c:458 src/remmina_file_editor.c:1432
 #: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:491
-#: data/ui/remmina_mpc.glade:314
 msgid "Name"
 msgstr "Nom"
 
@@ -100,7 +99,7 @@ msgid "<None>"
 msgstr "<aucune>"
 
 #: src/remmina_message_panel.c:163 data/ui/remmina_unlock.glade:46
-#: data/ui/remmina_mpc.glade:35
+#: data/ui/remmina_mpc.glade:38
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -123,12 +122,12 @@ msgstr "Non"
 #: src/remmina_sftp_plugin.c:349 src/remmina_ssh_plugin.c:1055
 #: plugins/rdp/rdp_plugin.c:1934 plugins/nx/nx_plugin.c:721
 #: plugins/vnc/vnc_plugin.c:1832 plugins/vnc/vnc_plugin.c:1852
-#: plugins/www/www_plugin.c:792 data/ui/remmina_mpc.glade:152
+#: plugins/www/www_plugin.c:792 data/ui/remmina_mpc.glade:155
 msgid "Username"
 msgstr "Nom d’utilisateur"
 
 #: src/remmina_message_panel.c:387 plugins/rdp/rdp_plugin.c:1936
-#: data/ui/remmina_mpc.glade:138
+#: data/ui/remmina_mpc.glade:141
 msgid "Domain"
 msgstr "Domaine"
 
@@ -389,8 +388,7 @@ msgid "User"
 msgstr "Utilisateur"
 
 #: src/remmina_ftp_client.c:930 src/remmina_file_editor.c:1457
-#: data/ui/remmina_main.glade:513 data/ui/remmina_mpc.glade:99
-#: data/ui/remmina_mpc.glade:325
+#: data/ui/remmina_main.glade:513 data/ui/remmina_mpc.glade:102
 msgid "Group"
 msgstr "Groupe"
 
@@ -597,7 +595,7 @@ msgstr "Agent SSH (automatique)"
 #: src/remmina_file_editor.c:938 src/remmina_protocol_widget.c:1330
 #: src/remmina_protocol_widget.c:1349 src/remmina_sftp_plugin.c:317
 #: src/remmina_ssh_plugin.c:956 plugins/www/www_plugin.c:793
-#: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:113
+#: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:116
 #: data/ui/remmina_preferences.glade:1533
 msgid "Password"
 msgstr "Mot de passe"
@@ -712,9 +710,9 @@ msgstr ""
 
 #. TRANSLATORS: %s is a placeholder for an error message
 #: src/remmina_protocol_widget.c:903
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run command: %s"
-msgstr "Impossible d’exécuter la commande, %s"
+msgstr "Impossible d’exécuter la commande : %s"
 
 #: src/remmina_protocol_widget.c:1348
 msgid "Type in username and password for SSH."
@@ -935,7 +933,8 @@ msgid "SSH Kerberos/GSSAPI authentication failed: %s"
 msgstr "L’authentification SSH Kerberos/GSSAPI a échoué : %s"
 
 #: src/remmina_ssh.c:353
-msgid "SSH public key has changed!"
+#, fuzzy
+msgid "The public SSH key changed!"
 msgstr "La clef SSH publique a changé !"
 
 #. TRANSLATORS: The placeholder %s is an error message
@@ -977,9 +976,9 @@ msgstr ""
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:484
-#, c-format
-msgid "SSH known host checking failed: %s"
-msgstr "La vérification de la clef d’hôte SSH a échoué : %s"
+#, fuzzy, c-format
+msgid "Could not check list of known SSH hosts: %s"
+msgstr "Impossible d’établir la connexion SSH : %s"
 
 #: src/remmina_ssh.c:490
 msgid "SSH password"
@@ -1001,15 +1000,15 @@ msgstr "Impossible d’établir la connexion SSH : %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1033 src/remmina_ssh.c:1095
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create channel: %s"
-msgstr "Impossible de créer le canal, %s"
+msgstr "Impossible de créer le canal : %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1044
 #, fuzzy, c-format
-msgid "Could not connect to the SSH tunnel destination: %s"
-msgstr "Échec de la connexion à la cible %s à travers le tunnel SSH"
+msgid "Could not connect to SSH tunnel: %s"
+msgstr "Échec de la connexion à la cible à travers le tunnel SSH : %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1110 src/remmina_ssh.c:1704
@@ -1018,15 +1017,15 @@ msgid "Could not open channel: %s"
 msgstr "Impossible d’ouvrir le canal : %s"
 
 #: src/remmina_ssh.c:1116
-#, c-format
-msgid "Failed to execute %s on SSH server, %%s"
+#, fuzzy, c-format
+msgid "Could not run %s on SSH server, %%s"
 msgstr "Impossible d’exécuter %s sur le serveur SSH, %%s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1154 src/remmina_ssh.c:1175 src/remmina_ssh.c:1184
-#, fuzzy, c-format
+#, c-format
 msgid "Could not request port forwarding: %s"
-msgstr "Échec de la demande de redirection de port, %s"
+msgstr "Échec de la demande de redirection de port : %s"
 
 #: src/remmina_ssh.c:1219
 msgid "The server did not respond."
@@ -1039,33 +1038,33 @@ msgstr "Impossible de se connecter au port local %i."
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1308
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run ssh_channel_write(): %s"
-msgstr "Impossible d’exécuter ssh_channel_write(), %s"
+msgstr "Impossible d’exécuter ssh_channel_write() : %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1315
-#, fuzzy, c-format
+#, c-format
 msgid "Could not read from tunnel listening socket: %s"
-msgstr "Impossible de lire sur le socket à l’écoute du tunnel, %s"
+msgstr "Impossible de lire sur le socket d’écoute du tunnel : %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1335
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run ssh_channel_poll(): %s"
-msgstr "Impossible d’exécuter ssh_channel_poll(), %s"
+msgstr "Impossible d’exécuter ssh_channel_poll() : %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1342
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run ssh_channel_read_nonblocking(): %s"
-msgstr "Impossible d’exécuter la fonction ssh_channel_read_nonblocking(), %s"
+msgstr "Impossible d’exécuter la fonction ssh_channel_read_nonblocking() : %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1361
-#, fuzzy, c-format
+#, c-format
 msgid "Could not send data to tunnel listening socket: %s"
-msgstr "Impossible d’envoyer des données au socket d’écoute du tunnel, %s"
+msgstr "Impossible d’envoyer des données au socket d’écoute du tunnel : %s"
 
 #: src/remmina_ssh.c:1440
 msgid "Assign a destination port."
@@ -1128,9 +1127,9 @@ msgstr[0] "%i élément au total."
 msgstr[1] "%i éléments au total."
 
 #: src/remmina_main.c:826
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete '%s'?"
-msgstr "Êtes‐vous sûr de vouloir effacer « %s » ?"
+msgstr "Êtes‐vous sûr de vouloir supprimer « %s » ?"
 
 #: src/remmina_main.c:926
 #, c-format
@@ -1300,7 +1299,7 @@ msgstr "SFTP — transfert de fichiers sécurisé"
 #: src/remmina_ssh_plugin.c:479
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Erreur : %s"
 
 #: src/remmina_ssh_plugin.c:496
 msgid "Terminal content saved under"
@@ -2428,33 +2427,52 @@ msgstr "Dernière utilisation"
 msgid "Remmina - Multi Password Changer"
 msgstr "Remmina — Modificateur de mots de passe multiples"
 
-#: data/ui/remmina_mpc.glade:21
+#: data/ui/remmina_mpc.glade:24
 msgid "Change"
 msgstr "Changer"
 
-#: data/ui/remmina_mpc.glade:61
+#: data/ui/remmina_mpc.glade:64
 msgid "<span weight='bold' size='larger'>Multi Password Changer</span>"
 msgstr ""
 "<span weight='bold' size='larger'>Modificateur de mots de passe multiples</"
 "span>"
 
-#: data/ui/remmina_mpc.glade:166
+#: data/ui/remmina_mpc.glade:169
 msgid "Selection criteria"
 msgstr "Critère de sélection"
 
-#: data/ui/remmina_mpc.glade:195
+#: data/ui/remmina_mpc.glade:198
 msgid "Confirm password"
 msgstr "Confirmez le mot de passe"
 
-#: data/ui/remmina_mpc.glade:208
-msgid "Reset to"
-msgstr "Réinitialisé à"
+#: data/ui/remmina_mpc.glade:211
+#, fuzzy
+msgctxt "Multi password changer"
+msgid "Set new password"
+msgstr "Enregistrer le mot de passe"
 
-#: data/ui/remmina_mpc.glade:302
-msgid "F"
-msgstr "F"
+#. A column table with multiple check-boxes
+#: data/ui/remmina_mpc.glade:305
+#, fuzzy
+msgctxt "Multi password changer"
+msgid "Select"
+msgstr "Sélectionner tout"
 
-#: data/ui/remmina_mpc.glade:336
+#: data/ui/remmina_mpc.glade:317
+#, fuzzy
+msgctxt "Multi password changer table"
+msgid "Name"
+msgstr "Nom"
+
+#: data/ui/remmina_mpc.glade:328
+#, fuzzy
+msgctxt "Multi password changer table"
+msgid "Group"
+msgstr "Groupe"
+
+#: data/ui/remmina_mpc.glade:339
+#, fuzzy
+msgctxt "Multi password changer table"
 msgid "Domain\\Username"
 msgstr "Domaine\\Utilisateur"
 
@@ -2784,40 +2802,34 @@ msgstr "Niveau de verbosité de SSH"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1344
-#, fuzzy
 msgid "Seconds of connection idleness before TCP keepalive probes are sent."
 msgstr ""
-"Temps (en secondes) durant lequel la connexion doit rester inactive avant "
-"que TCP ne commence à envoyer des paquets keepalive pour maintenir la "
-"session."
+"Durée d’inactivité (en secondes) avant que TCP ne commence à envoyer des "
+"paquets keepalive pour maintenir la session."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1360
-#, fuzzy
 msgid "Seconds between each keepalive probe."
 msgstr ""
-"Temps (en secondes) entre deux envois de paquets de maintien de la session "
+"Temps (en secondes) entre deux envois de paquets de maintien de la session "
 "TCP."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1376
-#, fuzzy
 msgid ""
 "Number of keepalive probes sent via TCP connection before it is dropped."
 msgstr ""
-"Nombre maximum de messages de maintien de la session TCP (keepalive probes) "
+"Nombre maximum de paquets de maintien de la session TCP (keepalive probes) "
 "avant abandon."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1392
-#, fuzzy
 msgid ""
 "Amount of milliseconds to attempt acknowledging data before closing the "
 "corresponding TCP connection forcibly."
 msgstr ""
-"Ceci spécifie la durée maximum en millisecondes durant laquelle des données "
-"transmises peuvent demeurer non acquittées avant que TCP ne ferme la "
-"connexion associée."
+"Durée maximum en millisecondes durant laquelle des données transmises "
+"peuvent demeurer non acquittées avant que TCP ne ferme la connexion associée."
 
 #: data/ui/remmina_preferences.glade:1413
 msgid "SSH options"
@@ -3002,3 +3014,4 @@ msgstr "Autoriser le texte en caractères gras"
 #: data/ui/remmina_preferences.glade:2183
 msgid "Terminal"
 msgstr "Terminal"
+

@@ -6,13 +6,14 @@
 # Oguz Ersen <oguzersen@protonmail.com>, 2019.
 # Serdar Sağlam <teknomobil@msn.com>, 2019.
 # Ömer Çakmak <faruk.omer.cakmak@gmail.com>, 2019.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-11-13 08:54+0000\n"
-"PO-Revision-Date: 2019-11-09 00:04+0000\n"
-"Last-Translator: Serdar Sağlam <teknomobil@msn.com>\n"
+"POT-Creation-Date: 2019-11-14 10:16+0000\n"
+"PO-Revision-Date: 2019-11-14 10:13+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/remmina/remmina/"
 "tr/>\n"
 "Language: tr\n"
@@ -58,7 +59,6 @@ msgstr "_Tamam"
 
 #: src/remmina_plugin_manager.c:458 src/remmina_file_editor.c:1432
 #: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:491
-#: data/ui/remmina_mpc.glade:314
 msgid "Name"
 msgstr "İsim"
 
@@ -103,7 +103,7 @@ msgid "<None>"
 msgstr "<Yok>"
 
 #: src/remmina_message_panel.c:163 data/ui/remmina_unlock.glade:46
-#: data/ui/remmina_mpc.glade:35
+#: data/ui/remmina_mpc.glade:38
 msgid "Cancel"
 msgstr "İptal"
 
@@ -126,12 +126,12 @@ msgstr "Hayır"
 #: src/remmina_sftp_plugin.c:349 src/remmina_ssh_plugin.c:1055
 #: plugins/rdp/rdp_plugin.c:1934 plugins/nx/nx_plugin.c:721
 #: plugins/vnc/vnc_plugin.c:1832 plugins/vnc/vnc_plugin.c:1852
-#: plugins/www/www_plugin.c:792 data/ui/remmina_mpc.glade:152
+#: plugins/www/www_plugin.c:792 data/ui/remmina_mpc.glade:155
 msgid "Username"
 msgstr "Kullanıcı adı"
 
 #: src/remmina_message_panel.c:387 plugins/rdp/rdp_plugin.c:1936
-#: data/ui/remmina_mpc.glade:138
+#: data/ui/remmina_mpc.glade:141
 msgid "Domain"
 msgstr "Alan adı"
 
@@ -381,8 +381,7 @@ msgid "User"
 msgstr "Kullanıcı"
 
 #: src/remmina_ftp_client.c:930 src/remmina_file_editor.c:1457
-#: data/ui/remmina_main.glade:513 data/ui/remmina_mpc.glade:99
-#: data/ui/remmina_mpc.glade:325
+#: data/ui/remmina_main.glade:513 data/ui/remmina_mpc.glade:102
 msgid "Group"
 msgstr "Grup"
 
@@ -586,7 +585,7 @@ msgstr "SSH İstemci (otomatik)"
 #: src/remmina_file_editor.c:938 src/remmina_protocol_widget.c:1330
 #: src/remmina_protocol_widget.c:1349 src/remmina_sftp_plugin.c:317
 #: src/remmina_ssh_plugin.c:956 plugins/www/www_plugin.c:793
-#: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:113
+#: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:116
 #: data/ui/remmina_preferences.glade:1533
 msgid "Password"
 msgstr "Parola"
@@ -699,9 +698,9 @@ msgstr "SSH sunucusunda %s komutu çalıştırılamadı (durum = %i)."
 
 #. TRANSLATORS: %s is a placeholder for an error message
 #: src/remmina_protocol_widget.c:903
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run command: %s"
-msgstr "Komut çalıştırılamadı, %s"
+msgstr "Komut çalıştırılamadı: %s"
 
 #: src/remmina_protocol_widget.c:1348
 msgid "Type in username and password for SSH."
@@ -920,8 +919,8 @@ msgid "SSH Kerberos/GSSAPI authentication failed: %s"
 msgstr "SSH Kerberos/GSSAPI kimlik doğrulaması başarısız: %s"
 
 #: src/remmina_ssh.c:353
-msgid "SSH public key has changed!"
-msgstr "SSH ortak anahtarı değişti!"
+msgid "The public SSH key changed!"
+msgstr "Genel SSH anahtarı değişti!"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:441
@@ -962,8 +961,8 @@ msgstr ""
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:484
 #, c-format
-msgid "SSH known host checking failed: %s"
-msgstr "SSH bilinen ana bilgisayar denetimi başarısız: %s"
+msgid "Could not check list of known SSH hosts: %s"
+msgstr "Bilinen SSH ana bilgisayar listesi kontrol edilemedi: %s"
 
 #: src/remmina_ssh.c:490
 msgid "SSH password"
@@ -985,15 +984,15 @@ msgstr "SSH oturumu başlatılamadı: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1033 src/remmina_ssh.c:1095
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create channel: %s"
-msgstr "Kanal oluşturulamadı, %s"
+msgstr "Kanal oluşturulamadı: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1044
-#, fuzzy, c-format
-msgid "Could not connect to the SSH tunnel destination: %s"
-msgstr "%s SSH tüneli hedefine bağlanılamadı"
+#, c-format
+msgid "Could not connect to SSH tunnel: %s"
+msgstr "SSH tüneline bağlanılamadı: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1110 src/remmina_ssh.c:1704
@@ -1003,14 +1002,14 @@ msgstr "Kanal açılamadı: %s"
 
 #: src/remmina_ssh.c:1116
 #, c-format
-msgid "Failed to execute %s on SSH server, %%s"
-msgstr "SSH sunucusunda %s çalıştırılamadı, %%s"
+msgid "Could not run %s on SSH server, %%s"
+msgstr "%s SSH sunucusunda çalıştırılamadı, %%s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1154 src/remmina_ssh.c:1175 src/remmina_ssh.c:1184
-#, fuzzy, c-format
+#, c-format
 msgid "Could not request port forwarding: %s"
-msgstr "Port yönlendirme isteği yapılamadı, %s"
+msgstr "Port yönlendirme isteği yapılamadı: %s"
 
 #: src/remmina_ssh.c:1219
 msgid "The server did not respond."
@@ -1023,33 +1022,33 @@ msgstr "Yerel bağlantı noktasına bağlanılamıyor %i."
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1308
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run ssh_channel_write(): %s"
-msgstr "ssh_channel_write() çalıştırılamadı, %s"
+msgstr "ssh_channel_write() çalıştırılamadı: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1315
-#, fuzzy, c-format
+#, c-format
 msgid "Could not read from tunnel listening socket: %s"
-msgstr "Tünel dinleme soketinden okunamadı, %s"
+msgstr "Tünel dinleme soketinden okunamadı: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1335
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run ssh_channel_poll(): %s"
-msgstr "ssh_channel_poll() çalıştırılamadı, %s"
+msgstr "ssh_channel_poll() çalıştırılamadı: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1342
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run ssh_channel_read_nonblocking(): %s"
-msgstr "ssh_channel_read_nonblocking() çalıştırılamadı, %s"
+msgstr "ssh_channel_read_nonblocking() çalıştırılamadı: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1361
-#, fuzzy, c-format
+#, c-format
 msgid "Could not send data to tunnel listening socket: %s"
-msgstr "Tünel dinleme soketine veri gönderilemedi, %s"
+msgstr "Tünel dinleme soketine veri gönderilemedi: %s"
 
 #: src/remmina_ssh.c:1440
 msgid "Assign a destination port."
@@ -1112,9 +1111,9 @@ msgstr[0] "Toplam %i öge."
 msgstr[1] "Toplam %i öge."
 
 #: src/remmina_main.c:826
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete '%s'?"
-msgstr "Silmek istiyor musunuz? '%s'"
+msgstr "'%s'i silmek istediğinizden emin misiniz?"
 
 #: src/remmina_main.c:926
 #, c-format
@@ -1279,7 +1278,7 @@ msgstr "SFTP - Güvenli Dosya Aktarımı"
 #: src/remmina_ssh_plugin.c:479
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Hata: %s"
 
 #: src/remmina_ssh_plugin.c:496
 msgid "Terminal content saved under"
@@ -2403,31 +2402,50 @@ msgstr "Son kullanılan"
 msgid "Remmina - Multi Password Changer"
 msgstr "Remmina - Çoklu Parola Değiştirici"
 
-#: data/ui/remmina_mpc.glade:21
+#: data/ui/remmina_mpc.glade:24
 msgid "Change"
 msgstr "Değiştir"
 
-#: data/ui/remmina_mpc.glade:61
+#: data/ui/remmina_mpc.glade:64
 msgid "<span weight='bold' size='larger'>Multi Password Changer</span>"
 msgstr "<span weight='bold' size='larger'>Çoklu Parola Değiştirici</span>"
 
-#: data/ui/remmina_mpc.glade:166
+#: data/ui/remmina_mpc.glade:169
 msgid "Selection criteria"
 msgstr "Seçim kriterleri"
 
-#: data/ui/remmina_mpc.glade:195
+#: data/ui/remmina_mpc.glade:198
 msgid "Confirm password"
 msgstr "Parolayı onayla"
 
-#: data/ui/remmina_mpc.glade:208
-msgid "Reset to"
-msgstr "Sıfırla"
+#: data/ui/remmina_mpc.glade:211
+#, fuzzy
+msgctxt "Multi password changer"
+msgid "Set new password"
+msgstr "Parolayı kaydet"
 
-#: data/ui/remmina_mpc.glade:302
-msgid "F"
-msgstr "F"
+#. A column table with multiple check-boxes
+#: data/ui/remmina_mpc.glade:305
+#, fuzzy
+msgctxt "Multi password changer"
+msgid "Select"
+msgstr "Tümünü seç"
 
-#: data/ui/remmina_mpc.glade:336
+#: data/ui/remmina_mpc.glade:317
+#, fuzzy
+msgctxt "Multi password changer table"
+msgid "Name"
+msgstr "İsim"
+
+#: data/ui/remmina_mpc.glade:328
+#, fuzzy
+msgctxt "Multi password changer table"
+msgid "Group"
+msgstr "Grup"
+
+#: data/ui/remmina_mpc.glade:339
+#, fuzzy
+msgctxt "Multi password changer table"
 msgid "Domain\\Username"
 msgstr "Alan adı\\Kullanıcı adı"
 
@@ -2745,36 +2763,32 @@ msgstr "SSH günlükleri"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1344
-#, fuzzy
 msgid "Seconds of connection idleness before TCP keepalive probes are sent."
 msgstr ""
-"TCP başlatılmadan önce bağlantının (saniye olarak) bağlantısının boşta "
-"kalması gerekiyor, kalıcı problar gönder."
+"TCP canlı tut yoklamaları gönderilmeden önceki bağlantı boşluğu süresi "
+"(saniye)."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1360
-#, fuzzy
 msgid "Seconds between each keepalive probe."
-msgstr "Tekli kalıcı problar arasındaki süre (saniye cinsinden)."
+msgstr "Her bir canlı tut yoklaması arasındaki süre (saniye)."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1376
-#, fuzzy
 msgid ""
 "Number of keepalive probes sent via TCP connection before it is dropped."
 msgstr ""
-"Bağlantıyı kesmeden önce, azami korunma probu sayısı TCP’nin göndermesi "
-"gerekir."
+"Bağlantıyı kesmeden önce TCP bağlantısı üzerinden gönderilecek canlı tut "
+"yoklaması sayısı."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
 #: data/ui/remmina_preferences.glade:1392
-#, fuzzy
 msgid ""
 "Amount of milliseconds to attempt acknowledging data before closing the "
 "corresponding TCP connection forcibly."
 msgstr ""
-"milisaniye cinsinden iletilen azami süreyi belirtir, ilgili bağlantı TCP "
-"zorla kapatılmadan önce veriler kabul edilmeden kalabilir."
+"İlgili TCP bağlantısını zorla kapatmadan önce verileri onaylamayı deneme "
+"süresinin miktarı (milisaniye)."
 
 #: data/ui/remmina_preferences.glade:1413
 msgid "SSH options"
@@ -2958,3 +2972,4 @@ msgstr "Kalın metne izin ver"
 #: data/ui/remmina_preferences.glade:2183
 msgid "Terminal"
 msgstr "Uçbirim"
+
