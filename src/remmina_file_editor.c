@@ -820,7 +820,6 @@ static void remmina_file_editor_create_ssh_tab(RemminaFileEditor *gfe, RemminaPr
 #ifdef HAVE_LIBSSH
 	RemminaFileEditorPriv *priv = gfe->priv;
 	GtkWidget *grid;
-	GtkWidget *hbox;
 	GtkWidget *widget;
 	const gchar *cs;
 	gchar *s;
@@ -832,22 +831,15 @@ static void remmina_file_editor_create_ssh_tab(RemminaFileEditor *gfe, RemminaPr
 	/* The SSH tab (implementation) */
 	grid = remmina_file_editor_create_notebook_tab(gfe, NULL,
 						       _("SSH Tunnel"), 9, 3);
-
-	hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
-	gtk_widget_show(hbox);
-	gtk_grid_attach(GTK_GRID(grid), hbox, 0, 0, 3, 1);
-	row++;
-
 	widget = gtk_toggle_button_new_with_label(_("Enable SSH tunnel"));
-	gtk_widget_show(widget);
-	gtk_box_pack_start(GTK_BOX(hbox), widget, TRUE, TRUE, 0);
+	gtk_widget_set_halign(widget, GTK_ALIGN_START);
+	gtk_grid_attach(GTK_GRID(grid), widget, 0, 0, 1, 1);
 	g_signal_connect(G_OBJECT(widget), "toggled",
 			 G_CALLBACK(remmina_file_editor_ssh_enabled_check_on_toggled), gfe);
 	priv->ssh_enabled_check = widget;
 
 	widget = gtk_check_button_new_with_label(_("Tunnel via loopback address"));
-	gtk_widget_show(widget);
-	gtk_box_pack_start(GTK_BOX(hbox), widget, TRUE, TRUE, 0);
+	gtk_grid_attach(GTK_GRID(grid), widget, 1, 0, 2, 1);
 	priv->ssh_loopback_check = widget;
 
 	row++;
@@ -858,21 +850,18 @@ static void remmina_file_editor_create_ssh_tab(RemminaFileEditor *gfe, RemminaPr
 		s = g_strdup_printf(_("Same server at port %i"), DEFAULT_SSH_PORT);
 		widget = gtk_radio_button_new_with_label(NULL, s);
 		g_free(s);
-		gtk_widget_show(widget);
 		gtk_grid_attach(GTK_GRID(grid), widget, 0, row, 3, 1);
 		priv->ssh_server_default_radio = widget;
 		row++;
 
 		widget = gtk_radio_button_new_with_label_from_widget(
 			GTK_RADIO_BUTTON(priv->ssh_server_default_radio), _("Custom"));
-		gtk_widget_show(widget);
 		gtk_grid_attach(GTK_GRID(grid), widget, 0, row, 1, 1);
 		g_signal_connect(G_OBJECT(widget), "toggled",
 				 G_CALLBACK(remmina_file_editor_ssh_server_custom_radio_on_toggled), gfe);
 		priv->ssh_server_custom_radio = widget;
 
 		widget = gtk_entry_new();
-		gtk_widget_show(widget);
 		gtk_entry_set_max_length(GTK_ENTRY(widget), 100);
 		gtk_widget_set_tooltip_markup(widget, _(server_tips2));
 		gtk_grid_attach(GTK_GRID(grid), widget, 1, row, 2, 1);
@@ -929,19 +918,16 @@ static void remmina_file_editor_create_ssh_tab(RemminaFileEditor *gfe, RemminaPr
 			row++;
 		}
 		widget = gtk_radio_button_new_with_label(NULL, _("SSH Agent (automatic)"));
-		gtk_widget_show(widget);
 		gtk_grid_attach(GTK_GRID(grid), widget, 0, row + 19, 1, 1);
 		priv->ssh_auth_agent_radio = widget;
 		row++;
 
 		widget = gtk_radio_button_new_with_label_from_widget(
 			GTK_RADIO_BUTTON(priv->ssh_auth_agent_radio), _("Password"));
-		gtk_widget_show(widget);
 		gtk_grid_attach(GTK_GRID(grid), widget, 0, row + 21, 1, 1);
 		priv->ssh_auth_password_radio = widget;
 
 		widget = gtk_entry_new();
-		gtk_widget_show(widget);
 		gtk_grid_attach(GTK_GRID(grid), widget, 1, row + 21, 2, 1);
 		gtk_entry_set_max_length(GTK_ENTRY(widget), 300);
 		gtk_entry_set_visibility(GTK_ENTRY(widget), FALSE);
@@ -951,7 +937,6 @@ static void remmina_file_editor_create_ssh_tab(RemminaFileEditor *gfe, RemminaPr
 
 		widget = gtk_radio_button_new_with_label_from_widget(
 			GTK_RADIO_BUTTON(priv->ssh_auth_password_radio), _("Public key (automatic)"));
-		gtk_widget_show(widget);
 		gtk_grid_attach(GTK_GRID(grid), widget, 0, row + 22, 1, 1);
 		priv->ssh_auth_auto_publickey_radio = widget;
 		row++;
@@ -993,6 +978,7 @@ static void remmina_file_editor_create_ssh_tab(RemminaFileEditor *gfe, RemminaPr
 
 		remmina_file_editor_ssh_enabled_check_on_toggled(NULL, gfe, ssh_setting);
 	}
+	gtk_widget_show_all(grid);
 	g_free(p);
 #endif
 }
@@ -1002,6 +988,12 @@ static void remmina_file_editor_create_all_settings(RemminaFileEditor *gfe)
 	TRACE_CALL(__func__);
 	RemminaFileEditorPriv *priv = gfe->priv;
 	GtkWidget *grid;
+
+	static const RemminaProtocolSetting autostart_settings[] =
+	{
+	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK, "enable-autostart", N_("Turn on autostart for this profile"),	       FALSE,  NULL, NULL },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_END, NULL, NULL, FALSE, NULL, NULL }
+	};
 
 	remmina_file_editor_create_notebook_container(gfe);
 
@@ -1017,8 +1009,13 @@ static void remmina_file_editor_create_all_settings(RemminaFileEditor *gfe)
 		remmina_file_editor_create_settings(gfe, grid, priv->plugin->advanced_settings);
 	}
 
+	/* Autostart tab */
+	grid = remmina_file_editor_create_notebook_tab(gfe, NULL, _("Autostart"), 20, 2);
+	remmina_file_editor_create_settings(gfe, grid, autostart_settings);
+
 	/* The SSH tab */
 	remmina_file_editor_create_ssh_tab(gfe, priv->plugin->ssh_setting);
+
 }
 
 static void remmina_file_editor_protocol_combo_on_changed(GtkComboBox *combo, RemminaFileEditor *gfe)
@@ -1426,7 +1423,7 @@ GtkWidget *remmina_file_editor_new_from_file(RemminaFile *remminafile)
 	gtk_container_set_border_width(GTK_CONTAINER(grid), 8);
 	gtk_box_pack_start(GTK_BOX(gtk_dialog_get_content_area(GTK_DIALOG(gfe))), grid, FALSE, FALSE, 2);
 
-	remmina_public_create_group(GTK_GRID(grid), _("Profile"), 0, 4, 3);
+	//remmina_public_create_group(GTK_GRID(grid), _("Profile"), 0, 4, 3);
 
 	/* Profile: Name */
 	widget = gtk_label_new(_("Name"));
