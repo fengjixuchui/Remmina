@@ -1,15 +1,15 @@
 # Uzbek translation for remmina
 # Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
 # This file is distributed under the same license as the remmina package.
-# Shuhrat Dehkanov <k@efir.uz>, 2015.
+# Shuhrat Dehkanov <k@efir.uz>, 2015, 2019.
 # Allan Nordhøy <epost@anotheragency.no>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-03 15:50+0000\n"
-"PO-Revision-Date: 2019-11-12 11:25+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2019-12-06 07:47+0000\n"
+"PO-Revision-Date: 2019-12-05 19:23+0000\n"
+"Last-Translator: Shuhrat Dehkanov <k@efir.uz>\n"
 "Language-Team: Uzbek <https://hosted.weblate.org/projects/remmina/remmina/"
 "uz@cyrillic/>\n"
 "Language: uz@cyrillic\n"
@@ -22,16 +22,15 @@ msgstr ""
 
 #: src/remmina_protocol_widget.c:248
 msgid "Connect via SSH from a new terminal"
-msgstr ""
+msgstr "Янги терминалда SSH орқали уланинг"
 
 #: src/remmina_protocol_widget.c:254
-#, fuzzy
 msgid "Open SFTP transfer"
-msgstr "Хавфсиз файл узатиш ойнасини очиш…"
+msgstr "Хавфсиз файл узатиш (SFTP) ойнасини очиш"
 
 #: src/remmina_protocol_widget.c:282
 msgid "Executing external commands…"
-msgstr ""
+msgstr "Ташқи командаларни ишга тушириш…"
 
 #: src/remmina_protocol_widget.c:289
 #, c-format
@@ -40,45 +39,44 @@ msgstr "'%s'га боғланилмоқда…"
 
 #: src/remmina_protocol_widget.c:717 src/remmina_protocol_widget.c:805
 #: src/remmina_protocol_widget.c:979
-#, fuzzy, c-format
+#, c-format
 msgid "Connecting to %s via SSH…"
-msgstr "'%s'га боғланилмоқда…"
+msgstr "'%s'га SSH орқали боғланилмоқда…"
 
 #: src/remmina_protocol_widget.c:855
-#, fuzzy, c-format
+#, c-format
 msgid "Awaiting incoming SSH connection at port %i…"
 msgstr "%i порти орқали кирувчи SSH туннель боғланишини кутилмоқда…"
 
 #: src/remmina_protocol_widget.c:900
-#, fuzzy, c-format
+#, c-format
 msgid "Could not find %s command on the SSH server"
 msgstr "SSH серверда %s буйруғи топилмади"
 
 #: src/remmina_protocol_widget.c:904
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run %s command on the SSH server (status = %i)."
 msgstr "SSH серверда %s буйруғини бажариш муваффақиятсиз ўтди (статус = %i)."
 
 #. TRANSLATORS: %s is a placeholder for an error message
 #: src/remmina_protocol_widget.c:912
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run command: %s"
-msgstr "Порт йўналтиришда муаммо юз берди? %s"
+msgstr "Буйруқни бажариб бўлмади: %s"
 
 #: src/remmina_protocol_widget.c:1339 src/remmina_protocol_widget.c:1358
 #: src/remmina_ssh_plugin.c:958 src/remmina_sftp_plugin.c:317
-#: src/remmina_file_editor.c:926 plugins/www/www_plugin.c:793
-#: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:116
-#: data/ui/remmina_preferences.glade:1533
+#: src/remmina_sftp_plugin.c:350 src/remmina_file_editor.c:926
+#: plugins/www/www_plugin.c:793 data/ui/remmina_unlock.glade:116
+#: data/ui/remmina_mpc.glade:116 data/ui/remmina_preferences.glade:1533
 msgid "Password"
 msgstr "Пароль"
 
 #: src/remmina_protocol_widget.c:1357
 msgid "Type in username and password for SSH."
-msgstr ""
+msgstr "SSH логин ва паролни киритинг."
 
 #: src/remmina_protocol_widget.c:1413
-#, fuzzy
 msgid "Certificate details:"
 msgstr "Сертификат маълумотлари:"
 
@@ -95,27 +93,22 @@ msgid "Fingerprint:"
 msgstr "Бармоқ изи:"
 
 #: src/remmina_protocol_widget.c:1417
-#, fuzzy
 msgid "Accept certificate?"
 msgstr "Сертификат қабул қилинсинми?"
 
 #: src/remmina_protocol_widget.c:1434
-#, fuzzy
 msgid "The certificate changed! Details:"
 msgstr "Сертификат ўзгарди:"
 
 #: src/remmina_protocol_widget.c:1437
-#, fuzzy
 msgid "Old fingerprint:"
 msgstr "Эски бармоқ изи:"
 
 #: src/remmina_protocol_widget.c:1438
-#, fuzzy
 msgid "New fingerprint:"
 msgstr "Янги бармоқ изи:"
 
 #: src/remmina_protocol_widget.c:1439
-#, fuzzy
 msgid "Accept changed certificate?"
 msgstr "Ўзгарган сертификат қабул қилинсинми?"
 
@@ -125,7 +118,6 @@ msgid "Listening on port %i for an incoming %s connection…"
 msgstr "%i порти орқали кирувчи %s боғланишини кутилмоқда…"
 
 #: src/remmina_protocol_widget.c:1606
-#, fuzzy
 msgid "Could not authenticate, attempting reconnection…"
 msgstr "Муваффқиятсиз идентификация. Қайта боғланишга ҳаракат қилинмоқда…"
 
@@ -137,7 +129,7 @@ msgstr "Сервер"
 #: src/remmina_protocol_widget.c:1685
 #, c-format
 msgid "Install the %s protocol plugin first."
-msgstr ""
+msgstr "Аввал %s протокол плагинини ўрнатинг."
 
 #: src/remmina_exec.c:320
 #, c-format
@@ -169,43 +161,40 @@ msgstr "Тугма босишларни мослаш"
 #. TRANSLATORS: Do not translate libsodium, is the name of a library
 #: src/remmina_pref_dialog.c:444
 msgid "libsodium >= 1.9.0 is required to use master password"
-msgstr ""
+msgstr "Мастер паролдан фойдаланиш учун libsodium >= 1.9.0 керак"
 
 #: src/remmina_ssh_plugin.c:481
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Хатолик: %s"
 
 #: src/remmina_ssh_plugin.c:498
 msgid "Terminal content saved under"
-msgstr ""
+msgstr "Терминал маълумотлари сақланди"
 
 #: src/remmina_ssh_plugin.c:552
-#, fuzzy
 msgid "Select All (Host + A)"
-msgstr "Барчасини белгилаш (Хост+a)"
+msgstr "Барчасини белгилаш (Хост + A)"
 
 #: src/remmina_ssh_plugin.c:553
-#, fuzzy
 msgid "Copy (host + C)"
-msgstr "Копиялаш (Хост+c)"
+msgstr "Копия (Хост + C)"
 
 #: src/remmina_ssh_plugin.c:554
-#, fuzzy
 msgid "Paste (host + V)"
-msgstr "Қўйиш (Хост+v)"
+msgstr "Қўйиш (Хост + V)"
 
 #: src/remmina_ssh_plugin.c:555
 msgid "Save session to file"
-msgstr ""
+msgstr "Сессияни файлга сақлаш"
 
 #: src/remmina_ssh_plugin.c:959 src/remmina_sftp_plugin.c:318
 msgid "SSH identity file"
-msgstr ""
+msgstr "SSH идентификация файли"
 
 #: src/remmina_ssh_plugin.c:960 src/remmina_sftp_plugin.c:319
 msgid "SSH agent"
-msgstr ""
+msgstr "SSH агент"
 
 #: src/remmina_ssh_plugin.c:961 src/remmina_sftp_plugin.c:320
 #: src/remmina_file_editor.c:939
@@ -214,7 +203,7 @@ msgstr "Оммавий калит (автоматик)"
 
 #: src/remmina_ssh_plugin.c:962 src/remmina_sftp_plugin.c:321
 msgid "Kerberos (GSSAPI)"
-msgstr ""
+msgstr "Kerberos (GSSAPI)"
 
 #: src/remmina_ssh_plugin.c:1037 data/ui/remmina_main.glade:248
 msgid "Copy"
@@ -246,18 +235,17 @@ msgstr "_Барчасини белгилаш"
 #: plugins/vnc/vnc_plugin.c:1852 plugins/rdp/rdp_plugin.c:1936
 #: plugins/nx/nx_plugin.c:721 data/ui/remmina_mpc.glade:155
 msgid "Username"
-msgstr ""
+msgstr "Логин"
 
-#: src/remmina_ssh_plugin.c:1058 src/remmina_sftp_plugin.c:350
-#: plugins/vnc/vnc_plugin.c:1833 plugins/vnc/vnc_plugin.c:1853
-#: plugins/spice/spice_plugin.c:437 plugins/rdp/rdp_plugin.c:1937
-#: plugins/nx/nx_plugin.c:722
+#: src/remmina_ssh_plugin.c:1058 plugins/vnc/vnc_plugin.c:1833
+#: plugins/vnc/vnc_plugin.c:1853 plugins/spice/spice_plugin.c:437
+#: plugins/rdp/rdp_plugin.c:1937 plugins/nx/nx_plugin.c:722
 msgid "User password"
-msgstr ""
+msgstr "Пароль"
 
 #: src/remmina_ssh_plugin.c:1059 src/remmina_sftp_plugin.c:351
 msgid "Authentication type"
-msgstr ""
+msgstr "Аутентификация тури"
 
 #: src/remmina_ssh_plugin.c:1060 src/remmina_sftp_plugin.c:352
 #: src/remmina_file_editor.c:356 src/remmina_file_editor.c:363
@@ -266,7 +254,7 @@ msgid "Identity file"
 msgstr "Идентификация файли"
 
 #: src/remmina_ssh_plugin.c:1061 src/remmina_sftp_plugin.c:353
-msgid "Private key passphrase"
+msgid "Password to unlock private key"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1062 plugins/xdmcp/xdmcp_plugin.c:370
@@ -276,7 +264,7 @@ msgstr "Бошланғич программа"
 
 #: src/remmina_ssh_plugin.c:1079
 msgid "Terminal color scheme"
-msgstr ""
+msgstr "Терминал ранг схемаси"
 
 #: src/remmina_ssh_plugin.c:1080 src/remmina_file_editor.c:896
 msgid "Character set"
@@ -284,48 +272,52 @@ msgstr "Кодировка"
 
 #: src/remmina_ssh_plugin.c:1081
 msgid "SSH Proxy Command"
-msgstr ""
+msgstr "SSH прокси буйруғи"
 
 #: src/remmina_ssh_plugin.c:1082
 msgid "KEX (Key Exchange) algorithms"
-msgstr ""
+msgstr "Калит алмашув алгоритми (KEX)"
 
 #: src/remmina_ssh_plugin.c:1083
 msgid "Symmetric cipher client to server"
-msgstr ""
+msgstr "Клиентдан серверга симметрик шифрлаш"
 
 #: src/remmina_ssh_plugin.c:1084
 msgid "Preferred server host key types"
-msgstr ""
+msgstr "Афзал кўрилган хост тугма турлари"
 
 #: src/remmina_ssh_plugin.c:1085
-msgid "SSH session log folder"
-msgstr ""
+#, fuzzy
+msgid "Folder for SSH session log"
+msgstr "SSH сессияни кўтаришда муаммо юз берди: %s"
 
 #: src/remmina_ssh_plugin.c:1086
-msgid "SSH session log file name"
-msgstr ""
+#, fuzzy
+msgid "Filename for SSH session log"
+msgstr "Чиқишда SSH сессияни лог файлга ёзишни ёқиш"
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Enable SSH session logging at exit"
+msgid "Log SSH session when exiing Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
-msgid "Enable terminal audible bell"
-msgstr ""
+#, fuzzy
+msgid "Audible terminal bell"
+msgstr "Терминал овозли сигналларини ёқиш"
 
 #: src/remmina_ssh_plugin.c:1089
-msgid "Enable SSH compression"
-msgstr ""
+#, fuzzy
+msgid "SSH compression"
+msgstr "SSH сиқишни ёқиш"
 
-#: src/remmina_ssh_plugin.c:1090 plugins/vnc/vnc_plugin.c:1876
-#: plugins/spice/spice_plugin.c:456 plugins/nx/nx_plugin.c:743
-msgid "Disable password storing"
-msgstr "Пароль сақлашни бекор қилиш"
+#: src/remmina_ssh_plugin.c:1090
+#, fuzzy
+msgid "Don't remember passwords"
+msgstr "Паролни сақлаш"
 
 #: src/remmina_ssh_plugin.c:1091
 msgid "Strict host key checking"
-msgstr ""
+msgstr "Хост тугмаларини жиддий текшириш"
 
 #: src/remmina_ssh_plugin.c:1105
 msgid "SSH - Secure Shell"
@@ -341,37 +333,37 @@ msgstr "Янги боғич"
 
 #: src/remmina_mpchange.c:234
 msgid "The passwords do not match"
-msgstr ""
+msgstr "Пароллар мос келмади"
 
 #: src/remmina_mpchange.c:244
 msgid "Resetting passwords, please wait…"
-msgstr ""
+msgstr "Бироз кутинг, пароллар бекор қилинмоқда…"
 
 #: src/remmina_mpchange.c:327
 msgid "The multi password changer requires a secrecy plugin.\n"
-msgstr ""
+msgstr "Кўп паролли ўзгартирувчи яширинлик плагинини талаб қилади.\n"
 
 #: src/remmina_mpchange.c:330
 msgid "The multi password changer requires a secrecy service.\n"
-msgstr ""
+msgstr "Кўп паролли ўзгартирувчи яширинлик хизматни талаб қилади..\n"
 
 #: src/remmina_mpchange.c:419
 #, c-format
 msgid "%d password changed."
 msgid_plural "%d passwords changed."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d та пароль ўзгарди."
+msgstr[1] "%d та пароллар ўзгарди."
 
 #: src/remmina_public.c:639
 msgid "Please enter format 'widthxheight'."
-msgstr "Илтимос 'энxбўй' форматида киритинг."
+msgstr "Илтимос, 'энxбўй' форматида киритинг."
 
 #. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
 msgid "translator-credits"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Shuhrat Dehkanov https://launchpad.net/~shooh"
+"Таржимонлар:\n"
+"\tShuhrat Dehkanov https://efir.uz"
 
 #: src/remmina_ftp_client.c:388
 msgid "Choose download location"
@@ -554,7 +546,7 @@ msgstr "Программа версиясини кўрсатиш"
 
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:113
-msgid "Modify connection profile, (requires --set-option)"
+msgid "Modify connection profile (requires --set-option)"
 msgstr ""
 
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
@@ -988,7 +980,6 @@ msgid "SSH credentials"
 msgstr ""
 
 #: src/remmina_ssh.c:282 src/remmina_ssh.c:563 src/remmina_ssh.c:590
-#: plugins/nx/nx_plugin.c:205
 msgid "SSH private key passphrase"
 msgstr "SSH шахсий калити пароли"
 
@@ -1066,7 +1057,7 @@ msgstr "SSH пароль"
 
 #: src/remmina_ssh.c:567
 msgid "SSH Kerberos/GSSAPI"
-msgstr ""
+msgstr "SSH Kerberos/GSSAPI"
 
 #: src/remmina_ssh.c:628
 #, fuzzy
@@ -1095,7 +1086,7 @@ msgstr "SSH туннел манзилига уланишда муаммо юз �
 #: src/remmina_ssh.c:1183 src/remmina_ssh.c:1781
 #, c-format
 msgid "Could not open channel: %s"
-msgstr ""
+msgstr "Канални очиб бўлмади: %s"
 
 #: src/remmina_ssh.c:1189
 #, fuzzy, c-format
@@ -1110,7 +1101,7 @@ msgstr "Порт йўналтиришда муаммо юз берди? %s"
 
 #: src/remmina_ssh.c:1292
 msgid "The server did not respond."
-msgstr ""
+msgstr "Сервер жавоб бермади."
 
 #: src/remmina_ssh.c:1335
 #, c-format
@@ -1296,11 +1287,12 @@ msgid "SSH Authentication"
 msgstr "SSH идентификация"
 
 #: src/remmina_file_editor.c:920
-msgid "SSH Agent (automatic)"
+#, fuzzy
+msgid "SSH agent (automatic)"
 msgstr "SSH агент (автоматик)"
 
 #: src/remmina_file_editor.c:994
-msgid "Turn on autostart for this profile"
+msgid "Turn on \"Autostart\" for this profile"
 msgstr ""
 
 #: src/remmina_file_editor.c:1002
@@ -1349,17 +1341,19 @@ msgid "Use '%s' as subgroup delimiter"
 msgstr "Ост-гуруҳ бўлувчиси сифатида '%s'дан фойдаланиш"
 
 #: src/remmina_file_editor.c:1486
-msgid "Pre Command"
+#, fuzzy
+msgid "Pre-command"
 msgstr "Олд комманда"
 
 #: src/remmina_file_editor.c:1504
-msgid "Post Command"
+#, fuzzy
+msgid "Post-command"
 msgstr "Кейинги комманда"
 
 #: src/remmina_file_editor.c:1569 src/remmina_file_editor.c:1587
-#, c-format
-msgid "File %s not found."
-msgstr "%s файли топилмади."
+#, fuzzy, c-format
+msgid "Could not find the file \"%s\"."
+msgstr "Канални очиб бўлмади: %s"
 
 #: src/remmina_chat_window.c:178
 #, c-format
@@ -1503,15 +1497,15 @@ msgid "Please retry after enabling encryption on this profile."
 msgstr ""
 "Илтимос, ушбу профил учун шифрлашни ёқиб кейин қайта ҳаракат қилиб кўринг."
 
-#: plugins/vnc/vnc_plugin.c:1803 plugins/rdp/rdp_plugin.c:1880
+#: plugins/vnc/vnc_plugin.c:1803
 msgid "256 colors (8 bpp)"
 msgstr "256 ранг (8 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1804 plugins/rdp/rdp_plugin.c:1878
+#: plugins/vnc/vnc_plugin.c:1804
 msgid "High color (16 bpp)"
 msgstr "Юқори ранг (16 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1805 plugins/rdp/rdp_plugin.c:1876
+#: plugins/vnc/vnc_plugin.c:1805
 msgid "True color (32 bpp)"
 msgstr "Ҳақиқий ранг (32 bpp)"
 
@@ -1540,7 +1534,6 @@ msgid "Repeater"
 msgstr "Такрорловчи (рипитер)"
 
 #: plugins/vnc/vnc_plugin.c:1834 plugins/vnc/vnc_plugin.c:1854
-#: plugins/xdmcp/xdmcp_plugin.c:369 plugins/rdp/rdp_plugin.c:1940
 msgid "Color depth"
 msgstr "Ранг чуқурлиги"
 
@@ -1574,6 +1567,11 @@ msgstr "Шифрлашни бекор қилиш"
 #: plugins/vnc/vnc_plugin.c:1875 plugins/vnc/vnc_plugin.c:1888
 msgid "Disable server input"
 msgstr "Сервердан киритмаларни бекор қилиш"
+
+#: plugins/vnc/vnc_plugin.c:1876 plugins/spice/spice_plugin.c:456
+#: plugins/nx/nx_plugin.c:743
+msgid "Disable password storing"
+msgstr "Пароль сақлашни бекор қилиш"
 
 #: plugins/vnc/vnc_plugin.c:1890
 msgid "Open Chat…"
@@ -1621,7 +1619,7 @@ msgstr "TLS боғланиш хатолиги."
 
 #: plugins/spice/spice_plugin.c:296
 msgid "Connection to SPICE server failed."
-msgstr "SPICE серверга боғланиш муваффақиятсиз кечди"
+msgstr "SPICE серверга боғланиш муваффақиятсиз кечди."
 
 #: plugins/spice/spice_plugin.c:438
 msgid "Use TLS encryption"
@@ -1679,7 +1677,8 @@ msgstr "Маҳаллий Х дисплейлар қолмади."
 
 #: plugins/xdmcp/xdmcp_plugin.c:264 plugins/nx/nx_plugin.c:608
 #, c-format
-msgid "Protocol %s is unavailable because GtkSocket only works under X.Org"
+msgid ""
+"The protocol \"%s\" is unavailable because GtkSocket only works under X.Org."
 msgstr ""
 
 #: plugins/xdmcp/xdmcp_plugin.c:348
@@ -1691,16 +1690,24 @@ msgid "Grayscale"
 msgstr "Оқ-қора"
 
 #: plugins/xdmcp/xdmcp_plugin.c:350
-msgid "256 colors"
+#, fuzzy
+msgid "256 colours"
 msgstr "256 ранг"
 
 #: plugins/xdmcp/xdmcp_plugin.c:351
-msgid "High color (16 bit)"
+#, fuzzy
+msgid "High colour (16 bit)"
 msgstr "Юқори ранг (16 бит)"
 
 #: plugins/xdmcp/xdmcp_plugin.c:352
-msgid "True color (24 bit)"
+#, fuzzy
+msgid "True colour (24 bit)"
 msgstr "Ҳақиқий ранг (24 бит)"
+
+#: plugins/xdmcp/xdmcp_plugin.c:369 plugins/rdp/rdp_plugin.c:1940
+#, fuzzy
+msgid "Colour depth"
+msgstr "Ранг чуқурлиги"
 
 #: plugins/xdmcp/xdmcp_plugin.c:371 plugins/nx/nx_plugin.c:742
 msgid "Use local cursor"
@@ -1828,7 +1835,7 @@ msgstr ""
 #, c-format
 msgid ""
 "You requested a H.264 GFX mode for server %s, but your libfreerdp does not "
-"support H.264. Please use a non-AVC color depth setting."
+"support H.264. Please use a non-AVC colour depth setting."
 msgstr ""
 
 #: plugins/rdp/rdp_plugin.c:1575
@@ -1862,13 +1869,30 @@ msgstr ""
 msgid "RemoteFX (32 bpp)"
 msgstr "RemoteFX (32 bpp)"
 
+#: plugins/rdp/rdp_plugin.c:1876
+#, fuzzy
+msgid "True colour (32 bpp)"
+msgstr "Ҳақиқий ранг (32 bpp)"
+
 #: plugins/rdp/rdp_plugin.c:1877
-msgid "True color (24 bpp)"
+#, fuzzy
+msgid "True colour (24 bpp)"
 msgstr "Ҳақиқий ранг (24 bpp)"
 
+#: plugins/rdp/rdp_plugin.c:1878
+#, fuzzy
+msgid "High colour (16 bpp)"
+msgstr "Юқори ранг (16 bpp)"
+
 #: plugins/rdp/rdp_plugin.c:1879
-msgid "High color (15 bpp)"
+#, fuzzy
+msgid "High colour (15 bpp)"
 msgstr "Юқори ранг (15 bpp)"
+
+#: plugins/rdp/rdp_plugin.c:1880
+#, fuzzy
+msgid "256 colours (8 bpp)"
+msgstr "256 ранг (8 bpp)"
 
 #: plugins/rdp/rdp_plugin.c:1897 data/ui/remmina_preferences.glade:658
 msgid "Off"
@@ -1973,8 +1997,9 @@ msgid "Local parallel device"
 msgstr ""
 
 #: plugins/rdp/rdp_plugin.c:1974
-msgid "Smartcard Name"
-msgstr ""
+#, fuzzy
+msgid "Smartcard name"
+msgstr "Ақлли карточкани бўлишиш"
 
 #: plugins/rdp/rdp_plugin.c:1975
 msgid "Share printers"
@@ -1985,7 +2010,7 @@ msgid "Share serial ports"
 msgstr ""
 
 #: plugins/rdp/rdp_plugin.c:1977
-msgid "Serial ports permissive mode"
+msgid "(SELinux) permissive mode for serial ports"
 msgstr ""
 
 #: plugins/rdp/rdp_plugin.c:1978
@@ -2142,7 +2167,8 @@ msgid "Reconnection attempt %d of %d…"
 msgstr "Қайта уланилмоқда (%d/%d)…"
 
 #: plugins/nx/nx_session_manager.c:98
-msgid "Terminating"
+#, fuzzy
+msgid "Terminating…"
 msgstr "Якунланмоқда"
 
 #: plugins/nx/nx_session_manager.c:143
@@ -2173,6 +2199,10 @@ msgstr "Дисплей"
 #: plugins/nx/nx_session_manager.c:197
 msgid "Status"
 msgstr "Статус"
+
+#: plugins/nx/nx_plugin.c:205
+msgid "Password for private SSH key"
+msgstr ""
 
 #: plugins/nx/nx_plugin.c:367
 msgid "Enter NX authentication credentials"
@@ -2242,7 +2272,7 @@ msgid "Toggle view"
 msgstr ""
 
 #: data/ui/remmina_main.glade:168
-msgid "search string or server name/ip address for quick connect"
+msgid "Search string or server name/IP address for \"\\Quick Connect\\\""
 msgstr ""
 
 #: data/ui/remmina_main.glade:172 data/ui/remmina_main.glade:174
@@ -2800,18 +2830,17 @@ msgid "(Host key +)"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1795
+#: data/ui/remmina_preferences.glade:1809
 msgid "Foreground colour"
 msgstr ""
 
-#: data/ui/remmina_preferences.glade:1809
-msgid "Foreground color"
-msgstr ""
-
 #: data/ui/remmina_preferences.glade:1823
+#: data/ui/remmina_preferences.glade:1890
 msgid "Background colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1836
+#: data/ui/remmina_preferences.glade:1905
 #, fuzzy
 msgid "Cursor colour"
 msgstr "Курсор сояси"
@@ -2828,86 +2857,78 @@ msgstr ""
 msgid "Load colour scheme"
 msgstr ""
 
-#: data/ui/remmina_preferences.glade:1890
-msgid "Background color"
-msgstr ""
-
-#: data/ui/remmina_preferences.glade:1905
-msgid "Cursor Color"
-msgstr ""
-
 #: data/ui/remmina_preferences.glade:1917
 msgid ""
-"Choose a color scheme file. Usually available in /usr/share/remmina/theme. "
+"Choose a colour scheme file. Usually available in /usr/share/remmina/theme. "
 "More details in https://github.com/mbadolato/iTerm2-Color-Schemes."
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1920
-msgid "Pick a terminal coloring file"
+msgid "Pick a terminal colouring file"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1934
-msgid "Pick a black color"
+msgid "Pick a black colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1946
-msgid "Pick a red color"
+msgid "Pick a red colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1958
-msgid "Pick a green color"
+msgid "Pick a green colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1970
-msgid "Pick a yellow color"
+msgid "Pick a yellow colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1982
-msgid "Pick a blue color"
+msgid "Pick a blue colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:1994
-msgid "Pick a magenta color"
+msgid "Pick a magenta colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2006
-msgid "Pick a cyan color"
+msgid "Pick a cyan colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2019
-msgid "Pick a white color"
+msgid "Pick a white colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2031
-msgid "Pick a light black color"
+msgid "Pick a light black colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2043
-msgid "Pick a light red color"
+msgid "Pick a light red colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2055
-msgid "Pick a bright green color"
+msgid "Pick a bright green colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2067
-msgid "Pick a bright yellow color"
+msgid "Pick a bright yellow colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2079
-msgid "Pick a bright blue color"
+msgid "Pick a bright blue colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2091
-msgid "Pick a light magenta color"
+msgid "Pick a light magenta colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2103
-msgid "Pick a light cyan color"
+msgid "Pick a light cyan colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2116
-msgid "Pick a light white color"
+msgid "Pick a light white colour"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:2129
@@ -2950,3 +2971,4 @@ msgstr ""
 #: data/ui/remmina_key_chooser.glade:82
 msgid "Please press the new key…"
 msgstr ""
+
