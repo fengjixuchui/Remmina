@@ -1,13 +1,14 @@
 # Arabic translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 # Aroa Taha <Naturameuocat@protonmail.com>, 2019.
+# anonymous <noreply@weblate.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
 "PO-Revision-Date: 2019-12-05 00:48+0000\n"
 "Last-Translator: Aroa Taha <Naturameuocat@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -303,7 +304,7 @@ msgid "Filename for SSH session log"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -354,16 +355,16 @@ msgstr ""
 #, c-format
 msgid "%d password changed."
 msgid_plural "%d passwords changed."
-msgstr[0] "صفر"
-msgstr[1] "واحد"
-msgstr[2] "اثنان"
-msgstr[3] "بعض"
-msgstr[4] "كثير"
-msgstr[5] "آخر"
+msgstr[0] "صفر كلمة سر غيرت"
+msgstr[1] "كلمة سر واحدة غيرت"
+msgstr[2] "كلمتى سر غيرت"
+msgstr[3] "بعض كلمات سر غيرت"
+msgstr[4] "الكثير من كلمات سر غيرت"
+msgstr[5] "كلمات سر أخرى غيرت"
 
 #: src/remmina_public.c:639
 msgid "Please enter format 'widthxheight'."
-msgstr ""
+msgstr "أدخل الشكل من فضلك 'العرضxالطول'"
 
 #. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
@@ -374,7 +375,7 @@ msgstr ""
 
 #: src/remmina_ftp_client.c:388
 msgid "Choose download location"
-msgstr ""
+msgstr "إختر مكان التحميل"
 
 #: src/remmina_ftp_client.c:528
 msgid "Are you sure to delete the selected files on server?"
@@ -386,7 +387,7 @@ msgstr ""
 
 #: src/remmina_ftp_client.c:592
 msgid "Upload folder"
-msgstr ""
+msgstr "تنزيل ملف"
 
 #: src/remmina_ftp_client.c:648 src/remmina_ftp_client.c:770
 msgid "Download"
@@ -398,7 +399,7 @@ msgstr "تنزيل"
 
 #: src/remmina_ftp_client.c:662
 msgid "_Delete"
-msgstr ""
+msgstr "_حدف"
 
 #: src/remmina_ftp_client.c:749
 msgid "Home"
@@ -406,15 +407,15 @@ msgstr "الصفحة الرئيسية"
 
 #: src/remmina_ftp_client.c:751
 msgid "Go to home folder"
-msgstr ""
+msgstr "الدهاب إلى الملف الرئيسي"
 
 #: src/remmina_ftp_client.c:756
 msgid "Up"
-msgstr ""
+msgstr "الفوق"
 
 #: src/remmina_ftp_client.c:758
 msgid "Go to parent folder"
-msgstr ""
+msgstr "الانتقال إلى المجلد الأصلي"
 
 #: src/remmina_ftp_client.c:763 plugins/vnc/vnc_plugin.c:1889
 #: plugins/rdp/rdp_plugin.c:2001
@@ -435,7 +436,7 @@ msgstr ""
 
 #: src/remmina_ftp_client.c:790 data/ui/remmina_main.glade:268
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: src/remmina_ftp_client.c:792
 msgid "Delete files on server"
@@ -472,7 +473,7 @@ msgstr ""
 
 #: src/remmina_ftp_client.c:1009
 msgid "Progress"
-msgstr ""
+msgstr "التقدم"
 
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:84
@@ -515,7 +516,7 @@ msgstr ""
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:101
 msgid "Quit"
-msgstr ""
+msgstr "أنهِ"
 
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:103
@@ -682,7 +683,7 @@ msgstr ""
 
 #: src/remmina_plugin_manager.c:69
 msgid "File"
-msgstr ""
+msgstr "ملف"
 
 #: src/remmina_plugin_manager.c:69
 msgid "Tool"
@@ -703,7 +704,7 @@ msgstr ""
 #: src/remmina_plugin_manager.c:440 src/remmina_message_panel.c:447
 #: src/remmina_message_panel.c:616 src/remmina_file_editor.c:161
 msgid "_OK"
-msgstr ""
+msgstr "_أوكي"
 
 #: src/remmina_plugin_manager.c:458 src/remmina_file_editor.c:1429
 #: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:512
@@ -747,7 +748,7 @@ msgstr ""
 
 #: src/remmina_main.c:978 src/remmina_file_editor.c:1312
 msgid "_Save"
-msgstr ""
+msgstr "_حفظ"
 
 #: src/remmina_main.c:985
 msgid "This protocol does not support exporting."
@@ -872,7 +873,7 @@ msgstr ""
 #: data/ui/remmina_spinner.glade:9 data/ui/remmina_key_chooser.glade:8
 #: data/ui/remmina_key_chooser.glade:9
 msgid "_Cancel"
-msgstr ""
+msgstr "_إلغاء"
 
 #: src/remmina_sftp_client.c:924
 msgid "Question"
@@ -885,14 +886,14 @@ msgstr ""
 #: src/remmina_message_panel.c:163 data/ui/remmina_unlock.glade:46
 #: data/ui/remmina_mpc.glade:38
 msgid "Cancel"
-msgstr ""
+msgstr "إلغاء"
 
 #: src/remmina_message_panel.c:199 data/ui/remmina_news.glade:27
 #: data/ui/remmina_preferences.glade:33 data/ui/remmina_preferences.glade:34
 #: data/ui/remmina_preferences.glade:60 data/ui/remmina_string_list.glade:8
 #: data/ui/remmina_string_list.glade:9 data/ui/remmina_string_list.glade:63
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: src/remmina_message_panel.c:260
 msgid "Yes"
@@ -1024,7 +1025,7 @@ msgstr ""
 
 #: src/remmina_ssh.c:525
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1299,7 +1300,7 @@ msgstr ""
 
 #: src/remmina_file_editor.c:1317 data/ui/remmina_main.glade:231
 msgid "Connect"
-msgstr ""
+msgstr "اتصل"
 
 #: src/remmina_file_editor.c:1320
 msgid "_Save and Connect"
@@ -1350,7 +1351,7 @@ msgstr ""
 
 #: plugins/exec/exec_plugin.c:204
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 
@@ -1650,7 +1651,7 @@ msgstr ""
 
 #: plugins/xdmcp/xdmcp_plugin.c:348
 msgid "Default"
-msgstr ""
+msgstr "أساسي"
 
 #: plugins/xdmcp/xdmcp_plugin.c:349
 msgid "Grayscale"
@@ -2134,7 +2135,7 @@ msgstr ""
 
 #: plugins/nx/nx_session_manager.c:152
 msgid "Start"
-msgstr ""
+msgstr "ابدأ"
 
 #: plugins/nx/nx_session_manager.c:158
 msgid "Terminate"
@@ -2167,8 +2168,8 @@ msgstr ""
 #: plugins/telepathy/telepathy_channel_handler.c:237
 #, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 
 #: plugins/telepathy/telepathy_channel_handler.c:240
@@ -2194,11 +2195,11 @@ msgstr ""
 
 #: data/ui/remmina_about.glade:30 data/ui/remmina_main.glade:444
 msgid "About"
-msgstr ""
+msgstr "عن"
 
 #: data/ui/remmina_about.glade:40
 msgid "Website"
-msgstr ""
+msgstr "موقع الويب"
 
 #: data/ui/remmina_main.glade:69
 msgid "New connection profile"
@@ -2231,7 +2232,7 @@ msgstr ""
 
 #: data/ui/remmina_main.glade:258
 msgid "Edit"
-msgstr ""
+msgstr "تعديل"
 
 #: data/ui/remmina_main.glade:288
 msgid "Collapse all"
@@ -2316,7 +2317,7 @@ msgstr ""
 
 #: data/ui/remmina_news.glade:142
 msgid "Apply"
-msgstr ""
+msgstr "طبّق"
 
 #: data/ui/remmina_news.glade:166
 msgid "<big>Important settings</big>"
@@ -2341,7 +2342,7 @@ msgstr ""
 
 #: data/ui/remmina_mpc.glade:24
 msgid "Change"
-msgstr ""
+msgstr "تغيير"
 
 #: data/ui/remmina_mpc.glade:64
 msgid "<span weight='bold' size='larger'>Multi Password Changer</span>"
@@ -2353,7 +2354,7 @@ msgstr ""
 
 #: data/ui/remmina_mpc.glade:198
 msgid "Confirm password"
-msgstr ""
+msgstr "تأكيد كلمة السر"
 
 #: data/ui/remmina_mpc.glade:211
 msgctxt "Multi password changer"
@@ -2369,7 +2370,7 @@ msgstr ""
 #: data/ui/remmina_mpc.glade:317
 msgctxt "Multi password changer table"
 msgid "Name"
-msgstr ""
+msgstr "إسم"
 
 #: data/ui/remmina_mpc.glade:328
 msgctxt "Multi password changer table"
@@ -2501,7 +2502,7 @@ msgstr ""
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"
@@ -2873,7 +2874,7 @@ msgstr ""
 
 #: data/ui/remmina_string_list.glade:14 data/ui/remmina_string_list.glade:158
 msgid "Add"
-msgstr ""
+msgstr "إضافة"
 
 #: data/ui/remmina_string_list.glade:20 data/ui/remmina_string_list.glade:137
 msgid "Remove"

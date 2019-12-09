@@ -1,5 +1,5 @@
 # Turkish translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # Serdar Sağlam <teknomobil@yandex.com>, 2019.
 # Sabri Ünal <libreajans@gmail.com>, 2019.
@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
-"PO-Revision-Date: 2019-12-05 23:29+0000\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
+"PO-Revision-Date: 2019-12-08 23:03+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/remmina/remmina/"
 "tr/>\n"
@@ -306,7 +306,7 @@ msgid "Filename for SSH session log"
 msgstr "Çıkışta SSH oturum kaydını etkinleştir"
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -603,7 +603,7 @@ msgid "Remmina Remote Desktop Client"
 msgstr "Remmina Uzak Masaüstü İstemcisi"
 
 #: src/rcw.c:585
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr ""
@@ -1045,8 +1045,9 @@ msgid "Do you trust the new public key?"
 msgstr "Yeni ortak anahtara güveniyor musunuz?"
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1399,8 +1400,9 @@ msgid "You did not set any command to be executed"
 msgstr "Yürütülecek herhangi bir komut belirlemediniz"
 
 #: plugins/exec/exec_plugin.c:204
+#, fuzzy
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 "Uyarı! Bir komutu eş zamanlı olarak yürütmek Remmina’yı zorlayabilir.\n"
@@ -2256,10 +2258,10 @@ msgid "Secure passwords storage in KWallet"
 msgstr "KDE Cüzdanında saklanan güvenli parolalar"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 "%s kendi masaüstünü paylaşmak istiyor.\n"
 "Daveti kabul ediyor musunuz ?"
@@ -2612,10 +2614,11 @@ msgid "Profile filename template"
 msgstr "Profil dosya adı şablonu"
 
 #: data/ui/remmina_preferences.glade:495
+#, fuzzy
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"
@@ -2927,84 +2930,68 @@ msgid "Pick a terminal colouring file"
 msgstr "Uçbirim renklendirme dosyası seç"
 
 #: data/ui/remmina_preferences.glade:1934
-#, fuzzy
 msgid "Pick a black colour"
-msgstr "Siyah bir renk seçin"
+msgstr "Siyah bir renk seç"
 
 #: data/ui/remmina_preferences.glade:1946
-#, fuzzy
 msgid "Pick a red colour"
-msgstr "Kırmızı bir renk seçin"
+msgstr "Kırmızı bir renk seç"
 
 #: data/ui/remmina_preferences.glade:1958
-#, fuzzy
 msgid "Pick a green colour"
-msgstr "Yeşil bir renk seçin"
+msgstr "Yeşil bir renk seç"
 
 #: data/ui/remmina_preferences.glade:1970
-#, fuzzy
 msgid "Pick a yellow colour"
-msgstr "Sarı bir renk seçin"
+msgstr "Sarı bir renk seç"
 
 #: data/ui/remmina_preferences.glade:1982
-#, fuzzy
 msgid "Pick a blue colour"
-msgstr "Mavi bir renk seçin"
+msgstr "Mavi bir renk seç"
 
 #: data/ui/remmina_preferences.glade:1994
-#, fuzzy
 msgid "Pick a magenta colour"
-msgstr "Magenta bir renk seçin"
+msgstr "Magenta bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2006
-#, fuzzy
 msgid "Pick a cyan colour"
-msgstr "Camgöbeği bir renk seçin"
+msgstr "Camgöbeği bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2019
-#, fuzzy
 msgid "Pick a white colour"
-msgstr "Beyaz bir renk seçin"
+msgstr "Beyaz bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2031
-#, fuzzy
 msgid "Pick a light black colour"
-msgstr "Açık siyah bir renk seçin"
+msgstr "Açık siyah bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2043
-#, fuzzy
 msgid "Pick a light red colour"
-msgstr "Açık kırmızı bir renk seçin"
+msgstr "Açık kırmızı bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2055
-#, fuzzy
 msgid "Pick a bright green colour"
-msgstr "Parlak yeşil bir renk seçin"
+msgstr "Parlak yeşil bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2067
-#, fuzzy
 msgid "Pick a bright yellow colour"
-msgstr "Parlak sarı bir renk seçin"
+msgstr "Parlak sarı bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2079
-#, fuzzy
 msgid "Pick a bright blue colour"
-msgstr "Parlak mavi bir renk seçin"
+msgstr "Parlak mavi bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2091
-#, fuzzy
 msgid "Pick a light magenta colour"
-msgstr "Açık macenta bir renk seçin"
+msgstr "Açık macenta bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2103
-#, fuzzy
 msgid "Pick a light cyan colour"
-msgstr "Açık camgöbeği bir renk seçin"
+msgstr "Açık camgöbeği bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2116
-#, fuzzy
 msgid "Pick a light white colour"
-msgstr "Açık beyaz bir renk seçin"
+msgstr "Açık beyaz bir renk seç"
 
 #: data/ui/remmina_preferences.glade:2129
 msgid "Use default system font"

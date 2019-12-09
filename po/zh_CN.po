@@ -1,16 +1,17 @@
 # Chinese (Simplified) translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 # shijing <jingshi@ubuntukylin.com>, 2019.
 # Allan Nordhøy <epost@anotheragency.no>, 2019.
+# anonymous <noreply@weblate.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
-"PO-Revision-Date: 2019-12-02 01:11+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
+"PO-Revision-Date: 2019-12-08 23:03+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "remmina/remmina/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -252,7 +253,7 @@ msgstr "全选(_S)"
 #: plugins/vnc/vnc_plugin.c:1852 plugins/rdp/rdp_plugin.c:1936
 #: plugins/nx/nx_plugin.c:721 data/ui/remmina_mpc.glade:155
 msgid "Username"
-msgstr ""
+msgstr "用户名"
 
 #: src/remmina_ssh_plugin.c:1058 plugins/vnc/vnc_plugin.c:1833
 #: plugins/vnc/vnc_plugin.c:1853 plugins/spice/spice_plugin.c:437
@@ -314,7 +315,7 @@ msgid "Filename for SSH session log"
 msgstr "在退出时启用 SSH 会话日志记录"
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -1056,8 +1057,9 @@ msgid "Do you trust the new public key?"
 msgstr "您信任新的公钥吗？"
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1416,7 +1418,7 @@ msgstr "您没有设置任何要执行的命令"
 #: plugins/exec/exec_plugin.c:204
 #, fuzzy
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 "警告！同步执行命令，可能挂起 Remmina。\n"
@@ -1441,7 +1443,7 @@ msgstr "输入验证凭据"
 
 #: plugins/www/www_plugin.c:791
 msgid "URL"
-msgstr ""
+msgstr "网址"
 
 #: plugins/www/www_plugin.c:791
 msgid "http://address or https://address"
@@ -2289,10 +2291,10 @@ msgid "Secure passwords storage in KWallet"
 msgstr "存储在 GNOME 密钥环中的安全密码"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 "%s 请求共享他/她的桌面。\n"
 "您是否接受邀请？"
@@ -2324,7 +2326,7 @@ msgstr "不要再显示此消息"
 
 #: data/ui/remmina_about.glade:30 data/ui/remmina_main.glade:444
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: data/ui/remmina_about.glade:40
 msgid "Website"
@@ -2363,7 +2365,7 @@ msgstr "清除"
 
 #: data/ui/remmina_main.glade:258
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: data/ui/remmina_main.glade:288
 msgid "Collapse all"
@@ -2651,7 +2653,7 @@ msgstr ""
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"

@@ -1,13 +1,14 @@
 # Basque translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 # Allan Nordhøy <epost@anotheragency.no>, 2019.
+# anonymous <noreply@weblate.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
 "PO-Revision-Date: 2019-11-12 11:24+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -307,7 +308,7 @@ msgid "Filename for SSH session log"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -909,11 +910,11 @@ msgstr ""
 
 #: src/remmina_message_panel.c:260
 msgid "Yes"
-msgstr ""
+msgstr "Bai"
 
 #: src/remmina_message_panel.c:267
 msgid "No"
-msgstr ""
+msgstr "Ez"
 
 #: src/remmina_message_panel.c:387 plugins/rdp/rdp_plugin.c:1938
 #: data/ui/remmina_mpc.glade:141
@@ -1036,8 +1037,9 @@ msgid "Do you trust the new public key?"
 msgstr "Gako publiko berriaz fidatzen zara?"
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1372,7 +1374,7 @@ msgstr ""
 
 #: plugins/exec/exec_plugin.c:204
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 
@@ -2212,10 +2214,10 @@ msgid "Secure passwords storage in KWallet"
 msgstr "%s pasahitza"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 "%s-k bere mahaigaina partekatu nahi du.\n"
 "Onartzen duzu gonbidapena?"
@@ -2392,7 +2394,7 @@ msgstr ""
 
 #: data/ui/remmina_mpc.glade:24
 msgid "Change"
-msgstr ""
+msgstr "Aldatu"
 
 #: data/ui/remmina_mpc.glade:64
 msgid "<span weight='bold' size='larger'>Multi Password Changer</span>"
@@ -2557,7 +2559,7 @@ msgstr ""
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"

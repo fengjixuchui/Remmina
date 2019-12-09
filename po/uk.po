@@ -1,15 +1,16 @@
 # Ukrainian translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 # Olexandr Nesterenko <olexn@ukr.net>, 2019.
+# anonymous <noreply@weblate.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
-"PO-Revision-Date: 2019-09-26 15:46+0000\n"
-"Last-Translator: Olexandr Nesterenko <olexn@ukr.net>\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
+"PO-Revision-Date: 2019-12-08 23:03+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/remmina/"
 "remmina/uk/>\n"
 "Language: uk\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 "X-Launchpad-Export-Date: 2014-04-10 15:04+0000\n"
 
 #: src/remmina_protocol_widget.c:248
@@ -235,7 +236,7 @@ msgstr ""
 
 #: src/remmina_ssh_plugin.c:1039
 msgid "Select all"
-msgstr ""
+msgstr "Обрати все"
 
 #: src/remmina_ssh_plugin.c:1039
 msgid "_Select all"
@@ -247,7 +248,7 @@ msgstr ""
 #: plugins/vnc/vnc_plugin.c:1852 plugins/rdp/rdp_plugin.c:1936
 #: plugins/nx/nx_plugin.c:721 data/ui/remmina_mpc.glade:155
 msgid "Username"
-msgstr ""
+msgstr "Ім'я користувача"
 
 #: src/remmina_ssh_plugin.c:1058 plugins/vnc/vnc_plugin.c:1833
 #: plugins/vnc/vnc_plugin.c:1853 plugins/spice/spice_plugin.c:437
@@ -308,7 +309,7 @@ msgid "Filename for SSH session log"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -443,7 +444,7 @@ msgstr "Вивантажити на сервер"
 
 #: src/remmina_ftp_client.c:790 data/ui/remmina_main.glade:268
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 #: src/remmina_ftp_client.c:792
 msgid "Delete files on server"
@@ -526,7 +527,7 @@ msgstr ""
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:101
 msgid "Quit"
-msgstr ""
+msgstr "Вийти"
 
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:103
@@ -1041,8 +1042,9 @@ msgid "Do you trust the new public key?"
 msgstr "Ви довіряєте новому публічному ключу?"
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1376,7 +1378,7 @@ msgstr ""
 
 #: plugins/exec/exec_plugin.c:204
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 
@@ -1398,7 +1400,7 @@ msgstr ""
 
 #: plugins/www/www_plugin.c:791
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: plugins/www/www_plugin.c:791
 msgid "http://address or https://address"
@@ -2216,10 +2218,10 @@ msgid "Secure passwords storage in KWallet"
 msgstr "%s Пароль"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 "%s бажає надати Вам доступ до робочого столу свого комп’ютера.\n"
 "Бажаєте прийняти запрошення?"
@@ -2247,7 +2249,7 @@ msgstr ""
 
 #: data/ui/remmina_about.glade:30 data/ui/remmina_main.glade:444
 msgid "About"
-msgstr ""
+msgstr "Про"
 
 #: data/ui/remmina_about.glade:40
 msgid "Website"
@@ -2281,11 +2283,11 @@ msgstr ""
 #: data/ui/remmina_main.glade:173 data/ui/remmina_main.glade:175
 #: data/ui/remmina_preferences.glade:214
 msgid "Clear"
-msgstr ""
+msgstr "Очистити"
 
 #: data/ui/remmina_main.glade:258
 msgid "Edit"
-msgstr ""
+msgstr "Редагувати"
 
 #: data/ui/remmina_main.glade:288
 msgid "Collapse all"
@@ -2297,7 +2299,7 @@ msgstr ""
 
 #: data/ui/remmina_main.glade:332
 msgid "Export"
-msgstr ""
+msgstr "Експорт"
 
 #: data/ui/remmina_main.glade:342
 msgid "Multi password changer"
@@ -2334,11 +2336,11 @@ msgstr ""
 
 #: data/ui/remmina_main.glade:576
 msgid "Last used"
-msgstr ""
+msgstr "Використано востаннє"
 
 #: data/ui/remmina_unlock.glade:60
 msgid "Unlock"
-msgstr ""
+msgstr "Розблокувати"
 
 #: data/ui/remmina_unlock.glade:94
 msgid "Unlock Remmina"
@@ -2396,7 +2398,7 @@ msgstr ""
 
 #: data/ui/remmina_mpc.glade:24
 msgid "Change"
-msgstr ""
+msgstr "Змінити"
 
 #: data/ui/remmina_mpc.glade:64
 msgid "<span weight='bold' size='larger'>Multi Password Changer</span>"
@@ -2408,7 +2410,7 @@ msgstr ""
 
 #: data/ui/remmina_mpc.glade:198
 msgid "Confirm password"
-msgstr ""
+msgstr "Підвердіть пароль"
 
 #: data/ui/remmina_mpc.glade:211
 #, fuzzy
@@ -2420,7 +2422,7 @@ msgstr "Запам'ятати пароль"
 #: data/ui/remmina_mpc.glade:305
 msgctxt "Multi password changer"
 msgid "Select"
-msgstr ""
+msgstr "Вибрати"
 
 #: data/ui/remmina_mpc.glade:317
 #, fuzzy
@@ -2561,7 +2563,7 @@ msgstr ""
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"
@@ -2573,7 +2575,7 @@ msgstr ""
 
 #: data/ui/remmina_preferences.glade:518
 msgid "Options"
-msgstr ""
+msgstr "Параметри"
 
 #: data/ui/remmina_preferences.glade:532
 msgid "Always show tabs"
@@ -2589,7 +2591,7 @@ msgstr ""
 
 #: data/ui/remmina_preferences.glade:584
 msgid "Automatic"
-msgstr ""
+msgstr "Автоматична"
 
 #: data/ui/remmina_preferences.glade:585
 msgid "Scrolled window"
@@ -2937,11 +2939,11 @@ msgstr ""
 
 #: data/ui/remmina_string_list.glade:14 data/ui/remmina_string_list.glade:158
 msgid "Add"
-msgstr ""
+msgstr "Додати"
 
 #: data/ui/remmina_string_list.glade:20 data/ui/remmina_string_list.glade:137
 msgid "Remove"
-msgstr ""
+msgstr "Видалити"
 
 #: data/ui/remmina_string_list.glade:26 data/ui/remmina_string_list.glade:116
 msgid "Move up"

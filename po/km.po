@@ -1,5 +1,5 @@
 # Khmer translation for remmina
-# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# Copyright © 2013 Rosetta Contributors and Canonical Ltd 2013
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
 "PO-Revision-Date: 2014-08-10 05:03+0000\n"
 "Last-Translator: Rockworld <sumoisrock@gmail.com>\n"
 "Language-Team: Khmer <km@li.org>\n"
@@ -301,7 +301,7 @@ msgid "Filename for SSH session log"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -583,10 +583,10 @@ msgid "Remmina Remote Desktop Client"
 msgstr "ម៉ាស៊ីន​ភ្ញៀវ​ផ្ទៃតុ​ពី​ចម្ងាយ​របស់ Remmina"
 
 #: src/rcw.c:585
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
-msgstr ""
+msgstr "តើអ្នកចង់លុុប '%s' ទេ"
 
 #: src/rcw.c:1291
 msgid "Viewport fullscreen mode"
@@ -1023,8 +1023,9 @@ msgid "Do you trust the new public key?"
 msgstr ""
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1352,7 +1353,7 @@ msgstr ""
 
 #: plugins/exec/exec_plugin.c:204
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 
@@ -2172,8 +2173,8 @@ msgstr ""
 #: plugins/telepathy/telepathy_channel_handler.c:237
 #, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 
 #: plugins/telepathy/telepathy_channel_handler.c:240
@@ -2511,7 +2512,7 @@ msgstr ""
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"

@@ -1,5 +1,5 @@
 # Finnish translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 # Tuomas Lähteenmäki <lahtis@gmail.com>, 2019.
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
 "PO-Revision-Date: 2019-12-02 17:51+0000\n"
 "Last-Translator: Tuomas Lähteenmäki <lahtis@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -302,7 +302,7 @@ msgid "Filename for SSH session log"
 msgstr "Ota SSH-istunnon kirjaaminen käyttöön poistumisen yhteydessä"
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -591,7 +591,7 @@ msgid "Remmina Remote Desktop Client"
 msgstr "Remmina-etätyöpöytäsovellus"
 
 #: src/rcw.c:585
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr ""
@@ -1034,8 +1034,9 @@ msgid "Do you trust the new public key?"
 msgstr "Luotatko uuteen julkiseen avaimeen?"
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1304,7 +1305,7 @@ msgstr "SSH-agentti (automaattinen)"
 #: src/remmina_file_editor.c:994
 #, fuzzy
 msgid "Turn on \"Autostart\" for this profile"
-msgstr "Käännä päälle automaattinen käynnistys tästä profiilista."
+msgstr "Ota käyttöön automaattinen käynnistys tälle profiilille"
 
 #: src/remmina_file_editor.c:1002
 msgid "Basic"
@@ -1389,8 +1390,9 @@ msgid "You did not set any command to be executed"
 msgstr "Et määrittänyt mitään komentoa suoritettavaksi"
 
 #: plugins/exec/exec_plugin.c:204
+#, fuzzy
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 "VAROITUS! Komennon suorittaminen synkronisesti voi johtaa siihen, että "
@@ -2032,7 +2034,6 @@ msgid "Local parallel device"
 msgstr "Paikallinen rinnakkaislaite"
 
 #: plugins/rdp/rdp_plugin.c:1974
-#, fuzzy
 msgid "Smartcard name"
 msgstr "Älykortin nimi"
 
@@ -2066,11 +2067,11 @@ msgstr "Ohita sertifikaatti"
 
 #: plugins/rdp/rdp_plugin.c:1983
 msgid "Use the old license workflow"
-msgstr ""
+msgstr "Käytä vanhaa lisenssin työnkulkua"
 
 #: plugins/rdp/rdp_plugin.c:1983
 msgid "It disables CAL and hwId is set to 0"
-msgstr ""
+msgstr "Poistaa CAL käytöstä ja asettaa hwId arvoon 0"
 
 #: plugins/rdp/rdp_plugin.c:1984
 msgid "Turn off password storing"
@@ -2249,10 +2250,10 @@ msgid "Secure passwords storage in KWallet"
 msgstr "Salasanojen tallentaminen KDE lompakkoon"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 "%s haluaa jakaa työpöytänsä.\n"
 "Hyväksytkö kutsun?"
@@ -2607,10 +2608,11 @@ msgid "Profile filename template"
 msgstr "Profiilitiedoston malli"
 
 #: data/ui/remmina_preferences.glade:495
+#, fuzzy
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"
@@ -2909,7 +2911,6 @@ msgid "Load colour theme"
 msgstr "Lataa värimaailma"
 
 #: data/ui/remmina_preferences.glade:1917
-#, fuzzy
 msgid ""
 "Choose a colour scheme file. Usually available in /usr/share/remmina/theme. "
 "https://github.com/mbadolato/iTerm2-Color-Schemes has more details."
@@ -2919,87 +2920,70 @@ msgstr ""
 "iTerm2-Color-Schemes."
 
 #: data/ui/remmina_preferences.glade:1920
-#, fuzzy
 msgid "Pick a terminal colouring file"
 msgstr "Valitse päätteen väritystiedosto"
 
 #: data/ui/remmina_preferences.glade:1934
-#, fuzzy
 msgid "Pick a black colour"
 msgstr "Valitse musta väri"
 
 #: data/ui/remmina_preferences.glade:1946
-#, fuzzy
 msgid "Pick a red colour"
 msgstr "Valitse punainen väri"
 
 #: data/ui/remmina_preferences.glade:1958
-#, fuzzy
 msgid "Pick a green colour"
 msgstr "Valitse vihreä väri"
 
 #: data/ui/remmina_preferences.glade:1970
-#, fuzzy
 msgid "Pick a yellow colour"
 msgstr "Valitse keltainen väri"
 
 #: data/ui/remmina_preferences.glade:1982
-#, fuzzy
 msgid "Pick a blue colour"
 msgstr "Valitse sininen väri"
 
 #: data/ui/remmina_preferences.glade:1994
-#, fuzzy
 msgid "Pick a magenta colour"
-msgstr "Valitse magentan värinen väri"
+msgstr "Valitse magenta väri"
 
 #: data/ui/remmina_preferences.glade:2006
-#, fuzzy
 msgid "Pick a cyan colour"
 msgstr "Valitse syaani väri"
 
 #: data/ui/remmina_preferences.glade:2019
-#, fuzzy
 msgid "Pick a white colour"
 msgstr "Valitse valkoinen väri"
 
 #: data/ui/remmina_preferences.glade:2031
-#, fuzzy
 msgid "Pick a light black colour"
 msgstr "Valitse vaalean musta väri"
 
 #: data/ui/remmina_preferences.glade:2043
-#, fuzzy
 msgid "Pick a light red colour"
 msgstr "Valitse vaaleanpunainen väri"
 
 #: data/ui/remmina_preferences.glade:2055
-#, fuzzy
 msgid "Pick a bright green colour"
 msgstr "Valitse kirkkaanvihreä väri"
 
 #: data/ui/remmina_preferences.glade:2067
-#, fuzzy
 msgid "Pick a bright yellow colour"
-msgstr "Valitse kirkkaankeltainen väri"
+msgstr "Valitse kirkkaan keltainen väri"
 
 #: data/ui/remmina_preferences.glade:2079
-#, fuzzy
 msgid "Pick a bright blue colour"
 msgstr "Valitse kirkkaan sininen väri"
 
 #: data/ui/remmina_preferences.glade:2091
-#, fuzzy
 msgid "Pick a light magenta colour"
-msgstr "Valitse vaalea magentaväri"
+msgstr "Valitse vaalea magenta väri"
 
 #: data/ui/remmina_preferences.glade:2103
-#, fuzzy
 msgid "Pick a light cyan colour"
 msgstr "Valitse vaalea syaani väri"
 
 #: data/ui/remmina_preferences.glade:2116
-#, fuzzy
 msgid "Pick a light white colour"
 msgstr "Valitse vaalea valkoinen väri"
 

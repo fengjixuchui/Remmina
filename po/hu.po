@@ -1,13 +1,13 @@
 # Hungarian translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
+# anonymous <noreply@weblate.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
 "PO-Revision-Date: 2019-01-11 15:05+0100\n"
 "Last-Translator: Meskó Balázs <mesko.balazs@fsf.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.10-dev\n"
 "X-Launchpad-Export-Date: 2014-04-10 15:03+0000\n"
-"X-Generator: Poedit 2.1.1\n"
 
 #: src/remmina_protocol_widget.c:248
 msgid "Connect via SSH from a new terminal"
@@ -312,7 +312,7 @@ msgid "Filename for SSH session log"
 msgstr "SSH kilépéskori munkamenetnaplózás engedélyezése"
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -1061,8 +1061,9 @@ msgid "Do you trust the new public key?"
 msgstr "Megbízik az új nyilvános kulcsban?"
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1418,7 +1419,7 @@ msgstr "Nem adott meg végrehajtandó parancsot"
 #: plugins/exec/exec_plugin.c:204
 #, fuzzy
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 "FIGYELEM! A parancs szinkron futtatása beakaszthatja a Remminát.\n"
@@ -2290,10 +2291,10 @@ msgid "Secure passwords storage in KWallet"
 msgstr "Jelszótárolás letiltása"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 "%s meg akarja osztani az asztalát.\n"
 "Elfogadja a meghívást?"
@@ -2361,7 +2362,7 @@ msgstr "Törlés"
 
 #: data/ui/remmina_main.glade:258
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztése"
 
 #: data/ui/remmina_main.glade:288
 msgid "Collapse all"
@@ -2649,7 +2650,7 @@ msgstr ""
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"

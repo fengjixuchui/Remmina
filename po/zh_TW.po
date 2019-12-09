@@ -1,5 +1,5 @@
 # Chinese (Traditional) translation for remmina
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # Po-Hsu Lin <po-hsu.lin at canonical.com>, 2019.
 # Walter Cheuk <wwycheuk@gmail.com>, 2019.
@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-07 08:04+0000\n"
-"PO-Revision-Date: 2019-11-06 06:15+0000\n"
-"Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
+"POT-Creation-Date: 2019-12-09 00:49+0000\n"
+"PO-Revision-Date: 2019-12-08 23:03+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "remmina/remmina/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -306,7 +306,7 @@ msgid "Filename for SSH session log"
 msgstr "在離開時啟用 SSH 作業階段紀錄"
 
 #: src/remmina_ssh_plugin.c:1087
-msgid "Log SSH session when exiing Remmina"
+msgid "Log SSH session when exiting Remmina"
 msgstr ""
 
 #: src/remmina_ssh_plugin.c:1088
@@ -593,7 +593,7 @@ msgid "Remmina Remote Desktop Client"
 msgstr "Remmina 遠端桌面客戶端"
 
 #: src/rcw.c:585
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr "目前視窗已開啟 %i 個作用中的連線。確定要關閉嗎？"
@@ -1034,8 +1034,9 @@ msgid "Do you trust the new public key?"
 msgstr "您信任新的公鑰嗎？"
 
 #: src/remmina_ssh.c:525
+#, fuzzy
 msgid ""
-"WARNING: The server has changed its public key. This means either you are "
+"Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
@@ -1385,8 +1386,9 @@ msgid "You did not set any command to be executed"
 msgstr "您沒有設定要執行的指令"
 
 #: plugins/exec/exec_plugin.c:204
+#, fuzzy
 msgid ""
-"WARNING! Running a command synchronously may cause Remmina not to respond.\n"
+"Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
 "警告！同步執行指令可能使 Remmina 停止回應。\n"
@@ -2243,10 +2245,10 @@ msgid "Secure passwords storage in KWallet"
 msgstr "儲存在 KDE Wallet 中的安全密碼"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"%s wants to share his/her desktop.\n"
-"Do you accept the invitation?"
+"%s wants to share their desktop.\n"
+"Do you accept?"
 msgstr ""
 "%s 想要共享他/她的桌面。\n"
 "您是否接受其邀請？"
@@ -2388,6 +2390,7 @@ msgid "Please wait…"
 msgstr ""
 
 #: data/ui/remmina_news.glade:108
+#, fuzzy
 msgid ""
 "Send <b><a href=\"https://remmina.gitlab.io/remminadoc.gitlab.io/"
 "remmina__stats_8c.html#details\" title=\"Remmina usage statistics"
@@ -2598,10 +2601,11 @@ msgid "Profile filename template"
 msgstr "設定檔檔案名稱範本"
 
 #: data/ui/remmina_preferences.glade:495
+#, fuzzy
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
-"%N Connection Name\n"
+"%N Connection name\n"
 "%h Hostname/IP\n"
 "\n"
 "\n"
