@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-19 21:24+0000\n"
-"PO-Revision-Date: 2019-12-12 21:48+0000\n"
+"POT-Creation-Date: 2019-12-23 01:24+0000\n"
+"PO-Revision-Date: 2019-12-22 22:05+0000\n"
 "Last-Translator: Tuomas Lähteenmäki <lahtis@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/remmina/remmina/"
 "fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10\n"
 "X-Launchpad-Export-Date: 2014-09-20 14:24+0000\n"
 
 #: src/remmina_protocol_widget.c:248
@@ -155,7 +155,7 @@ msgstr "Määritä käytettävissä olevat tarkkuudet"
 msgid "Recent lists cleared."
 msgstr "Viimeaikaisten luettelo tyhjennetty."
 
-#: src/remmina_pref_dialog.c:143 src/rcw.c:1816
+#: src/remmina_pref_dialog.c:143 src/rcw.c:1826
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
 msgstr "Painalluksia"
@@ -585,91 +585,91 @@ msgstr "Yhdistä etätyöpöytiin käyttäen sovelmavalikkoa"
 msgid "Remmina Remote Desktop Client"
 msgstr "Remmina-etätyöpöytäsovellus"
 
-#: src/rcw.c:586
+#: src/rcw.c:596
 #, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr "Haluatko varmasti sulkea %i aktiiviset yhteydet nykyisessä ikkunassa?"
 
-#: src/rcw.c:1292
+#: src/rcw.c:1302
 msgid "Viewport fullscreen mode"
 msgstr "Näytä kokonäytön tilassa"
 
-#: src/rcw.c:1300 data/ui/remmina_preferences.glade:586
+#: src/rcw.c:1310 data/ui/remmina_preferences.glade:586
 msgid "Scrolled fullscreen"
 msgstr "Vieritetty kokonäyttö"
 
-#: src/rcw.c:1385
+#: src/rcw.c:1395
 msgid "Keep aspect ratio when scaled"
 msgstr "Pidä kuvasuhde skaalattuna"
 
-#: src/rcw.c:1393
+#: src/rcw.c:1403
 msgid "Fill client window when scaled"
 msgstr "Täytä asiakasikkuna, kun skaalataan"
 
-#: src/rcw.c:1932
+#: src/rcw.c:1942
 msgid "Turn off scaling to avoid screenshot distortion."
 msgstr "Poista skaalaus käytöstä kuvakaappauksen vääristymien välttämiseksi."
 
-#: src/rcw.c:1992 plugins/www/www_plugin.c:761
+#: src/rcw.c:2002 plugins/www/www_plugin.c:761
 msgid "Screenshot taken"
 msgstr "Kuvakaappaus otettu"
 
-#: src/rcw.c:2063
+#: src/rcw.c:2073
 msgid "Resize the window to fit in remote resolution"
 msgstr "Muuta ikkunan koko vastaamaan etäpään resoluutiota"
 
-#: src/rcw.c:2074
+#: src/rcw.c:2084
 msgid "Toggle fullscreen mode"
 msgstr "Koko näytön tila päälle/pois"
 
-#: src/rcw.c:2119 data/ui/remmina_preferences.glade:930
+#: src/rcw.c:2129 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
 msgstr "Vaihtaa välilehtien sivuja"
 
-#: src/rcw.c:2133
+#: src/rcw.c:2143
 msgid "Toggle dynamic resolution update"
 msgstr "Vaihda dynaamisen resoluution päivitystä"
 
-#: src/rcw.c:2143
+#: src/rcw.c:2153
 msgid "Toggle scaled mode"
 msgstr "Vaihda skaalattu tila"
 
-#: src/rcw.c:2178
+#: src/rcw.c:2188
 msgid "Grab all keyboard events"
 msgstr "Kaappaa kaikki näppäimistön tapahtumat"
 
-#: src/rcw.c:2187
+#: src/rcw.c:2197
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: src/rcw.c:2195 src/rcw.c:2196 data/ui/remmina_main.glade:296
+#: src/rcw.c:2205 src/rcw.c:2206 data/ui/remmina_main.glade:296
 msgid "Tools"
 msgstr "Työkalut"
 
-#: src/rcw.c:2208
+#: src/rcw.c:2218
 msgid "Duplicate current connection"
 msgstr "Kahdenna nykyinen yhteys"
 
-#: src/rcw.c:2216 data/ui/remmina_preferences.glade:1124
+#: src/rcw.c:2226 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
 msgstr "Kuvakaappaus"
 
-#: src/rcw.c:2224 data/ui/remmina_preferences.glade:1033
+#: src/rcw.c:2234 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
 msgstr "Pienennä ikkuna"
 
-#: src/rcw.c:2233 data/ui/remmina_preferences.glade:1064
+#: src/rcw.c:2243 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
 msgstr "Katkaise yhteys"
 
-#: src/rcw.c:3786
+#: src/rcw.c:3804
 #, c-format
 msgid "The file \"%s\" is corrupted, unreadable, or could not be found."
 msgstr "Tiedosto \"%s\" on vioittunut, lukukelvoton tai sitä ei löytynyt."
 
-#: src/rcw.c:3948
+#: src/rcw.c:3966
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr ""
 "Varoitus: Tämä liitännäinen vaatii GtkSocketin, mutta se ei ole saatavilla."
@@ -801,7 +801,7 @@ msgstr "Kansiota \"%s\" ei voitu luoda."
 msgid "Could not create the file \"%s\"."
 msgstr "Tiedostoa \"%s\" ei voitu luoda."
 
-#. TRANSLATORS: The placeholders %s are a file path and a server name
+#. TRANSLATORS: The placeholders %s are a file path, and an error message.
 #: src/remmina_sftp_client.c:218
 #, c-format
 msgid "Could not open the file \"%s\" on the server. %s"
@@ -845,7 +845,7 @@ msgstr "Kansiota \"%s\" ei voitu avata. %s"
 #: src/remmina_sftp_client.c:688
 #, c-format
 msgid "Could not read from the folder. %s"
-msgstr "Kansiota %s ei voitu lukea."
+msgstr "Kansiota ei voitu lukea. %s"
 
 #: src/remmina_sftp_client.c:795
 msgid "Are you sure you want to cancel the file transfer in progress?"
@@ -982,7 +982,7 @@ msgstr "Yksityisen SSH-avaimen salalause"
 #: src/remmina_ssh.c:299
 #, c-format
 msgid "Could not authenticate automatically with public SSH key. %s"
-msgstr ""
+msgstr "Automaattista todentamista julkisen SSH-avaimen avulla. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:316
@@ -995,6 +995,7 @@ msgstr ""
 #, c-format
 msgid "Could not authenticate with SSH Kerberos/GSSAPI. %s"
 msgstr ""
+"Todennusta ei voitu todentaa SSH-Kerberos/GSSAPI-todennuksen avulla. %s"
 
 #: src/remmina_ssh.c:365
 msgid "The public SSH key changed!"
@@ -1004,19 +1005,19 @@ msgstr "Julkinen SSH-avain on muutettu!"
 #: src/remmina_ssh.c:492
 #, c-format
 msgid "Could not fetch the server's public SSH key. %s"
-msgstr ""
+msgstr "Palvelimen julkisen SSH-avaimen hakeminen ei onnistunut. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:499
-#, fuzzy, c-format
+#, c-format
 msgid "Could not fetch public SSH key. %s"
-msgstr "SSH-istunnon tunnelin yhdistäminen epäonnistui: %s"
+msgstr "Julkisen SSH-avaimen hakeminen ei onnistunut. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:507
-#, fuzzy, c-format
+#, c-format
 msgid "Could not fetch checksum for public SSH key. %s"
-msgstr "SSH-istunnon käynnistys epäonnistui: %s"
+msgstr "Julkisen SSH-avaimen tarkistussumman hakeminen ei onnistunut. %s"
 
 #: src/remmina_ssh.c:520
 msgid "The server is unknown. The public key fingerprint is:"
@@ -1027,7 +1028,6 @@ msgid "Do you trust the new public key?"
 msgstr "Luotatko uuteen julkiseen avaimeen?"
 
 #: src/remmina_ssh.c:525
-#, fuzzy
 msgid ""
 "Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
@@ -1040,9 +1040,9 @@ msgstr ""
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:550
-#, fuzzy, c-format
+#, c-format
 msgid "Could not check list of known SSH hosts. %s"
-msgstr "SSH-istunnon käynnistys epäonnistui: %s"
+msgstr "Tunnettujen SSH-koneiden luetteloa ei voitu tarkistaa. %s"
 
 #: src/remmina_ssh.c:557
 msgid "SSH password"
@@ -1058,31 +1058,31 @@ msgstr "SSH-todennus"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:747
-#, fuzzy, c-format
+#, c-format
 msgid "Could not start SSH session. %s"
 msgstr "SSH-istunnon käynnistys epäonnistui: %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1106 src/remmina_ssh.c:1168
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create channel. %s"
-msgstr "SFTP-istunnon luonti epäonnistui: %s"
+msgstr "Kanavaa ei voitu luoda. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1117
-#, fuzzy, c-format
+#, c-format
 msgid "Could not connect to SSH tunnel. %s"
-msgstr "SSH-istunnon tunnelin yhdistäminen epäonnistui: %s"
+msgstr "SSH-tunneliin ei voitu muodostaa yhteyttä. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1183 src/remmina_ssh.c:1781
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open channel. %s"
-msgstr "Kanavan avaaminen epäonnistui: %s"
+msgstr "Kanavaa ei voitu avata. %s"
 
 #: src/remmina_ssh.c:1189
-#, c-format
-msgid "Could not run %s on SSH server, %%s"
+#, fuzzy, c-format
+msgid "Could not run %s on SSH server."
 msgstr "Ei voitu ajaa %s SSH-palvelimella, %%s"
 
 #. TRANSLATORS: The placeholder %s is an error message
@@ -1874,7 +1874,7 @@ msgstr "Palvelin %s esti yhteyden."
 #: plugins/rdp/rdp_plugin.c:1580
 #, fuzzy, c-format
 msgid ""
-"The Remote Desktop Gateway \"%s\" denied the user \"%s\"\\%s access due to "
+"The Remote Desktop Gateway \"%s\" denied the user \"%s\\%s\" access due to "
 "policy."
 msgstr ""
 "Etätyöpöytäyhdyskäytävä %s esti käyttäjän %s\\%s pääsyn policy-käytännön "
@@ -2303,7 +2303,7 @@ msgstr "Vaihda näkymä"
 
 #: data/ui/remmina_main.glade:186
 #, fuzzy
-msgid "Search string or server name/IP address for \"\\Quick Connect\\\""
+msgid "Search string or server name/IP address for “Quick Connect”"
 msgstr ""
 "Etsi merkkijono tai palvelimen nimi /ip-osoite nopean yhteyden "
 "muodostamiseksi"

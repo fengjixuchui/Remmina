@@ -1,5 +1,34 @@
+## v1.3.9
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.8...v1.3.9)
+
+* Grab and focus out woes [!1985](https://gitlab.com/Remmina/Remmina/merge_requests/1985) *@giox069*
+
+## v1.3.8
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.7...v1.3.8)
+
+* Avoid clearing username/domain when saving RDP password [!1981](https://gitlab.com/Remmina/Remmina/merge_requests/1981) *@giox069*
+* Make Remmina news dialog modal to the main window [!1982](https://gitlab.com/Remmina/Remmina/merge_requests/1982) *@antenore*
+* Change switch notebook page idle func order. Fixes #2034 *@giox069*
+* Fixing bad seat grabbing behaviour (grab all keys not working) *@antenore*
+* Adding cmake option to use latest FreeRDP symbols when compiling. Fixes #2024 [!1977](https://gitlab.com/Remmina/Remmina/merge_requests/1977) *@antenore*
+* Spelling: Private key, direct explanations [!1964](https://gitlab.com/Remmina/Remmina/merge_requests/1964) *@kingu*
+* Spelling: Colour theme [!1973](https://gitlab.com/Remmina/Remmina/merge_requests/1973) *@kingu*
+* Spelling: Error messages [!1965](https://gitlab.com/Remmina/Remmina/merge_requests/1965) *@kingu*
+* Spelling: URL moved to avoid ending dot [!1966](https://gitlab.com/Remmina/Remmina/merge_requests/1966) *@kingu*
+* Spelling: "web-browser plugin" [!1967](https://gitlab.com/Remmina/Remmina/merge_requests/1967) *@kingu*
+* Spelling: "simple terminal" [!1968](https://gitlab.com/Remmina/Remmina/merge_requests/1968) *@kingu*
+* Spelling: "Secure password storage in KWallet" [!1969](https://gitlab.com/Remmina/Remmina/merge_requests/1969) *@kingu*
+* Spelling: Connection name [!1971](https://gitlab.com/Remmina/Remmina/merge_requests/1971) *@kingu*
+* Spelling: Their desktop, do you accept? [!1970](https://gitlab.com/Remmina/Remmina/merge_requests/1970) *@kingu*
+* Spelling: "Warning:" [!1972](https://gitlab.com/Remmina/Remmina/merge_requests/1972) *@kingu*
+* Pluralized string for closing active connections [!1975](https://gitlab.com/Remmina/Remmina/merge_requests/1975) *@kingu*
+* Spelling: Log SSH session when exiting Remmina [!1976](https://gitlab.com/Remmina/Remmina/merge_requests/1976) *@kingu*
+* GitLab landing page now only links to installation instructions [!1978](https://gitlab.com/Remmina/Remmina/merge_requests/1978) *@kingu*
+* Spelling: -on, , [!1979](https://gitlab.com/Remmina/Remmina/merge_requests/1979) *@kingu*
+* Adding default application symbolic icons [!1980](https://gitlab.com/Remmina/Remmina/merge_requests/1980) *@antenore*
+
 ## v1.3.7
-[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.6...v.1.3.7)
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.6...v1.3.7)
 
 * Better authentication MessagePanel API [!1937](https://gitlab.com/Remmina/Remmina/merge_requests/1937) *@giox069*
 * Adding hidden proxy/socks settings for the RDP plugin [!1927](https://gitlab.com/Remmina/Remmina/merge_requests/1927) *@antenore*
@@ -87,7 +116,7 @@
 
 
 ## v1.3.6
-[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.5...v.1.3.6)
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.5...v1.3.6)
 
 * Fix fullscreen switching [!1895](https://gitlab.com/Remmina/Remmina/merge_requests/1895) *@ToolsDevler*
 * Fullscreen fixes [!1897](https://gitlab.com/Remmina/Remmina/merge_requests/1897) *@giox069*
@@ -103,7 +132,7 @@
 * Remove G+ from documents [!1888](https://gitlab.com/Remmina/Remmina/merge_requests/1888) *@Cypresslin*
 
 ## v1.3.5
-[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.4...v.1.3.5)
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.4...v1.3.5)
 
 **ATTENTION** New dependencies.
 
@@ -171,7 +200,7 @@
 * Refactoring - warnings cleanup [!1877](https://gitlab.com/Remmina/Remmina/merge_requests/1877) *@antenore*
 
 ## v1.3.4
-[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.3...v.1.3.4)
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.3.3...v1.3.4)
 
 * Updated to use core18 and gnome-3-28-1804 [!1797](https://gitlab.com/Remmina/Remmina/merge_requests/1797) *@kenvandine*
 * Snap: Build snap in CI and publish to the edge channel for builds against master [!1810](https://gitlab.com/Remmina/Remmina/merge_requests/1810) *@kenvandine*
