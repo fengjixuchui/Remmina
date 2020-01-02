@@ -2,14 +2,14 @@
 # Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the remmina package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2019.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2019, 2020.
 # Allan Nordhøy <epost@anotheragency.no>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2019-12-23 01:24+0000\n"
-"PO-Revision-Date: 2019-12-24 13:21+0000\n"
+"POT-Creation-Date: 2019-12-30 13:23+0000\n"
+"PO-Revision-Date: 2020-01-02 10:21+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "remmina/remmina/pt_BR/>\n"
@@ -238,14 +238,14 @@ msgstr "_Selecionar tudo"
 
 #: src/remmina_ssh_plugin.c:1057 src/remmina_message_panel.c:330
 #: src/remmina_sftp_plugin.c:349 src/remmina_file_editor.c:917
-#: plugins/www/www_plugin.c:792 plugins/vnc/vnc_plugin.c:1832
-#: plugins/vnc/vnc_plugin.c:1852 plugins/rdp/rdp_plugin.c:1936
+#: plugins/www/www_plugin.c:792 plugins/vnc/vnc_plugin.c:1831
+#: plugins/vnc/vnc_plugin.c:1851 plugins/rdp/rdp_plugin.c:1936
 #: plugins/nx/nx_plugin.c:721 data/ui/remmina_mpc.glade:155
 msgid "Username"
 msgstr "Nome de usuário"
 
-#: src/remmina_ssh_plugin.c:1058 plugins/vnc/vnc_plugin.c:1833
-#: plugins/vnc/vnc_plugin.c:1853 plugins/spice/spice_plugin.c:437
+#: src/remmina_ssh_plugin.c:1058 plugins/vnc/vnc_plugin.c:1832
+#: plugins/vnc/vnc_plugin.c:1852 plugins/spice/spice_plugin.c:437
 #: plugins/nx/nx_plugin.c:722
 msgid "User password"
 msgstr "Senha de usuário"
@@ -423,7 +423,7 @@ msgstr "Subir"
 msgid "Go to parent folder"
 msgstr "Vai para a pasta pai"
 
-#: src/remmina_ftp_client.c:763 plugins/vnc/vnc_plugin.c:1889
+#: src/remmina_ftp_client.c:763 plugins/vnc/vnc_plugin.c:1888
 #: plugins/rdp/rdp_plugin.c:2001
 msgid "Refresh"
 msgstr "Atualizar"
@@ -636,7 +636,7 @@ msgstr "Alterna para o modo tela cheia"
 
 #: src/rcw.c:2129 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
-msgstr "Alterna para páginas de abas"
+msgstr "Alternar páginas de abas"
 
 #: src/rcw.c:2143
 msgid "Toggle dynamic resolution update"
@@ -665,15 +665,15 @@ msgstr "Duplica a conexão atual"
 #: src/rcw.c:2226 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
-msgstr "Captura a tela"
+msgstr "Captura de tela"
 
 #: src/rcw.c:2234 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
-msgstr "Minimiza a janela"
+msgstr "Minimizar janela"
 
 #: src/rcw.c:2243 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
-msgstr "Desconecta"
+msgstr "Desconectar"
 
 #: src/rcw.c:3804
 #, c-format
@@ -1475,122 +1475,122 @@ msgstr "Armazenamento seguro de senhas no chaveiro do GNOME"
 msgid "Hello World!"
 msgstr "Olá, mundo!"
 
-#: plugins/vnc/vnc_plugin.c:734
+#: plugins/vnc/vnc_plugin.c:733
 msgid "Enter VNC password"
 msgstr "Insira senha VNC"
 
-#: plugins/vnc/vnc_plugin.c:787
+#: plugins/vnc/vnc_plugin.c:786
 msgid "Enter VNC authentication credentials"
 msgstr "Insira as credenciais de autenticação VNC"
 
-#: plugins/vnc/vnc_plugin.c:890
+#: plugins/vnc/vnc_plugin.c:889
 msgid "Unable to connect to VNC server"
 msgstr "Não foi possível conectar-se ao servidor VNC"
 
-#: plugins/vnc/vnc_plugin.c:891
+#: plugins/vnc/vnc_plugin.c:890
 #, c-format
 msgid "Couldn’t convert '%s' to host address"
 msgstr "Não foi possível converter '%s' em um endereço de máquina"
 
-#: plugins/vnc/vnc_plugin.c:892
+#: plugins/vnc/vnc_plugin.c:891
 #, c-format
 msgid "VNC connection failed: %s"
 msgstr "Conexão VNC falhou: %s"
 
-#: plugins/vnc/vnc_plugin.c:893
+#: plugins/vnc/vnc_plugin.c:892
 msgid "Your connection has been rejected."
 msgstr "Sua conexão foi recusada."
 
-#: plugins/vnc/vnc_plugin.c:919
+#: plugins/vnc/vnc_plugin.c:918
 #, c-format
 msgid "The VNC server requested an unknown authentication method. %s"
 msgstr "O servidor VNC solicitou um método de autenticação desconhecido. %s"
 
-#: plugins/vnc/vnc_plugin.c:921
+#: plugins/vnc/vnc_plugin.c:920
 msgid "Please retry after turning on encryption for this profile."
 msgstr "Tente novamente após ativar a criptografia para este perfil."
 
-#: plugins/vnc/vnc_plugin.c:1803
+#: plugins/vnc/vnc_plugin.c:1802
 msgid "256 colors (8 bpp)"
 msgstr "256 cores (8 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1804
+#: plugins/vnc/vnc_plugin.c:1803
 msgid "High color (16 bpp)"
 msgstr "High color (16 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1805
+#: plugins/vnc/vnc_plugin.c:1804
 msgid "True color (32 bpp)"
 msgstr "True color (32 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1812 plugins/rdp/rdp_plugin.c:1887
+#: plugins/vnc/vnc_plugin.c:1811 plugins/rdp/rdp_plugin.c:1887
 #: plugins/rdp/rdp_settings.c:269 plugins/nx/nx_plugin.c:701
 msgid "Poor (fastest)"
 msgstr "Baixa (mais rápida)"
 
-#: plugins/vnc/vnc_plugin.c:1813 plugins/rdp/rdp_plugin.c:1888
+#: plugins/vnc/vnc_plugin.c:1812 plugins/rdp/rdp_plugin.c:1888
 #: plugins/rdp/rdp_settings.c:271 plugins/nx/nx_plugin.c:702
 msgid "Medium"
 msgstr "Médio"
 
-#: plugins/vnc/vnc_plugin.c:1814 plugins/rdp/rdp_plugin.c:1889
+#: plugins/vnc/vnc_plugin.c:1813 plugins/rdp/rdp_plugin.c:1889
 #: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:703
 msgid "Good"
 msgstr "Boa"
 
-#: plugins/vnc/vnc_plugin.c:1815 plugins/rdp/rdp_plugin.c:1890
+#: plugins/vnc/vnc_plugin.c:1814 plugins/rdp/rdp_plugin.c:1890
 #: plugins/rdp/rdp_settings.c:275 plugins/nx/nx_plugin.c:704
 msgid "Best (slowest)"
 msgstr "Melhor (mais lenta)"
 
-#: plugins/vnc/vnc_plugin.c:1831
+#: plugins/vnc/vnc_plugin.c:1830
 msgid "Repeater"
 msgstr "Repetidor"
 
-#: plugins/vnc/vnc_plugin.c:1834 plugins/vnc/vnc_plugin.c:1854
+#: plugins/vnc/vnc_plugin.c:1833 plugins/vnc/vnc_plugin.c:1853
 msgid "Color depth"
 msgstr "Profundidade de cores"
 
-#: plugins/vnc/vnc_plugin.c:1835 plugins/vnc/vnc_plugin.c:1855
+#: plugins/vnc/vnc_plugin.c:1834 plugins/vnc/vnc_plugin.c:1854
 #: plugins/rdp/rdp_plugin.c:1956 plugins/nx/nx_plugin.c:724
 msgid "Quality"
 msgstr "Qualidade"
 
-#: plugins/vnc/vnc_plugin.c:1851
+#: plugins/vnc/vnc_plugin.c:1850
 msgid "Listen on port"
 msgstr "Escutar na porta"
 
-#: plugins/vnc/vnc_plugin.c:1871
+#: plugins/vnc/vnc_plugin.c:1870
 msgid "Show remote cursor"
 msgstr "Mostrar cursor remoto"
 
-#: plugins/vnc/vnc_plugin.c:1872 plugins/vnc/vnc_plugin.c:1887
+#: plugins/vnc/vnc_plugin.c:1871 plugins/vnc/vnc_plugin.c:1886
 #: plugins/spice/spice_plugin.c:460 plugins/spice/spice_plugin.c:469
 msgid "View only"
 msgstr "Apenas visualizar"
 
-#: plugins/vnc/vnc_plugin.c:1873 plugins/spice/spice_plugin.c:455
+#: plugins/vnc/vnc_plugin.c:1872 plugins/spice/spice_plugin.c:455
 #: plugins/spice/spice_plugin.c:471 plugins/nx/nx_plugin.c:740
 msgid "Disable clipboard sync"
 msgstr "Desabilitar sincronização da área de transferência"
 
-#: plugins/vnc/vnc_plugin.c:1874 plugins/nx/nx_plugin.c:741
+#: plugins/vnc/vnc_plugin.c:1873 plugins/nx/nx_plugin.c:741
 msgid "Disable encryption"
 msgstr "Desabilitar criptografia"
 
-#: plugins/vnc/vnc_plugin.c:1875 plugins/vnc/vnc_plugin.c:1888
+#: plugins/vnc/vnc_plugin.c:1874 plugins/vnc/vnc_plugin.c:1887
 msgid "Disable server input"
-msgstr "Desativar entrada de servidor"
+msgstr "Desabilitar entrada de servidor"
 
-#: plugins/vnc/vnc_plugin.c:1876 plugins/spice/spice_plugin.c:456
+#: plugins/vnc/vnc_plugin.c:1875 plugins/spice/spice_plugin.c:456
 #: plugins/nx/nx_plugin.c:743
 msgid "Disable password storing"
 msgstr "Desabilitar armazenamento de senha"
 
-#: plugins/vnc/vnc_plugin.c:1890
+#: plugins/vnc/vnc_plugin.c:1889
 msgid "Open Chat…"
 msgstr "Abrir bate-papo…"
 
-#: plugins/vnc/vnc_plugin.c:1891 plugins/spice/spice_plugin.c:472
+#: plugins/vnc/vnc_plugin.c:1890 plugins/spice/spice_plugin.c:472
 #: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2004
 #: plugins/nx/nx_plugin.c:751
 msgid "Send Ctrl+Alt+Delete"
@@ -1875,8 +1875,8 @@ msgid ""
 "The Remote Desktop Gateway \"%s\" denied the user \"%s\\%s\" access due to "
 "policy."
 msgstr ""
-"O gateway de área de trabalho remota \"%s\" negou acesso ao usuário \"%s\\%"
-"s\" em razão de política."
+"O gateway de área de trabalho remota \"%s\" negou acesso ao usuário \"%s\\%s"
+"\" em razão de política."
 
 #: plugins/rdp/rdp_plugin.c:1590
 #, c-format
@@ -2057,7 +2057,7 @@ msgstr "Usar o fluxo de trabalho de licença antiga"
 
 #: plugins/rdp/rdp_plugin.c:1983
 msgid "It disables CAL and hwId is set to 0"
-msgstr "Desativa CAL e hwId é definido como 0"
+msgstr "Desabilita CAL e hwId é definido como 0"
 
 #: plugins/rdp/rdp_plugin.c:1984
 msgid "Turn off password storing"
@@ -2259,7 +2259,7 @@ msgid ""
 "following commands in a terminal window:"
 msgstr ""
 "Parece que Remmina está sendo executado em seu sistema como um pacote SNAP. "
-"Para permitir o acesso a algumas características importantes, como a "
+"Para habilitar o acesso a algumas características importantes, como a "
 "armazenamento de senha no seu chaveiro e compartilhamento de impressora RDP, "
 "por favor, abra o centro de software e dar as permissões apropriadas para "
 "Remmina. Como alternativa, você pode inserir os seguintes comandos em uma "
@@ -2296,8 +2296,8 @@ msgstr "Alternar visão"
 #: data/ui/remmina_main.glade:186
 msgid "Search string or server name/IP address for “Quick Connect”"
 msgstr ""
-"Texto de pesquisa ou nome/endereço IP do servidor para \"Conectar "
-"rapidamente\""
+"Texto de pesquisa ou nome/endereço IP do servidor para \"Conectar rapidamente"
+"\""
 
 #: data/ui/remmina_main.glade:190 data/ui/remmina_main.glade:192
 msgid "Server name or IP address"
@@ -2413,10 +2413,10 @@ msgid ""
 "</span>\n"
 msgstr ""
 "<span>\n"
-"<b>Você é ótimo por usar software livre com copyleft! <a href=\"https://"
-"remmina.org/donations/\" title=\"Awesome Remmina donations\">Faça uma "
-"doação</a> para nos fazer felizes e para melhorar ainda mais o programa.</"
-"b>\n"
+"<b>É muito bom que você esteja usando software livre com copyleft! <a href=\""
+"https://remmina.org/donations/\" title=\"Doações fantásticas para o Remmina\""
+">Faça uma doação</a> para nos fazer felizes e para melhorar ainda mais o "
+"programa.</b>\n"
 "</span>\n"
 
 #: data/ui/remmina_news.glade:212
