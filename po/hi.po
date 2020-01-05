@@ -1,49 +1,42 @@
-# Arabic translation for remmina
-# Copyright © 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the remmina package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-# Aroa Taha <Naturameuocat@protonmail.com>, 2019.
-# anonymous <noreply@weblate.org>, 2019.
-# Michal Čihař <michal@cihar.com>, 2019.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Antenore Gatta and Giovanni Panozzo
+# This file is distributed under the same license as the Remmina package.
+# Prachi Joshi <josprachi@yahoo.com>, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: remmina\n"
+"Project-Id-Version: Remmina v1.3.9\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
 "POT-Creation-Date: 2020-01-05 13:35+0000\n"
-"PO-Revision-Date: 2019-12-19 16:53+0000\n"
-"Last-Translator: Aroa Taha <Naturameuocat@protonmail.com>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/remmina/remmina/"
-"ar/>\n"
-"Language: ar\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.10-dev\n"
-"X-Launchpad-Export-Date: 2014-09-20 14:24+0000\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #: src/remmina_protocol_widget.c:248
 msgid "Connect via SSH from a new terminal"
-msgstr "الإتصال عبر SSH من طرفية جديدة"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:254
 msgid "Open SFTP transfer"
-msgstr "إفتح النقل STFP"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:282
 msgid "Executing external commands…"
-msgstr "تنفيد الأوامر الخارجية…"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:289
 #, c-format
 msgid "Connecting to \"%s\"…"
-msgstr "الإتصال ب \"%s\"…"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:717 src/remmina_protocol_widget.c:805
 #, c-format
 msgid "Connecting to \"%s\" via SSH…"
-msgstr "الإتصال ب \"%s\" عن طريق SSH…"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:855
 #, c-format
@@ -53,7 +46,7 @@ msgstr ""
 #: src/remmina_protocol_widget.c:900
 #, c-format
 msgid "The \"%s\" command is not available on the SSH server."
-msgstr "الأمر \"%s\" غير متوفر في خادم SSH."
+msgstr ""
 
 #: src/remmina_protocol_widget.c:904
 #, c-format
@@ -69,7 +62,7 @@ msgstr ""
 #: src/remmina_protocol_widget.c:979
 #, c-format
 msgid "Connecting to %s via SSH…"
-msgstr "الإتصال ب %s عن طريق SSH…"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1339 src/remmina_protocol_widget.c:1358
 #: src/remmina_ssh_plugin.c:958 src/remmina_sftp_plugin.c:317
@@ -78,49 +71,47 @@ msgstr "الإتصال ب %s عن طريق SSH…"
 #: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:116
 #: data/ui/remmina_preferences.glade:1533
 msgid "Password"
-msgstr "كلمة السر"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1357
 msgid "Type in username and password for SSH."
-msgstr "إكتب في إسم المستخدم و كلمة السر في SSH."
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1413
 msgid "Certificate details:"
-msgstr "تفاصيل الشهادة:"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1414 src/remmina_protocol_widget.c:1435
 msgid "Subject:"
-msgstr "موضوع:"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1415 src/remmina_protocol_widget.c:1436
 msgid "Issuer:"
-msgstr "مستعمل:"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1416
 msgid "Fingerprint:"
-msgstr "بصمة:"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1417
 msgid "Accept certificate?"
-msgstr "تقبل الشهادة؟"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1434
 msgid "The certificate changed! Details:"
 msgstr ""
-"الشهادة تغيرت!\n"
-"تفاصيل:"
 
 #: src/remmina_protocol_widget.c:1437
 msgid "Old fingerprint:"
-msgstr "بصمة قديمة:"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1438
 msgid "New fingerprint:"
-msgstr "بصمة جديدة:"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1439
 msgid "Accept changed certificate?"
-msgstr "هل تقبل الشهادة المغيرة؟"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1581
 #, c-format
@@ -129,12 +120,12 @@ msgstr ""
 
 #: src/remmina_protocol_widget.c:1606
 msgid "Could not authenticate, attempting reconnection…"
-msgstr "لا يمكن المصادقة ، محاولة إعادة الاتصال …"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1668 src/remmina_file_editor.c:402
 #: src/remmina_file_editor.c:877 data/ui/remmina_main.glade:574
 msgid "Server"
-msgstr "خادم"
+msgstr ""
 
 #: src/remmina_protocol_widget.c:1685
 #, c-format
@@ -149,7 +140,7 @@ msgstr ""
 #: src/remmina_pref_dialog.c:83 src/remmina_file_editor.c:491
 #: data/ui/remmina_preferences.glade:234
 msgid "Resolutions"
-msgstr "إستبانات"
+msgstr ""
 
 #: src/remmina_pref_dialog.c:83 src/remmina_file_editor.c:491
 msgid "Configure the available resolutions"
@@ -157,12 +148,12 @@ msgstr ""
 
 #: src/remmina_pref_dialog.c:132
 msgid "Recent lists cleared."
-msgstr "تم مسح القائمات الحديثة."
+msgstr ""
 
 #: src/remmina_pref_dialog.c:143 src/rcw.c:1827
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
-msgstr "مفاتيح"
+msgstr ""
 
 #: src/remmina_pref_dialog.c:143
 msgid "Configure the keystrokes"
@@ -171,7 +162,7 @@ msgstr ""
 #. TRANSLATORS: Do not translate libsodium, is the name of a library
 #: src/remmina_pref_dialog.c:444
 msgid "libsodium >= 1.9.0 is required to use master password"
-msgstr "libsodium> = 1.9.0 مطلوب لإستخدام كلمة السر الرئيسية"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:481
 #, c-format
@@ -204,7 +195,7 @@ msgstr ""
 
 #: src/remmina_ssh_plugin.c:960 src/remmina_sftp_plugin.c:319
 msgid "SSH agent"
-msgstr "مفوض SSH"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:961 src/remmina_sftp_plugin.c:320
 #: src/remmina_file_editor.c:939
@@ -217,27 +208,27 @@ msgstr ""
 
 #: src/remmina_ssh_plugin.c:1037 data/ui/remmina_main.glade:266
 msgid "Copy"
-msgstr "إنقل"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1037
 msgid "_Copy"
-msgstr "_إنقل"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1038
 msgid "Paste"
-msgstr "إلصق"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1038
 msgid "_Paste"
-msgstr "_إلصق"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1039
 msgid "Select all"
-msgstr "إنتقاء الكل"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1039
 msgid "_Select all"
-msgstr "_إنتقاء الكل"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1057 src/remmina_message_panel.c:330
 #: src/remmina_sftp_plugin.c:349 src/remmina_file_editor.c:917
@@ -245,13 +236,13 @@ msgstr "_إنتقاء الكل"
 #: plugins/vnc/vnc_plugin.c:1851 plugins/rdp/rdp_plugin.c:1936
 #: plugins/nx/nx_plugin.c:721 data/ui/remmina_mpc.glade:155
 msgid "Username"
-msgstr "إسم المستخدم"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1058 plugins/vnc/vnc_plugin.c:1832
 #: plugins/vnc/vnc_plugin.c:1852 plugins/spice/spice_plugin.c:437
 #: plugins/nx/nx_plugin.c:722
 msgid "User password"
-msgstr "كلمة سر المستخدم"
+msgstr ""
 
 #: src/remmina_ssh_plugin.c:1059 src/remmina_sftp_plugin.c:351
 msgid "Authentication type"
@@ -330,19 +321,19 @@ msgstr ""
 
 #: src/remmina_applet_menu_item.c:121
 msgid "Discovered"
-msgstr "مكتشف"
+msgstr ""
 
 #: src/remmina_applet_menu_item.c:126
 msgid "New Connection"
-msgstr "إتصال جديد"
+msgstr ""
 
 #: src/remmina_mpchange.c:234
 msgid "The passwords do not match"
-msgstr "كلمات السر لا"
+msgstr ""
 
 #: src/remmina_mpchange.c:244
 msgid "Resetting passwords, please wait…"
-msgstr "تصفير كلمات السر، انتضر من فضلك…"
+msgstr ""
 
 #: src/remmina_mpchange.c:327
 msgid "The multi password changer requires a secrecy plugin.\n"
@@ -358,25 +349,19 @@ msgid "%d password changed."
 msgid_plural "%d passwords changed."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
 
 #: src/remmina_public.c:639
 msgid "Please enter format 'widthxheight'."
-msgstr "أدخل الشكل من فضلك 'العرضxالطول'"
+msgstr ""
 
 #. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
 msgid "translator-credits"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Amr Abdoh https://launchpad.net/~abdohamr"
 
 #: src/remmina_ftp_client.c:388
 msgid "Choose download location"
-msgstr "إختر مكان التحميل"
+msgstr ""
 
 #: src/remmina_ftp_client.c:528
 msgid "Are you sure to delete the selected files on server?"
@@ -388,35 +373,35 @@ msgstr ""
 
 #: src/remmina_ftp_client.c:592
 msgid "Upload folder"
-msgstr "تنزيل ملف"
+msgstr ""
 
 #: src/remmina_ftp_client.c:648 src/remmina_ftp_client.c:770
 msgid "Download"
-msgstr "تحميل"
+msgstr ""
 
 #: src/remmina_ftp_client.c:655 src/remmina_ftp_client.c:781
 msgid "Upload"
-msgstr "تنزيل"
+msgstr ""
 
 #: src/remmina_ftp_client.c:662
 msgid "_Delete"
-msgstr "_حدف"
+msgstr ""
 
 #: src/remmina_ftp_client.c:749
 msgid "Home"
-msgstr "الصفحة الرئيسية"
+msgstr ""
 
 #: src/remmina_ftp_client.c:751
 msgid "Go to home folder"
-msgstr "الدهاب إلى الملف الرئيسي"
+msgstr ""
 
 #: src/remmina_ftp_client.c:756
 msgid "Up"
-msgstr "الفوق"
+msgstr ""
 
 #: src/remmina_ftp_client.c:758
 msgid "Go to parent folder"
-msgstr "الانتقال إلى المجلد الأصلي"
+msgstr ""
 
 #: src/remmina_ftp_client.c:763 plugins/vnc/vnc_plugin.c:1888
 #: plugins/rdp/rdp_plugin.c:2001
@@ -437,7 +422,7 @@ msgstr ""
 
 #: src/remmina_ftp_client.c:790 data/ui/remmina_main.glade:286
 msgid "Delete"
-msgstr "حذف"
+msgstr ""
 
 #: src/remmina_ftp_client.c:792
 msgid "Delete files on server"
@@ -474,7 +459,7 @@ msgstr ""
 
 #: src/remmina_ftp_client.c:1009
 msgid "Progress"
-msgstr "التقدم"
+msgstr ""
 
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:84
@@ -517,7 +502,7 @@ msgstr ""
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:101
 msgid "Quit"
-msgstr "أنهِ"
+msgstr ""
 
 #. TRANSLATORS: Shown in terminal. Do not use charcters that may be not supported on a terminal
 #: src/remmina.c:103
@@ -684,7 +669,7 @@ msgstr ""
 
 #: src/remmina_plugin_manager.c:69
 msgid "File"
-msgstr "ملف"
+msgstr ""
 
 #: src/remmina_plugin_manager.c:69
 msgid "Tool"
@@ -696,7 +681,7 @@ msgstr ""
 
 #: src/remmina_plugin_manager.c:69
 msgid "Secret"
-msgstr "سر"
+msgstr ""
 
 #: src/remmina_plugin_manager.c:440 data/ui/remmina_main.glade:394
 msgid "Plugins"
@@ -705,20 +690,20 @@ msgstr ""
 #: src/remmina_plugin_manager.c:440 src/remmina_message_panel.c:447
 #: src/remmina_message_panel.c:616 src/remmina_file_editor.c:161
 msgid "_OK"
-msgstr "_أوكي"
+msgstr ""
 
 #: src/remmina_plugin_manager.c:458 src/remmina_file_editor.c:1429
 #: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:538
 msgid "Name"
-msgstr "إسم"
+msgstr ""
 
 #: src/remmina_plugin_manager.c:464 plugins/nx/nx_session_manager.c:183
 msgid "Type"
-msgstr "نوع"
+msgstr ""
 
 #: src/remmina_plugin_manager.c:470
 msgid "Description"
-msgstr "مواصفة"
+msgstr ""
 
 #: src/remmina_plugin_manager.c:476
 msgid "Version"
@@ -730,15 +715,11 @@ msgid "Total %i item."
 msgid_plural "Total %i items."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
 
 #: src/remmina_main.c:874
 #, c-format
 msgid "Are you sure you want to delete \"%s\"?"
-msgstr "هل أنت متأكد من أنك تريد حذف \"%s\"؟"
+msgstr ""
 
 #: src/remmina_main.c:974
 #, c-format
@@ -746,24 +727,22 @@ msgid ""
 "Unable to import:\n"
 "%s"
 msgstr ""
-"غير قادر على إستيراد:\n"
-"%s"
 
 #: src/remmina_main.c:1001 data/ui/remmina_main.glade:340
 msgid "Import"
-msgstr "إستيراد"
+msgstr ""
 
 #: src/remmina_main.c:1024 src/remmina_file_editor.c:1312
 msgid "_Save"
-msgstr "_حفظ"
+msgstr ""
 
 #: src/remmina_main.c:1031
 msgid "This protocol does not support exporting."
-msgstr "هذا البروتوكول لا يقبل التصدير."
+msgstr ""
 
 #: src/remmina_main.c:1272
 msgid "Remmina Kiosk"
-msgstr "كشك رمينا"
+msgstr ""
 
 #: src/remmina_key_chooser.h:38
 msgid "Shift+"
@@ -791,86 +770,86 @@ msgstr ""
 
 #: src/remmina_key_chooser.h:44
 msgid "<None>"
-msgstr "<لا شيئ>"
+msgstr ""
 
 #. TRANSLATORS: The placeholder %s is a directory path
 #: src/remmina_sftp_client.c:171
 #, c-format
 msgid "Could not create the folder \"%s\"."
-msgstr "لا يمكن إنشاء المجلد \"%s\"."
+msgstr ""
 
 #. TRANSLATORS: The placeholder %s is a file path
 #: src/remmina_sftp_client.c:179 src/remmina_sftp_client.c:200
 #, c-format
 msgid "Could not create the file \"%s\"."
-msgstr "لا يمكن إنشاء الملف \"%s\"."
+msgstr ""
 
 #. TRANSLATORS: The placeholders %s are a file path, and an error message.
 #: src/remmina_sftp_client.c:218
 #, c-format
 msgid "Could not open the file \"%s\" on the server. %s"
-msgstr "لا يمكن فتح الملف \"%s\" في الخادم. %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:240
 #, c-format
 msgid "Could not save the file \"%s\"."
-msgstr "لا يمكن حفظ الملف \"%s\"."
+msgstr ""
 
 #: src/remmina_sftp_client.c:279 src/remmina_sftp_client.c:733
 #, c-format
 msgid "Could not open the folder \"%s\". %s"
-msgstr "لا يمكن فتح المجلد \"%s\". %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:383
 #, c-format
 msgid "Could not create the folder \"%s\" on the server. %s"
-msgstr "لا يمكن إنشاء المجلد \"%s\" في الخادم. %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:411 src/remmina_sftp_client.c:433
 #, c-format
 msgid "Could not create the file \"%s\" on the server. %s"
-msgstr "لا يمكن إنشاء الملف \"%s\" في الخادم. %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:454
 #, c-format
 msgid "Could not open the file \"%s\"."
-msgstr "لا يمكن فتح الملف \"%s\"."
+msgstr ""
 
 #: src/remmina_sftp_client.c:474
 #, c-format
 msgid "Could not write to the file \"%s\" on the server. %s"
-msgstr "لا يمكن الكتابة لالملف \"%s\" في الخادم. %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:670
 #, c-format
 msgid "Could not open the folder  \"%s\". %s"
-msgstr "لا يمكن فتح المجلد \"%s\". %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:688
 #, c-format
 msgid "Could not read from the folder. %s"
-msgstr "لا يمكن القراءة من المجلد. %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:795
 msgid "Are you sure you want to cancel the file transfer in progress?"
-msgstr "هل أنت متأكد من أنك تريد إلغاء نقل الملف قيد التقدم؟"
+msgstr ""
 
 #: src/remmina_sftp_client.c:829
 #, c-format
 msgid "Could not delete \"%s\". %s"
-msgstr "لا يمكن حذف\"%s\". %s"
+msgstr ""
 
 #: src/remmina_sftp_client.c:910
 msgid "The file exists already"
-msgstr "الملف موجود من قبل"
+msgstr ""
 
 #: src/remmina_sftp_client.c:913
 msgid "Resume"
-msgstr "إستئنف"
+msgstr ""
 
 #: src/remmina_sftp_client.c:914
 msgid "Overwrite"
-msgstr "إعادة الكتابة"
+msgstr ""
 
 #: src/remmina_sftp_client.c:915 src/remmina_message_panel.c:452
 #: src/remmina_message_panel.c:624 src/remmina_file_editor.c:160
@@ -880,44 +859,44 @@ msgstr "إعادة الكتابة"
 #: data/ui/remmina_spinner.glade:9 data/ui/remmina_key_chooser.glade:8
 #: data/ui/remmina_key_chooser.glade:9
 msgid "_Cancel"
-msgstr "_إلغاء"
+msgstr ""
 
 #: src/remmina_sftp_client.c:924
 msgid "Question"
-msgstr "سؤال"
+msgstr ""
 
 #: src/remmina_sftp_client.c:932
 msgid "The following file already exists in the target folder:"
-msgstr "الملف التالي موجود من قبل في المجلد الهدف:"
+msgstr ""
 
 #: src/remmina_message_panel.c:163 data/ui/remmina_unlock.glade:46
 #: data/ui/remmina_mpc.glade:38
 msgid "Cancel"
-msgstr "إلغاء"
+msgstr ""
 
 #: src/remmina_message_panel.c:199 data/ui/remmina_news.glade:28
 #: data/ui/remmina_preferences.glade:33 data/ui/remmina_preferences.glade:34
 #: data/ui/remmina_preferences.glade:60 data/ui/remmina_string_list.glade:8
 #: data/ui/remmina_string_list.glade:9 data/ui/remmina_string_list.glade:63
 msgid "Close"
-msgstr "إغلاق"
+msgstr ""
 
 #: src/remmina_message_panel.c:260
 msgid "Yes"
-msgstr "نعم"
+msgstr ""
 
 #: src/remmina_message_panel.c:267
 msgid "No"
-msgstr "لا"
+msgstr ""
 
 #: src/remmina_message_panel.c:387 plugins/rdp/rdp_plugin.c:1938
 #: data/ui/remmina_mpc.glade:141
 msgid "Domain"
-msgstr "نطاق"
+msgstr ""
 
 #: src/remmina_message_panel.c:415
 msgid "Save password"
-msgstr "حفظ كلمة سر"
+msgstr ""
 
 #: src/remmina_message_panel.c:508
 msgid "Enter certificate authentication files"
@@ -1080,9 +1059,9 @@ msgid "Could not open channel. %s"
 msgstr ""
 
 #: src/remmina_ssh.c:1189
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run %s on SSH server."
-msgstr "لا يمكن فتح الملف \"%s\" في الخادم. %s"
+msgstr ""
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:1227 src/remmina_ssh.c:1248 src/remmina_ssh.c:1257
@@ -1269,9 +1248,8 @@ msgid "SSH Authentication"
 msgstr ""
 
 #: src/remmina_file_editor.c:920
-#, fuzzy
 msgid "SSH agent (automatic)"
-msgstr "مفوض SSH"
+msgstr ""
 
 #: src/remmina_file_editor.c:994
 msgid "Turn on \"Autostart\" for this profile"
@@ -1307,7 +1285,7 @@ msgstr ""
 
 #: src/remmina_file_editor.c:1317 data/ui/remmina_main.glade:249
 msgid "Connect"
-msgstr "اتصل"
+msgstr ""
 
 #: src/remmina_file_editor.c:1320
 msgid "_Save and Connect"
@@ -1547,7 +1525,7 @@ msgstr ""
 #: plugins/vnc/vnc_plugin.c:1875 plugins/spice/spice_plugin.c:456
 #: plugins/nx/nx_plugin.c:743
 msgid "Disable password storing"
-msgstr "تعطيل تخزين كلمة السر"
+msgstr ""
 
 #: plugins/vnc/vnc_plugin.c:1889
 msgid "Open Chat…"
@@ -1658,7 +1636,7 @@ msgstr ""
 
 #: plugins/xdmcp/xdmcp_plugin.c:348
 msgid "Default"
-msgstr "أساسي"
+msgstr ""
 
 #: plugins/xdmcp/xdmcp_plugin.c:349
 msgid "Grayscale"
@@ -2142,7 +2120,7 @@ msgstr ""
 
 #: plugins/nx/nx_session_manager.c:152
 msgid "Start"
-msgstr "ابدأ"
+msgstr ""
 
 #: plugins/nx/nx_session_manager.c:158
 msgid "Terminate"
@@ -2215,11 +2193,11 @@ msgstr ""
 
 #: data/ui/remmina_about.glade:30 data/ui/remmina_main.glade:462
 msgid "About"
-msgstr "عن"
+msgstr ""
 
 #: data/ui/remmina_about.glade:40
 msgid "Website"
-msgstr "موقع الويب"
+msgstr ""
 
 #: data/ui/remmina_main.glade:74
 msgid "New connection profile"
@@ -2252,7 +2230,7 @@ msgstr ""
 
 #: data/ui/remmina_main.glade:276
 msgid "Edit"
-msgstr "تعديل"
+msgstr ""
 
 #: data/ui/remmina_main.glade:306
 msgid "Collapse all"
@@ -2337,7 +2315,7 @@ msgstr ""
 
 #: data/ui/remmina_news.glade:142
 msgid "Apply"
-msgstr "طبّق"
+msgstr ""
 
 #: data/ui/remmina_news.glade:166
 msgid "<big>Important settings</big>"
@@ -2362,7 +2340,7 @@ msgstr ""
 
 #: data/ui/remmina_mpc.glade:24
 msgid "Change"
-msgstr "تغيير"
+msgstr ""
 
 #: data/ui/remmina_mpc.glade:64
 msgid "<span weight='bold' size='larger'>Multi Password Changer</span>"
@@ -2374,7 +2352,7 @@ msgstr ""
 
 #: data/ui/remmina_mpc.glade:198
 msgid "Confirm password"
-msgstr "تأكيد كلمة السر"
+msgstr ""
 
 #: data/ui/remmina_mpc.glade:211
 msgctxt "Multi password changer"
@@ -2390,7 +2368,7 @@ msgstr ""
 #: data/ui/remmina_mpc.glade:317
 msgctxt "Multi password changer table"
 msgid "Name"
-msgstr "إسم"
+msgstr ""
 
 #: data/ui/remmina_mpc.glade:328
 msgctxt "Multi password changer table"
@@ -2894,7 +2872,7 @@ msgstr ""
 
 #: data/ui/remmina_string_list.glade:14 data/ui/remmina_string_list.glade:158
 msgid "Add"
-msgstr "إضافة"
+msgstr ""
 
 #: data/ui/remmina_string_list.glade:20 data/ui/remmina_string_list.glade:137
 msgid "Remove"
