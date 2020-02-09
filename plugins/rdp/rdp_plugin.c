@@ -184,24 +184,17 @@ static gboolean remmina_rdp_tunnel_init(RemminaProtocolWidget *gp)
 	const gchar *cert_hostport;
 
 	rfContext *rfi = GET_PLUGIN_DATA(gp);
-	RemminaFile *remminafile;
-
-	remminafile = remmina_plugin_service->protocol_plugin_get_file(gp);
-
+	g_debug("[RDP] %s\n", __func__);
 	hostport = remmina_plugin_service->protocol_plugin_start_direct_tunnel(gp, 3389, FALSE);
 	if (hostport == NULL)
 		return FALSE;
 
 	remmina_plugin_service->get_server_port(hostport, 3389, &host, &port);
 
+	g_debug("[RDP] protocol_plugin_start_direct_tunnel() returned %s\n", hostport);
+
 	cert_host = host;
 	cert_port = port;
-
-	if (remmina_plugin_service->file_get_int(remminafile, "ssh_enabled", FALSE)) {
-		cert_hostport = remmina_plugin_service->file_get_string(remminafile, "server");
-		if (cert_hostport)
-			remmina_plugin_service->get_server_port(cert_hostport, 3389, &cert_host, &cert_port);
-	}
 
 	if (!rfi->is_reconnecting) {
 		/* settings->CertificateName and settings->ServerHostname is created
@@ -218,11 +211,15 @@ static gboolean remmina_rdp_tunnel_init(RemminaProtocolWidget *gp)
 		}
 	}
 
+	g_debug("[RDP] tunnel has been optionally initialized. Now connecting to %s:%d\n", host, port);
+
 	if (cert_host != host) g_free(cert_host);
 	g_free(host);
 	g_free(hostport);
 
 	rfi->settings->ServerPort = port;
+
+
 
 	return TRUE;
 }
@@ -716,21 +713,17 @@ static DWORD remmina_rdp_verify_changed_certificate(freerdp *instance,
 static void remmina_rdp_post_disconnect(freerdp *instance)
 {
 	TRACE_CALL(__func__);
-	rfContext *rfi;
 
 	if (!instance || !instance->context)
 		return;
-
-	rfi = (rfContext *)instance->context;
 
 	PubSub_UnsubscribeChannelConnected(instance->context->pubSub,
 					   (pChannelConnectedEventHandler)remmina_rdp_OnChannelConnectedEventHandler);
 	PubSub_UnsubscribeChannelDisconnected(instance->context->pubSub,
 					      (pChannelDisconnectedEventHandler)remmina_rdp_OnChannelDisconnectedEventHandler);
 
-	gdi_free(instance);
+	/* The remaining cleanup will be continued on main thread by complete_cleanup_on_main_thread() */
 
-	remmina_rdp_clipboard_free(rfi);
 }
 
 static void remmina_rdp_main_loop(RemminaProtocolWidget *gp)
@@ -1007,7 +1000,7 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 
 	rfi->settings->AutoReconnectionEnabled = (remmina_plugin_service->file_get_int(remminafile, "disableautoreconnect", FALSE) ? FALSE : TRUE);
 	/* Disable RDP auto reconnection when SSH tunnel is enabled */
-	if (remmina_plugin_service->file_get_int(remminafile, "ssh_enabled", FALSE))
+	if (remmina_plugin_service->file_get_int(remminafile, "ssh_tunnel_enabled", FALSE))
 		rfi->settings->AutoReconnectionEnabled = FALSE;
 
 	rfi->settings->ColorDepth = remmina_plugin_service->file_get_int(remminafile, "colordepth", 66);
@@ -1489,34 +1482,34 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 #ifdef FREERDP_ERROR_CONNECT_ACCOUNT_LOCKED_OUT
 			case FREERDP_ERROR_CONNECT_ACCOUNT_LOCKED_OUT:
 #endif
-				remmina_plugin_service->protocol_plugin_set_error(gp, _("Access to RDP server %s failed.\nAccount is locked out."),
+				remmina_plugin_service->protocol_plugin_set_error(gp, _("Could not access the RDP server \"%s\".\nAccount locked out."),
 										  rfi->settings->ServerHostname);
 				break;
 			case STATUS_ACCOUNT_EXPIRED:
 #ifdef FREERDP_ERROR_CONNECT_ACCOUNT_EXPIRED
 			case FREERDP_ERROR_CONNECT_ACCOUNT_EXPIRED:
 #endif
-				remmina_plugin_service->protocol_plugin_set_error(gp, _("Access to RDP server %s failed.\nAccount is expired."),
+				remmina_plugin_service->protocol_plugin_set_error(gp, _("Could not access the RDP server \"%s\".\nAccount expired."),
 										  rfi->settings->ServerHostname);
 				break;
 			case STATUS_PASSWORD_EXPIRED:
 #ifdef FREERDP_ERROR_CONNECT_PASSWORD_EXPIRED
 			case FREERDP_ERROR_CONNECT_PASSWORD_EXPIRED:
 #endif
-				remmina_plugin_service->protocol_plugin_set_error(gp, _("Access to RDP server %s failed.\nPassword expired."),
+				remmina_plugin_service->protocol_plugin_set_error(gp, _("Could not access the RDP server \"%s\".\nPassword expired."),
 										  rfi->settings->ServerHostname);
 				break;
 			case STATUS_ACCOUNT_DISABLED:
 #ifdef FREERDP_ERROR_CONNECT_ACCOUNT_DISABLED
 			case FREERDP_ERROR_CONNECT_ACCOUNT_DISABLED:
 #endif
-				remmina_plugin_service->protocol_plugin_set_error(gp, _("Access to RDP server %s failed.\nAccount is disabled."),
+				remmina_plugin_service->protocol_plugin_set_error(gp, _("Could not access the RDP server \"%s\".\nAccount disabled."),
 										  rfi->settings->ServerHostname);
 				break;
 #ifdef FREERDP_ERROR_SERVER_INSUFFICIENT_PRIVILEGES
 			/* https://msdn.microsoft.com/en-us/library/ee392247.aspx */
 			case FREERDP_ERROR_SERVER_INSUFFICIENT_PRIVILEGES:
-				remmina_plugin_service->protocol_plugin_set_error(gp, _("Access to RDP server %s failed.\nUser has insufficient privileges."),
+				remmina_plugin_service->protocol_plugin_set_error(gp, _("Could not access the RDP server \"%s\".\nInsufficient user privileges."),
 										  rfi->settings->ServerHostname);
 				break;
 #endif
@@ -1524,7 +1517,7 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 #ifdef FREERDP_ERROR_CONNECT_ACCOUNT_RESTRICTION
 			case FREERDP_ERROR_CONNECT_ACCOUNT_RESTRICTION:
 #endif
-				remmina_plugin_service->protocol_plugin_set_error(gp, _("Access to RDP server %s failed.\nAccount has restrictions."),
+				remmina_plugin_service->protocol_plugin_set_error(gp, _("Could not access the RDP server \"%s\".\nAccount restricted."),
 										  rfi->settings->ServerHostname);
 				break;
 
@@ -1532,7 +1525,7 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 #ifdef FREERDP_ERROR_CONNECT_PASSWORD_MUST_CHANGE
 			case FREERDP_ERROR_CONNECT_PASSWORD_MUST_CHANGE:
 #endif
-				remmina_plugin_service->protocol_plugin_set_error(gp, _("Access to RDP server %s failed.\nUser must change password before connecting."),
+				remmina_plugin_service->protocol_plugin_set_error(gp, _("Could not access the RDP server \"%s\".\nChange user password before connecting."),
 										  rfi->settings->ServerHostname);
 				break;
 
@@ -1640,6 +1633,10 @@ static gboolean complete_cleanup_on_main_thread(gpointer data)
 	gboolean orphaned;
 	rfContext *rfi = (rfContext *)data;
 	RemminaProtocolWidget *gp;
+
+	remmina_rdp_clipboard_free(rfi);
+
+	gdi_free(rfi->instance);
 
 	gp = rfi->protocol_widget;
 	if (GET_PLUGIN_DATA(gp) == NULL) orphaned = True; else orphaned = False;

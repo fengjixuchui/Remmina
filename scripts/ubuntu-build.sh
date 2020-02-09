@@ -30,7 +30,7 @@ while [ "$1" != "" ]; do
     shift
 done
 
-if [ "$DEBEMAIL" == "" -o "$DEBFULLNAME" == "" ]; then
+if [ "$DEBEMAIL" == "" ] || [ "$DEBFULLNAME" == "" ]; then
     echo "DEBEMAIL and DEBFULLNAME variables must be set before run this script"
     exit 1
 fi
@@ -60,7 +60,7 @@ PKG_DIR="${PKG_NAME}_${PKG_VER}"
 echo $PKG_VER
 
 mkdir -p ${BDIR}
-rm -rf ${BDIR}/*
+rm -rf "${BDIR:?}/"*
 
 # exports repo without .git folder and other operative system clients
 git archive --format tar --prefix "${BDIR}/${PKG_DIR}/" HEAD | \
@@ -92,7 +92,7 @@ EOF
 
     cat ../changelog.orig >>debian/changelog
     debuild -eUBUNTU_SERIE="$serie" -S -sa # add ' -us -uc' flags to avoid signing
-    rm -rf *
+    rm -rf -- *
     tar zxf "../${PKG_NAME}_${PKG_VER}.orig.tar.gz"
 done
 cd -
