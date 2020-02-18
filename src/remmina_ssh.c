@@ -201,8 +201,7 @@ remmina_ssh_auth_password(RemminaSSH *ssh)
 		return REMMINA_SSH_AUTH_SUCCESS;
 	}
 	if (ssh->password == NULL) {
-		// TRANSLATORS: The placeholder %s is an error message
-		remmina_ssh_set_error(ssh, _("Password is null"));
+		remmina_ssh_set_error(ssh, "Password is null");
 		g_debug("[SSH] password is null, returning from %s", __func__);
 		return REMMINA_SSH_AUTH_AUTHFAILED_RETRY_AFTER_PROMPT;
 	}
@@ -254,7 +253,7 @@ remmina_ssh_auth_pubkey(RemminaSSH *ssh)
 	if (ssh_pki_import_privkey_file(ssh->privkeyfile, (ssh->passphrase ? ssh->passphrase : ""),
 					NULL, NULL, &key) != SSH_OK) {
 		if (ssh->passphrase == NULL || ssh->passphrase[0] == '\0') {
-			remmina_ssh_set_error(ssh, _("SSH passaphrase is empty, it should not."));
+			remmina_ssh_set_error(ssh, _("SSH passphrase is empty, it should not."));
 			return REMMINA_SSH_AUTH_AUTHFAILED_RETRY_AFTER_PROMPT;
 		}
 
