@@ -190,7 +190,6 @@ parts:
       - libcrystalhd3
       - libcacard0
       - libva2
-      - libusb-1.0-0
       - libzvbi0
       - libxvidcore4
       - libusbredirhost1
@@ -221,12 +220,12 @@ parts:
       - libsodium23
       - libwebkit2gtk-4.0-37
       - libjavascriptcoregtk-4.0-18
+      - libusb-1.0-0
 
     override-build: |
       set -ex
       snapcraftctl build
     stage:
-      - lib/*/libusb-1.0.so.*
       - usr/bin/gtk3-demo
       - usr/lib/*/libavahi*.so.*
       - usr/lib/*/libappindicator3.so.*
@@ -246,7 +245,6 @@ parts:
       - usr/lib/*/libcrystalhd.so.*
       - usr/lib/*/libcacard.so.*
       - usr/lib/*/libva.so.*
-      - usr/lib/*/libzvbi.so.*
       - usr/lib/*/libxvidcore.so.*
       - usr/lib/*/libusbredirhost.so.*
       - usr/lib/*/libx265.so.*
