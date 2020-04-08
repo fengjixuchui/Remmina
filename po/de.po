@@ -4,11 +4,12 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 # Johannes Weberhofer <jweberhofer@weberhofer.at>, 2019, 2020.
 # Allan Nordhøy <epost@anotheragency.no>, 2019, 2020.
+# Oliver <websites@posteo.de>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-03-27 10:06+0000\n"
+"POT-Creation-Date: 2020-04-08 09:07+0000\n"
 "PO-Revision-Date: 2020-03-23 03:49+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -26,7 +27,8 @@ msgid "Connect via SSH from a new terminal"
 msgstr "Über eine neue Konsole via SSH verbinden"
 
 #: src/remmina_protocol_widget.c:281
-msgid "Open SFTP transfer"
+#, fuzzy
+msgid "Open SFTP transfer…"
 msgstr "SFTP-Dateiübertragung starten"
 
 #: src/remmina_protocol_widget.c:309
@@ -157,7 +159,7 @@ msgstr "Definieren Sie die möglichen Bildschirmauflösungen"
 msgid "Recent lists cleared."
 msgstr "Liste zuletzt geöffneter Verbindungen geleert."
 
-#: src/remmina_pref_dialog.c:143 src/rcw.c:1827
+#: src/remmina_pref_dialog.c:143 src/rcw.c:1833
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
 msgstr "Tastenschläge"
@@ -272,7 +274,6 @@ msgid "Startup program"
 msgstr "Startprogramm"
 
 #: src/remmina_ssh_plugin.c:1029
-#, fuzzy
 msgid ""
 "The filename can use the following placeholders:\n"
 "\n"
@@ -284,17 +285,16 @@ msgid ""
 "  • %g is substituted with Remmina profile group name\n"
 "  • %d is substituted with local datetime in iso8601 format\n"
 msgstr ""
-"<tt><big>* Kommando in PATH Argumenten %h\n"
-"• /pfad/zu/kommando -optionen %h %u\n"
-"• %h wird durch den Servernamen ersetzt\n"
-"• %t wird durch den SSH Servernamen ersetzt\n"
-"• %u wird durch den Benutzernamen ersetzt\n"
-"• %U wird durch den SSH Benutzernamen ersetzt\n"
-"• %p wird durch den Remmina Profilnamen ersetzt\n"
-"• %g wird durch den Remmina Profil‐Gruppennamen ersetzt\n"
-"Starten Sie nicht im Hintergrund, wenn Sie das Kommando vor der Verbindung "
-"starten wollen.\n"
-"</big></tt>"
+"Beim Festlegen des Dateinamens können folgende Platzhalter verwendet "
+"werden:\n"
+"\n"
+"   • %h wird durch den Servernamen ersetzt\n"
+"   • %t wird durch den SSH Servernamen ersetzt\n"
+"   • %u wird durch den Benutzernamen ersetzt\n"
+"   • %U wird durch den SSH Benutzernamen ersetzt\n"
+"   • %p wird durch den Remmina Profilnamen ersetzt\n"
+"   • %g wird durch den Remmina Profil‐Gruppennamen ersetzt\n"
+"   • %d wird durch das lokale Datum im ISO-8601 Format ersetzt\n"
 
 #: src/remmina_ssh_plugin.c:1051
 msgid "Terminal color scheme"
@@ -611,93 +611,93 @@ msgstr "Mit dem Applet‐Menü zur entfernten Arbeitsflächen verbinden"
 msgid "Remmina Remote Desktop Client"
 msgstr "Remmina Remote-Desktop-Client"
 
-#: src/rcw.c:597
+#: src/rcw.c:596
 #, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr ""
 "Wollen Sie wirklich %i aktive Verbindungen im aktuellen Fenster schließen?"
 
-#: src/rcw.c:1303
+#: src/rcw.c:1309
 msgid "Viewport fullscreen mode"
 msgstr "Vollbildmodus"
 
-#: src/rcw.c:1311 data/ui/remmina_preferences.glade:586
+#: src/rcw.c:1317 data/ui/remmina_preferences.glade:586
 msgid "Scrolled fullscreen"
 msgstr "Verschiebbare Vollbildschirmanzeige"
 
-#: src/rcw.c:1396
+#: src/rcw.c:1402
 msgid "Keep aspect ratio when scaled"
 msgstr "Bildformat im skalierten Modus beibehalten"
 
-#: src/rcw.c:1404
+#: src/rcw.c:1410
 msgid "Fill client window when scaled"
 msgstr "Client‐Fenster füllen wenn skaliert"
 
-#: src/rcw.c:1943
+#: src/rcw.c:1949
 msgid "Turn off scaling to avoid screenshot distortion."
 msgstr ""
 "Schalten Sie die Skalierung aus um Verzerrungen bei Screenshots zu vermeiden."
 
-#: src/rcw.c:2003 plugins/www/www_plugin.c:831
+#: src/rcw.c:2009 plugins/www/www_plugin.c:831
 msgid "Screenshot taken"
 msgstr "Screenshot wurde erzeugt"
 
-#: src/rcw.c:2077
+#: src/rcw.c:2083
 msgid "Resize the window to fit in remote resolution"
 msgstr "Das Fenster auf die entfernte Bildschirmauflösung anpassen"
 
-#: src/rcw.c:2088
+#: src/rcw.c:2094
 msgid "Toggle fullscreen mode"
 msgstr "Vollbildmodus umschalten"
 
-#: src/rcw.c:2133 data/ui/remmina_preferences.glade:930
+#: src/rcw.c:2139 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
 msgstr "Wechsel zwischen den Reitern"
 
-#: src/rcw.c:2147
+#: src/rcw.c:2153
 msgid "Toggle dynamic resolution update"
 msgstr "Dynamische Auflösung umschalten"
 
-#: src/rcw.c:2157
+#: src/rcw.c:2163
 msgid "Toggle scaled mode"
 msgstr "Skalierten Modus umschalten"
 
-#: src/rcw.c:2192
+#: src/rcw.c:2198
 msgid "Grab all keyboard events"
 msgstr "Alle Tastatureingaben abfangen"
 
-#: src/rcw.c:2201
+#: src/rcw.c:2207
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: src/rcw.c:2209 src/rcw.c:2210 data/ui/remmina_main.glade:297
+#: src/rcw.c:2215 src/rcw.c:2216 data/ui/remmina_main.glade:297
 msgid "Tools"
 msgstr "Werkzeuge"
 
-#: src/rcw.c:2222
+#: src/rcw.c:2228
 msgid "Duplicate current connection"
 msgstr "Aktuelle Verbindung duplizieren"
 
-#: src/rcw.c:2233 data/ui/remmina_preferences.glade:1124
+#: src/rcw.c:2239 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
 msgstr "Bildschirmfoto"
 
-#: src/rcw.c:2241 data/ui/remmina_preferences.glade:1033
+#: src/rcw.c:2247 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
 msgstr "Fenster minimieren"
 
-#: src/rcw.c:2250 data/ui/remmina_preferences.glade:1064
+#: src/rcw.c:2256 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
 msgstr "Verbindung trennen"
 
-#: src/rcw.c:3807
+#: src/rcw.c:3812
 #, c-format
 msgid "The file \"%s\" is corrupted, unreadable, or could not be found."
 msgstr "Die Datei \"%s\" ist ungültig, unlesbar oder wurde nicht gefunden."
 
-#: src/rcw.c:3969
+#: src/rcw.c:3974
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr ""
 "Warnung: Dieses Plugin benötigt GtkSocket, welches aber nicht verfügbar ist."
@@ -730,8 +730,8 @@ msgstr "Geheimnis"
 msgid "Plugins"
 msgstr "Plugins"
 
-#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:451
-#: src/remmina_message_panel.c:620 src/remmina_file_editor.c:162
+#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:452
+#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:162
 msgid "_OK"
 msgstr "_Ok"
 
@@ -892,8 +892,8 @@ msgstr "Fortsetzen"
 msgid "Overwrite"
 msgstr "Überschreiben"
 
-#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:456
-#: src/remmina_message_panel.c:628 src/remmina_file_editor.c:161
+#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:457
+#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:161
 #: src/remmina_file_editor.c:370 src/remmina_file_editor.c:1320
 #: plugins/spice/spice_plugin_file_transfer.c:84
 #: plugins/nx/nx_session_manager.c:156 data/ui/remmina_spinner.glade:8
@@ -935,27 +935,27 @@ msgstr "Nein"
 msgid "Domain"
 msgstr "Domäne"
 
-#: src/remmina_message_panel.c:419
+#: src/remmina_message_panel.c:420
 msgid "Save password"
 msgstr "Passwort speichern"
 
-#: src/remmina_message_panel.c:512
+#: src/remmina_message_panel.c:513
 msgid "Enter certificate authentication files"
 msgstr "Zertifikats‐Authentifizierungs‐Dateien eingeben"
 
-#: src/remmina_message_panel.c:524
+#: src/remmina_message_panel.c:525
 msgid "CA Certificate File"
 msgstr "CA Zertifikatsdatei"
 
-#: src/remmina_message_panel.c:546
+#: src/remmina_message_panel.c:547
 msgid "CA CRL File"
 msgstr "CA CRL Datei"
 
-#: src/remmina_message_panel.c:568
+#: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
 msgstr "Client Zertifikatsdatei"
 
-#: src/remmina_message_panel.c:590
+#: src/remmina_message_panel.c:591
 msgid "Client Certificate Key"
 msgstr "Client Zertifikatsschlüssel"
 
@@ -996,9 +996,8 @@ msgid "Public SSH key cannot be imported. %s"
 msgstr "Der öffentliche SSH-Schlüssel kann nicht importiert werden: %s"
 
 #: src/remmina_ssh.c:255
-#, fuzzy
 msgid "SSH passphrase is empty, it should not be."
-msgstr "Die SSH Passphrase darf nicht leer sein."
+msgstr "Die SSH-Passphrase ist leer, sie sollte es nicht sein."
 
 #. TRANSLATORS: The placeholder %s is an error message
 #: src/remmina_ssh.c:289
@@ -1227,7 +1226,6 @@ msgstr ""
 "• [server]:port</big></tt>"
 
 #: src/remmina_file_editor.c:81
-#, fuzzy
 msgid ""
 "<tt><big>• command in PATH args %h\n"
 "• /path/to/foo -options %h %u\n"
@@ -1250,6 +1248,7 @@ msgstr ""
 "• %U wird durch den SSH Benutzernamen ersetzt\n"
 "• %p wird durch den Remmina Profilnamen ersetzt\n"
 "• %g wird durch den Remmina Profil‐Gruppennamen ersetzt\n"
+"• %d wird durch das lokale Datum im ISO-8601 Format ersetzt\n"
 "Starten Sie nicht im Hintergrund, wenn Sie das Kommando vor der Verbindung "
 "starten wollen.\n"
 "</big></tt>"
@@ -2024,9 +2023,8 @@ msgid "Client name"
 msgstr "Client‐Name"
 
 #: plugins/rdp/rdp_plugin.c:2010
-#, fuzzy
 msgid "Client build"
-msgstr "Client‐Name"
+msgstr "Client‐Build"
 
 #: plugins/rdp/rdp_plugin.c:2013
 msgid "Load balance info"
@@ -2571,13 +2569,12 @@ msgid "Screenshot folder"
 msgstr "Ordner für Bildschirmfotos"
 
 #: data/ui/remmina_preferences.glade:292
-#, fuzzy
 msgid "Choose a folder to save screenshots from Remmina in."
 msgstr ""
-"Wählen Sie das Verzeichnis in das Remmina Bildschirmfotos speichern soll."
+"Wählen Sie einen Ordner, in dem Sie Bildschirmfotos von Remmina speichern "
+"möchten."
 
 #: data/ui/remmina_preferences.glade:295
-#, fuzzy
 msgid "Select a folder"
 msgstr "Wählen Sie einen Ordner"
 
@@ -2587,7 +2584,7 @@ msgstr "Bildschirmauflösungen"
 
 #: data/ui/remmina_preferences.glade:326
 msgid "Screenshot filename"
-msgstr "Dateiname für Screenshots"
+msgstr "Dateiname für Bildschirmfoto"
 
 #: data/ui/remmina_preferences.glade:338
 msgid ""

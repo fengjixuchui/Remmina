@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-03-27 10:06+0000\n"
+"POT-Creation-Date: 2020-04-08 09:07+0000\n"
 "PO-Revision-Date: 2020-03-01 17:33+0000\n"
 "Last-Translator: Deleted User <noreply+16368@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -31,7 +31,8 @@ msgid "Connect via SSH from a new terminal"
 msgstr "Yeni bir uçbirimden SSH ile bağlan"
 
 #: src/remmina_protocol_widget.c:281
-msgid "Open SFTP transfer"
+#, fuzzy
+msgid "Open SFTP transfer…"
 msgstr "SFTP aktarımını aç"
 
 #: src/remmina_protocol_widget.c:309
@@ -160,7 +161,7 @@ msgstr "Kullanılabilir çözünürlükleri yapılandır"
 msgid "Recent lists cleared."
 msgstr "Geçmiş listesi temizlendi."
 
-#: src/remmina_pref_dialog.c:143 src/rcw.c:1827
+#: src/remmina_pref_dialog.c:143 src/rcw.c:1833
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
 msgstr "Tuş vuruşları"
@@ -275,7 +276,6 @@ msgid "Startup program"
 msgstr "Başlangıç programı"
 
 #: src/remmina_ssh_plugin.c:1029
-#, fuzzy
 msgid ""
 "The filename can use the following placeholders:\n"
 "\n"
@@ -287,17 +287,15 @@ msgid ""
 "  • %g is substituted with Remmina profile group name\n"
 "  • %d is substituted with local datetime in iso8601 format\n"
 msgstr ""
-"<tt><big>* PATH'deki komut argümanlar %h\n"
-"* /foo/konumu -seçenekler %h %u\n"
-"* %h sunucu adı ile değiştirilir\n"
-"* %t SSH sunucu adı ile değiştirilir\n"
-"* %u kullanıcı adı ile değiştirilir\n"
-"* %U SSH kullanıcı adı ile değiştirilir\n"
-"* %p Remmina profil adı ile değiştirilir\n"
-"* %g Remmina profil grubu adı ile değiştirilir\n"
-"Komutun bağlanmadan önce yürütülmesini istiyorsanız arka planda "
-"çalıştırmayın\n"
-"</big></tt>"
+"Dosya adı aşağıdaki yer tutucuları kullanabilir:\n"
+"\n"
+"  • %h sunucu adı ile değiştirilir\n"
+"  • %t SSH sunucu adı ile değiştirilir\n"
+"  • %u kullanıcı adı ile değiştirilir\n"
+"  • %U SSH kullanıcı adı ile değiştirilir\n"
+"  • %p Remmina profil adı ile değiştirilir\n"
+"  • %g Remmina profil grubu adı ile değiştirilir\n"
+"  • %d iso8601 biçiminde yerel tarih ile değiştirilir\n"
 
 #: src/remmina_ssh_plugin.c:1051
 msgid "Terminal color scheme"
@@ -393,7 +391,9 @@ msgstr "'Genişlik ve Yükseklik' biçimini girin."
 #. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
 msgid "translator-credits"
-msgstr "Serdar Sağlam"
+msgstr ""
+"Serdar Sağlam\n"
+"Oğuz Ersen"
 
 #: src/remmina_ftp_client.c:388
 msgid "Choose download location"
@@ -612,92 +612,92 @@ msgstr "Uzak masaüstüne küçük uygulama menüsü ile bağlan"
 msgid "Remmina Remote Desktop Client"
 msgstr "Remmina Uzak Masaüstü İstemcisi"
 
-#: src/rcw.c:597
+#: src/rcw.c:596
 #, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr ""
 "Geçerli penceredeki %i aktif bağlantıyı kapatmak istediğinize emin misiniz?"
 
-#: src/rcw.c:1303
+#: src/rcw.c:1309
 msgid "Viewport fullscreen mode"
 msgstr "Görüntüleme penceresi tam ekran"
 
-#: src/rcw.c:1311 data/ui/remmina_preferences.glade:586
+#: src/rcw.c:1317 data/ui/remmina_preferences.glade:586
 msgid "Scrolled fullscreen"
 msgstr "Kaydırmalı tam ekran"
 
-#: src/rcw.c:1396
+#: src/rcw.c:1402
 msgid "Keep aspect ratio when scaled"
 msgstr "Ölçeklendiğinde en boy oranını koru"
 
-#: src/rcw.c:1404
+#: src/rcw.c:1410
 msgid "Fill client window when scaled"
 msgstr "Ölçeklendiğinde istemci penceresini doldur"
 
-#: src/rcw.c:1943
+#: src/rcw.c:1949
 msgid "Turn off scaling to avoid screenshot distortion."
 msgstr "Ekran görüntüsünün bozulmasını önlemek için ölçeklemeyi kapatın."
 
-#: src/rcw.c:2003 plugins/www/www_plugin.c:831
+#: src/rcw.c:2009 plugins/www/www_plugin.c:831
 msgid "Screenshot taken"
 msgstr "Ekran görüntüsü alındı"
 
-#: src/rcw.c:2077
+#: src/rcw.c:2083
 msgid "Resize the window to fit in remote resolution"
 msgstr "Pencereyi uzak sunucu çözünürlüğüne göre ayarla"
 
-#: src/rcw.c:2088
+#: src/rcw.c:2094
 msgid "Toggle fullscreen mode"
 msgstr "Tam ekran kipini değiştir"
 
-#: src/rcw.c:2133 data/ui/remmina_preferences.glade:930
+#: src/rcw.c:2139 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
 msgstr "Sekme sayfalarını değiştir"
 
-#: src/rcw.c:2147
+#: src/rcw.c:2153
 msgid "Toggle dynamic resolution update"
 msgstr "Dinamik çözünürlük güncellemesini değiştir"
 
-#: src/rcw.c:2157
+#: src/rcw.c:2163
 msgid "Toggle scaled mode"
 msgstr "Ölçeklendirilmiş kipi değiştir"
 
-#: src/rcw.c:2192
+#: src/rcw.c:2198
 msgid "Grab all keyboard events"
 msgstr "Tüm klavye olaylarını yakala"
 
-#: src/rcw.c:2201
+#: src/rcw.c:2207
 msgid "Preferences"
 msgstr "Tercihler"
 
-#: src/rcw.c:2209 src/rcw.c:2210 data/ui/remmina_main.glade:297
+#: src/rcw.c:2215 src/rcw.c:2216 data/ui/remmina_main.glade:297
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/rcw.c:2222
+#: src/rcw.c:2228
 msgid "Duplicate current connection"
 msgstr "Mevcut bağlantıyı çoğalt"
 
-#: src/rcw.c:2233 data/ui/remmina_preferences.glade:1124
+#: src/rcw.c:2239 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
 msgstr "Ekran görüntüsü"
 
-#: src/rcw.c:2241 data/ui/remmina_preferences.glade:1033
+#: src/rcw.c:2247 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
 msgstr "Pencereyi küçült"
 
-#: src/rcw.c:2250 data/ui/remmina_preferences.glade:1064
+#: src/rcw.c:2256 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
 msgstr "Bağlantıyı kes"
 
-#: src/rcw.c:3807
+#: src/rcw.c:3812
 #, c-format
 msgid "The file \"%s\" is corrupted, unreadable, or could not be found."
 msgstr "\"%s\" dosyası bozuk, okunamıyor veya bulunamadı."
 
-#: src/rcw.c:3969
+#: src/rcw.c:3974
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "Uyarı: Bu eklenti GtkSocket gerektirir, ancak mevcut değil."
 
@@ -729,8 +729,8 @@ msgstr "Gizli"
 msgid "Plugins"
 msgstr "Eklentiler"
 
-#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:451
-#: src/remmina_message_panel.c:620 src/remmina_file_editor.c:162
+#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:452
+#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:162
 msgid "_OK"
 msgstr "_Tamam"
 
@@ -891,8 +891,8 @@ msgstr "Devam"
 msgid "Overwrite"
 msgstr "Üzerine Yaz"
 
-#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:456
-#: src/remmina_message_panel.c:628 src/remmina_file_editor.c:161
+#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:457
+#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:161
 #: src/remmina_file_editor.c:370 src/remmina_file_editor.c:1320
 #: plugins/spice/spice_plugin_file_transfer.c:84
 #: plugins/nx/nx_session_manager.c:156 data/ui/remmina_spinner.glade:8
@@ -934,27 +934,27 @@ msgstr "Hayır"
 msgid "Domain"
 msgstr "Alan adı"
 
-#: src/remmina_message_panel.c:419
+#: src/remmina_message_panel.c:420
 msgid "Save password"
 msgstr "Parolayı kaydet"
 
-#: src/remmina_message_panel.c:512
+#: src/remmina_message_panel.c:513
 msgid "Enter certificate authentication files"
 msgstr "Sertifika kimlik doğrulama dosyalarını gir"
 
-#: src/remmina_message_panel.c:524
+#: src/remmina_message_panel.c:525
 msgid "CA Certificate File"
 msgstr "CA Sertifika Dosyası"
 
-#: src/remmina_message_panel.c:546
+#: src/remmina_message_panel.c:547
 msgid "CA CRL File"
 msgstr "CA CRL Dosyası"
 
-#: src/remmina_message_panel.c:568
+#: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
 msgstr "İstemci Sertifika Dosyası"
 
-#: src/remmina_message_panel.c:590
+#: src/remmina_message_panel.c:591
 msgid "Client Certificate Key"
 msgstr "İstemci Sertifika Anahtarı"
 
@@ -994,7 +994,6 @@ msgid "Public SSH key cannot be imported. %s"
 msgstr "Genel SSH anahtarı alınamıyor. %s"
 
 #: src/remmina_ssh.c:255
-#, fuzzy
 msgid "SSH passphrase is empty, it should not be."
 msgstr "SSH parolası boş olmamalıdır."
 
@@ -1217,7 +1216,6 @@ msgstr ""
 "* [sunucu]:port</big></tt>"
 
 #: src/remmina_file_editor.c:81
-#, fuzzy
 msgid ""
 "<tt><big>• command in PATH args %h\n"
 "• /path/to/foo -options %h %u\n"
@@ -1232,14 +1230,15 @@ msgid ""
 "connecting.\n"
 "</big></tt>"
 msgstr ""
-"<tt><big>* PATH'deki komut argümanlar %h\n"
-"* /foo/konumu -seçenekler %h %u\n"
-"* %h sunucu adı ile değiştirilir\n"
-"* %t SSH sunucu adı ile değiştirilir\n"
-"* %u kullanıcı adı ile değiştirilir\n"
-"* %U SSH kullanıcı adı ile değiştirilir\n"
-"* %p Remmina profil adı ile değiştirilir\n"
-"* %g Remmina profil grubu adı ile değiştirilir\n"
+"<tt><big>• PATH'deki komut argümanlar %h\n"
+"• /foo/konumu -seçenekler %h %u\n"
+"• %h sunucu adı ile değiştirilir\n"
+"• %t SSH sunucu adı ile değiştirilir\n"
+"• %u kullanıcı adı ile değiştirilir\n"
+"• %U SSH kullanıcı adı ile değiştirilir\n"
+"• %p Remmina profil adı ile değiştirilir\n"
+"• %g Remmina profil grubu adı ile değiştirilir\n"
+"• %d iso8601 biçiminde yerel tarih ile değiştirilir\n"
 "Komutun bağlanmadan önce yürütülmesini istiyorsanız arka planda "
 "çalıştırmayın\n"
 "</big></tt>"
@@ -1961,7 +1960,6 @@ msgid "2600 (Windows XP),7601 (Windows Vista/7),9600 (Windows 8 and newer)"
 msgstr "2600 (Windows XP),7601 (Windows Vista/7),9600 (Windows 8 ve sonrası)"
 
 #: plugins/rdp/rdp_plugin.c:1963
-#, fuzzy
 msgid ""
 "Used i.a. by Terminal services in SmartCard channel to distinguish client "
 "capabilities:\n"
@@ -1973,10 +1971,10 @@ msgid ""
 msgstr ""
 "İstemci yeteneklerini ayırt etmek için örneğin SmartCard kanalındaki Uçbirim "
 "hizmetleri tarafından kullanılır:\n"
-"  ⏺ < 4034: Windows XP temel akıllı kart fonksiyonları\n"
-"  ⏺ 4034-7064: Windows Vista/7: SCardReadCache(), SCardWriteCache(),\n"
+"  • < 4034: Windows XP temel akıllı kart fonksiyonları\n"
+"  • 4034-7064: Windows Vista/7: SCardReadCache(), SCardWriteCache(),\n"
 "    SCardGetTransmitCount()\n"
-"  ⏺ >= 7065: Windows 8 ve sonrası: SCardGetReaderIcon(), "
+"  • >= 7065: Windows 8 ve sonrası: SCardGetReaderIcon(), "
 "SCardGetDeviceTypeId()"
 
 #: plugins/rdp/rdp_plugin.c:2002
@@ -2557,14 +2555,12 @@ msgid "Screenshot folder"
 msgstr "Ekran görüntüsü klasörü"
 
 #: data/ui/remmina_preferences.glade:292
-#, fuzzy
 msgid "Choose a folder to save screenshots from Remmina in."
-msgstr "Remmina ekran görüntülerinin kaydedileceği klasörü seçin."
+msgstr "Remmina ekran görüntülerini kaydetmek için bir klasör seçin."
 
 #: data/ui/remmina_preferences.glade:295
-#, fuzzy
 msgid "Select a folder"
-msgstr "Klasör Seç"
+msgstr "Bir klasör seçin"
 
 #: data/ui/remmina_preferences.glade:305
 msgid "Screen resolutions"

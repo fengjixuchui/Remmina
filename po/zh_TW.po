@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-03-27 10:06+0000\n"
+"POT-Creation-Date: 2020-04-08 09:07+0000\n"
 "PO-Revision-Date: 2020-03-24 20:31+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -26,7 +26,8 @@ msgid "Connect via SSH from a new terminal"
 msgstr "從新的終端機以 SSH 連接"
 
 #: src/remmina_protocol_widget.c:281
-msgid "Open SFTP transfer"
+#, fuzzy
+msgid "Open SFTP transfer…"
 msgstr "開啟安全檔案(SFTP)傳輸"
 
 #: src/remmina_protocol_widget.c:309
@@ -155,7 +156,7 @@ msgstr "設定可用的解析度"
 msgid "Recent lists cleared."
 msgstr "已清除最近使用清單。"
 
-#: src/remmina_pref_dialog.c:143 src/rcw.c:1827
+#: src/remmina_pref_dialog.c:143 src/rcw.c:1833
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
 msgstr "自訂快捷鍵"
@@ -618,91 +619,91 @@ msgstr "通過小程式選單快速連接到遠端桌面"
 msgid "Remmina Remote Desktop Client"
 msgstr "Remmina 遠端桌面客戶端"
 
-#: src/rcw.c:597
+#: src/rcw.c:596
 #, fuzzy, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr "目前視窗已開啟 %i 個作用中的連線。確定要關閉嗎？"
 
-#: src/rcw.c:1303
+#: src/rcw.c:1309
 msgid "Viewport fullscreen mode"
 msgstr "視埠全螢幕模式"
 
-#: src/rcw.c:1311 data/ui/remmina_preferences.glade:586
+#: src/rcw.c:1317 data/ui/remmina_preferences.glade:586
 msgid "Scrolled fullscreen"
 msgstr "捲動全螢幕"
 
-#: src/rcw.c:1396
+#: src/rcw.c:1402
 msgid "Keep aspect ratio when scaled"
 msgstr "縮放時維持比例"
 
-#: src/rcw.c:1404
+#: src/rcw.c:1410
 msgid "Fill client window when scaled"
 msgstr "縮放時填滿用戶端視窗"
 
-#: src/rcw.c:1943
+#: src/rcw.c:1949
 msgid "Turn off scaling to avoid screenshot distortion."
 msgstr "關閉縮放，以避免干擾螢幕截圖。"
 
-#: src/rcw.c:2003 plugins/www/www_plugin.c:831
+#: src/rcw.c:2009 plugins/www/www_plugin.c:831
 msgid "Screenshot taken"
 msgstr "拍下的螢幕截圖"
 
-#: src/rcw.c:2077
+#: src/rcw.c:2083
 msgid "Resize the window to fit in remote resolution"
 msgstr "調整視窗大小以適應遠端解析度"
 
-#: src/rcw.c:2088
+#: src/rcw.c:2094
 msgid "Toggle fullscreen mode"
 msgstr "切換全螢幕模式"
 
-#: src/rcw.c:2133 data/ui/remmina_preferences.glade:930
+#: src/rcw.c:2139 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
 msgstr "切換分頁"
 
-#: src/rcw.c:2147
+#: src/rcw.c:2153
 msgid "Toggle dynamic resolution update"
 msgstr "切換動態解析度更新"
 
-#: src/rcw.c:2157
+#: src/rcw.c:2163
 msgid "Toggle scaled mode"
 msgstr "啟用縮放的模式"
 
-#: src/rcw.c:2192
+#: src/rcw.c:2198
 msgid "Grab all keyboard events"
 msgstr "抓取所有鍵盤事件"
 
-#: src/rcw.c:2201
+#: src/rcw.c:2207
 msgid "Preferences"
 msgstr "偏好設定"
 
-#: src/rcw.c:2209 src/rcw.c:2210 data/ui/remmina_main.glade:297
+#: src/rcw.c:2215 src/rcw.c:2216 data/ui/remmina_main.glade:297
 msgid "Tools"
 msgstr "工具"
 
-#: src/rcw.c:2222
+#: src/rcw.c:2228
 msgid "Duplicate current connection"
 msgstr "複製當前連線"
 
-#: src/rcw.c:2233 data/ui/remmina_preferences.glade:1124
+#: src/rcw.c:2239 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
 msgstr "螢幕截圖"
 
-#: src/rcw.c:2241 data/ui/remmina_preferences.glade:1033
+#: src/rcw.c:2247 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
 msgstr "最小化視窗"
 
-#: src/rcw.c:2250 data/ui/remmina_preferences.glade:1064
+#: src/rcw.c:2256 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
 msgstr "斷開連接"
 
-#: src/rcw.c:3807
+#: src/rcw.c:3812
 #, fuzzy, c-format
 msgid "The file \"%s\" is corrupted, unreadable, or could not be found."
 msgstr "檔案 %s 已毀損，無法讀取或找不到檔案"
 
-#: src/rcw.c:3969
+#: src/rcw.c:3974
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "警告：此外掛需要 GtkSocket，但它不可用。"
 
@@ -734,8 +735,8 @@ msgstr "機密"
 msgid "Plugins"
 msgstr "外掛"
 
-#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:451
-#: src/remmina_message_panel.c:620 src/remmina_file_editor.c:162
+#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:452
+#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:162
 msgid "_OK"
 msgstr "確定(_O)"
 
@@ -896,8 +897,8 @@ msgstr "恢復"
 msgid "Overwrite"
 msgstr "覆寫"
 
-#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:456
-#: src/remmina_message_panel.c:628 src/remmina_file_editor.c:161
+#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:457
+#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:161
 #: src/remmina_file_editor.c:370 src/remmina_file_editor.c:1320
 #: plugins/spice/spice_plugin_file_transfer.c:84
 #: plugins/nx/nx_session_manager.c:156 data/ui/remmina_spinner.glade:8
@@ -939,27 +940,27 @@ msgstr "否"
 msgid "Domain"
 msgstr "網域"
 
-#: src/remmina_message_panel.c:419
+#: src/remmina_message_panel.c:420
 msgid "Save password"
 msgstr "儲存密碼"
 
-#: src/remmina_message_panel.c:512
+#: src/remmina_message_panel.c:513
 msgid "Enter certificate authentication files"
 msgstr "輸入憑證驗證檔案"
 
-#: src/remmina_message_panel.c:524
+#: src/remmina_message_panel.c:525
 msgid "CA Certificate File"
 msgstr "CA 憑證檔案"
 
-#: src/remmina_message_panel.c:546
+#: src/remmina_message_panel.c:547
 msgid "CA CRL File"
 msgstr "CA CRL 檔案"
 
-#: src/remmina_message_panel.c:568
+#: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
 msgstr "客戶端憑證檔案"
 
-#: src/remmina_message_panel.c:590
+#: src/remmina_message_panel.c:591
 msgid "Client Certificate Key"
 msgstr "客戶端憑證金鑰"
 

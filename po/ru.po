@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-03-27 10:06+0000\n"
+"POT-Creation-Date: 2020-04-08 09:07+0000\n"
 "PO-Revision-Date: 2020-03-11 16:33+0000\n"
 "Last-Translator: Солтыс Сергей <treefeed@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -28,7 +28,8 @@ msgid "Connect via SSH from a new terminal"
 msgstr "Подключиться через SSH из нового терминала"
 
 #: src/remmina_protocol_widget.c:281
-msgid "Open SFTP transfer"
+#, fuzzy
+msgid "Open SFTP transfer…"
 msgstr "Открыть защищённую передачу файлов (SFTP)"
 
 #: src/remmina_protocol_widget.c:309
@@ -157,7 +158,7 @@ msgstr "Настройка доступных разрешений"
 msgid "Recent lists cleared."
 msgstr "Списки истории очищены."
 
-#: src/remmina_pref_dialog.c:143 src/rcw.c:1827
+#: src/remmina_pref_dialog.c:143 src/rcw.c:1833
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
 msgstr "Комбинации клавиш"
@@ -272,7 +273,6 @@ msgid "Startup program"
 msgstr "Запуск программы"
 
 #: src/remmina_ssh_plugin.c:1029
-#, fuzzy
 msgid ""
 "The filename can use the following placeholders:\n"
 "\n"
@@ -284,17 +284,15 @@ msgid ""
 "  • %g is substituted with Remmina profile group name\n"
 "  • %d is substituted with local datetime in iso8601 format\n"
 msgstr ""
-"<tt><big>• команды в аргументах PATH %h\n"
-"• /path/to/foo -options %h %u\n"
-"• %h назначает имя сервера\n"
-"• %t назначает имя сервера SSH\n"
-"• %u назначает имя пользователя\n"
-"• %U назначает имя пользователя SSH\n"
-"• %p назначает имя профиля Remmina\n"
-"• %g назначает имя групппы профиля Remmina\n"
-"Не запускайте в фоновом режиме, если хотите выполнять команды до "
-"соединения.\n"
-"</big></tt>"
+"Имя файла может быть использовано со следующими переменными:\n"
+"\n"
+"  - %h заменяется именем сервера\n"
+"  - %t подставляется под имя сервера SSH\n"
+"  - %u заменяется именем пользователя\n"
+"  - %U заменяется именем пользователя SSH\n"
+"  - %p заменяется именем профиля Remmina\n"
+"  - %g заменяется на название группы профиля Remmina\n"
+"  - %d заменяется локальным временем в формате iso8601\n"
 
 #: src/remmina_ssh_plugin.c:1051
 msgid "Terminal color scheme"
@@ -629,91 +627,91 @@ msgid "Remmina Remote Desktop Client"
 msgstr "Клиент удалённого рабочего стола Remmina"
 
 # You need set up plural forms for 1, 2 and 5 here.
-#: src/rcw.c:597
+#: src/rcw.c:596
 #, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr "Вы действительно хотите закрыть %i активных подключений в этом окне?"
 
-#: src/rcw.c:1303
+#: src/rcw.c:1309
 msgid "Viewport fullscreen mode"
 msgstr "Режим полного экрана"
 
-#: src/rcw.c:1311 data/ui/remmina_preferences.glade:586
+#: src/rcw.c:1317 data/ui/remmina_preferences.glade:586
 msgid "Scrolled fullscreen"
 msgstr "Полноэкранный с прокруткой"
 
-#: src/rcw.c:1396
+#: src/rcw.c:1402
 msgid "Keep aspect ratio when scaled"
 msgstr "Сохранять пропорции при масштабировании"
 
-#: src/rcw.c:1404
+#: src/rcw.c:1410
 msgid "Fill client window when scaled"
 msgstr "Заполнять окно клиента при масштабировании"
 
-#: src/rcw.c:1943
+#: src/rcw.c:1949
 msgid "Turn off scaling to avoid screenshot distortion."
 msgstr "Отключите масштабирование во избежание искривления снимков экрана."
 
-#: src/rcw.c:2003 plugins/www/www_plugin.c:831
+#: src/rcw.c:2009 plugins/www/www_plugin.c:831
 msgid "Screenshot taken"
 msgstr "Снимок сделан"
 
-#: src/rcw.c:2077
+#: src/rcw.c:2083
 msgid "Resize the window to fit in remote resolution"
 msgstr "Растянуть окно под размер удалённого разрешения"
 
-#: src/rcw.c:2088
+#: src/rcw.c:2094
 msgid "Toggle fullscreen mode"
 msgstr "Переключить на полный экран"
 
-#: src/rcw.c:2133 data/ui/remmina_preferences.glade:930
+#: src/rcw.c:2139 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
 msgstr "Перейти на вкладку"
 
-#: src/rcw.c:2147
+#: src/rcw.c:2153
 msgid "Toggle dynamic resolution update"
 msgstr "Переключить на динамическое обновление разрешения"
 
-#: src/rcw.c:2157
+#: src/rcw.c:2163
 msgid "Toggle scaled mode"
 msgstr "Переключить в режим масштабирования"
 
-#: src/rcw.c:2192
+#: src/rcw.c:2198
 msgid "Grab all keyboard events"
 msgstr "Захватывать все нажатия клавиш"
 
-#: src/rcw.c:2201
+#: src/rcw.c:2207
 msgid "Preferences"
 msgstr "Параметры"
 
-#: src/rcw.c:2209 src/rcw.c:2210 data/ui/remmina_main.glade:297
+#: src/rcw.c:2215 src/rcw.c:2216 data/ui/remmina_main.glade:297
 msgid "Tools"
 msgstr "Инструменты"
 
-#: src/rcw.c:2222
+#: src/rcw.c:2228
 msgid "Duplicate current connection"
 msgstr "Дублировать текущее соединение"
 
-#: src/rcw.c:2233 data/ui/remmina_preferences.glade:1124
+#: src/rcw.c:2239 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
 msgstr "Снимок экрана"
 
-#: src/rcw.c:2241 data/ui/remmina_preferences.glade:1033
+#: src/rcw.c:2247 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
 msgstr "Свернуть окно"
 
-#: src/rcw.c:2250 data/ui/remmina_preferences.glade:1064
+#: src/rcw.c:2256 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
 msgstr "Отключиться"
 
-#: src/rcw.c:3807
+#: src/rcw.c:3812
 #, c-format
 msgid "The file \"%s\" is corrupted, unreadable, or could not be found."
 msgstr "Файл \"%s\" поврежден, не читается или не найден."
 
-#: src/rcw.c:3969
+#: src/rcw.c:3974
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "Внимание: Этот модуль требует GtkSocket, но он недоступен."
 
@@ -745,8 +743,8 @@ msgstr "Ключ безопасности"
 msgid "Plugins"
 msgstr "Модули"
 
-#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:451
-#: src/remmina_message_panel.c:620 src/remmina_file_editor.c:162
+#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:452
+#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:162
 msgid "_OK"
 msgstr "_OK"
 
@@ -908,8 +906,8 @@ msgstr "Возобновить"
 msgid "Overwrite"
 msgstr "Перезаписать"
 
-#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:456
-#: src/remmina_message_panel.c:628 src/remmina_file_editor.c:161
+#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:457
+#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:161
 #: src/remmina_file_editor.c:370 src/remmina_file_editor.c:1320
 #: plugins/spice/spice_plugin_file_transfer.c:84
 #: plugins/nx/nx_session_manager.c:156 data/ui/remmina_spinner.glade:8
@@ -951,27 +949,27 @@ msgstr "Нет"
 msgid "Domain"
 msgstr "Домен"
 
-#: src/remmina_message_panel.c:419
+#: src/remmina_message_panel.c:420
 msgid "Save password"
 msgstr "Сохранить пароль"
 
-#: src/remmina_message_panel.c:512
+#: src/remmina_message_panel.c:513
 msgid "Enter certificate authentication files"
 msgstr "Укажите файлы сертификата аутентификации"
 
-#: src/remmina_message_panel.c:524
+#: src/remmina_message_panel.c:525
 msgid "CA Certificate File"
 msgstr "Файл сертификата ЦС"
 
-#: src/remmina_message_panel.c:546
+#: src/remmina_message_panel.c:547
 msgid "CA CRL File"
 msgstr "Файл САС ЦС (CA CLR)"
 
-#: src/remmina_message_panel.c:568
+#: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
 msgstr "Файл клиентского сертификата"
 
-#: src/remmina_message_panel.c:590
+#: src/remmina_message_panel.c:591
 msgid "Client Certificate Key"
 msgstr "Ключ клиентского сертификата"
 
@@ -1011,7 +1009,6 @@ msgid "Public SSH key cannot be imported. %s"
 msgstr "Публичный ключ SSH не может быть импортирован. %s"
 
 #: src/remmina_ssh.c:255
-#, fuzzy
 msgid "SSH passphrase is empty, it should not be."
 msgstr "Ключевая фраза SSH пуста, но должна быть заполнена."
 
@@ -1236,7 +1233,6 @@ msgstr ""
 "• [сервер]:порт</big></tt>"
 
 #: src/remmina_file_editor.c:81
-#, fuzzy
 msgid ""
 "<tt><big>• command in PATH args %h\n"
 "• /path/to/foo -options %h %u\n"
@@ -1259,6 +1255,7 @@ msgstr ""
 "• %U назначает имя пользователя SSH\n"
 "• %p назначает имя профиля Remmina\n"
 "• %g назначает имя групппы профиля Remmina\n"
+"• %d заменяется локальным временем в формате iso8601\n"
 "Не запускайте в фоновом режиме, если хотите выполнять команды до "
 "соединения.\n"
 "</big></tt>"
@@ -2576,12 +2573,10 @@ msgid "Screenshot folder"
 msgstr "Папка для снимков"
 
 #: data/ui/remmina_preferences.glade:292
-#, fuzzy
 msgid "Choose a folder to save screenshots from Remmina in."
 msgstr "Выберите папку, в которой будут храниться снимки Remmina."
 
 #: data/ui/remmina_preferences.glade:295
-#, fuzzy
 msgid "Select a folder"
 msgstr "Выбрать папку"
 

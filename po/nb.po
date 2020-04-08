@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-03-27 10:06+0000\n"
+"POT-Creation-Date: 2020-04-08 09:07+0000\n"
 "PO-Revision-Date: 2020-03-27 07:36+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/remmina/"
@@ -26,7 +26,8 @@ msgid "Connect via SSH from a new terminal"
 msgstr "Koble til via SSH fra en ny terminal"
 
 #: src/remmina_protocol_widget.c:281
-msgid "Open SFTP transfer"
+#, fuzzy
+msgid "Open SFTP transfer…"
 msgstr "Åpne SFTP-overføring"
 
 #: src/remmina_protocol_widget.c:309
@@ -155,7 +156,7 @@ msgstr "Sett opp de tilgjengelige oppløsningene"
 msgid "Recent lists cleared."
 msgstr "Listene over nylig aktivitet er tømt."
 
-#: src/remmina_pref_dialog.c:143 src/rcw.c:1827
+#: src/remmina_pref_dialog.c:143 src/rcw.c:1833
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
 msgstr "Tastetrykk"
@@ -624,95 +625,95 @@ msgstr "Koble til eksterne skrivebord via miniprogramsmenyen"
 msgid "Remmina Remote Desktop Client"
 msgstr "Remmina-klient for eksterne skrivebord"
 
-#: src/rcw.c:597
+#: src/rcw.c:596
 #, fuzzy, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr ""
 "Er du sikker på at du vil lukke %i aktive tilkoblinger i det aktive vinduet?"
 
-#: src/rcw.c:1303
+#: src/rcw.c:1309
 #, fuzzy
 msgid "Viewport fullscreen mode"
 msgstr "Fullskjermsmodus"
 
-#: src/rcw.c:1311 data/ui/remmina_preferences.glade:586
+#: src/rcw.c:1317 data/ui/remmina_preferences.glade:586
 msgid "Scrolled fullscreen"
 msgstr "Rullet fullskjermsvisning"
 
-#: src/rcw.c:1396
+#: src/rcw.c:1402
 #, fuzzy
 msgid "Keep aspect ratio when scaled"
 msgstr "Behold sideforhold når skalert"
 
-#: src/rcw.c:1404
+#: src/rcw.c:1410
 #, fuzzy
 msgid "Fill client window when scaled"
 msgstr "Fyll klientvindu når skalert"
 
-#: src/rcw.c:1943
+#: src/rcw.c:1949
 msgid "Turn off scaling to avoid screenshot distortion."
 msgstr "Skru av skalering for å unngå fordreining av skjermavbildninger."
 
-#: src/rcw.c:2003 plugins/www/www_plugin.c:831
+#: src/rcw.c:2009 plugins/www/www_plugin.c:831
 msgid "Screenshot taken"
 msgstr "Skjermavbildning utført"
 
-#: src/rcw.c:2077
+#: src/rcw.c:2083
 msgid "Resize the window to fit in remote resolution"
 msgstr "Tilpass vindustørrelsen slik at den passer med ekstern oppløsning"
 
-#: src/rcw.c:2088
+#: src/rcw.c:2094
 msgid "Toggle fullscreen mode"
 msgstr "Slå av/på fullskjermmodus"
 
-#: src/rcw.c:2133 data/ui/remmina_preferences.glade:930
+#: src/rcw.c:2139 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
 msgstr "Bytt mellom fanesider"
 
-#: src/rcw.c:2147
+#: src/rcw.c:2153
 msgid "Toggle dynamic resolution update"
 msgstr "Veksle dynamisk oppløsningsoppdatering"
 
-#: src/rcw.c:2157
+#: src/rcw.c:2163
 msgid "Toggle scaled mode"
 msgstr "Skru av/på skalert modus"
 
-#: src/rcw.c:2192
+#: src/rcw.c:2198
 msgid "Grab all keyboard events"
 msgstr "Fang alle tastaturtastetrykk"
 
-#: src/rcw.c:2201
+#: src/rcw.c:2207
 msgid "Preferences"
 msgstr "Innstillinger"
 
-#: src/rcw.c:2209 src/rcw.c:2210 data/ui/remmina_main.glade:297
+#: src/rcw.c:2215 src/rcw.c:2216 data/ui/remmina_main.glade:297
 msgid "Tools"
 msgstr "Verktøy"
 
-#: src/rcw.c:2222
+#: src/rcw.c:2228
 msgid "Duplicate current connection"
 msgstr "Dupliser nåværende tilkobling"
 
-#: src/rcw.c:2233 data/ui/remmina_preferences.glade:1124
+#: src/rcw.c:2239 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
 msgstr "Skjermavbildning"
 
-#: src/rcw.c:2241 data/ui/remmina_preferences.glade:1033
+#: src/rcw.c:2247 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
 msgstr "Minimer vindu"
 
-#: src/rcw.c:2250 data/ui/remmina_preferences.glade:1064
+#: src/rcw.c:2256 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
 msgstr "Koble fra"
 
-#: src/rcw.c:3807
+#: src/rcw.c:3812
 #, fuzzy, c-format
 msgid "The file \"%s\" is corrupted, unreadable, or could not be found."
 msgstr "Filen \"%s\" er skadet, kan ikke leses, eller ble ikke funnet."
 
-#: src/rcw.c:3969
+#: src/rcw.c:3974
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr ""
 "Advarsel: Dette programtillegget krever GtkSocket, men det er ikke "
@@ -746,8 +747,8 @@ msgstr "Hemmelighet"
 msgid "Plugins"
 msgstr "Programtillegg"
 
-#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:451
-#: src/remmina_message_panel.c:620 src/remmina_file_editor.c:162
+#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:452
+#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:162
 msgid "_OK"
 msgstr "_OK"
 
@@ -858,9 +859,9 @@ msgstr "Klarte ikke å lagre filen: %s."
 
 #: src/remmina_sftp_client.c:281 src/remmina_sftp_client.c:698
 #: src/remmina_sftp_client.c:761
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open the folder \"%s\". %s"
-msgstr "Klarte ikke å åpne kanal: %s"
+msgstr "Klarte ikke å åpne mappen \"%s\". %s"
 
 #: src/remmina_sftp_client.c:385
 #, fuzzy, c-format
@@ -893,9 +894,9 @@ msgid "Are you sure you want to cancel the file transfer in progress?"
 msgstr "Er du sikker på at du vil slette «%s»?"
 
 #: src/remmina_sftp_client.c:857
-#, fuzzy, c-format
+#, c-format
 msgid "Could not delete \"%s\". %s"
-msgstr "Klarte ikke å åpne kanal: %s"
+msgstr "Klarte ikke å slette \"%s\". %s"
 
 #: src/remmina_sftp_client.c:938
 msgid "The file exists already"
@@ -909,8 +910,8 @@ msgstr "Fortsett"
 msgid "Overwrite"
 msgstr "Overskriv"
 
-#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:456
-#: src/remmina_message_panel.c:628 src/remmina_file_editor.c:161
+#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:457
+#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:161
 #: src/remmina_file_editor.c:370 src/remmina_file_editor.c:1320
 #: plugins/spice/spice_plugin_file_transfer.c:84
 #: plugins/nx/nx_session_manager.c:156 data/ui/remmina_spinner.glade:8
@@ -952,28 +953,28 @@ msgstr "Nei"
 msgid "Domain"
 msgstr "Domene"
 
-#: src/remmina_message_panel.c:419
+#: src/remmina_message_panel.c:420
 msgid "Save password"
 msgstr "Lagre passord"
 
-#: src/remmina_message_panel.c:512
+#: src/remmina_message_panel.c:513
 #, fuzzy
 msgid "Enter certificate authentication files"
 msgstr "Angi filer for sertifikatsidentitetsbekreftelse"
 
-#: src/remmina_message_panel.c:524
+#: src/remmina_message_panel.c:525
 msgid "CA Certificate File"
 msgstr "CA-sertifikatsfil"
 
-#: src/remmina_message_panel.c:546
+#: src/remmina_message_panel.c:547
 msgid "CA CRL File"
 msgstr "CA CRL-fil"
 
-#: src/remmina_message_panel.c:568
+#: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
 msgstr "Klientsertifikatsfil"
 
-#: src/remmina_message_panel.c:590
+#: src/remmina_message_panel.c:591
 msgid "Client Certificate Key"
 msgstr "Klientsertifikatsnøkkel"
 
@@ -1242,6 +1243,7 @@ msgstr ""
 "* [tjener]:port</big></tt>"
 
 #: src/remmina_file_editor.c:81
+#, fuzzy
 msgid ""
 "<tt><big>• command in PATH args %h\n"
 "• /path/to/foo -options %h %u\n"
@@ -1264,6 +1266,7 @@ msgstr ""
 "• %U erstattes med SSH-brukernavnet\n"
 "• %p erstattes med Remmina-profilnavnet\n"
 "• %g erstattes med Remmina-profilgruppenavnet\n"
+"•  %d erstattes med lokal datotid i iso8601.format\n"
 "Ikke kjør i bakgrunnen hvis du ønsker at kommandoen skal kjøres før "
 "tilknytning.\n"
 "</big></tt>"

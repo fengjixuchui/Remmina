@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-03-27 10:06+0000\n"
+"POT-Creation-Date: 2020-04-08 09:07+0000\n"
 "PO-Revision-Date: 2020-02-18 21:48+0000\n"
 "Last-Translator: Giovanni Panozzo <giovanni@panozzo.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11\n"
+"X-Generator: Weblate 4.0-dev\n"
 "X-Launchpad-Export-Date: 2011-01-18 05:16+0000\n"
 
 #: src/remmina_protocol_widget.c:275
@@ -28,7 +28,8 @@ msgid "Connect via SSH from a new terminal"
 msgstr "Connessione tramite SSH da un nuovo terminale"
 
 #: src/remmina_protocol_widget.c:281
-msgid "Open SFTP transfer"
+#, fuzzy
+msgid "Open SFTP transfer…"
 msgstr "Apri trasferimento SFTP"
 
 #: src/remmina_protocol_widget.c:309
@@ -158,7 +159,7 @@ msgstr "Configura le risoluzioni disponibili"
 msgid "Recent lists cleared."
 msgstr "Elenchi elementi recenti puliti."
 
-#: src/remmina_pref_dialog.c:143 src/rcw.c:1827
+#: src/remmina_pref_dialog.c:143 src/rcw.c:1833
 #: data/ui/remmina_preferences.glade:249 data/ui/remmina_preferences.glade:259
 msgid "Keystrokes"
 msgstr "Battute"
@@ -274,7 +275,6 @@ msgid "Startup program"
 msgstr "Programma all’avvio"
 
 #: src/remmina_ssh_plugin.c:1029
-#, fuzzy
 msgid ""
 "The filename can use the following placeholders:\n"
 "\n"
@@ -286,17 +286,15 @@ msgid ""
 "  • %g is substituted with Remmina profile group name\n"
 "  • %d is substituted with local datetime in iso8601 format\n"
 msgstr ""
-"<tt><big>• comando [accessibile nel $PATH] argomenti [%h]\n"
-"• /percorso/del/comando -opzioni %h %u\n"
+"Il nome del file può utilizzare i seguenti segnaposto\n"
+"\n"
 "• %h viene sostituito con il nome del server\n"
 "• %t viene sostituito con il nome del server SSH\n"
 "• %u viene sostituito con il nome utente\n"
 "• %U viene sostituito con il nome utente SSH\n"
 "• %p viene sostituito con il nome del profilo\n"
 "• %g viene sostituito con il nome del gruppo del profilo di Remmina\n"
-"Non eseguire in background se si desidera che il comando venga completato "
-"prima di connettersi.\n"
-"</big></tt>"
+"• %d è sostituito con l'ora locale in formato iso8601\n"
 
 #: src/remmina_ssh_plugin.c:1051
 msgid "Terminal color scheme"
@@ -614,93 +612,93 @@ msgstr "Connetti al desktop remoto utilizzando il menu dell’applet"
 msgid "Remmina Remote Desktop Client"
 msgstr "Client di connessione a desktop remoti Remmina"
 
-#: src/rcw.c:597
+#: src/rcw.c:596
 #, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr ""
 "Sei sicuro di voler chiudere %i connessioni attive nella finestra corrente?"
 
-#: src/rcw.c:1303
+#: src/rcw.c:1309
 msgid "Viewport fullscreen mode"
 msgstr "Modalità area visibile a schermo intero"
 
-#: src/rcw.c:1311 data/ui/remmina_preferences.glade:586
+#: src/rcw.c:1317 data/ui/remmina_preferences.glade:586
 msgid "Scrolled fullscreen"
 msgstr "Schermo intero scrollabile"
 
-#: src/rcw.c:1396
+#: src/rcw.c:1402
 msgid "Keep aspect ratio when scaled"
 msgstr "Ridimensiona mantenendo le proporzioni"
 
-#: src/rcw.c:1404
+#: src/rcw.c:1410
 msgid "Fill client window when scaled"
 msgstr "Ridimensiona riempiendo la finestra"
 
-#: src/rcw.c:1943
+#: src/rcw.c:1949
 msgid "Turn off scaling to avoid screenshot distortion."
 msgstr ""
 "Disattivare il ridimensionamento per evitare distorsioni dello screenshot."
 
-#: src/rcw.c:2003 plugins/www/www_plugin.c:831
+#: src/rcw.c:2009 plugins/www/www_plugin.c:831
 msgid "Screenshot taken"
 msgstr "Screenshot eseguito"
 
-#: src/rcw.c:2077
+#: src/rcw.c:2083
 msgid "Resize the window to fit in remote resolution"
 msgstr "Ridimensionare lo schermo per adattarsi alla risoluzione remota"
 
-#: src/rcw.c:2088
+#: src/rcw.c:2094
 msgid "Toggle fullscreen mode"
 msgstr "Imposta Schermo Intero"
 
-#: src/rcw.c:2133 data/ui/remmina_preferences.glade:930
+#: src/rcw.c:2139 data/ui/remmina_preferences.glade:930
 msgid "Switch tab pages"
 msgstr "Cambia Scheda"
 
-#: src/rcw.c:2147
+#: src/rcw.c:2153
 msgid "Toggle dynamic resolution update"
 msgstr "Attiva aggiornamento dinamico della risoluzione"
 
-#: src/rcw.c:2157
+#: src/rcw.c:2163
 msgid "Toggle scaled mode"
 msgstr "Attivare modalità riscalata"
 
-#: src/rcw.c:2192
+#: src/rcw.c:2198
 msgid "Grab all keyboard events"
 msgstr "Catturare tutti gli eventi della tastiera"
 
-#: src/rcw.c:2201
+#: src/rcw.c:2207
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: src/rcw.c:2209 src/rcw.c:2210 data/ui/remmina_main.glade:297
+#: src/rcw.c:2215 src/rcw.c:2216 data/ui/remmina_main.glade:297
 msgid "Tools"
 msgstr "Strumenti"
 
-#: src/rcw.c:2222
+#: src/rcw.c:2228
 msgid "Duplicate current connection"
 msgstr "Duplica la sessione corrente"
 
-#: src/rcw.c:2233 data/ui/remmina_preferences.glade:1124
+#: src/rcw.c:2239 data/ui/remmina_preferences.glade:1124
 #: data/ui/remmina_preferences.glade:1134
 msgid "Screenshot"
 msgstr "Cattura schermata"
 
-#: src/rcw.c:2241 data/ui/remmina_preferences.glade:1033
+#: src/rcw.c:2247 data/ui/remmina_preferences.glade:1033
 msgid "Minimize window"
 msgstr "Minimizzare la finestra"
 
-#: src/rcw.c:2250 data/ui/remmina_preferences.glade:1064
+#: src/rcw.c:2256 data/ui/remmina_preferences.glade:1064
 msgid "Disconnect"
 msgstr "Scollegarsi"
 
-#: src/rcw.c:3807
+#: src/rcw.c:3812
 #, c-format
 msgid "The file \"%s\" is corrupted, unreadable, or could not be found."
 msgstr "Il file \"%s\" è danneggiato, illeggibile o non è stato trovato."
 
-#: src/rcw.c:3969
+#: src/rcw.c:3974
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "Attenzione: Questo plugin richiede GtkSocket, ma non è disponibile."
 
@@ -732,8 +730,8 @@ msgstr "Segreto"
 msgid "Plugins"
 msgstr "Plugins"
 
-#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:451
-#: src/remmina_message_panel.c:620 src/remmina_file_editor.c:162
+#: src/remmina_plugin_manager.c:446 src/remmina_message_panel.c:452
+#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:162
 msgid "_OK"
 msgstr "_OK"
 
@@ -894,8 +892,8 @@ msgstr "Ripristina"
 msgid "Overwrite"
 msgstr "Sovrascrivi"
 
-#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:456
-#: src/remmina_message_panel.c:628 src/remmina_file_editor.c:161
+#: src/remmina_sftp_client.c:943 src/remmina_message_panel.c:457
+#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:161
 #: src/remmina_file_editor.c:370 src/remmina_file_editor.c:1320
 #: plugins/spice/spice_plugin_file_transfer.c:84
 #: plugins/nx/nx_session_manager.c:156 data/ui/remmina_spinner.glade:8
@@ -937,27 +935,27 @@ msgstr "No"
 msgid "Domain"
 msgstr "Dominio"
 
-#: src/remmina_message_panel.c:419
+#: src/remmina_message_panel.c:420
 msgid "Save password"
 msgstr "Memorizzare la password"
 
-#: src/remmina_message_panel.c:512
+#: src/remmina_message_panel.c:513
 msgid "Enter certificate authentication files"
 msgstr "Inserire i certificati di autenticazione"
 
-#: src/remmina_message_panel.c:524
+#: src/remmina_message_panel.c:525
 msgid "CA Certificate File"
 msgstr "File di certificato CA"
 
-#: src/remmina_message_panel.c:546
+#: src/remmina_message_panel.c:547
 msgid "CA CRL File"
 msgstr "Elenco di revocazione della CA"
 
-#: src/remmina_message_panel.c:568
+#: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
 msgstr "File di certificato client"
 
-#: src/remmina_message_panel.c:590
+#: src/remmina_message_panel.c:591
 msgid "Client Certificate Key"
 msgstr "Chiave del certificato del cliente"
 
@@ -997,7 +995,6 @@ msgid "Public SSH key cannot be imported. %s"
 msgstr "Impossibile importare la chiave SSH pubblica. %s"
 
 #: src/remmina_ssh.c:255
-#, fuzzy
 msgid "SSH passphrase is empty, it should not be."
 msgstr "La passphrase ssh è vuota, non dovrebbe esserlo."
 
@@ -1225,7 +1222,6 @@ msgstr ""
 "* [server]:porta</big></tt>"
 
 #: src/remmina_file_editor.c:81
-#, fuzzy
 msgid ""
 "<tt><big>• command in PATH args %h\n"
 "• /path/to/foo -options %h %u\n"
@@ -1240,14 +1236,15 @@ msgid ""
 "connecting.\n"
 "</big></tt>"
 msgstr ""
-"<tt><big>• comando [accessibile nel $PATH] argomenti [%h]\n"
-"• /percorso/del/comando -opzioni %h %u\n"
+"Il nome del file può utilizzare i seguenti segnaposto\n"
+"\n"
 "• %h viene sostituito con il nome del server\n"
 "• %t viene sostituito con il nome del server SSH\n"
 "• %u viene sostituito con il nome utente\n"
 "• %U viene sostituito con il nome utente SSH\n"
 "• %p viene sostituito con il nome del profilo\n"
 "• %g viene sostituito con il nome del gruppo del profilo di Remmina\n"
+"• %d è sostituito con l'ora locale in formato iso8601\n"
 "Non eseguire in background se si desidera che il comando venga completato "
 "prima di connettersi.\n"
 "</big></tt>"
@@ -1966,6 +1963,8 @@ msgstr "Negoziare"
 #: plugins/rdp/rdp_plugin.c:1960
 msgid "2600 (Windows XP),7601 (Windows Vista/7),9600 (Windows 8 and newer)"
 msgstr ""
+"2600 (Windows XP),7601 (Windows Vista/7), 9600 (Windows 8 e versioni più "
+"recenti)"
 
 #: plugins/rdp/rdp_plugin.c:1963
 msgid ""
@@ -1977,6 +1976,13 @@ msgid ""
 "  • >= 7065: Windows 8 and newer: SCardGetReaderIcon(), "
 "SCardGetDeviceTypeId()"
 msgstr ""
+"Utilizzato tra l'altro da Servizi terminal nel canale SmartCard per "
+"distinguere le funzionalità client:\n"
+"   • fino a 4034: Funzioni per le smart card di base di Windows XP\n"
+"   • da 4034 a 7064: Windows Vista/7: SCardReadCache(), SCardWriteCache(), \n"
+"     SCardGetTransmitCount()\n"
+"   • da 7065: Windows 8 e più recenti: SCardGetReaderIcon(), "
+"SCardGetDeviceTypeId()"
 
 #: plugins/rdp/rdp_plugin.c:2002
 msgid "Sound"
@@ -2011,9 +2017,8 @@ msgid "Client name"
 msgstr "Nome client"
 
 #: plugins/rdp/rdp_plugin.c:2010
-#, fuzzy
 msgid "Client build"
-msgstr "Nome client"
+msgstr "Build del client"
 
 #: plugins/rdp/rdp_plugin.c:2013
 msgid "Load balance info"
@@ -2558,12 +2563,10 @@ msgid "Screenshot folder"
 msgstr "Cartella per screenshot"
 
 #: data/ui/remmina_preferences.glade:292
-#, fuzzy
 msgid "Choose a folder to save screenshots from Remmina in."
 msgstr "Scegli la cartella in cui salvare gli screenshot di Remmina."
 
 #: data/ui/remmina_preferences.glade:295
-#, fuzzy
 msgid "Select a folder"
 msgstr "Selezionare una cartella"
 
