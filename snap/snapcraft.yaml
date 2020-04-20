@@ -38,6 +38,7 @@ apps:
       - pulseaudio
       - ssh-keys
       - ssh-public-keys
+      - removable-media
 
   winpr-makecert:
     command: winpr-makecert
@@ -147,9 +148,13 @@ parts:
       - libxkbfile-dev
       - libwebkit2gtk-4.0-dev
     stage-packages:
-      - xauth
       - libusb-1.0-0
       - libzvbi0
+      - suckless-tools
+      - vim
+      - xauth
+      - xterm
+      - openssh-client
     configflags:
       - -DCMAKE_BUILD_TYPE=Release
       - -DWITH_FREERDP3=OFF
