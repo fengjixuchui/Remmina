@@ -813,13 +813,6 @@ static void remmina_plugin_www_save_snapshot(GObject *object, GAsyncResult *resu
 	if (screenshot == NULL)
 		g_debug("WWW: gdk_pixbuf_get_from_surface failed");
 
-	// Transfer the PixBuf in the main clipboard selection
-	gchar *value = remmina_plugin_service->pref_get_value("deny_screenshot_clipboard");
-	if (value && value == FALSE) {
-		GtkClipboard *c = gtk_clipboard_get(GDK_SELECTION_CLIPBOARD);
-		gtk_clipboard_set_image(c, screenshot);
-	}
-
 	pngstr = g_string_new(g_strdup_printf("%s/%s.png",
 					      remmina_plugin_service->pref_get_value("screenshot_path"),
 					      remmina_plugin_service->pref_get_value("screenshot_name")));
@@ -900,7 +893,7 @@ static const RemminaProtocolSetting remmina_plugin_www_advanced_settings[] =
 	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK, "enable-webgl",		    N_("Turn on WebGL support"),    TRUE,  NULL, NULL },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK, "enable-webaudio",	    N_("Turn on HTML5 audio support"), TRUE,  NULL, NULL },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK, "ignore-tls-errors",	    N_("Ignore TLS errors"),	       TRUE,  NULL, NULL },
-	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK, "disablepasswordstoring",    N_("No password storage"),    TRUE,  NULL, NULL },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK, "disablepasswordstoring",    N_("Forget passwords after use"),    TRUE,  NULL, NULL },
 #ifdef DEBUG
 	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK, "enable-webinspector",	    N_("Turn on Web Inspector"),	       TRUE,  NULL, NULL },
 #endif
