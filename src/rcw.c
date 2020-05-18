@@ -1184,7 +1184,7 @@ static void nb_set_current_page(GtkNotebook *notebook, GtkWidget *page)
 
 static void nb_migrate_page_content(GtkWidget *frompage, GtkWidget *topage)
 {
-	/* Migrate a single connection tab from a nothebook to another one */
+	/* Migrate a single connection tab from a notebook to another one */
 	GList *lst, *l;
 	RemminaConnectionObject *cnnobj;
 
@@ -1278,6 +1278,9 @@ static void rcw_switch_viewmode(RemminaConnectionWindow *cnnwin, int newmode)
 			 * status before self destruction of cnnwin */
 			newwin->priv->fss_view_mode = old_mode;
 	}
+
+	/* Prevent unreleased hostkey from old window to be released here */
+	newwin->priv->hostkey_used = TRUE;
 }
 
 
@@ -1958,7 +1961,7 @@ static void rcw_toolbar_screenshot(GtkWidget *widget, RemminaConnectionWindow *c
 	if (remmina_protocol_widget_plugin_screenshot(gp, &rpsd)) {
 		// Good, we have a screenshot from the plugin !
 
-		remmina_log_printf("Screenshot from plugin: w=%d h=%d bpp=%d bytespp=%d\n",
+		remmina_debug("Screenshot from plugin: w=%d h=%d bpp=%d bytespp=%d\n",
 				   rpsd.width, rpsd.height, rpsd.bitsPerPixel, rpsd.bytesPerPixel);
 
 		width = rpsd.width;
@@ -2850,11 +2853,11 @@ static gboolean rcw_map_event_fullscreen(GtkWidget *widget, GdkEvent *event, gpo
 			gtk_window_fullscreen_on_monitor(GTK_WINDOW(widget), gtk_window_get_screen(GTK_WINDOW(widget)),
 							 target_monitor);
 	} else {
-		remmina_log_print("Fullscreen managed by WM or by the user, as per settings");
+		remmina_debug("Fullscreen managed by WM or by the user, as per settings");
 		gtk_window_fullscreen(GTK_WINDOW(widget));
 	}
 #else
-	remmina_log_print("Cannot fullscreen on a specific monitor, feature available from GTK 3.18");
+	remmina_debug("Cannot fullscreen on a specific monitor, feature available from GTK 3.18");
 	gtk_window_fullscreen(GTK_WINDOW(widget));
 #endif
 
@@ -3372,6 +3375,11 @@ static void rcw_create_overlay_ftb_overlay(RemminaConnectionWindow *cnnwin)
 	gtk_drag_source_set(GTK_WIDGET(priv->overlay_ftb_overlay), GDK_BUTTON1_MASK,
 			    dnd_targets_ftb, sizeof dnd_targets_ftb / sizeof *dnd_targets_ftb, GDK_ACTION_MOVE);
 	g_signal_connect_after(GTK_WIDGET(priv->overlay_ftb_overlay), "drag-begin", G_CALLBACK(rcw_ftb_drag_begin), cnnwin);
+
+	if (remmina_pref.fullscreen_toolbar_visibility == FLOATING_TOOLBAR_VISIBILITY_DISABLE) {
+		/* toolbar in fullscreenmode disbled, hide everityhg */
+		gtk_widget_hide(fr);
+	}
 }
 
 
@@ -3480,14 +3488,12 @@ RemminaConnectionWindow *rcw_create_fullscreen(GtkWindow *old, gint view_mode)
 	cnnwin->priv->fss_view_mode = view_mode;
 
 	/* Create the floating toolbar */
-	if (remmina_pref.fullscreen_toolbar_visibility != FLOATING_TOOLBAR_VISIBILITY_DISABLE) {
-		rcw_create_overlay_ftb_overlay(cnnwin);
-		/* Add drag and drop capabilities to the drop/dest target for floating toolbar */
-		gtk_drag_dest_set(GTK_WIDGET(cnnwin->priv->overlay), GTK_DEST_DEFAULT_MOTION | GTK_DEST_DEFAULT_HIGHLIGHT,
-				  dnd_targets_ftb, sizeof dnd_targets_ftb / sizeof *dnd_targets_ftb, GDK_ACTION_MOVE);
-		gtk_drag_dest_set_track_motion(GTK_WIDGET(cnnwin->priv->notebook), TRUE);
-		g_signal_connect(GTK_WIDGET(cnnwin->priv->overlay), "drag-drop", G_CALLBACK(rcw_ftb_drag_drop), cnnwin);
-	}
+	rcw_create_overlay_ftb_overlay(cnnwin);
+	/* Add drag and drop capabilities to the drop/dest target for floating toolbar */
+	gtk_drag_dest_set(GTK_WIDGET(cnnwin->priv->overlay), GTK_DEST_DEFAULT_MOTION | GTK_DEST_DEFAULT_HIGHLIGHT,
+			  dnd_targets_ftb, sizeof dnd_targets_ftb / sizeof *dnd_targets_ftb, GDK_ACTION_MOVE);
+	gtk_drag_dest_set_track_motion(GTK_WIDGET(cnnwin->priv->notebook), TRUE);
+	g_signal_connect(GTK_WIDGET(cnnwin->priv->overlay), "drag-drop", G_CALLBACK(rcw_ftb_drag_drop), cnnwin);
 
 	gtk_widget_show(GTK_WIDGET(cnnwin));
 	GtkWindowGroup * wingrp = gtk_window_group_new ();
@@ -3670,7 +3676,10 @@ static gboolean rcw_hostkey_func(RemminaProtocolWidget *gp, guint keyval, gboole
 			}
 		}
 	}
-	priv->hostkey_activated = FALSE;
+	/* If a keypress makes the current cnnobj to move to another window,
+	 * priv is now invalid. So we can no longer use priv here */
+	cnnobj->cnnwin->priv->hostkey_activated = FALSE;
+
 	/* Trap all key presses when hostkey is pressed */
 	return TRUE;
 }
