@@ -51,6 +51,7 @@
 #define GET_PLUGIN_DATA(gp) (RemminaPluginVncData *)g_object_get_data(G_OBJECT(gp), "plugin-data")
 
 static RemminaPluginService *remmina_plugin_service = NULL;
+#define REMMINA_PLUGIN_DEBUG(fmt, ...) remmina_plugin_service->_remmina_debug(__func__, fmt, ##__VA_ARGS__)
 
 static int dot_cursor_x_hot = 2;
 static int dot_cursor_y_hot = 2;
@@ -690,24 +691,25 @@ static gboolean remmina_plugin_vnc_queue_cuttext(RemminaPluginVncCuttextParam *p
 	TRACE_CALL(__func__);
 	RemminaProtocolWidget *gp = param->gp;
 	RemminaPluginVncData *gpdata = GET_PLUGIN_DATA(gp);
-	GTimeVal t;
+	GDateTime *t;
 	glong diff;
 	const char *cur_charset;
 	gchar *text;
 	gsize br, bw;
 
 	if (GTK_IS_WIDGET(gp) && gpdata->connected) {
-		g_get_current_time(&t);
-		diff = (t.tv_sec - gpdata->clipboard_timer.tv_sec) * 10
-		       + (t.tv_usec - gpdata->clipboard_timer.tv_usec) / 100000;
+		t = g_date_time_new_now_utc();
+		diff = g_date_time_difference(t, gpdata->clipboard_timer) / 100000; // tenth of second
 		if (diff >= 10) {
+			g_date_time_unref(gpdata->clipboard_timer);
 			gpdata->clipboard_timer = t;
 			/* Convert text from VNC latin-1 to current GTK charset (usually UTF-8) */
 			g_get_charset(&cur_charset);
 			text = g_convert_with_fallback(param->text, param->textlen, cur_charset, "ISO-8859-1", "?", &br, &bw, NULL);
 			gtk_clipboard_set_text(gtk_clipboard_get(GDK_SELECTION_CLIPBOARD), text, bw);
 			g_free(text);
-		}
+		} else
+			g_date_time_unref(t);
 	}
 	g_free(param->text);
 	g_free(param);
@@ -946,7 +948,7 @@ static void remmina_plugin_vnc_rfb_output(const char *format, ...)
 	g_free(f);
 	va_end(args);
 
-	remmina_plugin_service->debug("VNC returned: %s", vnc_error);
+	REMMINA_PLUGIN_DEBUG("VNC returned: %s", vnc_error);
 }
 
 static void remmina_plugin_vnc_chat_on_send(RemminaProtocolWidget *gp, const gchar *text)
@@ -1510,7 +1512,7 @@ static void remmina_plugin_vnc_on_cuttext_request(GtkClipboard *clipboard, const
 {
 	TRACE_CALL(__func__);
 	RemminaPluginVncData *gpdata = GET_PLUGIN_DATA(gp);
-	GTimeVal t;
+	GDateTime *t;
 	glong diff;
 	gsize br, bw;
 	gchar *latin1_text;
@@ -1518,12 +1520,11 @@ static void remmina_plugin_vnc_on_cuttext_request(GtkClipboard *clipboard, const
 
 	if (text) {
 		/* A timer (1 second) to avoid clipboard "loopback": text cut out from VNC won’t paste back into VNC */
-		g_get_current_time(&t);
-		diff = (t.tv_sec - gpdata->clipboard_timer.tv_sec) * 10
-		       + (t.tv_usec - gpdata->clipboard_timer.tv_usec) / 100000;
+		t = g_date_time_new_now_utc();
+		diff = g_date_time_difference(t, gpdata->clipboard_timer) / 100000; // tenth of second
 		if (diff < 10)
 			return;
-
+		g_date_time_unref(gpdata->clipboard_timer);
 		gpdata->clipboard_timer = t;
 		/* Convert text from current charset to latin-1 before sending to remote server.
 		 * See RFC6143 7.5.6 */
@@ -1648,6 +1649,7 @@ static gboolean remmina_plugin_vnc_close_connection_timeout(RemminaProtocolWidge
 		gpdata->vnc_buffer = NULL;
 	}
 	g_ptr_array_free(gpdata->pressed_keys, TRUE);
+    g_date_time_unref(gpdata->clipboard_timer);
 	remmina_plugin_vnc_event_free_all(gp);
 	g_queue_free(gpdata->vnc_event_queue);
 	pthread_mutex_destroy(&gpdata->vnc_event_queue_mutex);
@@ -1805,7 +1807,7 @@ static void remmina_plugin_vnc_init(RemminaProtocolWidget *gp)
 	g_signal_connect(G_OBJECT(gpdata->drawing_area), "draw", G_CALLBACK(remmina_plugin_vnc_on_draw), gp);
 
 	gpdata->auth_first = TRUE;
-	g_get_current_time(&gpdata->clipboard_timer);
+	gpdata->clipboard_timer = g_date_time_new_now_utc();
 	gpdata->listen_sock = -1;
 	gpdata->pressed_keys = g_ptr_array_new();
 	gpdata->vnc_event_queue = g_queue_new();

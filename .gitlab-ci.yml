@@ -52,9 +52,10 @@ ubuntu:devel:
   only:
     refs:
       - master
+      - tags
+      - merge_requests
       - web
       - schedules
-      - merge_requests
 
 appimage:build:
   # image: ubuntu:devel
@@ -104,17 +105,21 @@ flatpak:test:
   script:
     - /bin/sh -xe ./flatpak/flatpak-build.sh
   artifacts:
+    expose_as: "Download flatpak from the flatpak artifact folder"
     paths:
-      - flatpak/${BUNDLE}
+      - flatpak/$BUNDLE
+      - flatpak/
     expire_in: 10 days
   cache:
     paths:
       - flatpak/.flatpak-builder/cache
+      - flatpak/.flatpak-builder/downloads
+      - flatpak/.flatpak-builder/git
   only:
-    refs:
-      - master
-      - web
-      - schedules
+    - merge_requests
+    - tags
+    - web
+    - schedules
 
 snap:build:
   image: ubuntudesktop/gnome-3-28-1804
@@ -138,6 +143,11 @@ snap:build:
     expire_in: 10 days
   only:
     refs:
-      - master
+      - tags
+      - merge_requests
       - web
       - schedules
+trigger_build:
+  stage: build
+  script:
+    - "curl -X POST -F token=TOKEN -F ref=REF_NAME https://gitlab.com/api/v4/projects/10530342/trigger/pipeline"

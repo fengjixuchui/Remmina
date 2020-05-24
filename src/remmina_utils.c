@@ -308,8 +308,7 @@ gchar* remmina_utils_get_lang()
 const gchar* remmina_utils_get_kernel_name()
 {
 	TRACE_CALL(__func__);
-	if (u.sysname)
-		return u.sysname;
+	return u.sysname;
 }
 
 const gchar* remmina_utils_get_kernel_release()
@@ -319,8 +318,7 @@ const gchar* remmina_utils_get_kernel_release()
  */
 {
 	TRACE_CALL(__func__);
-	if (u.release)
-		return u.release;
+	return u.release;
 }
 
 /**
@@ -330,8 +328,7 @@ const gchar* remmina_utils_get_kernel_release()
 const gchar* remmina_utils_get_kernel_arch()
 {
 	TRACE_CALL(__func__);
-	if (u.machine)
-		return u.machine;
+	return u.machine;
 }
 
 /**
@@ -440,13 +437,14 @@ const gchar* remmina_utils_get_os_info()
 		remmina_utils_get_kernel_name(),
 		remmina_utils_get_kernel_release(),
 		remmina_utils_get_kernel_arch());
-	if (!kernel_string || kernel_string[0] == '\0')
+	if (!kernel_string || kernel_string[0] == '\0') {
 		if(kernel_string)
 			g_free(kernel_string);
 		kernel_string = g_strdup_printf("%s;%s;%s\n",
 			"UNKNOWN",
 			"UNKNOWN",
 			"UNKNOWN");
+    }
 	return kernel_string;
 }
 
@@ -511,21 +509,21 @@ gchar* remmina_gen_random_uuid()
 {
 	TRACE_CALL(__func__);
 	GRand *rand;
-	GTimeVal t;
+	GDateTime *gdt;
 	gchar *result;
 	int i;
 	static char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 	result = g_malloc0(15);
 
-	g_get_current_time(&t);
-	rand = g_rand_new_with_seed((guint32)t.tv_sec ^ (guint32)t.tv_usec);
+    gdt = g_date_time_new_now_utc();
+    rand = g_rand_new_with_seed((guint32)g_date_time_to_unix(gdt));
+    g_date_time_unref(gdt);
 
 	for (i = 0; i < 7; i++) {
 		result[i] = alpha[g_rand_int_range(rand, 0, sizeof(alpha) - 1)];
 	}
 
-	g_rand_set_seed(rand, (guint32)t.tv_usec);
 	for (i = 0; i < 7; i++) {
 		result[i + 7] = alpha[g_rand_int_range(rand, 0, sizeof(alpha) - 1)];
 	}

@@ -73,13 +73,14 @@ static void remmina_pref_gen_secret(void)
 	TRACE_CALL(__func__);
 	guchar s[32];
 	gint i;
-	GTimeVal gtime;
+	GDateTime *gtime;
 	GKeyFile *gkeyfile;
 	gchar *content;
 	gsize length;
 
-	g_get_current_time(&gtime);
-	srand(gtime.tv_sec);
+	gtime = g_date_time_new_now_utc();
+	srand(g_date_time_to_unix(gtime));
+	g_date_time_unref(gtime);
 
 	for (i = 0; i < 32; i++) {
 		s[i] = (guchar)(rand() % 256);
@@ -637,6 +638,19 @@ void remmina_pref_init(void)
 			NULL);
 	else
 		remmina_pref.vte_shortcutkey_select_all = GDK_KEY_a;
+
+	if (g_key_file_has_key(gkeyfile, "remmina_pref", "vte_shortcutkey_increase_font", NULL))
+		remmina_pref.vte_shortcutkey_increase_font = g_key_file_get_integer(gkeyfile, "remmina_pref", "vte_shortcutkey_increase_font",
+			NULL);
+	else
+		remmina_pref.vte_shortcutkey_increase_font = GDK_KEY_Page_Up;
+
+	if (g_key_file_has_key(gkeyfile, "remmina_pref", "vte_shortcutkey_decrease_font", NULL))
+		remmina_pref.vte_shortcutkey_decrease_font = g_key_file_get_integer(gkeyfile, "remmina_pref", "vte_shortcutkey_decrease_font",
+			NULL);
+	else
+		remmina_pref.vte_shortcutkey_decrease_font = GDK_KEY_Page_Down;
+
 
 	/* If we have a color scheme file, we switch to it, GIO will merge it in the
 	 * remmina.pref file */
