@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-06-23 21:37+0000\n"
-"PO-Revision-Date: 2020-06-16 15:49+0000\n"
+"POT-Creation-Date: 2020-07-22 23:44+0000\n"
+"PO-Revision-Date: 2020-07-21 07:05+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/remmina/remmina/"
 "da/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: src/remmina_protocol_widget.c:275
 msgid "Connect via SSH from a new terminal"
@@ -70,9 +70,9 @@ msgid "Connecting to %s via SSH…"
 msgstr "Opretter forbindelse til %s via SSH …"
 
 #: src/remmina_protocol_widget.c:1426 src/remmina_protocol_widget.c:1445
-#: src/remmina_ssh_plugin.c:957 src/remmina_sftp_plugin.c:300
-#: src/remmina_sftp_plugin.c:335 src/remmina_file_editor.c:1012
-#: plugins/www/www_plugin.c:872 plugins/rdp/rdp_plugin.c:2198
+#: src/remmina_ssh_plugin.c:967 src/remmina_sftp_plugin.c:309
+#: src/remmina_sftp_plugin.c:344 src/remmina_file_editor.c:1012
+#: plugins/www/www_plugin.c:872 plugins/rdp/rdp_plugin.c:2223
 #: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:236
 #: data/ui/remmina_preferences.glade:1577
 msgid "Password"
@@ -137,7 +137,7 @@ msgstr "Server"
 msgid "Install the %s protocol plugin first."
 msgstr "Installer først %s-protokolpluginet."
 
-#: src/remmina_exec.c:324
+#: src/remmina_exec.c:464
 #, c-format
 msgid "Plugin %s is not registered."
 msgstr "Pluginet %s er ikke registreret."
@@ -168,131 +168,131 @@ msgstr "Konfigurer tastetrykkene"
 msgid "libsodium >= 1.9.0 is required to use master password"
 msgstr "libsodium >= 1.9.0 kræves for at bruge hovedadgangskode"
 
-#: src/remmina_ssh_plugin.c:462
+#: src/remmina_ssh_plugin.c:472
 #, c-format
 msgid "Error: %s"
 msgstr "Fejl: %s"
 
-#: src/remmina_ssh_plugin.c:479
+#: src/remmina_ssh_plugin.c:489
 msgid "Terminal content saved in"
 msgstr "Terminalens indhold gemt i"
 
-#: src/remmina_ssh_plugin.c:533
+#: src/remmina_ssh_plugin.c:543
 msgid "Select All (host+A)"
 msgstr "Vælg alt (vært+A)"
 
-#: src/remmina_ssh_plugin.c:534
+#: src/remmina_ssh_plugin.c:544
 msgid "Copy (host+C)"
 msgstr "Kopiér (vært+C)"
 
-#: src/remmina_ssh_plugin.c:535
+#: src/remmina_ssh_plugin.c:545
 msgid "Paste (host+V)"
 msgstr "Indsæt (vært+V)"
 
-#: src/remmina_ssh_plugin.c:536
+#: src/remmina_ssh_plugin.c:546
 msgid "Save session to file"
 msgstr "Gem session til fil"
 
-#: src/remmina_ssh_plugin.c:537
+#: src/remmina_ssh_plugin.c:547
 msgid "Increase font size (host+Page Up)"
 msgstr "Større tekst (vært+Page Up)"
 
-#: src/remmina_ssh_plugin.c:538
+#: src/remmina_ssh_plugin.c:548
 msgid "Decrease font size (host+Page Down)"
 msgstr "Mindre tekst (vært+Page Down)"
 
-#: src/remmina_ssh_plugin.c:958 src/remmina_sftp_plugin.c:301
+#: src/remmina_ssh_plugin.c:968 src/remmina_sftp_plugin.c:310
 #: src/remmina_file_editor.c:364 src/remmina_file_editor.c:371
 msgid "SSH identity file"
 msgstr "SSH-identitetsfil"
 
-#: src/remmina_ssh_plugin.c:959 src/remmina_sftp_plugin.c:302
+#: src/remmina_ssh_plugin.c:969 src/remmina_sftp_plugin.c:311
 msgid "SSH agent"
 msgstr "SSH-agent"
 
-#: src/remmina_ssh_plugin.c:960 src/remmina_sftp_plugin.c:303
+#: src/remmina_ssh_plugin.c:970 src/remmina_sftp_plugin.c:312
 #: src/remmina_file_editor.c:1025
 msgid "Public key (automatic)"
 msgstr "Offentlig nøgle (automatisk)"
 
-#: src/remmina_ssh_plugin.c:961 src/remmina_sftp_plugin.c:304
+#: src/remmina_ssh_plugin.c:971 src/remmina_sftp_plugin.c:313
 msgid "Kerberos (GSSAPI)"
 msgstr "Kerberos (GSSAPI)"
 
-#: src/remmina_ssh_plugin.c:1036 data/ui/remmina_main.glade:273
+#: src/remmina_ssh_plugin.c:1046 data/ui/remmina_main.glade:273
 msgid "Copy"
 msgstr "Kopiér"
 
-#: src/remmina_ssh_plugin.c:1036
+#: src/remmina_ssh_plugin.c:1046
 msgid "_Copy"
 msgstr "_Kopiér"
 
-#: src/remmina_ssh_plugin.c:1037
+#: src/remmina_ssh_plugin.c:1047
 msgid "Paste"
 msgstr "Indsæt"
 
-#: src/remmina_ssh_plugin.c:1037
+#: src/remmina_ssh_plugin.c:1047
 msgid "_Paste"
 msgstr "_Indsæt"
 
-#: src/remmina_ssh_plugin.c:1038
+#: src/remmina_ssh_plugin.c:1048
 msgid "Select all"
 msgstr "Vælg alt"
 
-#: src/remmina_ssh_plugin.c:1038
+#: src/remmina_ssh_plugin.c:1048
 msgid "_Select all"
 msgstr "_Vælg alt"
 
-#: src/remmina_ssh_plugin.c:1039 data/ui/remmina_preferences.glade:2223
+#: src/remmina_ssh_plugin.c:1049 data/ui/remmina_preferences.glade:2223
 msgid "Increase font size"
 msgstr "Større tekst"
 
-#: src/remmina_ssh_plugin.c:1039
+#: src/remmina_ssh_plugin.c:1049
 msgid "_Increase font size"
 msgstr "_Større tekst"
 
-#: src/remmina_ssh_plugin.c:1040 data/ui/remmina_preferences.glade:2235
+#: src/remmina_ssh_plugin.c:1050 data/ui/remmina_preferences.glade:2235
 msgid "Decrease font size"
 msgstr "Mindre tekst"
 
-#: src/remmina_ssh_plugin.c:1040
+#: src/remmina_ssh_plugin.c:1050
 msgid "_Decrease font size"
 msgstr "_Mindre tekst"
 
-#: src/remmina_ssh_plugin.c:1058 src/remmina_message_panel.c:330
-#: src/remmina_sftp_plugin.c:334 src/remmina_file_editor.c:1003
+#: src/remmina_ssh_plugin.c:1068 src/remmina_message_panel.c:330
+#: src/remmina_sftp_plugin.c:343 src/remmina_file_editor.c:1003
 #: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1858
-#: plugins/vnc/vnc_plugin.c:1878 plugins/rdp/rdp_plugin.c:2197
+#: plugins/vnc/vnc_plugin.c:1878 plugins/rdp/rdp_plugin.c:2222
 #: plugins/nx/nx_plugin.c:730 data/ui/remmina_mpc.glade:144
 msgid "Username"
 msgstr "Brugernavn"
 
-#: src/remmina_ssh_plugin.c:1059 plugins/vnc/vnc_plugin.c:1859
+#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1859
 #: plugins/vnc/vnc_plugin.c:1879 plugins/spice/spice_plugin.c:437
 #: plugins/nx/nx_plugin.c:731
 msgid "User password"
 msgstr "Brugerens adgangskode"
 
-#: src/remmina_ssh_plugin.c:1060 src/remmina_sftp_plugin.c:336
+#: src/remmina_ssh_plugin.c:1070 src/remmina_sftp_plugin.c:345
 msgid "Authentication type"
 msgstr "Autentifikationstype"
 
-#: src/remmina_ssh_plugin.c:1061 src/remmina_sftp_plugin.c:337
+#: src/remmina_ssh_plugin.c:1071 src/remmina_sftp_plugin.c:346
 #: plugins/nx/nx_plugin.c:729
 msgid "Identity file"
 msgstr "Identitetsfil"
 
-#: src/remmina_ssh_plugin.c:1062 src/remmina_sftp_plugin.c:338
+#: src/remmina_ssh_plugin.c:1072 src/remmina_sftp_plugin.c:347
 #: src/remmina_file_editor.c:1034
 msgid "Password to unlock private key"
 msgstr "Adgangskode til at låse op for privat nøgle"
 
-#: src/remmina_ssh_plugin.c:1063 plugins/xdmcp/xdmcp_plugin.c:370
-#: plugins/rdp/rdp_plugin.c:2228 plugins/nx/nx_plugin.c:734
+#: src/remmina_ssh_plugin.c:1073 plugins/xdmcp/xdmcp_plugin.c:370
+#: plugins/rdp/rdp_plugin.c:2254 plugins/nx/nx_plugin.c:734
 msgid "Startup program"
 msgstr "Opstartsprogram"
 
-#: src/remmina_ssh_plugin.c:1068
+#: src/remmina_ssh_plugin.c:1078
 msgid ""
 "The filename can use the following placeholders:\n"
 "\n"
@@ -314,59 +314,59 @@ msgstr ""
 "  • %g erstattes af Remmina-profilgruppenavn\n"
 "  • %d erstattes af lokal datetime i iso8601-format\n"
 
-#: src/remmina_ssh_plugin.c:1090
+#: src/remmina_ssh_plugin.c:1100
 msgid "Terminal color scheme"
 msgstr "Terminalens farvetema"
 
-#: src/remmina_ssh_plugin.c:1091
+#: src/remmina_ssh_plugin.c:1101
 msgid "Character set"
 msgstr "Tegnsæt"
 
-#: src/remmina_ssh_plugin.c:1092 src/remmina_sftp_plugin.c:339
+#: src/remmina_ssh_plugin.c:1102 src/remmina_sftp_plugin.c:348
 msgid "SSH Proxy Command"
 msgstr "Kommando til SSH-proxy"
 
-#: src/remmina_ssh_plugin.c:1093
+#: src/remmina_ssh_plugin.c:1103
 msgid "KEX (Key Exchange) algorithms"
 msgstr "KEX-algoritmer (Key Exchange)"
 
-#: src/remmina_ssh_plugin.c:1094
+#: src/remmina_ssh_plugin.c:1104
 msgid "Symmetric cipher client to server"
 msgstr "Symmetrisk chiffer klient til server"
 
-#: src/remmina_ssh_plugin.c:1095
+#: src/remmina_ssh_plugin.c:1105
 msgid "Preferred server host key types"
 msgstr "Fortrukne nøgletyper til servervært"
 
-#: src/remmina_ssh_plugin.c:1096
+#: src/remmina_ssh_plugin.c:1106
 msgid "Folder for SSH session log"
 msgstr "Mappe til SSH-sessionens log"
 
-#: src/remmina_ssh_plugin.c:1097
+#: src/remmina_ssh_plugin.c:1107
 msgid "Filename for SSH session log"
 msgstr "Filnavn til SSH-sessionens log"
 
-#: src/remmina_ssh_plugin.c:1098
+#: src/remmina_ssh_plugin.c:1108
 msgid "Log SSH session when exiting Remmina"
 msgstr "Log SSH-session når Remmina afsluttes"
 
-#: src/remmina_ssh_plugin.c:1099
+#: src/remmina_ssh_plugin.c:1109
 msgid "Audible terminal bell"
 msgstr "Klokke med lyd i terminalen"
 
-#: src/remmina_ssh_plugin.c:1100
+#: src/remmina_ssh_plugin.c:1110
 msgid "SSH compression"
 msgstr "SSH-komprimering"
 
-#: src/remmina_ssh_plugin.c:1101
+#: src/remmina_ssh_plugin.c:1111
 msgid "Don't remember passwords"
 msgstr "Husk ikke adgangskoder"
 
-#: src/remmina_ssh_plugin.c:1102
+#: src/remmina_ssh_plugin.c:1112
 msgid "Strict host key checking"
 msgstr "Striks tjek af værtsnøgle"
 
-#: src/remmina_ssh_plugin.c:1116
+#: src/remmina_ssh_plugin.c:1126
 msgid "SSH - Secure Shell"
 msgstr "SSH - Sikker skal"
 
@@ -458,7 +458,7 @@ msgid "Go to parent folder"
 msgstr "Gå til overliggende mappe"
 
 #: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1915
-#: plugins/rdp/rdp_plugin.c:2268
+#: plugins/rdp/rdp_plugin.c:2294
 msgid "Refresh"
 msgstr "Opdater"
 
@@ -503,11 +503,11 @@ msgstr "Gruppe"
 msgid "Permission"
 msgstr "Tilladelse"
 
-#: src/remmina_ftp_client.c:1006 plugins/rdp/rdp_plugin.c:2137
+#: src/remmina_ftp_client.c:1006 plugins/rdp/rdp_plugin.c:2157
 msgid "Remote"
 msgstr "Fjern"
 
-#: src/remmina_ftp_client.c:1013 plugins/rdp/rdp_plugin.c:2133
+#: src/remmina_ftp_client.c:1013 plugins/rdp/rdp_plugin.c:2153
 msgid "Local"
 msgstr "Lokal"
 
@@ -521,16 +521,31 @@ msgid "Show 'About'"
 msgstr "Vis 'Om'"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
-#: src/remmina.c:86 src/remmina.c:88
+#: src/remmina.c:86
+#, fuzzy
+#| msgid ""
+#| "Connect either to a desktop described in a file (.remmina or a filetype "
+#| "supported by a plugin) or a supported URI (RDP, VNC or SPICE)"
 msgid ""
-"Connect to desktop described in file (.remmina or type supported by plugin)"
+"Connect either to a desktop described in a file (.remmina or a filetype "
+"supported by a plugin) or a supported URI (RDP, VNC, SSH or SPICE)"
 msgstr ""
-"Opret forbindelse til skrivebord beskrevet i fil (.remmina eller type der "
-"understøttes af plugin)"
+"Opret enten forbindelse til et skrivebord beskrevet i en fil (.remmina eller "
+"en filtype der understøttes af et plugin) eller en understøttede URI (RDP, "
+"VNC eller SPICE)"
 
 #: src/remmina.c:86 src/remmina.c:88 src/remmina.c:90
 msgid "FILE"
 msgstr "FIL"
+
+#. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
+#: src/remmina.c:88
+msgid ""
+"Connect to a desktop described in a file (.remmina or a type supported by a "
+"plugin)"
+msgstr ""
+"Opret forbindelse til et skrivebord beskrevet i en fil (.remmina eller en "
+"type der understøttes af et plugin)"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:90
@@ -610,6 +625,10 @@ msgstr ""
 "Indstil en eller flere profilindstillinger som skal bruges med --update-"
 "profile"
 
+#: src/remmina.c:119
+msgid "Encrypt a password"
+msgstr "Krypter en adgangskode"
+
 #: src/remmina_icon.c:139
 msgid "Open Main Window"
 msgstr "Åbn hovedvindue"
@@ -638,7 +657,7 @@ msgstr "Remmina-applet"
 msgid "Connect to remote desktops through the applet menu"
 msgstr "Opret forbindelse til fjernskriveborde gennem applet-menuen"
 
-#: src/remmina_icon.c:473 src/remmina_icon.c:474 src/remmina_main.c:1226
+#: src/remmina_icon.c:473 src/remmina_icon.c:474 src/remmina_main.c:1240
 msgid "Remmina Remote Desktop Client"
 msgstr "Remmina-fjernskrivebordsklient"
 
@@ -782,19 +801,19 @@ msgstr "Beskrivelse"
 msgid "Version"
 msgstr "Version"
 
-#: src/remmina_main.c:656
+#: src/remmina_main.c:657
 #, c-format
 msgid "Total %i item."
 msgid_plural "Total %i items."
 msgstr[0] "Total %i element."
 msgstr[1] "Total %i elementer."
 
-#: src/remmina_main.c:834
+#: src/remmina_main.c:835
 #, c-format
 msgid "Are you sure you want to delete \"%s\"?"
 msgstr "Er du sikker på, at du vil slette \"%s\"?"
 
-#: src/remmina_main.c:934
+#: src/remmina_main.c:935
 #, c-format
 msgid ""
 "Unable to import:\n"
@@ -803,19 +822,19 @@ msgstr ""
 "Kan ikke importere:\n"
 "%s"
 
-#: src/remmina_main.c:960 data/ui/remmina_main.glade:380
+#: src/remmina_main.c:961 data/ui/remmina_main.glade:380
 msgid "Import"
 msgstr "Importér"
 
-#: src/remmina_main.c:983 src/remmina_file_editor.c:1450
+#: src/remmina_main.c:984 src/remmina_file_editor.c:1450
 msgid "_Save"
 msgstr "_Gem"
 
-#: src/remmina_main.c:989
+#: src/remmina_main.c:990
 msgid "This protocol does not support exporting."
 msgstr "Denne protokol understøtter ikke eksport."
 
-#: src/remmina_main.c:1228
+#: src/remmina_main.c:1242
 msgid "Remmina Kiosk"
 msgstr "Remmina-kiosk"
 
@@ -956,7 +975,7 @@ msgstr "Ja"
 msgid "No"
 msgstr "Nej"
 
-#: src/remmina_message_panel.c:391 plugins/rdp/rdp_plugin.c:2199
+#: src/remmina_message_panel.c:391 plugins/rdp/rdp_plugin.c:2224
 #: data/ui/remmina_mpc.glade:172
 msgid "Domain"
 msgstr "Domæne"
@@ -985,19 +1004,19 @@ msgstr "Klient-certifikatfil"
 msgid "Client Certificate Key"
 msgstr "Klient-certifikatnøgle"
 
-#: src/remmina_sftp_plugin.c:313
+#: src/remmina_sftp_plugin.c:322
 msgid "Show Hidden Files"
 msgstr "Vis skjulte filer"
 
-#: src/remmina_sftp_plugin.c:315
+#: src/remmina_sftp_plugin.c:324
 msgid "Overwrite all files"
 msgstr "Overskriv alle filer"
 
-#: src/remmina_sftp_plugin.c:317
+#: src/remmina_sftp_plugin.c:326
 msgid "Resume all file transfers"
 msgstr "Genoptag alle filoverførsler"
 
-#: src/remmina_sftp_plugin.c:348
+#: src/remmina_sftp_plugin.c:357
 msgid "SFTP - Secure File Transfer"
 msgstr "SFTP - Sikker filoverførsel"
 
@@ -1051,32 +1070,32 @@ msgid "The public SSH key changed!"
 msgstr "Den offentlige SSH-nøgle blev ændret!"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:509
+#: src/remmina_ssh.c:510
 #, c-format
 msgid "Could not fetch the server's public SSH key. %s"
 msgstr "Kunne ikke hente serverens offentlige SSH-nøgle. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:516
+#: src/remmina_ssh.c:517
 #, c-format
 msgid "Could not fetch public SSH key. %s"
 msgstr "Kunne ikke hente offentlig SSH-nøgle. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:524
+#: src/remmina_ssh.c:525
 #, c-format
 msgid "Could not fetch checksum for public SSH key. %s"
 msgstr "Kunne ikke hente checksum til offentlig SSH-nøgle. %s"
 
-#: src/remmina_ssh.c:537
+#: src/remmina_ssh.c:538
 msgid "The server is unknown. The public key fingerprint is:"
 msgstr "Serveren er ukendt. Fingeraftrykket af den offentlige nøgle er:"
 
-#: src/remmina_ssh.c:539 src/remmina_ssh.c:545
+#: src/remmina_ssh.c:540 src/remmina_ssh.c:546
 msgid "Do you trust the new public key?"
 msgstr "Stoler du på den nye offentlige nøgle?"
 
-#: src/remmina_ssh.c:542
+#: src/remmina_ssh.c:543
 msgid ""
 "Warning: The server has changed its public key. This means either you are "
 "under attack,\n"
@@ -1088,146 +1107,146 @@ msgstr ""
 "offentlige nøgle er:"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:567
+#: src/remmina_ssh.c:568
 #, c-format
 msgid "Could not check list of known SSH hosts. %s"
 msgstr "Kunne ikke tjekke listen over kendte SSH-værter. %s"
 
-#: src/remmina_ssh.c:576
+#: src/remmina_ssh.c:577
 msgid "SSH password"
 msgstr "SSH-adgangskode"
 
-#: src/remmina_ssh.c:583 src/remmina_ssh.c:621
+#: src/remmina_ssh.c:584 src/remmina_ssh.c:622
 msgid "SSH private key passphrase"
 msgstr "Adgangssætning for privat nøgle for SSH"
 
-#: src/remmina_ssh.c:588
+#: src/remmina_ssh.c:589
 msgid "SSH Kerberos/GSSAPI"
 msgstr "SSH-Kerberos/GSSAPI"
 
-#: src/remmina_ssh.c:618 src/remmina_ssh.c:641
+#: src/remmina_ssh.c:619 src/remmina_ssh.c:644
 msgid "SSH tunnel credentials"
 msgstr "Loginoplysninger for SSH-tunnel"
 
-#: src/remmina_ssh.c:618 src/remmina_ssh.c:641 plugins/nx/nx_plugin.c:203
+#: src/remmina_ssh.c:619 src/remmina_ssh.c:644 plugins/nx/nx_plugin.c:203
 msgid "SSH credentials"
 msgstr "SSH-loginoplysninger"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:792
+#: src/remmina_ssh.c:814
 #, c-format
 msgid "Could not start SSH session. %s"
 msgstr "Kunne ikke starte SSH-session. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1177 src/remmina_ssh.c:1240
+#: src/remmina_ssh.c:1199 src/remmina_ssh.c:1262
 #, c-format
 msgid "Could not create channel. %s"
 msgstr "Kunne ikke oprette kanal. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1188
+#: src/remmina_ssh.c:1210
 #, c-format
 msgid "Could not connect to SSH tunnel. %s"
 msgstr "Kunne ikke oprette forbindelse til SSH-tunnel. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1255 src/remmina_ssh.c:1880
+#: src/remmina_ssh.c:1277 src/remmina_ssh.c:1902
 #, c-format
 msgid "Could not open channel. %s"
 msgstr "Kunne ikke åbne kanal. %s"
 
-#: src/remmina_ssh.c:1261
+#: src/remmina_ssh.c:1283
 #, c-format
 msgid "Could not run %s on SSH server."
 msgstr "Kunne ikke køre %s på SSH-server."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1299 src/remmina_ssh.c:1320 src/remmina_ssh.c:1329
+#: src/remmina_ssh.c:1321 src/remmina_ssh.c:1342 src/remmina_ssh.c:1351
 #, c-format
 msgid "Could not request port forwarding. %s"
 msgstr "Kunne ikke anmode om viderestilling af port. %s"
 
-#: src/remmina_ssh.c:1364
+#: src/remmina_ssh.c:1386
 msgid "The server did not respond."
 msgstr "Serveren svarede ikke."
 
-#: src/remmina_ssh.c:1407
+#: src/remmina_ssh.c:1429
 #, c-format
 msgid "Cannot connect to local port %i."
 msgstr "Kan ikke oprette forbindelse til porten %i."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1457
+#: src/remmina_ssh.c:1479
 #, c-format
 msgid "Could not write to SSH channel. %s"
 msgstr "Kunne ikke skrive til SSH-kanal. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1464
+#: src/remmina_ssh.c:1486
 #, c-format
 msgid "Could not read from tunnel listening socket. %s"
 msgstr "Kunne ikke læse fra tunnellyttesokkel. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1484
+#: src/remmina_ssh.c:1506
 #, c-format
 msgid "Could not poll SSH channel. %s"
 msgstr "Kunne ikke poll SSH-kanal. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1491
+#: src/remmina_ssh.c:1513
 #, c-format
 msgid "Could not read SSH channel in a non-blocking way. %s"
 msgstr "Kunne ikke læse SSH-kanal på en måde som ikke blokerer. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1510
+#: src/remmina_ssh.c:1532
 #, c-format
 msgid "Could not send data to tunnel listening socket. %s"
 msgstr "Kunne ikke sende data til tunnellyttesokkel. %s"
 
-#: src/remmina_ssh.c:1612
+#: src/remmina_ssh.c:1634
 msgid "Assign a destination port."
 msgstr "Tildel en målport."
 
-#: src/remmina_ssh.c:1619
+#: src/remmina_ssh.c:1641
 msgid "Could not create socket."
 msgstr "Kunne ikke oprette sokkel."
 
-#: src/remmina_ssh.c:1629
+#: src/remmina_ssh.c:1651
 msgid "Could not bind server socket to local port."
 msgstr "Kunne ikke binde serversokkel til lokal port."
 
-#: src/remmina_ssh.c:1635
+#: src/remmina_ssh.c:1657
 msgid "Could not listen to local port."
 msgstr "Kunne ikke lytte til lokal port."
 
 #. TRANSLATORS: Do not translate pthread
-#: src/remmina_ssh.c:1645 src/remmina_ssh.c:1662 src/remmina_ssh.c:1679
-#: src/remmina_ssh.c:1697
+#: src/remmina_ssh.c:1667 src/remmina_ssh.c:1684 src/remmina_ssh.c:1701
+#: src/remmina_ssh.c:1719
 msgid "Could not start pthread."
 msgstr "Kunne ikke starte pthread."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1790
+#: src/remmina_ssh.c:1812
 #, c-format
 msgid "Could not create SFTP session. %s"
 msgstr "Kunne ikke oprette SFTP-session. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1795
+#: src/remmina_ssh.c:1817
 #, c-format
 msgid "Could not start SFTP session. %s"
 msgstr "Kunne ikke starte SFTP-session. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1910
+#: src/remmina_ssh.c:1932
 #, c-format
 msgid "Could not request shell. %s"
 msgstr "Kunne ikke anmode skallen. %s"
 
-#: src/remmina_ssh.c:2003
+#: src/remmina_ssh.c:2025
 msgid "Could not create PTY device."
 msgstr "Kunne ikke oprette PTY-enhed."
 
@@ -1369,7 +1388,7 @@ msgstr "Tunnel via loopback-adresse"
 msgid "Same server at port %i"
 msgstr "Samme server på port %i"
 
-#: src/remmina_file_editor.c:987 plugins/rdp/rdp_plugin.c:2229
+#: src/remmina_file_editor.c:987 plugins/rdp/rdp_plugin.c:2255
 msgid "Startup path"
 msgstr "Opstartssti"
 
@@ -1528,7 +1547,7 @@ msgid "Ignore TLS errors"
 msgstr "Ignorer TLS-fejl"
 
 #: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1902
-#: plugins/spice/spice_plugin.c:456 plugins/rdp/rdp_plugin.c:2250
+#: plugins/spice/spice_plugin.c:456 plugins/rdp/rdp_plugin.c:2276
 #: plugins/nx/nx_plugin.c:752
 msgid "Forget passwords after use"
 msgstr "Gem adgangskoder efter anvendelse"
@@ -1596,22 +1615,22 @@ msgstr "Mange farver (16 bpp)"
 msgid "256 colors (8 bpp)"
 msgstr "256 farver (8 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1838 plugins/rdp/rdp_plugin.c:2125
+#: plugins/vnc/vnc_plugin.c:1838 plugins/rdp/rdp_plugin.c:2145
 #: plugins/rdp/rdp_settings.c:275 plugins/nx/nx_plugin.c:713
 msgid "Best (slowest)"
 msgstr "Bedste (langsomst)"
 
-#: plugins/vnc/vnc_plugin.c:1839 plugins/rdp/rdp_plugin.c:2124
+#: plugins/vnc/vnc_plugin.c:1839 plugins/rdp/rdp_plugin.c:2144
 #: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:712
 msgid "Good"
 msgstr "God"
 
-#: plugins/vnc/vnc_plugin.c:1840 plugins/rdp/rdp_plugin.c:2123
+#: plugins/vnc/vnc_plugin.c:1840 plugins/rdp/rdp_plugin.c:2143
 #: plugins/rdp/rdp_settings.c:271 plugins/nx/nx_plugin.c:711
 msgid "Medium"
 msgstr "Medium"
 
-#: plugins/vnc/vnc_plugin.c:1841 plugins/rdp/rdp_plugin.c:2122
+#: plugins/vnc/vnc_plugin.c:1841 plugins/rdp/rdp_plugin.c:2142
 #: plugins/rdp/rdp_settings.c:269 plugins/nx/nx_plugin.c:710
 msgid "Poor (fastest)"
 msgstr "Dårlig (hurtigst)"
@@ -1625,7 +1644,7 @@ msgid "Color depth"
 msgstr "Farvedybde"
 
 #: plugins/vnc/vnc_plugin.c:1861 plugins/vnc/vnc_plugin.c:1881
-#: plugins/rdp/rdp_plugin.c:2217 plugins/nx/nx_plugin.c:733
+#: plugins/rdp/rdp_plugin.c:2242 plugins/nx/nx_plugin.c:733
 msgid "Quality"
 msgstr "Kvalitet"
 
@@ -1660,7 +1679,7 @@ msgid "Open Chat…"
 msgstr "Åbn chat …"
 
 #: plugins/vnc/vnc_plugin.c:1917 plugins/spice/spice_plugin.c:472
-#: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2271
+#: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2297
 msgid "Send Ctrl+Alt+Delete"
 msgstr "Send Ctrl+Alt+Delete"
 
@@ -1709,7 +1728,7 @@ msgstr "Brug TLS-kryptering"
 msgid "Server CA certificate"
 msgstr "Serverens CA-certifikat"
 
-#: plugins/spice/spice_plugin.c:440 plugins/rdp/rdp_plugin.c:2202
+#: plugins/spice/spice_plugin.c:440 plugins/rdp/rdp_plugin.c:2227
 msgid "Share folder"
 msgstr "Delingsmappe"
 
@@ -1782,7 +1801,7 @@ msgstr "Mange farver (16 bit)"
 msgid "True colour (24 bit)"
 msgstr "Ægte farver (24 bit)"
 
-#: plugins/xdmcp/xdmcp_plugin.c:369 plugins/rdp/rdp_plugin.c:2201
+#: plugins/xdmcp/xdmcp_plugin.c:369 plugins/rdp/rdp_plugin.c:2226
 msgid "Colour depth"
 msgstr "Farvedybde"
 
@@ -1818,15 +1837,15 @@ msgstr "Løsrevet vindue"
 msgid "Remmina simple terminal"
 msgstr "Remmina simpel terminal"
 
-#: plugins/rdp/rdp_plugin.c:677
+#: plugins/rdp/rdp_plugin.c:680
 msgid "Enter RDP authentication credentials"
 msgstr "Indtast loginoplysninger for RDP-autentifikation"
 
-#: plugins/rdp/rdp_plugin.c:739
+#: plugins/rdp/rdp_plugin.c:742
 msgid "Enter RDP gateway authentication credentials"
 msgstr "Indtast loginoplysninger for autentifikation af RDP-gateway"
 
-#: plugins/rdp/rdp_plugin.c:1693
+#: plugins/rdp/rdp_plugin.c:1709
 #, c-format
 msgid ""
 "Could not access the RDP server \"%s\".\n"
@@ -1835,7 +1854,7 @@ msgstr ""
 "Kunne ikke få adgang til RDP-serveren \"%s\".\n"
 "Kontoen er låst."
 
-#: plugins/rdp/rdp_plugin.c:1700
+#: plugins/rdp/rdp_plugin.c:1716
 #, c-format
 msgid ""
 "Could not access the RDP server \"%s\".\n"
@@ -1844,7 +1863,7 @@ msgstr ""
 "Kunne ikke få adgang til RDP-serveren \"%s\".\n"
 "Kontoen er udløbet."
 
-#: plugins/rdp/rdp_plugin.c:1707
+#: plugins/rdp/rdp_plugin.c:1723
 #, c-format
 msgid ""
 "Could not access the RDP server \"%s\".\n"
@@ -1853,7 +1872,7 @@ msgstr ""
 "Kunne ikke få adgang til RDP-serveren \"%s\".\n"
 "Adgangskoden er udløbet."
 
-#: plugins/rdp/rdp_plugin.c:1714
+#: plugins/rdp/rdp_plugin.c:1730
 #, c-format
 msgid ""
 "Could not access the RDP server \"%s\".\n"
@@ -1862,7 +1881,7 @@ msgstr ""
 "Kunne ikke få adgang til RDP-serveren \"%s\".\n"
 "Kontoen er deaktiveret."
 
-#: plugins/rdp/rdp_plugin.c:1720
+#: plugins/rdp/rdp_plugin.c:1736
 #, c-format
 msgid ""
 "Could not access the RDP server \"%s\".\n"
@@ -1871,7 +1890,7 @@ msgstr ""
 "Kunne ikke få adgang til RDP-serveren \"%s\".\n"
 "Brugeren har ikke tilstrækkelige rettigheder."
 
-#: plugins/rdp/rdp_plugin.c:1728
+#: plugins/rdp/rdp_plugin.c:1744
 #, c-format
 msgid ""
 "Could not access the RDP server \"%s\".\n"
@@ -1880,7 +1899,7 @@ msgstr ""
 "Kunne ikke få adgang til RDP-serveren \"%s\".\n"
 "Kontoen har begrænsninger."
 
-#: plugins/rdp/rdp_plugin.c:1736
+#: plugins/rdp/rdp_plugin.c:1752
 #, c-format
 msgid ""
 "Could not access the RDP server \"%s\".\n"
@@ -1889,17 +1908,17 @@ msgstr ""
 "Kunne ikke få adgang til RDP-serveren \"%s\".\n"
 "Brugeren skal skifte adgangskode inden der oprettes forbindelse."
 
-#: plugins/rdp/rdp_plugin.c:1741
+#: plugins/rdp/rdp_plugin.c:1757
 #, c-format
 msgid "Lost connection to the RDP server \"%s\"."
 msgstr "Mistede forbindelse til RDP-serveren \"%s\"."
 
-#: plugins/rdp/rdp_plugin.c:1744
+#: plugins/rdp/rdp_plugin.c:1760
 #, c-format
 msgid "Could not find the address for the RDP server \"%s\"."
 msgstr "Kunne ikke finde adressen til RDP-serveren \"%s\"."
 
-#: plugins/rdp/rdp_plugin.c:1748
+#: plugins/rdp/rdp_plugin.c:1764
 #, c-format
 msgid ""
 "Could not connect to the RDP server \"%s\" via TLS. Check that client and "
@@ -1909,7 +1928,7 @@ msgstr ""
 "klienten og serveren understøtter den samme TLS-version."
 
 #. TRANSLATORS: the placeholder may be either an IP/FQDN or a server hostname
-#: plugins/rdp/rdp_plugin.c:1752
+#: plugins/rdp/rdp_plugin.c:1768
 #, c-format
 msgid ""
 "Unable to establish a connection to the RDP server. Check \"Security "
@@ -1918,16 +1937,16 @@ msgstr ""
 "Kan ikke etablere en forbindelse til RDP-serveren. Tjek \"Forhandling af "
 "sikkerhedsprotokol\" \"%s\"."
 
-#: plugins/rdp/rdp_plugin.c:1760
+#: plugins/rdp/rdp_plugin.c:1776
 #, c-format
 msgid "Cannot connect to the RDP server \"%s\"."
 msgstr "Kan ikke oprette forbindelse til RDP-serveren \"%s\"."
 
-#: plugins/rdp/rdp_plugin.c:1763
+#: plugins/rdp/rdp_plugin.c:1779
 msgid "Could not start libfreerdp-gdi."
 msgstr "Kunne ikke starte libfreerdp-gdi."
 
-#: plugins/rdp/rdp_plugin.c:1766
+#: plugins/rdp/rdp_plugin.c:1782
 #, c-format
 msgid ""
 "You requested a H.264 GFX mode for the server \"%s\", but your libfreerdp "
@@ -1937,12 +1956,12 @@ msgstr ""
 "understøtter ikke H.264. Brug venligst en farvedybdeindstilling som ikke er "
 "AVC."
 
-#: plugins/rdp/rdp_plugin.c:1773
+#: plugins/rdp/rdp_plugin.c:1789
 #, c-format
 msgid "The \"%s\" server refused the connection."
 msgstr "Serveren \"%s\" nægtede forbindelsen."
 
-#: plugins/rdp/rdp_plugin.c:1778
+#: plugins/rdp/rdp_plugin.c:1794
 #, c-format
 msgid ""
 "The Remote Desktop Gateway \"%s\" denied the user \"%s\\%s\" access due to "
@@ -1951,88 +1970,88 @@ msgstr ""
 "Fjernskrivebordsgatewayen \"%s\" nægtede brugeren \"%s\\%s\" adgang pga. "
 "regler."
 
-#: plugins/rdp/rdp_plugin.c:1788
+#: plugins/rdp/rdp_plugin.c:1804
 #, c-format
 msgid "Cannot connect to the \"%s\" RDP server."
 msgstr "Kan ikke oprette forbindelse til RDP-serveren \"%s\"."
 
-#: plugins/rdp/rdp_plugin.c:2107
+#: plugins/rdp/rdp_plugin.c:2127
 msgid "GFX AVC444 (32 bpp)"
 msgstr "GFX AVC444 (32 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2108
+#: plugins/rdp/rdp_plugin.c:2128
 msgid "GFX AVC420 (32 bpp)"
 msgstr "GFX AVC420 (32 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2109
+#: plugins/rdp/rdp_plugin.c:2129
 msgid "GFX RFX (32 bpp)"
 msgstr "GFX RFX (32 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2110
+#: plugins/rdp/rdp_plugin.c:2130
 msgid "RemoteFX (32 bpp)"
 msgstr "RemoteFX (32 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2111
+#: plugins/rdp/rdp_plugin.c:2131
 msgid "True colour (32 bpp)"
 msgstr "Ægte farver (32 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2112
+#: plugins/rdp/rdp_plugin.c:2132
 msgid "True colour (24 bpp)"
 msgstr "Ægte farver (24 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2113
+#: plugins/rdp/rdp_plugin.c:2133
 msgid "High colour (16 bpp)"
 msgstr "Mange farver (16 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2114
+#: plugins/rdp/rdp_plugin.c:2134
 msgid "High colour (15 bpp)"
 msgstr "Mange farver (15 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2115
+#: plugins/rdp/rdp_plugin.c:2135
 msgid "256 colours (8 bpp)"
 msgstr "256 farver (8 bpp)"
 
-#: plugins/rdp/rdp_plugin.c:2132 data/ui/remmina_preferences.glade:702
+#: plugins/rdp/rdp_plugin.c:2152 data/ui/remmina_preferences.glade:702
 msgid "Off"
 msgstr "Fra"
 
-#: plugins/rdp/rdp_plugin.c:2134
+#: plugins/rdp/rdp_plugin.c:2154
 msgid "Local - low quality"
 msgstr "Lokal - lav kvalitet"
 
-#: plugins/rdp/rdp_plugin.c:2135
+#: plugins/rdp/rdp_plugin.c:2155
 msgid "Local - medium quality"
 msgstr "Lokal - medium kvalitet"
 
-#: plugins/rdp/rdp_plugin.c:2136
+#: plugins/rdp/rdp_plugin.c:2156
 msgid "Local - high quality"
 msgstr "Lokal - høj kvalitet"
 
-#: plugins/rdp/rdp_plugin.c:2144
+#: plugins/rdp/rdp_plugin.c:2164
 msgid "Automatic negotiation"
 msgstr "Automatisk forhandling"
 
-#: plugins/rdp/rdp_plugin.c:2145
+#: plugins/rdp/rdp_plugin.c:2165
 msgid "NLA protocol security"
 msgstr "Sikkerhed for NLA-protokol"
 
-#: plugins/rdp/rdp_plugin.c:2146
+#: plugins/rdp/rdp_plugin.c:2166
 msgid "TLS protocol security"
 msgstr "Sikkerhed for TLS-protokol"
 
-#: plugins/rdp/rdp_plugin.c:2147
+#: plugins/rdp/rdp_plugin.c:2167
 msgid "RDP protocol security"
 msgstr "Sikkerhed for RDP-protokol"
 
-#: plugins/rdp/rdp_plugin.c:2148
+#: plugins/rdp/rdp_plugin.c:2168
 msgid "NLA extended protocol security"
 msgstr "Udvidet sikkerhed for NLA-protokol"
 
-#: plugins/rdp/rdp_plugin.c:2161
+#: plugins/rdp/rdp_plugin.c:2181
 msgid "2600 (Windows XP), 7601 (Windows Vista/7), 9600 (Windows 8 and newer)"
 msgstr "2600 (Windows XP), 7601 (Windows Vista/7), 9600 (Windows 8 og nyere)"
 
-#: plugins/rdp/rdp_plugin.c:2164
+#: plugins/rdp/rdp_plugin.c:2184
 msgid ""
 "Used i.a. by terminal services in smart card channel to distinguish client "
 "capabilities:\n"
@@ -2050,7 +2069,7 @@ msgstr ""
 "  • >= 7065: Windows 8 og nyere: SCardGetReaderIcon(),\n"
 "    SCardGetDeviceTypeId()"
 
-#: plugins/rdp/rdp_plugin.c:2171
+#: plugins/rdp/rdp_plugin.c:2191
 msgid ""
 "Options for redirection of audio input:\n"
 "  • [sys:<sys>,][dev:<dev>,][format:<format>,][rate:<rate>,]\n"
@@ -2066,7 +2085,7 @@ msgstr ""
 "  • sys:oss,dev:1,format:1\n"
 "  • sys:alsa"
 
-#: plugins/rdp/rdp_plugin.c:2179
+#: plugins/rdp/rdp_plugin.c:2199
 msgid ""
 "Options for redirection of USB device:\n"
 "  • [dbg,][id:<vid>:<pid>#…,][addr:<bus>:<addr>#…,][auto]\n"
@@ -2078,55 +2097,67 @@ msgstr ""
 "  • auto\n"
 "  • id:054c:0268#4669:6e6b,addr:04:0c"
 
-#: plugins/rdp/rdp_plugin.c:2218
+#: plugins/rdp/rdp_plugin.c:2205
+msgid ""
+"Advanced setting for high latency links:\n"
+"Adjust connection timeout, use if you encounter timeout failures with your "
+"connection.\n"
+"The highest possible value is 600000 ms (10 minutes)\n"
+msgstr ""
+
+#: plugins/rdp/rdp_plugin.c:2243
 msgid "Security protocol negotiation"
 msgstr "Forhandling af sikkerhedsprotokol"
 
-#: plugins/rdp/rdp_plugin.c:2219
+#: plugins/rdp/rdp_plugin.c:2244
 msgid "Gateway transport type"
 msgstr "Gateway transporttype"
 
-#: plugins/rdp/rdp_plugin.c:2220
+#: plugins/rdp/rdp_plugin.c:2245
 msgid "Sound"
 msgstr "Lyd"
 
-#: plugins/rdp/rdp_plugin.c:2221
+#: plugins/rdp/rdp_plugin.c:2246
 msgid "Redirect local microphone"
 msgstr "Omdiriger lokal mikrofon"
 
-#: plugins/rdp/rdp_plugin.c:2222
+#: plugins/rdp/rdp_plugin.c:2247
+msgid "Connection timeout in ms"
+msgstr "Forbindelsestimeout i ms"
+
+#: plugins/rdp/rdp_plugin.c:2248
 msgid "Remote Desktop Gateway server"
 msgstr "Gateway-server for fjernskrivebord"
 
-#: plugins/rdp/rdp_plugin.c:2223
+#: plugins/rdp/rdp_plugin.c:2249
 msgid "Remote Desktop Gateway username"
 msgstr "Gateway-brugernavn for fjernskrivebord"
 
-#: plugins/rdp/rdp_plugin.c:2224
+#: plugins/rdp/rdp_plugin.c:2250
 msgid "Remote Desktop Gateway password"
 msgstr "Gateway-adgangskode for fjernskrivebord"
 
-#: plugins/rdp/rdp_plugin.c:2225
+#: plugins/rdp/rdp_plugin.c:2251
 msgid "Remote Desktop Gateway domain"
 msgstr "Gateway-domæne for fjernskrivebord"
 
-#: plugins/rdp/rdp_plugin.c:2226
+#: plugins/rdp/rdp_plugin.c:2252
 msgid "Client name"
 msgstr "Klientnavn"
 
-#: plugins/rdp/rdp_plugin.c:2227
+#: plugins/rdp/rdp_plugin.c:2253
 msgid "Client build"
 msgstr "Klientbygning"
 
-#: plugins/rdp/rdp_plugin.c:2230
+#: plugins/rdp/rdp_plugin.c:2256
 msgid "Load balance info"
 msgstr "Information om belastning"
 
-#: plugins/rdp/rdp_plugin.c:2231
+#: plugins/rdp/rdp_plugin.c:2257
 msgid "Override printer drivers"
 msgstr "Tilsidesæt printerdrivere"
 
-#: plugins/rdp/rdp_plugin.c:2231
+#: plugins/rdp/rdp_plugin.c:2257
 msgid ""
 "\"Samsung_CLX-3300_Series\":\"Samsung CLX-3300 Series PS\";\"Canon MF410\":"
 "\"Canon MF410 Series UFR II\""
@@ -2134,147 +2165,147 @@ msgstr ""
 "\"Samsung_CLX-3300_Series\":\"Samsung CLX-3300 Series PS\";\"Canon MF410\":"
 "\"Canon MF410 Series UFR II\""
 
-#: plugins/rdp/rdp_plugin.c:2232
+#: plugins/rdp/rdp_plugin.c:2258
 msgid "USB device redirection"
 msgstr "Viderestilling af USB-enhed"
 
-#: plugins/rdp/rdp_plugin.c:2233
+#: plugins/rdp/rdp_plugin.c:2259
 msgid "Local serial name"
 msgstr "Navn på lokal seriel"
 
-#: plugins/rdp/rdp_plugin.c:2233
+#: plugins/rdp/rdp_plugin.c:2259
 msgid "COM1, COM2, etc."
 msgstr "COM1, COM2 osv."
 
-#: plugins/rdp/rdp_plugin.c:2234
+#: plugins/rdp/rdp_plugin.c:2260
 msgid "Local serial driver"
 msgstr "Driver til lokal seriel"
 
-#: plugins/rdp/rdp_plugin.c:2234
+#: plugins/rdp/rdp_plugin.c:2260
 msgid "Serial"
 msgstr "Serienummer"
 
-#: plugins/rdp/rdp_plugin.c:2235
+#: plugins/rdp/rdp_plugin.c:2261
 msgid "Local serial path"
 msgstr "Sti til lokal seriel"
 
-#: plugins/rdp/rdp_plugin.c:2235
+#: plugins/rdp/rdp_plugin.c:2261
 msgid "/dev/ttyS0, /dev/ttyS1, etc."
 msgstr "/dev/ttyS0, /dev/ttyS1 osv."
 
-#: plugins/rdp/rdp_plugin.c:2236
+#: plugins/rdp/rdp_plugin.c:2262
 msgid "Local parallel name"
 msgstr "Navn på lokal parallel"
 
-#: plugins/rdp/rdp_plugin.c:2237
+#: plugins/rdp/rdp_plugin.c:2263
 msgid "Local parallel device"
 msgstr "Enhed for lokal parallel"
 
-#: plugins/rdp/rdp_plugin.c:2238
+#: plugins/rdp/rdp_plugin.c:2264
 msgid "Name of smart card"
 msgstr "Navn på smartcard"
 
-#: plugins/rdp/rdp_plugin.c:2239
+#: plugins/rdp/rdp_plugin.c:2265
 msgid "Dynamic virtual channel"
 msgstr "Dynamisk virtuel kanal"
 
-#: plugins/rdp/rdp_plugin.c:2239 plugins/rdp/rdp_plugin.c:2240
+#: plugins/rdp/rdp_plugin.c:2265 plugins/rdp/rdp_plugin.c:2266
 msgid "<channel>[,<options>]"
 msgstr "<kanal>[,<tilvalg>]"
 
-#: plugins/rdp/rdp_plugin.c:2240
+#: plugins/rdp/rdp_plugin.c:2266
 msgid "Static virtual channel"
 msgstr "Statisk virtuel kanal"
 
-#: plugins/rdp/rdp_plugin.c:2241
+#: plugins/rdp/rdp_plugin.c:2267
 msgid "Prefer IPv6 AAAA record over IPv4 A record"
 msgstr "Foretræk IPv6 AAAA-fortegnelse over IPv4-fortegnelse"
 
-#: plugins/rdp/rdp_plugin.c:2242
+#: plugins/rdp/rdp_plugin.c:2268
 msgid "Share printers"
 msgstr "Del printere"
 
-#: plugins/rdp/rdp_plugin.c:2243
+#: plugins/rdp/rdp_plugin.c:2269
 msgid "Share serial ports"
 msgstr "Del serielle porte"
 
-#: plugins/rdp/rdp_plugin.c:2244
+#: plugins/rdp/rdp_plugin.c:2270
 msgid "(SELinux) permissive mode for serial ports"
 msgstr "(SELinux) eftergivende tilstand til serielle porte"
 
-#: plugins/rdp/rdp_plugin.c:2245
+#: plugins/rdp/rdp_plugin.c:2271
 msgid "Share parallel ports"
 msgstr "Del parallelle porte"
 
-#: plugins/rdp/rdp_plugin.c:2246
+#: plugins/rdp/rdp_plugin.c:2272
 msgid "Share a smart card"
 msgstr "Del et smartcard"
 
-#: plugins/rdp/rdp_plugin.c:2247
+#: plugins/rdp/rdp_plugin.c:2273
 msgid "Turn off clipboard sync"
 msgstr "Deaktivér synkronisering af udklipsholder"
 
-#: plugins/rdp/rdp_plugin.c:2248
+#: plugins/rdp/rdp_plugin.c:2274
 msgid "Ignore certificate"
 msgstr "Ignorer certifikat"
 
-#: plugins/rdp/rdp_plugin.c:2249
+#: plugins/rdp/rdp_plugin.c:2275
 msgid "Use the old license workflow"
 msgstr "Brug workflowet fra den gamle licens"
 
-#: plugins/rdp/rdp_plugin.c:2249
+#: plugins/rdp/rdp_plugin.c:2275
 msgid "It disables CAL and hwId is set to 0"
 msgstr "Den deaktiverer CAL, og hwId indstilles til 0"
 
-#: plugins/rdp/rdp_plugin.c:2251
+#: plugins/rdp/rdp_plugin.c:2277
 msgid "Attach to console (2003/2003 R2)"
 msgstr "Tilkobl til konsol (2003/2003 R2)"
 
-#: plugins/rdp/rdp_plugin.c:2252
+#: plugins/rdp/rdp_plugin.c:2278
 msgid "Turn off fast-path"
 msgstr "Deaktivér fast-path"
 
-#: plugins/rdp/rdp_plugin.c:2253
+#: plugins/rdp/rdp_plugin.c:2279
 msgid "Server detection using Remote Desktop Gateway"
 msgstr "Serverregistrering med fjernskrivebordsgateway"
 
-#: plugins/rdp/rdp_plugin.c:2255
+#: plugins/rdp/rdp_plugin.c:2281
 msgid "Use system proxy settings"
 msgstr "Brug systemets proxyindstillinger"
 
-#: plugins/rdp/rdp_plugin.c:2257
+#: plugins/rdp/rdp_plugin.c:2283
 msgid "Turn off automatic reconnection"
 msgstr "Deaktivér automatisk genoprettelse af forbindelsen"
 
-#: plugins/rdp/rdp_plugin.c:2258
+#: plugins/rdp/rdp_plugin.c:2284
 msgid "Relax order checks"
 msgstr "Afslappet tjek af rækkefølge"
 
-#: plugins/rdp/rdp_plugin.c:2259
+#: plugins/rdp/rdp_plugin.c:2285
 msgid "Glyph cache"
 msgstr "Glyf-mellemlager"
 
-#: plugins/rdp/rdp_plugin.c:2260
+#: plugins/rdp/rdp_plugin.c:2286
 msgid "Enable multitransport protocol (UDP)"
 msgstr "Anvend multitransportprotokol"
 
-#: plugins/rdp/rdp_plugin.c:2260
+#: plugins/rdp/rdp_plugin.c:2286
 msgid "Using the UDP protocol may improve performance"
 msgstr "Brug af UDP-protokol kan forbedre ydelsen"
 
-#: plugins/rdp/rdp_plugin.c:2284
+#: plugins/rdp/rdp_plugin.c:2310
 msgid "RDP - Remote Desktop Protocol"
 msgstr "RDP - Fjernskrivebordsprotokol"
 
-#: plugins/rdp/rdp_plugin.c:2307
+#: plugins/rdp/rdp_plugin.c:2333
 msgid "RDP - RDP File Handler"
 msgstr "RDP - RDP-filhåndterer"
 
-#: plugins/rdp/rdp_plugin.c:2322
+#: plugins/rdp/rdp_plugin.c:2348
 msgid "RDP - Preferences"
 msgstr "RDP - Præferencer"
 
-#: plugins/rdp/rdp_plugin.c:2375
+#: plugins/rdp/rdp_plugin.c:2401
 msgid "Export connection in Windows .rdp file format"
 msgstr "Eksportér forbindelse i Windows .rdp-filformat"
 

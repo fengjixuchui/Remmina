@@ -295,6 +295,9 @@ static gboolean remmina_rdp_tunnel_init(RemminaProtocolWidget *gp)
 
 	remmina_plugin_service->get_server_port(hostport, 3389, &host, &port);
 
+	if (host[0] == 0)
+		return FALSE;
+
 	REMMINA_PLUGIN_DEBUG("protocol_plugin_start_direct_tunnel() returned %s", hostport);
 
 	cert_host = host;
@@ -1517,6 +1520,19 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 		g_free(p);
 	}
 
+	int vermaj, vermin, verrev;
+	freerdp_get_version(&vermaj, &vermin, &verrev);
+
+#if FREERDP_CHECK_VERSION(2, 1, 0)
+	cs = remmina_plugin_service->file_get_string(remminafile, "timeout");
+	if (cs != NULL && cs[0] != '\0') {
+		const gchar *endptr = NULL;
+		guint64 val = g_ascii_strtoull (cs, (gchar **) &endptr, 10);
+		if (val > 600000 || val <= 0)
+			val = 600000;
+		rfi->settings->TcpAckTimeout = (UINT32)val;
+	}
+#endif
 
 	if (remmina_plugin_service->file_get_int(remminafile, "preferipv6", FALSE) ? TRUE : FALSE)
 		rfi->settings->PreferIPv6OverIPv4 = TRUE;
@@ -1942,7 +1958,7 @@ static gboolean remmina_rdp_open_connection(RemminaProtocolWidget *gp)
 
 	if (pthread_create(&rfi->remmina_plugin_thread, NULL, remmina_rdp_main_thread, gp)) {
 		remmina_plugin_service->protocol_plugin_set_error(gp, "%s",
-								  "Could not start pthread. Falling back to non-thread mode…");
+								  "Could not start pthread.");
 
 		rfi->remmina_plugin_thread = 0;
 
@@ -1953,11 +1969,15 @@ static gboolean remmina_rdp_open_connection(RemminaProtocolWidget *gp)
 	profile_name = remmina_plugin_service->file_get_string(remminafile, "name");
 	p = profile_name;
 	strcpy(thname, "RemmRDP:");
-	nthname = strlen(thname);
-	while ((c = *p) != 0 && nthname < sizeof(thname) - 1) {
-		if (isalnum(c))
-			thname[nthname++] = c;
-		p++;
+	if (p != NULL) {
+		nthname = strlen(thname);
+		while ((c = *p) != 0 && nthname < sizeof(thname) - 1) {
+			if (isalnum(c))
+				thname[nthname++] = c;
+			p++;
+		}
+	} else {
+		strcat(thname, "<NONAM>");
 	}
 	thname[nthname] = 0;
 #if defined(__linux__)
@@ -2181,6 +2201,11 @@ static gchar usb_tooltip[] =
 	   "  • auto\n"
 	   "  • id:054c:0268#4669:6e6b,addr:04:0c");
 
+static gchar timeout_tooltip[] =
+	N_("Advanced setting for high latency links:\n"
+	   "Adjust connection timeout, use if you encounter timeout failures with your connection.\n"
+	   "The highest possible value is 600000 ms (10 minutes)\n");
+
 
 /* Array of RemminaProtocolSetting for basic settings.
  * Each item is composed by:
@@ -2219,6 +2244,7 @@ static const RemminaProtocolSetting remmina_rdp_advanced_settings[] =
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "gwtransp",		    N_("Gateway transport type"),			 FALSE, gwtransp_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "sound",		    N_("Sound"),					 FALSE, sound_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "microphone",		    N_("Redirect local microphone"),			 TRUE,	NULL,		  microphone_tooltip												 },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "timeout",		    N_("Connection timeout in ms"),			 TRUE,	NULL,		  timeout_tooltip												 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "gateway_server",	    N_("Remote Desktop Gateway server"),		 FALSE, NULL,		  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "gateway_username",	    N_("Remote Desktop Gateway username"),		 FALSE, NULL,		  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_PASSWORD, "gateway_password",	    N_("Remote Desktop Gateway password"),		 FALSE, NULL,		  NULL														 },
