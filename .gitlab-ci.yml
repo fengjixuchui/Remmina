@@ -64,22 +64,27 @@ appimage:build:
   stage: build
   before_script:
     - apt-get update -qq
+    - apt-get install -q -y librsvg2-2 librsvg2-bin librsvg2-common librsvg2-dev
 
   script:
     - mkdir $BUILD_FOLDER
     - cmake -B$BUILD_FOLDER -H. $CMAKE_BUILD_OPTIONS -DCMAKE_INSTALL_PREFIX=/usr
     - make VERBOSE=1 -C $BUILD_FOLDER
     - make VERBOSE=1 -C $BUILD_FOLDER install DESTDIR=AppDir
-    - wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage --directory-prefix=$BUILD_FOLDER/
-    - wget https://github.com/linuxdeploy/linuxdeploy-plugin-appimage/releases/download/continuous/linuxdeploy-plugin-appimage-x86_64.AppImage --directory-prefix=$BUILD_FOLDER/
-    - chmod +x $BUILD_FOLDER/*AppImage
+    # Temporary using old binaries as there's an opened bug https://github.com/linuxdeploy/linuxdeploy/issues/143
+    #- wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage --directory-prefix=$BUILD_FOLDER/
+    - wget -c https://artifacts.assassinate-you.net/artifactory/list/linuxdeploy/travis-456/linuxdeploy-x86_64.AppImage --directory-prefix=$BUILD_FOLDER/
+    - wget -c https://github.com/linuxdeploy/linuxdeploy-plugin-appimage/releases/download/continuous/linuxdeploy-plugin-appimage-x86_64.AppImage --directory-prefix=$BUILD_FOLDER/
+    - wget -c https://raw.githubusercontent.com/linuxdeploy/linuxdeploy-plugin-gtk/master/linuxdeploy-plugin-gtk.sh --directory-prefix=$BUILD_FOLDER/
+    - chmod +x $BUILD_FOLDER/*AppImage $BUILD_FOLDER/*sh
     - export OUTPUT="Remmina-x86_64.AppImage"
     - cd $BUILD_FOLDER && ./linuxdeploy-x86_64.AppImage --appimage-extract
     - mv squashfs-root/ linuxdeploy/
     - export UPDATE_INFORMATION="gh-releases-zsync|AppImage|appimaged|continuous|appimaged*$ARCH*.AppImage.zsync"
     - export SIGN=1
     - export VERBOSE=1
-    - linuxdeploy/AppRun --appdir AppDir --output appimage
+    - linuxdeploy/AppRun --appdir AppDir --plugin gtk --output appimage
+    # - linuxdeploy/AppRun --appdir AppDir --output appimage
 
   artifacts:
     name: "Remmina-x86_64.AppImage"

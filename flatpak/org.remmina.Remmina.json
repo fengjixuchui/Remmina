@@ -45,8 +45,17 @@
         /* Query GNOME Shell version (to display systray icon if supported) */
         "--talk-name=org.gnome.Shell",
         /* Local network host discovery */
-        "--system-talk-name=org.freedesktop.Avahi"
+        "--system-talk-name=org.freedesktop.Avahi",
+        /* Allow rw access to download folder */
+        "--filesystem=xdg-download"
     ],
+    "add-build-extensions": {
+      "org.freedesktop.Platform.ffmpeg-full": {
+        "directory": "lib/ffmpeg",
+        "version": "19.08",
+        "add-ld-path": "."
+      }
+    },
     "modules": [
         "shared-modules/dbus-glib/dbus-glib-0.110.json",
         "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
@@ -151,22 +160,26 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
                 "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+                "-DWITH_WAYLAND:BOOL=ON",
                 "-DWITH_CLIENT:BOOL=OFF",
-                "-DWITH_CUPS:BOOL=ON",
-                "-DWITH_JPEG:BOOL=ON",
-                "-DWITH_MANPAGES:BOOL=OFF",
-                "-DWITH_OPENH264:BOOL=ON",
-                "-DWITH_OSS:BOOL=OFF",
-                "-DWITH_PCSC:BOOL=ON",
+                "-DWITH_SERVER:BOOL=OFF",
                 "-DWITH_PULSE:BOOL=ON",
-                "-DWITH_SERVER:BOOL=OFF"
+                "-DWITH_GSTREAMER:BOOL=OFF",
+                "-DWITH_FFMPEG:BOOL=ON",
+                "-DWITH_DSP_FFMPEG:BOOL=ON",
+                "-DWITH_CHANNELS:BOOL=ON",
+                "-DBUILTIN_CHANNELS:BOOL=ON",
+                "-DWITH_CUPS:BOOL=ON",
+                "-DWITH_PCSC:BOOL=ON",
+                "-DWITH_JPEG:BOOL=ON",
+                "-DWITH_LIBSYSTEMD:BOOL=OFF"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/FreeRDP/FreeRDP.git",
-                    "tag": "2.1.2",
-                    "commit": "584efae073386e8c5f6bc265b05c87d508a9bcbc"
+                    "tag": "2.2.0",
+                    "commit": "d2ba84a6885f57674098fe8e76c5f99d880e580d"
                 }
             ],
             "modules": [
@@ -185,8 +198,8 @@
                 },
                 {
                     /**
-                     * libusb-1.0 has been forced as a dependency for FreeRDP
-                     */
+                    * libusb-1.0 has been forced as a dependency for FreeRDP
+                    */
                     "name": "libusb",
                     "sources": [
                         {
@@ -199,6 +212,7 @@
                         "--disable-udev"
                     ]
                 }
+
             ]
         },
         {
@@ -445,6 +459,7 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
                 "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+                "-DWITH_FREERDP3:BOOL=OFF",
                 "-DWITH_MANPAGES:BOOL=OFF"
             ],
             "sources": [

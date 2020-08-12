@@ -1157,7 +1157,7 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 	if (remmina_plugin_service->file_get_int(remminafile, "ssh_tunnel_enabled", FALSE))
 		rfi->settings->AutoReconnectionEnabled = FALSE;
 
-	rfi->settings->ColorDepth = remmina_plugin_service->file_get_int(remminafile, "colordepth", 66);
+	rfi->settings->ColorDepth = remmina_plugin_service->file_get_int(remminafile, "colordepth", 99);
 
 	rfi->settings->SoftwareGdi = TRUE;
 
@@ -1170,9 +1170,16 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 		rfi->settings->RemoteFxCodec = TRUE;
 		rfi->settings->SupportGraphicsPipeline = FALSE;
 		rfi->settings->ColorDepth = 32;
+	} else if (rfi->settings->ColorDepth == 63) {
+		/* /gfx (RFX Progressive) (Win8) */
+		rfi->settings->ColorDepth = 32;
+		rfi->settings->SupportGraphicsPipeline = TRUE;
+		rfi->settings->GfxH264 = FALSE;
+		rfi->settings->GfxAVC444 = FALSE;
 	} else if (rfi->settings->ColorDepth == 64) {
 		/* /gfx:rfx (Win8) */
 		rfi->settings->ColorDepth = 32;
+		rfi->settings->RemoteFxCodec = TRUE;
 		rfi->settings->SupportGraphicsPipeline = TRUE;
 		rfi->settings->GfxH264 = FALSE;
 		rfi->settings->GfxAVC444 = FALSE;
@@ -1182,12 +1189,19 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 		rfi->settings->SupportGraphicsPipeline = TRUE;
 		rfi->settings->GfxH264 = TRUE;
 		rfi->settings->GfxAVC444 = FALSE;
-	} else if (rfi->settings->ColorDepth >= 66) {
+	} else if (rfi->settings->ColorDepth == 66) {
 		/* /gfx:avc444 (Win10) */
 		rfi->settings->ColorDepth = 32;
 		rfi->settings->SupportGraphicsPipeline = TRUE;
 		rfi->settings->GfxH264 = TRUE;
 		rfi->settings->GfxAVC444 = TRUE;
+	} else if (rfi->settings->ColorDepth == 99) {
+		/* Automatic (Let the server choose its best format) */
+		rfi->settings->ColorDepth = 32;
+		rfi->settings->RemoteFxCodec = TRUE;
+		rfi->settings->SupportGraphicsPipeline = TRUE;
+		rfi->settings->GfxH264 = gfx_h264_available;
+		rfi->settings->GfxAVC444 = gfx_h264_available;
 	}
 
 	rfi->settings->DesktopWidth = remmina_plugin_service->get_profile_remote_width(gp);
@@ -1492,6 +1506,13 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 		rfi->settings->AudioCapture = TRUE;
 		g_free(p);
 	}
+
+	cs = remmina_plugin_service->file_get_string(remminafile, "freerdp_log_level");
+	if (cs != NULL && cs[0] != '\0') {
+		wLog* root = WLog_GetRoot();
+		WLog_SetStringLogLevel(root, cs);
+	}
+
 
 	cs = remmina_plugin_service->file_get_string(remminafile, "usb");
 	if (cs != NULL && cs[0] != '\0') {
@@ -2124,9 +2145,11 @@ static gboolean remmina_rdp_get_screenshot(RemminaProtocolWidget *gp, RemminaPlu
 static gpointer colordepth_list[] =
 {
 	/* 1st one is the default in a new install */
+	"99", N_("Automatic (32 bpp) (Server chooses its best format)"),
 	"66", N_("GFX AVC444 (32 bpp)"),
 	"65", N_("GFX AVC420 (32 bpp)"),
 	"64", N_("GFX RFX (32 bpp)"),
+	"63", N_("GFX RFX Progressive (32 bpp)"),
 	"0",  N_("RemoteFX (32 bpp)"),
 	"32", N_("True colour (32 bpp)"),
 	"24", N_("True colour (24 bpp)"),
@@ -2135,6 +2158,20 @@ static gpointer colordepth_list[] =
 	"8",  N_("256 colours (8 bpp)"),
 	NULL
 };
+
+/* Array of key/value pairs for the FreeRDP logging level */
+static gpointer log_level[] =
+{
+	"INFO",  "INFO",
+	"FATAL", "FATAL",
+	"ERROR", "ERROR",
+	"WARN",  "WARN",
+	"DEBUG", "DEBUG",
+	"TRACE", "TRACE",
+	"OFF",   "OFF",
+	NULL
+};
+
 
 /* Array of key/value pairs for quality selection */
 static gpointer quality_list[] =
@@ -2242,6 +2279,7 @@ static const RemminaProtocolSetting remmina_rdp_advanced_settings[] =
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "quality",		    N_("Quality"),					 FALSE, quality_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "security",		    N_("Security protocol negotiation"),		 FALSE, security_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "gwtransp",		    N_("Gateway transport type"),			 FALSE, gwtransp_list,	  NULL														 },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "freerdp_log_level",	    N_("FreeRDP log level"),			 	FALSE, log_level,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "sound",		    N_("Sound"),					 FALSE, sound_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "microphone",		    N_("Redirect local microphone"),			 TRUE,	NULL,		  microphone_tooltip												 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "timeout",		    N_("Connection timeout in ms"),			 TRUE,	NULL,		  timeout_tooltip												 },
