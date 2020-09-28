@@ -11,13 +11,14 @@
 # Nikita Epifanov <nikgreens@protonmail.com>, 2020.
 # Daniel <dan.ef1999@gmail.com>, 2020.
 # Allan Nordhøy <epost@anotheragency.no>, 2020.
+# Alexey Napalkov <flynbit@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-08-14 12:35+0000\n"
-"PO-Revision-Date: 2020-08-14 00:10+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2020-09-01 06:29+0000\n"
+"PO-Revision-Date: 2020-09-04 08:36+0000\n"
+"Last-Translator: Солтыс Сергей <treefeed@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/remmina/remmina/"
 "ru/>\n"
 "Language: ru\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 "X-Launchpad-Export-Date: 2014-04-10 15:03+0000\n"
 "X-Poedit-Flags-xgettext: --add-comments\n"
 
@@ -270,14 +271,14 @@ msgstr "_Уменьшить шрифт"
 
 #: src/remmina_ssh_plugin.c:1068 src/remmina_message_panel.c:330
 #: src/remmina_sftp_plugin.c:343 src/remmina_file_editor.c:1003
-#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1863
-#: plugins/vnc/vnc_plugin.c:1883 plugins/rdp/rdp_plugin.c:2259
+#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1879
+#: plugins/vnc/vnc_plugin.c:1899 plugins/rdp/rdp_plugin.c:2259
 #: plugins/nx/nx_plugin.c:730 data/ui/remmina_mpc.glade:144
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1864
-#: plugins/vnc/vnc_plugin.c:1884 plugins/spice/spice_plugin.c:437
+#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1880
+#: plugins/vnc/vnc_plugin.c:1900 plugins/spice/spice_plugin.c:437
 #: plugins/nx/nx_plugin.c:731
 msgid "User password"
 msgstr "Пароль пользователя"
@@ -481,7 +482,7 @@ msgstr "Вверх"
 msgid "Go to parent folder"
 msgstr "На одну папку вверх"
 
-#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1920
+#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1936
 #: plugins/rdp/rdp_plugin.c:2332
 msgid "Refresh"
 msgstr "Обновить"
@@ -546,16 +547,12 @@ msgstr "Показать \"О программе\""
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:86
-#, fuzzy
-#| msgid ""
-#| "Connect to desktop described in file (.remmina or type supported by "
-#| "plugin)"
 msgid ""
 "Connect either to a desktop described in a file (.remmina or a filetype "
 "supported by a plugin) or a supported URI (RDP, VNC, SSH or SPICE)"
 msgstr ""
 "Подключиться к рабочему столу, описанному в файле (.remmina или тип файла, "
-"поддерживаемый модулем)"
+"поддерживаемый модулем), или к поддерживаему URI (RDP, VNC, SSH или SPICE)"
 
 #: src/remmina.c:86 src/remmina.c:88 src/remmina.c:90
 msgid "FILE"
@@ -563,10 +560,6 @@ msgstr "ФАЙЛ"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:88
-#, fuzzy
-#| msgid ""
-#| "Connect to desktop described in file (.remmina or type supported by "
-#| "plugin)"
 msgid ""
 "Connect to a desktop described in a file (.remmina or a type supported by a "
 "plugin)"
@@ -653,8 +646,6 @@ msgstr ""
 "update-profile"
 
 #: src/remmina.c:119
-#, fuzzy
-#| msgid "Enter VNC password"
 msgid "Encrypt a password"
 msgstr "Зашифровать пароль"
 
@@ -692,7 +683,7 @@ msgstr "Клиент удалённого рабочего стола Remmina"
 
 # You need set up plural forms for 1, 2 and 5 here.
 #: src/rcw.c:652
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr "Вы уверены, что хотите закрыть %i активных подключений в текущем окне?"
@@ -1576,7 +1567,7 @@ msgstr "Включить поддержку HTML5 аудио"
 msgid "Ignore TLS errors"
 msgstr "Игнорировать ошибки TLS"
 
-#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1907
+#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1923
 #: plugins/spice/spice_plugin.c:456 plugins/rdp/rdp_plugin.c:2314
 #: plugins/nx/nx_plugin.c:752
 msgid "Forget passwords after use"
@@ -1634,82 +1625,82 @@ msgid "Please retry after turning on encryption for this profile."
 msgstr ""
 "Включите шифрование в настройках этого подключения и повторите попытку."
 
-#: plugins/vnc/vnc_plugin.c:1834
+#: plugins/vnc/vnc_plugin.c:1850
 msgid "True color (32 bpp)"
 msgstr "True color (32 бит/пиксель)"
 
-#: plugins/vnc/vnc_plugin.c:1835
+#: plugins/vnc/vnc_plugin.c:1851
 msgid "High color (16 bpp)"
 msgstr "High color (16 бит/пиксель)"
 
-#: plugins/vnc/vnc_plugin.c:1836
+#: plugins/vnc/vnc_plugin.c:1852
 msgid "256 colors (8 bpp)"
 msgstr "256 цветов (8 бит/пиксель)"
 
-#: plugins/vnc/vnc_plugin.c:1843 plugins/rdp/rdp_plugin.c:2182
+#: plugins/vnc/vnc_plugin.c:1859 plugins/rdp/rdp_plugin.c:2182
 #: plugins/rdp/rdp_settings.c:275 plugins/nx/nx_plugin.c:713
 msgid "Best (slowest)"
 msgstr "Наилучшее (самое медленное)"
 
-#: plugins/vnc/vnc_plugin.c:1844 plugins/rdp/rdp_plugin.c:2181
+#: plugins/vnc/vnc_plugin.c:1860 plugins/rdp/rdp_plugin.c:2181
 #: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:712
 msgid "Good"
 msgstr "Хорошее"
 
-#: plugins/vnc/vnc_plugin.c:1845 plugins/rdp/rdp_plugin.c:2180
+#: plugins/vnc/vnc_plugin.c:1861 plugins/rdp/rdp_plugin.c:2180
 #: plugins/rdp/rdp_settings.c:271 plugins/nx/nx_plugin.c:711
 msgid "Medium"
 msgstr "Среднее"
 
-#: plugins/vnc/vnc_plugin.c:1846 plugins/rdp/rdp_plugin.c:2179
+#: plugins/vnc/vnc_plugin.c:1862 plugins/rdp/rdp_plugin.c:2179
 #: plugins/rdp/rdp_settings.c:269 plugins/nx/nx_plugin.c:710
 msgid "Poor (fastest)"
 msgstr "Низкое (самое быстрое)"
 
-#: plugins/vnc/vnc_plugin.c:1862
+#: plugins/vnc/vnc_plugin.c:1878
 msgid "Repeater"
 msgstr "Повторитель"
 
-#: plugins/vnc/vnc_plugin.c:1865 plugins/vnc/vnc_plugin.c:1885
+#: plugins/vnc/vnc_plugin.c:1881 plugins/vnc/vnc_plugin.c:1901
 msgid "Color depth"
 msgstr "Глубина цвета"
 
-#: plugins/vnc/vnc_plugin.c:1866 plugins/vnc/vnc_plugin.c:1886
+#: plugins/vnc/vnc_plugin.c:1882 plugins/vnc/vnc_plugin.c:1902
 #: plugins/rdp/rdp_plugin.c:2279 plugins/nx/nx_plugin.c:733
 msgid "Quality"
 msgstr "Качество"
 
-#: plugins/vnc/vnc_plugin.c:1882
+#: plugins/vnc/vnc_plugin.c:1898
 msgid "Listen on port"
 msgstr "Прослушивать порт"
 
-#: plugins/vnc/vnc_plugin.c:1902
+#: plugins/vnc/vnc_plugin.c:1918
 msgid "Show remote cursor"
 msgstr "Показывать удалённый курсор"
 
-#: plugins/vnc/vnc_plugin.c:1903 plugins/vnc/vnc_plugin.c:1918
+#: plugins/vnc/vnc_plugin.c:1919 plugins/vnc/vnc_plugin.c:1934
 #: plugins/spice/spice_plugin.c:460 plugins/spice/spice_plugin.c:469
 msgid "View only"
 msgstr "Только просмотр"
 
-#: plugins/vnc/vnc_plugin.c:1904 plugins/spice/spice_plugin.c:455
+#: plugins/vnc/vnc_plugin.c:1920 plugins/spice/spice_plugin.c:455
 #: plugins/spice/spice_plugin.c:471 plugins/nx/nx_plugin.c:749
 msgid "Disable clipboard sync"
 msgstr "Отключить синхронизацию буфера обмена"
 
-#: plugins/vnc/vnc_plugin.c:1905 plugins/nx/nx_plugin.c:750
+#: plugins/vnc/vnc_plugin.c:1921 plugins/nx/nx_plugin.c:750
 msgid "Disable encryption"
 msgstr "Отключить шифрование"
 
-#: plugins/vnc/vnc_plugin.c:1906 plugins/vnc/vnc_plugin.c:1919
+#: plugins/vnc/vnc_plugin.c:1922 plugins/vnc/vnc_plugin.c:1935
 msgid "Disable server input"
 msgstr "Отключить ввод на сервере"
 
-#: plugins/vnc/vnc_plugin.c:1921
+#: plugins/vnc/vnc_plugin.c:1937
 msgid "Open Chat…"
 msgstr "Начать разговор…"
 
-#: plugins/vnc/vnc_plugin.c:1922 plugins/spice/spice_plugin.c:472
+#: plugins/vnc/vnc_plugin.c:1938 plugins/spice/spice_plugin.c:472
 #: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2335
 msgid "Send Ctrl+Alt+Delete"
 msgstr "Послать Ctrl+Alt+Delete"
@@ -2008,7 +1999,7 @@ msgstr "Невозможно подключиться к RDP серверу \"%s
 
 #: plugins/rdp/rdp_plugin.c:2148
 msgid "Automatic (32 bpp) (Server chooses its best format)"
-msgstr ""
+msgstr "Автоматически (32 бит/пиксель) (Сервер выбирает лучший формат)"
 
 #: plugins/rdp/rdp_plugin.c:2149
 msgid "GFX AVC444 (32 bpp)"
@@ -2023,10 +2014,8 @@ msgid "GFX RFX (32 bpp)"
 msgstr "GFX RFX (32 бит/пиксель)"
 
 #: plugins/rdp/rdp_plugin.c:2152
-#, fuzzy
-#| msgid "GFX RFX (32 bpp)"
 msgid "GFX RFX Progressive (32 bpp)"
-msgstr "GFX RFX (32 бит/пиксель)"
+msgstr "GFX RFX Прогрессивный (32 бит/пиксель)"
 
 #: plugins/rdp/rdp_plugin.c:2153
 msgid "RemoteFX (32 bpp)"
@@ -2069,8 +2058,6 @@ msgid "Local - high quality"
 msgstr "Локальный - высокое качество"
 
 #: plugins/rdp/rdp_plugin.c:2201
-#, fuzzy
-#| msgid "Automatically negotiate"
 msgid "Automatic negotiation"
 msgstr "Согласовывать автоматически"
 
@@ -2161,10 +2148,8 @@ msgid "Gateway transport type"
 msgstr "Тип транспорта шлюза"
 
 #: plugins/rdp/rdp_plugin.c:2282
-#, fuzzy
-#| msgid "SSH log level"
 msgid "FreeRDP log level"
-msgstr "Уровень лога SSH"
+msgstr "Уровень лога FreeRDP"
 
 #: plugins/rdp/rdp_plugin.c:2283
 msgid "Sound"
@@ -2175,10 +2160,8 @@ msgid "Redirect local microphone"
 msgstr "Перенаправлять локальный микрофон"
 
 #: plugins/rdp/rdp_plugin.c:2285
-#, fuzzy
-#| msgid "Connecting to \"%s\"…"
 msgid "Connection timeout in ms"
-msgstr "Подключение к \"%s\"…"
+msgstr "Тайм-аут соединения в мс"
 
 #: plugins/rdp/rdp_plugin.c:2286
 msgid "Remote Desktop Gateway server"
@@ -2516,53 +2499,50 @@ msgid ""
 "<big><b>Remmina Snap package</b></big>\n"
 "\n"
 "<span>\n"
-"It seems that Remmina is running on your system as a Snap package.\n"
-"Some Remmina functionalities need your intervention to work properly\n"
+"Remmina is running on your system as a Snap package.\n"
+"Some Remmina functions need to be set up to work properly.\n"
 "</span>\n"
 msgstr ""
+"<big><b>Snap-пакет Remmina</b></big>\n"
+"\n"
+"<span>\n"
+"Remmina работает в вашей системе как Snap-пакет.\n"
+"Некоторые функции Remmina требуют настройки для правильной работы.\n"
+"</span>\n"
 
 #: data/ui/remmina_snap_info_dialog.glade:120
-#, fuzzy
-#| msgid ""
-#| "It seems that Remmina is running on your system as a SNAP package. To "
-#| "enable access to some important features, like password saving in your "
-#| "keyring and RDP printer sharing, please open your software center and "
-#| "give the appropriate permissions to Remmina. As an alternative you can "
-#| "enter the following commands in a terminal window:"
 msgid ""
 "To enable access to some important features, like password saving in your "
 "keyring and RDP printer sharing, please open your software center and give "
 "the appropriate permissions to Remmina. As an alternative you can enter the "
 "following commands in a terminal window:"
 msgstr ""
-"Похоже, что Remmina запущена в вашей системе в качестве SNAP пакета. Что бы "
-"включить доступ к некоторым важным возможностям, как сохранение пароля в "
-"хранилище ключей и доступ к принтеру через RDP, пожалуйста откройте ваш "
+"Чтобы включить доступ к некоторым важным возможностям, как сохранение пароля "
+"в хранилище ключей и доступ к принтеру через RDP, пожалуйста откройте ваш "
 "центр управления программами и дайте Remmina необходимые разрешения. В "
 "качестве альтернативы, вы можете ввести следующие команды в терминал:"
 
 #: data/ui/remmina_snap_info_dialog.glade:166
-#, fuzzy
-#| msgid "Permission"
 msgid "<big>Permissions</big>"
 msgstr "<big>Уровень допуска</big>"
 
 #: data/ui/remmina_snap_info_dialog.glade:201
 msgid ""
-"Snap packages runs confined from the rest of the system, therefore by "
-"default, Remmina profiles will be saved inside the Snap file system, but you "
-"can still set an alternative PATH in the general preferences."
+"Since Snap packages run confined from the rest of the system, Remmina "
+"profiles are saved inside the Snap file system by default. You can change "
+"the location in the Remmina preferences."
 msgstr ""
+"Поскольку пакеты Snap запускаются изолированно от остальной системы, профили "
+"Remmina сохраняются в файловой системе Snap, по умолчанию. Вы можете "
+"изменить папку в настройках Remmina."
 
 #: data/ui/remmina_snap_info_dialog.glade:221
-msgid "Change the Remmina profiles PATH"
-msgstr ""
+msgid "Change where Remmina profiles are stored"
+msgstr "Изменить место хранения профилей Remmina"
 
 #: data/ui/remmina_snap_info_dialog.glade:260
-#, fuzzy
-#| msgid "<big>Take part</big>"
 msgid "<big>Snap settings</big>"
-msgstr "<big>Принять участие</big>"
+msgstr "<big>Snap настройки</big>"
 
 #: data/ui/remmina_snap_info_dialog.glade:273
 msgid "Do not show this message again"

@@ -14,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-08-14 12:35+0000\n"
-"PO-Revision-Date: 2020-08-11 15:23+0000\n"
-"Last-Translator: Antenore Gatta <antenore@simbiosi.org>\n"
+"POT-Creation-Date: 2020-09-01 06:29+0000\n"
+"PO-Revision-Date: 2020-09-04 08:36+0000\n"
+"Last-Translator: random r <epsilin@yopmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/remmina/remmina/"
 "it/>\n"
 "Language: it\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 "X-Launchpad-Export-Date: 2011-01-18 05:16+0000\n"
 
 #: src/remmina_protocol_widget.c:275
@@ -269,14 +269,14 @@ msgstr "Ri_duce dimensione font"
 
 #: src/remmina_ssh_plugin.c:1068 src/remmina_message_panel.c:330
 #: src/remmina_sftp_plugin.c:343 src/remmina_file_editor.c:1003
-#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1863
-#: plugins/vnc/vnc_plugin.c:1883 plugins/rdp/rdp_plugin.c:2259
+#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1879
+#: plugins/vnc/vnc_plugin.c:1899 plugins/rdp/rdp_plugin.c:2259
 #: plugins/nx/nx_plugin.c:730 data/ui/remmina_mpc.glade:144
 msgid "Username"
 msgstr "Nome utente"
 
-#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1864
-#: plugins/vnc/vnc_plugin.c:1884 plugins/spice/spice_plugin.c:437
+#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1880
+#: plugins/vnc/vnc_plugin.c:1900 plugins/spice/spice_plugin.c:437
 #: plugins/nx/nx_plugin.c:731
 msgid "User password"
 msgstr "Password utente"
@@ -465,7 +465,7 @@ msgstr "Su"
 msgid "Go to parent folder"
 msgstr "Visualizzare la cartella padre"
 
-#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1920
+#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1936
 #: plugins/rdp/rdp_plugin.c:2332
 msgid "Refresh"
 msgstr "Aggiorna"
@@ -997,7 +997,7 @@ msgstr "File di certificato CA"
 
 #: src/remmina_message_panel.c:547
 msgid "CA CRL File"
-msgstr "Elenco di revocazione della CA"
+msgstr "Elenco di revoca della CA"
 
 #: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
@@ -1551,7 +1551,7 @@ msgstr "Attivare il supporto audio HTML5"
 msgid "Ignore TLS errors"
 msgstr "Ignora gli errori TLS"
 
-#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1907
+#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1923
 #: plugins/spice/spice_plugin.c:456 plugins/rdp/rdp_plugin.c:2314
 #: plugins/nx/nx_plugin.c:752
 msgid "Forget passwords after use"
@@ -1608,82 +1608,82 @@ msgstr "Il server VNC ha richiesto un metodo di autenticazione sconosciuto. %s"
 msgid "Please retry after turning on encryption for this profile."
 msgstr "Riprovare dopo aver attivato la crittografia per questo profilo."
 
-#: plugins/vnc/vnc_plugin.c:1834
+#: plugins/vnc/vnc_plugin.c:1850
 msgid "True color (32 bpp)"
 msgstr "Truecolor (32 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1835
+#: plugins/vnc/vnc_plugin.c:1851
 msgid "High color (16 bpp)"
 msgstr "Highcolor (16 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1836
+#: plugins/vnc/vnc_plugin.c:1852
 msgid "256 colors (8 bpp)"
 msgstr "256 colori (8 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1843 plugins/rdp/rdp_plugin.c:2182
+#: plugins/vnc/vnc_plugin.c:1859 plugins/rdp/rdp_plugin.c:2182
 #: plugins/rdp/rdp_settings.c:275 plugins/nx/nx_plugin.c:713
 msgid "Best (slowest)"
 msgstr "Ottima (più lenta)"
 
-#: plugins/vnc/vnc_plugin.c:1844 plugins/rdp/rdp_plugin.c:2181
+#: plugins/vnc/vnc_plugin.c:1860 plugins/rdp/rdp_plugin.c:2181
 #: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:712
 msgid "Good"
 msgstr "Buona"
 
-#: plugins/vnc/vnc_plugin.c:1845 plugins/rdp/rdp_plugin.c:2180
+#: plugins/vnc/vnc_plugin.c:1861 plugins/rdp/rdp_plugin.c:2180
 #: plugins/rdp/rdp_settings.c:271 plugins/nx/nx_plugin.c:711
 msgid "Medium"
 msgstr "Media"
 
-#: plugins/vnc/vnc_plugin.c:1846 plugins/rdp/rdp_plugin.c:2179
+#: plugins/vnc/vnc_plugin.c:1862 plugins/rdp/rdp_plugin.c:2179
 #: plugins/rdp/rdp_settings.c:269 plugins/nx/nx_plugin.c:710
 msgid "Poor (fastest)"
 msgstr "Scarsa (più veloce)"
 
-#: plugins/vnc/vnc_plugin.c:1862
+#: plugins/vnc/vnc_plugin.c:1878
 msgid "Repeater"
 msgstr "Ripetitore"
 
-#: plugins/vnc/vnc_plugin.c:1865 plugins/vnc/vnc_plugin.c:1885
+#: plugins/vnc/vnc_plugin.c:1881 plugins/vnc/vnc_plugin.c:1901
 msgid "Color depth"
 msgstr "Profondità colore"
 
-#: plugins/vnc/vnc_plugin.c:1866 plugins/vnc/vnc_plugin.c:1886
+#: plugins/vnc/vnc_plugin.c:1882 plugins/vnc/vnc_plugin.c:1902
 #: plugins/rdp/rdp_plugin.c:2279 plugins/nx/nx_plugin.c:733
 msgid "Quality"
 msgstr "Qualità"
 
-#: plugins/vnc/vnc_plugin.c:1882
+#: plugins/vnc/vnc_plugin.c:1898
 msgid "Listen on port"
 msgstr "In ascolto sulla porta"
 
-#: plugins/vnc/vnc_plugin.c:1902
+#: plugins/vnc/vnc_plugin.c:1918
 msgid "Show remote cursor"
 msgstr "Visualizzare il cursore remoto"
 
-#: plugins/vnc/vnc_plugin.c:1903 plugins/vnc/vnc_plugin.c:1918
+#: plugins/vnc/vnc_plugin.c:1919 plugins/vnc/vnc_plugin.c:1934
 #: plugins/spice/spice_plugin.c:460 plugins/spice/spice_plugin.c:469
 msgid "View only"
 msgstr "Solo visualizzazione"
 
-#: plugins/vnc/vnc_plugin.c:1904 plugins/spice/spice_plugin.c:455
+#: plugins/vnc/vnc_plugin.c:1920 plugins/spice/spice_plugin.c:455
 #: plugins/spice/spice_plugin.c:471 plugins/nx/nx_plugin.c:749
 msgid "Disable clipboard sync"
 msgstr "Disabilitare la sincronizzazione degli appunti"
 
-#: plugins/vnc/vnc_plugin.c:1905 plugins/nx/nx_plugin.c:750
+#: plugins/vnc/vnc_plugin.c:1921 plugins/nx/nx_plugin.c:750
 msgid "Disable encryption"
 msgstr "Disabilitare la cifratura"
 
-#: plugins/vnc/vnc_plugin.c:1906 plugins/vnc/vnc_plugin.c:1919
+#: plugins/vnc/vnc_plugin.c:1922 plugins/vnc/vnc_plugin.c:1935
 msgid "Disable server input"
 msgstr "Disabilitare l’input del server"
 
-#: plugins/vnc/vnc_plugin.c:1921
+#: plugins/vnc/vnc_plugin.c:1937
 msgid "Open Chat…"
 msgstr "Aprire la chat…"
 
-#: plugins/vnc/vnc_plugin.c:1922 plugins/spice/spice_plugin.c:472
+#: plugins/vnc/vnc_plugin.c:1938 plugins/spice/spice_plugin.c:472
 #: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2335
 msgid "Send Ctrl+Alt+Delete"
 msgstr "Inviare Ctrl+Alt+Canc"
@@ -2484,17 +2484,16 @@ msgid ""
 "<big><b>Remmina Snap package</b></big>\n"
 "\n"
 "<span>\n"
-"It seems that Remmina is running on your system as a Snap package.\n"
-"Some Remmina functionalities need your intervention to work properly\n"
+"Remmina is running on your system as a Snap package.\n"
+"Some Remmina functions need to be set up to work properly.\n"
 "</span>\n"
 msgstr ""
-"<big><b>Pacchetto Remmina Snap</b></big>\n"
+"<big><b>Pacchetto Snap Remmina</b></big>\n"
 "\n"
 "<span>\n"
-"Sembra che Remmina sia in esecuzione sul vostro sistema come pacchetto "
-"Snap.\n"
-"Alcune funzionalità di Remmina hanno bisogno del vostro intervento per "
-"funzionare correttamente\n"
+"Remmina è in esecuzione sul vostro sistema come pacchetto Snap.\n"
+"Alcune funzionalità di Remmina devono essere impostate per funzionare "
+"correttamente.\n"
 "</span>\n"
 
 #: data/ui/remmina_snap_info_dialog.glade:120
@@ -2516,18 +2515,17 @@ msgstr "<big> Autorizzazioni</big>"
 
 #: data/ui/remmina_snap_info_dialog.glade:201
 msgid ""
-"Snap packages runs confined from the rest of the system, therefore by "
-"default, Remmina profiles will be saved inside the Snap file system, but you "
-"can still set an alternative PATH in the general preferences."
+"Since Snap packages run confined from the rest of the system, Remmina "
+"profiles are saved inside the Snap file system by default. You can change "
+"the location in the Remmina preferences."
 msgstr ""
-"I pacchetti Snap vengono eseguiti confinati dal resto del sistema, quindi "
-"per impostazione predefinita, i profili di Remmina verranno salvati "
-"all'interno del file system Snap, ma è comunque possibile impostare un PATH "
-"alternativo nelle preferenze generali."
+"Dato che i pacchetti Snap vengono eseguiti confinati dal resto del sistema, "
+"i profili di Remmina vengono salvati all'interno del file system Snap in "
+"modo predefinito. Puoi cambiare la posizione nelle preferenze di Remmina."
 
 #: data/ui/remmina_snap_info_dialog.glade:221
-msgid "Change the Remmina profiles PATH"
-msgstr "Modificare il PATH dei profili Remmina"
+msgid "Change where Remmina profiles are stored"
+msgstr "Modifica dove vengono salvati i profili di Remmina"
 
 #: data/ui/remmina_snap_info_dialog.glade:260
 msgid "<big>Snap settings</big>"

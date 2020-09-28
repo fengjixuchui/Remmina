@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-08-14 12:35+0000\n"
-"PO-Revision-Date: 2020-08-14 00:10+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2020-09-01 06:29+0000\n"
+"PO-Revision-Date: 2020-09-25 09:00+0000\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/remmina/remmina/"
 "sk/>\n"
 "Language: sk\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 "X-Launchpad-Export-Date: 2014-04-10 15:03+0000\n"
 
 #: src/remmina_protocol_widget.c:275
@@ -271,14 +271,14 @@ msgstr ""
 
 #: src/remmina_ssh_plugin.c:1068 src/remmina_message_panel.c:330
 #: src/remmina_sftp_plugin.c:343 src/remmina_file_editor.c:1003
-#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1863
-#: plugins/vnc/vnc_plugin.c:1883 plugins/rdp/rdp_plugin.c:2259
+#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1879
+#: plugins/vnc/vnc_plugin.c:1899 plugins/rdp/rdp_plugin.c:2259
 #: plugins/nx/nx_plugin.c:730 data/ui/remmina_mpc.glade:144
 msgid "Username"
 msgstr "Meno používateľa"
 
-#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1864
-#: plugins/vnc/vnc_plugin.c:1884 plugins/spice/spice_plugin.c:437
+#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1880
+#: plugins/vnc/vnc_plugin.c:1900 plugins/spice/spice_plugin.c:437
 #: plugins/nx/nx_plugin.c:731
 msgid "User password"
 msgstr "Heslo používateľa"
@@ -473,7 +473,7 @@ msgstr "Nahor"
 msgid "Go to parent folder"
 msgstr "Prejsť do nadradeného priečinku"
 
-#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1920
+#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1936
 #: plugins/rdp/rdp_plugin.c:2332
 msgid "Refresh"
 msgstr "Obnoviť"
@@ -551,7 +551,7 @@ msgstr ""
 
 #: src/remmina.c:86 src/remmina.c:88 src/remmina.c:90
 msgid "FILE"
-msgstr ""
+msgstr "SÚBOR"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:88
@@ -606,7 +606,7 @@ msgstr "Použije predvolený názov servera (pre parameter --new)"
 
 #: src/remmina.c:106
 msgid "SERVER"
-msgstr ""
+msgstr "SERVER"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:108
@@ -615,7 +615,7 @@ msgstr "Použije predvolený protokol (pre parameter --new)"
 
 #: src/remmina.c:108
 msgid "PROTOCOL"
-msgstr ""
+msgstr "PROTOKOL"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:110
@@ -737,9 +737,8 @@ msgid "Grab all keyboard events"
 msgstr "Zachytí všetky udalosti klávesnice"
 
 #: src/rcw.c:2284
-#, fuzzy
 msgid "_Tools"
-msgstr "Nástroje"
+msgstr "_Nástroje"
 
 #: src/rcw.c:2285 data/ui/remmina_main.glade:303
 msgid "Tools"
@@ -1370,7 +1369,7 @@ msgstr "Mapovanie klávesnice"
 
 #: src/remmina_file_editor.c:881
 msgid "Behavior"
-msgstr ""
+msgstr "Správanie"
 
 #: src/remmina_file_editor.c:884
 #, fuzzy
@@ -1379,18 +1378,16 @@ msgid "Execute a Command"
 msgstr "Spustenie príkazu"
 
 #: src/remmina_file_editor.c:888
-#, fuzzy
 msgid "Before connecting"
-msgstr "Otvoriť pripojenie"
+msgstr "Pred pripojením"
 
 #: src/remmina_file_editor.c:890
 msgid "command %h %u %t %U %p %g --option"
 msgstr ""
 
 #: src/remmina_file_editor.c:895
-#, fuzzy
 msgid "After connecting"
-msgstr "Otvoriť pripojenie"
+msgstr "Po pripojení"
 
 #: src/remmina_file_editor.c:897
 msgid "/path/to/command -opt1 arg %h %u %t -opt2 %U %p %g"
@@ -1446,7 +1443,7 @@ msgstr "Rozšírené"
 
 #: src/remmina_file_editor.c:1127
 msgid "Notes"
-msgstr ""
+msgstr "Poznámky"
 
 #: src/remmina_file_editor.c:1370
 msgid "Default settings saved."
@@ -1523,7 +1520,6 @@ msgid "Command"
 msgstr "Príkaz"
 
 #: plugins/exec/exec_plugin.c:267
-#, fuzzy
 msgid "Asynchronous execution"
 msgstr "Asynchrónne spustenie"
 
@@ -1549,7 +1545,7 @@ msgstr "Používateľský agent"
 
 #: plugins/www/www_plugin.c:888
 msgid "Proxy URL"
-msgstr ""
+msgstr "URL proxy"
 
 #: plugins/www/www_plugin.c:888
 msgid "E.g. https://example.org, socks://mysocks:1080"
@@ -1583,7 +1579,7 @@ msgstr "Zapnúť podporu zvuku HTML5"
 msgid "Ignore TLS errors"
 msgstr "Ignoruje chyby TLS"
 
-#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1907
+#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1923
 #: plugins/spice/spice_plugin.c:456 plugins/rdp/rdp_plugin.c:2314
 #: plugins/nx/nx_plugin.c:752
 #, fuzzy
@@ -1604,9 +1600,8 @@ msgid "Secured password storage in the GNOME keyring"
 msgstr "Bezpečne uložiť heslo do zväzku kľúčov prostredia GNOME"
 
 #: plugins/tool_hello_world/plugin_config.h:40
-#, fuzzy
 msgid "Hello, World!"
-msgstr "Vitaj svet!"
+msgstr "Ahoj, Svet!"
 
 #: plugins/vnc/vnc_plugin.c:753
 msgid "Enter VNC password"
@@ -1643,82 +1638,82 @@ msgstr "Server VNC si vyžiadal neznámy spôsob overenia totožnosti. %s"
 msgid "Please retry after turning on encryption for this profile."
 msgstr "Prosím, skúste to znovu po zapnutí šifrovanie pre tento profil."
 
-#: plugins/vnc/vnc_plugin.c:1834
+#: plugins/vnc/vnc_plugin.c:1850
 msgid "True color (32 bpp)"
 msgstr "Skutočné farby (32 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1835
+#: plugins/vnc/vnc_plugin.c:1851
 msgid "High color (16 bpp)"
 msgstr "Veľa farieb (16 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1836
+#: plugins/vnc/vnc_plugin.c:1852
 msgid "256 colors (8 bpp)"
 msgstr "256 farieb (8 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1843 plugins/rdp/rdp_plugin.c:2182
+#: plugins/vnc/vnc_plugin.c:1859 plugins/rdp/rdp_plugin.c:2182
 #: plugins/rdp/rdp_settings.c:275 plugins/nx/nx_plugin.c:713
 msgid "Best (slowest)"
 msgstr "Najlepšia (najpomalšie)"
 
-#: plugins/vnc/vnc_plugin.c:1844 plugins/rdp/rdp_plugin.c:2181
+#: plugins/vnc/vnc_plugin.c:1860 plugins/rdp/rdp_plugin.c:2181
 #: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:712
 msgid "Good"
 msgstr "Dobrá"
 
-#: plugins/vnc/vnc_plugin.c:1845 plugins/rdp/rdp_plugin.c:2180
+#: plugins/vnc/vnc_plugin.c:1861 plugins/rdp/rdp_plugin.c:2180
 #: plugins/rdp/rdp_settings.c:271 plugins/nx/nx_plugin.c:711
 msgid "Medium"
 msgstr "Stredná"
 
-#: plugins/vnc/vnc_plugin.c:1846 plugins/rdp/rdp_plugin.c:2179
+#: plugins/vnc/vnc_plugin.c:1862 plugins/rdp/rdp_plugin.c:2179
 #: plugins/rdp/rdp_settings.c:269 plugins/nx/nx_plugin.c:710
 msgid "Poor (fastest)"
 msgstr "Najhoršia (najrýchlejšie)"
 
-#: plugins/vnc/vnc_plugin.c:1862
+#: plugins/vnc/vnc_plugin.c:1878
 msgid "Repeater"
 msgstr "Opakovač"
 
-#: plugins/vnc/vnc_plugin.c:1865 plugins/vnc/vnc_plugin.c:1885
+#: plugins/vnc/vnc_plugin.c:1881 plugins/vnc/vnc_plugin.c:1901
 msgid "Color depth"
 msgstr "Hĺbka farieb"
 
-#: plugins/vnc/vnc_plugin.c:1866 plugins/vnc/vnc_plugin.c:1886
+#: plugins/vnc/vnc_plugin.c:1882 plugins/vnc/vnc_plugin.c:1902
 #: plugins/rdp/rdp_plugin.c:2279 plugins/nx/nx_plugin.c:733
 msgid "Quality"
 msgstr "Kvalita"
 
-#: plugins/vnc/vnc_plugin.c:1882
+#: plugins/vnc/vnc_plugin.c:1898
 msgid "Listen on port"
 msgstr "Načúva na porte"
 
-#: plugins/vnc/vnc_plugin.c:1902
+#: plugins/vnc/vnc_plugin.c:1918
 msgid "Show remote cursor"
 msgstr "Zobraziť vzdialený kurzor"
 
-#: plugins/vnc/vnc_plugin.c:1903 plugins/vnc/vnc_plugin.c:1918
+#: plugins/vnc/vnc_plugin.c:1919 plugins/vnc/vnc_plugin.c:1934
 #: plugins/spice/spice_plugin.c:460 plugins/spice/spice_plugin.c:469
 msgid "View only"
 msgstr "Iba zobrazenie"
 
-#: plugins/vnc/vnc_plugin.c:1904 plugins/spice/spice_plugin.c:455
+#: plugins/vnc/vnc_plugin.c:1920 plugins/spice/spice_plugin.c:455
 #: plugins/spice/spice_plugin.c:471 plugins/nx/nx_plugin.c:749
 msgid "Disable clipboard sync"
 msgstr "Zakázať synchronizáciu schránky"
 
-#: plugins/vnc/vnc_plugin.c:1905 plugins/nx/nx_plugin.c:750
+#: plugins/vnc/vnc_plugin.c:1921 plugins/nx/nx_plugin.c:750
 msgid "Disable encryption"
 msgstr "Zakázať šifrovanie"
 
-#: plugins/vnc/vnc_plugin.c:1906 plugins/vnc/vnc_plugin.c:1919
+#: plugins/vnc/vnc_plugin.c:1922 plugins/vnc/vnc_plugin.c:1935
 msgid "Disable server input"
 msgstr "Zakázať vstup zo servera"
 
-#: plugins/vnc/vnc_plugin.c:1921
+#: plugins/vnc/vnc_plugin.c:1937
 msgid "Open Chat…"
 msgstr "Otvoriť rozhovor…"
 
-#: plugins/vnc/vnc_plugin.c:1922 plugins/spice/spice_plugin.c:472
+#: plugins/vnc/vnc_plugin.c:1938 plugins/spice/spice_plugin.c:472
 #: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2335
 msgid "Send Ctrl+Alt+Delete"
 msgstr "Odoslať Ctrl+Alt+Delete"
@@ -2017,7 +2012,7 @@ msgstr "Nedá sa pripojiť k serveru RDP „%s“."
 
 #: plugins/rdp/rdp_plugin.c:2148
 msgid "Automatic (32 bpp) (Server chooses its best format)"
-msgstr ""
+msgstr "Automatická (32 bpp) (Server si zvolí najlepší formát)"
 
 #: plugins/rdp/rdp_plugin.c:2149
 msgid "GFX AVC444 (32 bpp)"
@@ -2084,19 +2079,16 @@ msgid "Automatic negotiation"
 msgstr "Interval automatického uzamknutia"
 
 #: plugins/rdp/rdp_plugin.c:2202
-#, fuzzy
 msgid "NLA protocol security"
-msgstr "Karty podľa protokolov"
+msgstr "Zabezpečenie protokolom NLA"
 
 #: plugins/rdp/rdp_plugin.c:2203
-#, fuzzy
 msgid "TLS protocol security"
-msgstr "Karty podľa protokolov"
+msgstr "Zabezpečenie protokolom TLS"
 
 #: plugins/rdp/rdp_plugin.c:2204
-#, fuzzy
 msgid "RDP protocol security"
-msgstr "Karty podľa protokolov"
+msgstr "Zabezpečenie protokolom RDP"
 
 #: plugins/rdp/rdp_plugin.c:2205
 msgid "NLA extended protocol security"
@@ -2163,7 +2155,7 @@ msgstr "Typ transportu brány"
 #, fuzzy
 #| msgid "SSH log level"
 msgid "FreeRDP log level"
-msgstr "Úroveň záznamu SSH"
+msgstr "Úroveň záznamu FreeRDP"
 
 #: plugins/rdp/rdp_plugin.c:2283
 msgid "Sound"
@@ -2220,10 +2212,8 @@ msgstr ""
 "\"Canon MF410 Series UFR II\""
 
 #: plugins/rdp/rdp_plugin.c:2296
-#, fuzzy
-#| msgid "Select USB devices for redirection"
 msgid "USB device redirection"
-msgstr "Vybrať zariadenia USB na presmerovanie"
+msgstr "Presmerovanie zariadení USB"
 
 #: plugins/rdp/rdp_plugin.c:2297
 msgid "Local serial name"
@@ -2264,15 +2254,15 @@ msgstr "Sprístupniť kartu smartcard"
 
 #: plugins/rdp/rdp_plugin.c:2303
 msgid "Dynamic virtual channel"
-msgstr ""
+msgstr "Dynamický virtuálny kanál"
 
 #: plugins/rdp/rdp_plugin.c:2303 plugins/rdp/rdp_plugin.c:2304
 msgid "<channel>[,<options>]"
-msgstr ""
+msgstr "<kanál>[,<voľby>]"
 
 #: plugins/rdp/rdp_plugin.c:2304
 msgid "Static virtual channel"
-msgstr ""
+msgstr "Statický virtuálny kanál"
 
 #: plugins/rdp/rdp_plugin.c:2305
 msgid "Prefer IPv6 AAAA record over IPv4 A record"
@@ -2345,11 +2335,11 @@ msgstr "Vyrovnávacia pamäť glyfov"
 
 #: plugins/rdp/rdp_plugin.c:2324
 msgid "Enable multitransport protocol (UDP)"
-msgstr ""
+msgstr "Povoliť multitransportný protokol (UDP)"
 
 #: plugins/rdp/rdp_plugin.c:2324
 msgid "Using the UDP protocol may improve performance"
-msgstr ""
+msgstr "Použitím protokolu UDP sa môže zvýšiť výkon"
 
 #: plugins/rdp/rdp_plugin.c:2348
 msgid "RDP - Remote Desktop Protocol"
@@ -2521,8 +2511,8 @@ msgid ""
 "<big><b>Remmina Snap package</b></big>\n"
 "\n"
 "<span>\n"
-"It seems that Remmina is running on your system as a Snap package.\n"
-"Some Remmina functionalities need your intervention to work properly\n"
+"Remmina is running on your system as a Snap package.\n"
+"Some Remmina functions need to be set up to work properly.\n"
 "</span>\n"
 msgstr ""
 
@@ -2554,13 +2544,13 @@ msgstr "<big>Oprávnenie</big>"
 
 #: data/ui/remmina_snap_info_dialog.glade:201
 msgid ""
-"Snap packages runs confined from the rest of the system, therefore by "
-"default, Remmina profiles will be saved inside the Snap file system, but you "
-"can still set an alternative PATH in the general preferences."
+"Since Snap packages run confined from the rest of the system, Remmina "
+"profiles are saved inside the Snap file system by default. You can change "
+"the location in the Remmina preferences."
 msgstr ""
 
 #: data/ui/remmina_snap_info_dialog.glade:221
-msgid "Change the Remmina profiles PATH"
+msgid "Change where Remmina profiles are stored"
 msgstr ""
 
 #: data/ui/remmina_snap_info_dialog.glade:260
@@ -2621,9 +2611,8 @@ msgid "Show search bar"
 msgstr "Zobrazí panel vyhľadávania"
 
 #: data/ui/remmina_main.glade:123
-#, fuzzy
 msgid "Remmina main menu"
-msgstr "Priečinok údajov aplikácie Remmina"
+msgstr "Hlavná ponuka aplikácie Remmina"
 
 #: data/ui/remmina_main.glade:130
 msgid "Actions"
@@ -2699,9 +2688,8 @@ msgstr "Wiki"
 
 #. Remmina community website
 #: data/ui/remmina_main.glade:467
-#, fuzzy
 msgid "Community"
-msgstr "Online komunita"
+msgstr "Komunita"
 
 #: data/ui/remmina_main.glade:588
 msgid "Plugin"
@@ -2759,16 +2747,12 @@ msgstr ""
 "\">anonymné</a></b> štatistiky na adresu remmina.org"
 
 #: data/ui/remmina_news.glade:142 data/ui/remmina_news.glade:195
-#, fuzzy
 msgid "Send anonymous statistics"
-msgstr "Odosielať štatistiky na adresu remmina.org"
+msgstr "Odosielať anonymné štatistiky"
 
 #: data/ui/remmina_news.glade:156
-#, fuzzy
 msgid "Use as default remote desktop client"
-msgstr ""
-"Nastaviť aplikáciu Remmina ako predvoleného klienta pre vzdialené pracovné "
-"plochy"
+msgstr "Použiť ako predvoleného klienta pre vzdialené pracovné plochy"
 
 #: data/ui/remmina_news.glade:165
 msgid "Apply"
@@ -2784,6 +2768,8 @@ msgid ""
 "Fetch news from <a href=\"https://remmina.org\" title=\"Remmina news site"
 "\">remmina.org</a> (*)"
 msgstr ""
+"Získavať novinky z adresy <a href=\"https://remmina.org\" title=\"Remmina "
+"news site\">remmina.org</a> (*)"
 
 #: data/ui/remmina_news.glade:208 data/ui/remmina_preferences.glade:515
 msgid ""
@@ -2909,9 +2895,8 @@ msgid "Screen resolutions"
 msgstr "Rozlíšenia obrazoviek"
 
 #: data/ui/remmina_preferences.glade:280
-#, fuzzy
 msgid "Folder for screenshots"
-msgstr "Priečinok pre záznam relácie SSH"
+msgstr "Priečinok pre snímky obrazoviek"
 
 #: data/ui/remmina_preferences.glade:292
 msgid "Choose a folder to save screenshots from Remmina in."
@@ -2928,9 +2913,8 @@ msgid "Set up"
 msgstr ""
 
 #: data/ui/remmina_preferences.glade:326
-#, fuzzy
 msgid "Screenshot filenames"
-msgstr "Názov súboru snímky obrazovky"
+msgstr "Názov súbor snímky obrazovky"
 
 #: data/ui/remmina_preferences.glade:338
 msgid ""
@@ -3271,9 +3255,8 @@ msgid "Allow bold text"
 msgstr "Povoliť tučný text"
 
 #: data/ui/remmina_preferences.glade:1891
-#, fuzzy
 msgid "Colour theme"
-msgstr "Načítanie farebného motívu"
+msgstr "Farebný motív"
 
 #: data/ui/remmina_preferences.glade:1902
 msgid ""

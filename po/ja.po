@@ -14,10 +14,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-08-14 12:35+0000\n"
-"PO-Revision-Date: 2020-08-12 06:29+0000\n"
-"Last-Translator: YAMADA Shinichirou <yamada_strong_yamada_nice_64bit@yahoo."
-"co.jp>\n"
+"POT-Creation-Date: 2020-09-01 06:29+0000\n"
+"PO-Revision-Date: 2020-09-04 08:36+0000\n"
+"Last-Translator: YAMADA Shinichirou <yamada_strong_yamada_nice_64bit@yahoo.co"
+".jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/remmina/remmina/"
 "ja/>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 "X-Launchpad-Export-Date: 2014-09-20 14:24+0000\n"
 
 #: src/remmina_protocol_widget.c:275
@@ -58,13 +58,12 @@ msgstr "ポート %i で SSH 接続を待ち受け中…"
 #: src/remmina_protocol_widget.c:980
 #, c-format
 msgid "The \"%s\" command is not available on the SSH server."
-msgstr "コマンド \"%s\" は SSH サーバー上では利用できません。"
+msgstr "\"%s\" コマンドは SSH サーバー上で利用できません。"
 
 #: src/remmina_protocol_widget.c:984
 #, c-format
 msgid "Could not run the \"%s\" command on the SSH server (status = %i)."
-msgstr ""
-"SSH サーバー上でコマンド \"%s\" を実行できませんでした (ステータス = %i)。"
+msgstr "SSH サーバー上で \"%s\" コマンドを実行できませんでした (ステータス = %i)。"
 
 #. TRANSLATORS: %s is a placeholder for an error message
 #: src/remmina_protocol_widget.c:992
@@ -269,14 +268,14 @@ msgstr "フォントサイズを縮小(_D)"
 
 #: src/remmina_ssh_plugin.c:1068 src/remmina_message_panel.c:330
 #: src/remmina_sftp_plugin.c:343 src/remmina_file_editor.c:1003
-#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1863
-#: plugins/vnc/vnc_plugin.c:1883 plugins/rdp/rdp_plugin.c:2259
+#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1879
+#: plugins/vnc/vnc_plugin.c:1899 plugins/rdp/rdp_plugin.c:2259
 #: plugins/nx/nx_plugin.c:730 data/ui/remmina_mpc.glade:144
 msgid "Username"
 msgstr "ユーザー名"
 
-#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1864
-#: plugins/vnc/vnc_plugin.c:1884 plugins/spice/spice_plugin.c:437
+#: src/remmina_ssh_plugin.c:1069 plugins/vnc/vnc_plugin.c:1880
+#: plugins/vnc/vnc_plugin.c:1900 plugins/spice/spice_plugin.c:437
 #: plugins/nx/nx_plugin.c:731
 msgid "User password"
 msgstr "ユーザーパスワード"
@@ -478,7 +477,7 @@ msgstr "上へ"
 msgid "Go to parent folder"
 msgstr "親フォルダーに移動"
 
-#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1920
+#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1936
 #: plugins/rdp/rdp_plugin.c:2332
 msgid "Refresh"
 msgstr "更新"
@@ -689,7 +688,7 @@ msgstr "全画面表示 (ウィンドウモード)"
 
 #: src/rcw.c:1380 data/ui/remmina_preferences.glade:630
 msgid "Scrolled fullscreen"
-msgstr "スクロール付き全画面表示"
+msgstr "全画面表示 (スクロールモード)"
 
 #: src/rcw.c:1465
 msgid "Keep aspect ratio when scaled"
@@ -726,7 +725,7 @@ msgstr "動的な解像度の更新のオン/オフ"
 
 #: src/rcw.c:2232
 msgid "Toggle scaled mode"
-msgstr "拡大縮小モードのオン/オフ"
+msgstr "スケールモードのオン/オフ"
 
 #: src/rcw.c:2267
 msgid "Grab all keyboard events"
@@ -1558,7 +1557,7 @@ msgstr "HTML5 オーディオサポートをオン"
 msgid "Ignore TLS errors"
 msgstr "TLS のエラーを無視"
 
-#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1907
+#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1923
 #: plugins/spice/spice_plugin.c:456 plugins/rdp/rdp_plugin.c:2314
 #: plugins/nx/nx_plugin.c:752
 msgid "Forget passwords after use"
@@ -1615,82 +1614,82 @@ msgstr "VNC サーバーが不明な認証方式を要求してきました: %s"
 msgid "Please retry after turning on encryption for this profile."
 msgstr "このプロファイルの暗号化をオンにして再試行してください。"
 
-#: plugins/vnc/vnc_plugin.c:1834
+#: plugins/vnc/vnc_plugin.c:1850
 msgid "True color (32 bpp)"
 msgstr "フルカラー (32 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1835
+#: plugins/vnc/vnc_plugin.c:1851
 msgid "High color (16 bpp)"
 msgstr "ハイカラー (16 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1836
+#: plugins/vnc/vnc_plugin.c:1852
 msgid "256 colors (8 bpp)"
 msgstr "256 色 (8 bpp)"
 
-#: plugins/vnc/vnc_plugin.c:1843 plugins/rdp/rdp_plugin.c:2182
+#: plugins/vnc/vnc_plugin.c:1859 plugins/rdp/rdp_plugin.c:2182
 #: plugins/rdp/rdp_settings.c:275 plugins/nx/nx_plugin.c:713
 msgid "Best (slowest)"
 msgstr "最高 (最低速)"
 
-#: plugins/vnc/vnc_plugin.c:1844 plugins/rdp/rdp_plugin.c:2181
+#: plugins/vnc/vnc_plugin.c:1860 plugins/rdp/rdp_plugin.c:2181
 #: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:712
 msgid "Good"
 msgstr "高"
 
-#: plugins/vnc/vnc_plugin.c:1845 plugins/rdp/rdp_plugin.c:2180
+#: plugins/vnc/vnc_plugin.c:1861 plugins/rdp/rdp_plugin.c:2180
 #: plugins/rdp/rdp_settings.c:271 plugins/nx/nx_plugin.c:711
 msgid "Medium"
 msgstr "中"
 
-#: plugins/vnc/vnc_plugin.c:1846 plugins/rdp/rdp_plugin.c:2179
+#: plugins/vnc/vnc_plugin.c:1862 plugins/rdp/rdp_plugin.c:2179
 #: plugins/rdp/rdp_settings.c:269 plugins/nx/nx_plugin.c:710
 msgid "Poor (fastest)"
 msgstr "低 (最速)"
 
-#: plugins/vnc/vnc_plugin.c:1862
+#: plugins/vnc/vnc_plugin.c:1878
 msgid "Repeater"
 msgstr "リピーター"
 
-#: plugins/vnc/vnc_plugin.c:1865 plugins/vnc/vnc_plugin.c:1885
+#: plugins/vnc/vnc_plugin.c:1881 plugins/vnc/vnc_plugin.c:1901
 msgid "Color depth"
-msgstr "色深度"
+msgstr "色数"
 
-#: plugins/vnc/vnc_plugin.c:1866 plugins/vnc/vnc_plugin.c:1886
+#: plugins/vnc/vnc_plugin.c:1882 plugins/vnc/vnc_plugin.c:1902
 #: plugins/rdp/rdp_plugin.c:2279 plugins/nx/nx_plugin.c:733
 msgid "Quality"
 msgstr "品質"
 
-#: plugins/vnc/vnc_plugin.c:1882
+#: plugins/vnc/vnc_plugin.c:1898
 msgid "Listen on port"
 msgstr "ポートを開く"
 
-#: plugins/vnc/vnc_plugin.c:1902
+#: plugins/vnc/vnc_plugin.c:1918
 msgid "Show remote cursor"
 msgstr "リモートのカーソルを表示する"
 
-#: plugins/vnc/vnc_plugin.c:1903 plugins/vnc/vnc_plugin.c:1918
+#: plugins/vnc/vnc_plugin.c:1919 plugins/vnc/vnc_plugin.c:1934
 #: plugins/spice/spice_plugin.c:460 plugins/spice/spice_plugin.c:469
 msgid "View only"
 msgstr "表示専用"
 
-#: plugins/vnc/vnc_plugin.c:1904 plugins/spice/spice_plugin.c:455
+#: plugins/vnc/vnc_plugin.c:1920 plugins/spice/spice_plugin.c:455
 #: plugins/spice/spice_plugin.c:471 plugins/nx/nx_plugin.c:749
 msgid "Disable clipboard sync"
 msgstr "クリップボードの同期を無効にする"
 
-#: plugins/vnc/vnc_plugin.c:1905 plugins/nx/nx_plugin.c:750
+#: plugins/vnc/vnc_plugin.c:1921 plugins/nx/nx_plugin.c:750
 msgid "Disable encryption"
 msgstr "暗号化を無効にする"
 
-#: plugins/vnc/vnc_plugin.c:1906 plugins/vnc/vnc_plugin.c:1919
+#: plugins/vnc/vnc_plugin.c:1922 plugins/vnc/vnc_plugin.c:1935
 msgid "Disable server input"
 msgstr "サーバー入力を無効にする"
 
-#: plugins/vnc/vnc_plugin.c:1921
+#: plugins/vnc/vnc_plugin.c:1937
 msgid "Open Chat…"
 msgstr "チャット開始…"
 
-#: plugins/vnc/vnc_plugin.c:1922 plugins/spice/spice_plugin.c:472
+#: plugins/vnc/vnc_plugin.c:1938 plugins/spice/spice_plugin.c:472
 #: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2335
 msgid "Send Ctrl+Alt+Delete"
 msgstr "Ctrl+Alt+Delete を送る"
@@ -1815,7 +1814,7 @@ msgstr "フルカラー (24 bit)"
 
 #: plugins/xdmcp/xdmcp_plugin.c:369 plugins/rdp/rdp_plugin.c:2263
 msgid "Colour depth"
-msgstr "色深度"
+msgstr "色数"
 
 #: plugins/xdmcp/xdmcp_plugin.c:371 plugins/nx/nx_plugin.c:751
 msgid "Use local cursor"
@@ -2405,7 +2404,7 @@ msgstr "デバイスの倍率 %"
 
 #: plugins/rdp/rdp_settings.c:578
 msgid "Desktop orientation"
-msgstr "デスクトップの傾き"
+msgstr "デスクトップの向き"
 
 #: plugins/rdp/rdp_event.c:302
 #, c-format
@@ -2487,15 +2486,15 @@ msgid ""
 "<big><b>Remmina Snap package</b></big>\n"
 "\n"
 "<span>\n"
-"It seems that Remmina is running on your system as a Snap package.\n"
-"Some Remmina functionalities need your intervention to work properly\n"
+"Remmina is running on your system as a Snap package.\n"
+"Some Remmina functions need to be set up to work properly.\n"
 "</span>\n"
 msgstr ""
 "<big><b>Remmina の Snap パッケージ</b></big>\n"
 "\n"
 "<span>\n"
-"このシステム上で実行している Remmina は Snap 版だと思われます。\n"
-"Remmina のいくつかの機能を正常に動作させるには設定の変更が必要です。\n"
+"このシステム上で実行している Remmina は Snap 版です。\n"
+"Remmina のいくつかの機能を正常に動作させるには設定を変更する必要があります。\n"
 "</span>\n"
 
 #: data/ui/remmina_snap_info_dialog.glade:120
@@ -2515,17 +2514,16 @@ msgstr "<big>権限</big>"
 
 #: data/ui/remmina_snap_info_dialog.glade:201
 msgid ""
-"Snap packages runs confined from the rest of the system, therefore by "
-"default, Remmina profiles will be saved inside the Snap file system, but you "
-"can still set an alternative PATH in the general preferences."
+"Since Snap packages run confined from the rest of the system, Remmina "
+"profiles are saved inside the Snap file system by default. You can change "
+"the location in the Remmina preferences."
 msgstr ""
-"Snap パッケージはシステムから隔離された制限のある状態で実行されるため、初期設"
-"定では、Remmina のプロファイルは Snap ファイルシステム内に保存されますが、代"
-"替 PATH を設定することで保存先を変更できます。"
+"Snap パッケージはシステムから隔離された制限のある状態で実行されるため、初期設定では、Remmina のプロファイルは Snap "
+"ファイルシステム側に保存されますが、保存先の設定は変更できます。"
 
 #: data/ui/remmina_snap_info_dialog.glade:221
-msgid "Change the Remmina profiles PATH"
-msgstr "Remmina のプロファイルの PATH の変更"
+msgid "Change where Remmina profiles are stored"
+msgstr "Remmina のプロファイルの保存先を変更"
 
 #: data/ui/remmina_snap_info_dialog.glade:260
 msgid "<big>Snap settings</big>"
@@ -2924,7 +2922,7 @@ msgstr "Remmina のデータフォルダー"
 
 #: data/ui/remmina_preferences.glade:388
 msgid "Remember last view mode for each connection"
-msgstr "各接続の最後の表示モードを記憶する"
+msgstr "接続時に前回の表示モードを使用する"
 
 #. The star (*) is a reference to privacy consent
 #: data/ui/remmina_preferences.glade:392

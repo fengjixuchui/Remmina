@@ -1,5 +1,5 @@
 ---
-image: remmina/ubuntu:18.04
+image: registry.gitlab.com/remmina/remmina/ubuntu:18.04
 
 stages:
   - build
@@ -60,11 +60,10 @@ ubuntu:devel:
 appimage:build:
   # image: ubuntu:devel
   # stage: cross_environment
-  image: remmina/ubuntu:16.04
+  image: registry.gitlab.com/remmina/remmina/ubuntu:16.04
   stage: build
   before_script:
     - apt-get update -qq
-    - apt-get install -q -y librsvg2-2 librsvg2-bin librsvg2-common librsvg2-dev
 
   script:
     - mkdir $BUILD_FOLDER
@@ -100,7 +99,7 @@ appimage:build:
     - schedules
 
 flatpak:test:
-  image: remmina/ubuntu:18.04
+  image: registry.gitlab.com/remmina/remmina/ubuntu:18.04
   stage: build
   variables:
     BUNDLE: "remmina-dev.flatpak"
