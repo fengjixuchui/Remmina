@@ -646,6 +646,12 @@ void remmina_pref_init(void)
 	else
 		remmina_pref.vte_shortcutkey_decrease_font = GDK_KEY_Page_Down;
 
+	if (g_key_file_has_key(gkeyfile, "remmina_pref", "vte_shortcutkey_search_text", NULL))
+		remmina_pref.vte_shortcutkey_search_text = g_key_file_get_integer(gkeyfile, "remmina_pref", "vte_shortcutkey_search_text",
+										    NULL);
+	else
+		remmina_pref.vte_shortcutkey_search_text = GDK_KEY_g;
+
 
 	/* If we have a color scheme file, we switch to it, GIO will merge it in the
 	 * remmina.pref file */
@@ -744,7 +750,7 @@ gboolean remmina_pref_save(void)
 	g_key_file_set_string(gkeyfile, "remmina_pref", "datadir_path", remmina_pref.datadir_path);
 	g_key_file_set_string(gkeyfile, "remmina_pref", "remmina_file_name", remmina_pref.remmina_file_name);
 	g_key_file_set_string(gkeyfile, "remmina_pref", "screenshot_path", remmina_pref.screenshot_path);
-	g_key_file_set_string(gkeyfile, "remmina_pref", "remmina_file_name", remmina_pref.remmina_file_name);
+	g_key_file_set_string(gkeyfile, "remmina_pref", "screenshot_name", remmina_pref.screenshot_name);
 	g_key_file_set_boolean(gkeyfile, "remmina_pref", "deny_screenshot_clipboard", remmina_pref.deny_screenshot_clipboard);
 	g_key_file_set_boolean(gkeyfile, "remmina_pref", "save_view_mode", remmina_pref.save_view_mode);
 #if SODIUM_VERSION_INT >= 90200

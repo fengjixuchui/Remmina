@@ -1497,20 +1497,31 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 
 	cs = remmina_plugin_service->file_get_string(remminafile, "microphone");
 	if (cs != NULL && cs[0] != '\0') {
-		char **p;
-		size_t count;
+		if (g_strcmp0(cs, "0") == 0) {
+			REMMINA_PLUGIN_DEBUG("\"microphone\" was set to 0, setting to \"\"");
+			remmina_plugin_service->file_set_string(remminafile, "microphone", "");
+		} else {
+			REMMINA_PLUGIN_DEBUG("microphone set to %s", cs);
+			char **p;
+			size_t count;
 
-		p = remmina_rdp_CommandLineParseCommaSeparatedValuesEx("audin", g_strdup(cs), &count);
+			p = remmina_rdp_CommandLineParseCommaSeparatedValuesEx("audin", g_strdup(cs), &count);
 
-		freerdp_client_add_dynamic_channel(rfi->settings, count, p);
-		rfi->settings->AudioCapture = TRUE;
-		g_free(p);
+			freerdp_client_add_dynamic_channel(rfi->settings, count, p);
+			rfi->settings->AudioCapture = TRUE;
+			g_free(p);
+		}
 	}
 
 	cs = remmina_plugin_service->file_get_string(remminafile, "freerdp_log_level");
 	if (cs != NULL && cs[0] != '\0') {
 		wLog* root = WLog_GetRoot();
 		WLog_SetStringLogLevel(root, cs);
+	}
+
+	cs = remmina_plugin_service->file_get_string(remminafile, "freerdp_log_filters");
+	if (cs != NULL && cs[0] != '\0') {
+		WLog_AddStringLogFilters(cs);
 	}
 
 
@@ -2280,6 +2291,7 @@ static const RemminaProtocolSetting remmina_rdp_advanced_settings[] =
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "security",		    N_("Security protocol negotiation"),		 FALSE, security_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "gwtransp",		    N_("Gateway transport type"),			 FALSE, gwtransp_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "freerdp_log_level",	    N_("FreeRDP log level"),			 	FALSE, log_level,	  NULL														 },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "freerdp_log_filters",		    N_("FreeRDP log filters"),			 FALSE, NULL,		  N_("tag:level[,tag:level[,...]]")											 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "sound",		    N_("Sound"),					 FALSE, sound_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "microphone",		    N_("Redirect local microphone"),			 TRUE,	NULL,		  microphone_tooltip												 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "timeout",		    N_("Connection timeout in ms"),			 TRUE,	NULL,		  timeout_tooltip												 },

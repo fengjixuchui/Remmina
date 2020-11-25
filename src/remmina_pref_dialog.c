@@ -350,6 +350,7 @@ void remmina_pref_on_dialog_destroy(GtkWidget *widget, gpointer user_data)
 	remmina_pref.vte_shortcutkey_select_all = remmina_key_chooser_get_keyval(gtk_button_get_label(remmina_pref_dialog->button_keyboard_select_all));
 	remmina_pref.vte_shortcutkey_increase_font = remmina_key_chooser_get_keyval(gtk_button_get_label(remmina_pref_dialog->button_keyboard_increase_font));
 	remmina_pref.vte_shortcutkey_decrease_font = remmina_key_chooser_get_keyval(gtk_button_get_label(remmina_pref_dialog->button_keyboard_decrease_font));
+	remmina_pref.vte_shortcutkey_search_text = remmina_key_chooser_get_keyval(gtk_button_get_label(remmina_pref_dialog->button_keyboard_search_text));
 
 	remmina_pref_save();
 	remmina_pref_init();
@@ -379,10 +380,10 @@ static gboolean remmina_pref_dialog_add_pref_plugin(gchar *name, RemminaPlugin *
 	return FALSE;
 }
 
-void remmina_pref_dialog_vte_font_on_toggled(GtkWidget *widget, RemminaPrefDialog *dialog)
+void remmina_pref_dialog_vte_font_on_toggled(GtkSwitch *widget, RemminaPrefDialog *dialog)
 {
 	TRACE_CALL(__func__);
-	gtk_widget_set_sensitive(GTK_WIDGET(remmina_pref_dialog->fontbutton_terminal_font), !gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(widget)));
+	gtk_widget_set_sensitive(GTK_WIDGET(remmina_pref_dialog->fontbutton_terminal_font), !gtk_switch_get_active(widget));
 }
 
 void remmina_pref_dialog_disable_tray_icon_on_toggled(GtkWidget *widget, RemminaPrefDialog *dialog)
@@ -609,6 +610,7 @@ static void remmina_pref_dialog_init(void)
 	remmina_pref_dialog_set_button_label(remmina_pref_dialog->button_keyboard_select_all, remmina_pref.vte_shortcutkey_select_all);
 	remmina_pref_dialog_set_button_label(remmina_pref_dialog->button_keyboard_increase_font, remmina_pref.vte_shortcutkey_increase_font);
 	remmina_pref_dialog_set_button_label(remmina_pref_dialog->button_keyboard_decrease_font, remmina_pref.vte_shortcutkey_decrease_font);
+	remmina_pref_dialog_set_button_label(remmina_pref_dialog->button_keyboard_search_text, remmina_pref.vte_shortcutkey_search_text);
 
 	remmina_plugin_manager_for_each_plugin(REMMINA_PLUGIN_TYPE_PREF, remmina_pref_dialog_add_pref_plugin, remmina_pref_dialog->dialog);
 
@@ -693,6 +695,7 @@ GtkDialog* remmina_pref_dialog_new(gint default_tab, GtkWindow *parent)
 	remmina_pref_dialog->button_keyboard_select_all = GTK_BUTTON(GET_OBJECT("button_keyboard_select_all"));
 	remmina_pref_dialog->button_keyboard_increase_font = GTK_BUTTON(GET_OBJECT("button_keyboard_increase_font"));
 	remmina_pref_dialog->button_keyboard_decrease_font = GTK_BUTTON(GET_OBJECT("button_keyboard_decrease_font"));
+	remmina_pref_dialog->button_keyboard_search_text = GTK_BUTTON(GET_OBJECT("button_keyboard_search_text"));
 	remmina_pref_dialog->label_terminal_foreground = GTK_LABEL(GET_OBJECT("label_terminal_foreground"));
 	remmina_pref_dialog->colorbutton_foreground = GTK_COLOR_BUTTON(GET_OBJECT("colorbutton_foreground"));
 	remmina_pref_dialog->label_terminal_background = GTK_LABEL(GET_OBJECT("label_terminal_background"));
