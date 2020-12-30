@@ -81,15 +81,6 @@ static void remmina_rdp_file_import_field(RemminaFile *remminafile, const gchar 
 			remmina_plugin_service->file_set_string(remminafile, "sound", "remote");
 			break;
 		}
-	} else if (g_strcmp0(key, "audiocapturemode") == 0) {
-		switch (atoi(value)) {
-		case 0:
-			remmina_plugin_service->file_set_string(remminafile, "microphone", "");
-			break;
-		case 1:
-			remmina_plugin_service->file_set_string(remminafile, "microphone", "sys:pulse");
-			break;
-		}
 	} else if (g_strcmp0(key, "redirectprinters") == 0) {
 		remmina_plugin_service->file_set_int(remminafile, "shareprinter", (atoi(value) == 1));
 	} else if (g_strcmp0(key, "redirectsmartcard") == 0) {
@@ -276,7 +267,8 @@ gboolean remmina_rdp_file_export_channel(RemminaFile *remminafile, FILE *fp)
 	fprintf(fp, "alternate shell:s:%s\r\n", cs ? cs : "");
 	cs = remmina_plugin_service->file_get_string(remminafile, "execpath");
 	fprintf(fp, "shell working directory:s:%s\r\n", cs ? cs : "");
-	fprintf(fp, "gatewayhostname:s:\r\n");
+	cs = remmina_plugin_service->file_get_string(remminafile, "gateway_server");
+	fprintf(fp, "gatewayhostname:s:%s\r\n", cs ? cs : "");
 	fprintf(fp, "gatewayusagemethod:i:4\r\n");
 	fprintf(fp, "gatewaycredentialssource:i:4\r\n");
 	fprintf(fp, "gatewayprofileusagemethod:i:0\r\n");
