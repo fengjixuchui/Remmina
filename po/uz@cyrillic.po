@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-08-14 00:10+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Uzbek <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -434,11 +434,11 @@ msgid_plural "%d passwords changed."
 msgstr[0] "%d та пароль ўзгарди."
 msgstr[1] "%d та пароллар ўзгарди."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "Илтимос, 'энxбўй' форматида киритинг."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 #, fuzzy
 #| msgid "Quality settings"
 msgid "Change security settings"
@@ -792,27 +792,27 @@ msgstr ""
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr ""
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "Протокол"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "Киритма"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "Файл"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "Функция"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "Танлов"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "Махфий"
 
@@ -2655,7 +2655,7 @@ msgstr ""
 #: data/ui/remmina_about.glade:34
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2757,22 +2757,22 @@ msgstr ""
 msgid "Last used"
 msgstr ""
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 #, fuzzy
 msgid "Remote Desktop Client"
 msgstr "Remmina - масофавий боғланиш программаси"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 #, fuzzy
 msgid "New connection profile"
 msgstr "Янги боғланиш профилини ясаш"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 #, fuzzy
 msgid "Remmina main menu"
 msgstr "Remmina аплет"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr ""
 

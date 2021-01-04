@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-12-30 11:28+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/remmina/"
@@ -445,11 +445,11 @@ msgid_plural "%d passwords changed."
 msgstr[0] "%d passord endret."
 msgstr[1] "%d passord endret."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "Skriv inn format «breddexhøyde»."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 #, fuzzy
 #| msgid "Quality settings"
 msgid "Change security settings"
@@ -814,27 +814,27 @@ msgstr ""
 "Advarsel: Dette programtillegget krever GtkSocket, men det er ikke "
 "tilgjengelig."
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "Oppføring"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "Fil"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "Verktøy"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "Innstilling"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "Hemmelighet"
 
@@ -2792,9 +2792,16 @@ msgid "About"
 msgstr "Om"
 
 #: data/ui/remmina_about.glade:34
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+#| "Copyright © 2009–2014 Vic Lee\n"
+#| "More details in COPYING\n"
+#| "    "
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2905,19 +2912,19 @@ msgstr "Programtillegg"
 msgid "Last used"
 msgstr "Sist brukt"
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 msgid "Remote Desktop Client"
 msgstr "Klient for eksterne skrivebord"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 msgid "New connection profile"
 msgstr "Ny tilkoblingsprofil"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 msgid "Remmina main menu"
 msgstr "Remmina-hovedmeny"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr "Handlinger"
 

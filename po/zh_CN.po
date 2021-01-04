@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-11-29 07:29+0000\n"
 "Last-Translator: Eric <spice2wolf@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -422,11 +422,11 @@ msgid "%d password changed."
 msgid_plural "%d passwords changed."
 msgstr[0] "%d 个密码已更改。"
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "请正确输入“宽x高”。"
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 msgid "Change security settings"
 msgstr "更改安全设置"
 
@@ -775,27 +775,27 @@ msgstr "文件 \"%s\" 已损坏，无法读取或未找到。"
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "警告：此插件需要 GtkSocket，但它不可用。"
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "协议"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "入口"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "文件"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "工具"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "首选项"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "机密"
 
@@ -2608,9 +2608,16 @@ msgid "About"
 msgstr "关于"
 
 #: data/ui/remmina_about.glade:34
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+#| "Copyright © 2009–2014 Vic Lee\n"
+#| "More details in COPYING\n"
+#| "    "
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2715,19 +2722,19 @@ msgstr "插件"
 msgid "Last used"
 msgstr "最后使用"
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 msgid "Remote Desktop Client"
 msgstr "远程桌面客户端"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 msgid "New connection profile"
 msgstr "创建一个新的连接配置文件"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 msgid "Remmina main menu"
 msgstr "Remmina 主菜单"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr "动作"
 

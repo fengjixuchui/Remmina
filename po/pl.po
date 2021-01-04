@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-09-06 13:36+0000\n"
 "Last-Translator: WaldiS <sto@tutanota.de>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -440,11 +440,11 @@ msgstr[0] "%d hasło zmienione."
 msgstr[1] "%d hasła zmienione."
 msgstr[2] "%d haseł zmienione."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "Proszę wprowadzić rozdzielczość w formacie „szerokośćxwysokość”."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 #, fuzzy
 #| msgid "Quality settings"
 msgid "Change security settings"
@@ -805,27 +805,27 @@ msgstr "Plik „%s” jest uszkodzony, nie do odczytu lub nie można go znaleź�
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "Ostrzeżenie: Ta wtyczka wymaga GtkSocket, które jest niedostępne."
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "Protokół"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "Wpis"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "Plik"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "Narzędzie"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "Preferencje"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "Sekretny"
 
@@ -2732,9 +2732,16 @@ msgid "About"
 msgstr "O programie"
 
 #: data/ui/remmina_about.glade:34
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+#| "Copyright © 2009–2014 Vic Lee\n"
+#| "More details in COPYING\n"
+#| "    "
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2839,19 +2846,19 @@ msgstr "Wtyczka"
 msgid "Last used"
 msgstr "Ostatnio użyte"
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 msgid "Remote Desktop Client"
 msgstr "Klient zdalnego pulpitu"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 msgid "New connection profile"
 msgstr "Nowy profil połączeń"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 msgid "Remmina main menu"
 msgstr "Główne menu Remminy"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr "Akcje"
 

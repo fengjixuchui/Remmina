@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Remmina v1.4.6\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-12-13 22:29+0000\n"
 "Last-Translator: Kurd As <kurd68587@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://hosted.weblate.org/projects/"
@@ -430,11 +430,11 @@ msgid_plural "%d passwords changed."
 msgstr[0] "‫%d وشەی تێپەڕبوون گؤڕا."
 msgstr[1] "‏‫%d وشەی تێپەڕبوون گۆڕا."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "تکایە شێپێدان بنووسە ‘widthxheight’."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 msgid "Change security settings"
 msgstr "گۆڕینی ڕێکخستنەکانی پاراستن"
 
@@ -779,27 +779,27 @@ msgstr "پەڕگەی “%s” تێکشکاوە، ناخوێندرێتەوە، ی
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "وریابە: ئەم پێوەکراوە پێویستی بە GtkSocket هەیە، بەڵام بەردەست نیە."
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "پرۆتۆکۆڵ"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "تێخستن"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "پەڕگە"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "ئامراز"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "هەڵبژاردەکان"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "نهێنی"
 
@@ -2663,9 +2663,16 @@ msgid "About"
 msgstr "دەربارە"
 
 #: data/ui/remmina_about.glade:34
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+#| "Copyright © 2009–2014 Vic Lee\n"
+#| "More details in COPYING\n"
+#| "    "
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2770,19 +2777,19 @@ msgstr "پێوەکراو"
 msgid "Last used"
 msgstr "دواین بەکارهێنان"
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 msgid "Remote Desktop Client"
 msgstr "ڕاژەخوازی کۆنتڕۆڵی دووری ڕوومێزی ڕێمینا"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 msgid "New connection profile"
 msgstr "پرۆفایلێکی نوێی پەیوەندی"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 msgid "Remmina main menu"
 msgstr "لیستەی سەرەکی ڕێمینا"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr "کردارەکان"
 

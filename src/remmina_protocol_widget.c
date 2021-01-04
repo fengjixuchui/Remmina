@@ -2,7 +2,7 @@
  * Remmina - The GTK+ Remote Desktop Client
  * Copyright (C) 2009-2011 Vic Lee
  * Copyright (C) 2014-2015 Antenore Gatta, Fabio Castelli, Giovanni Panozzo
- * Copyright (C) 2016-2020 Antenore Gatta, Giovanni Panozzo
+ * Copyright (C) 2016-2021 Antenore Gatta, Giovanni Panozzo
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -1808,9 +1808,18 @@ void remmina_protocol_widget_setup(RemminaProtocolWidget *gp, RemminaFile *remmi
 		return;
 	}
 	gp->priv->plugin = plugin;
+	gp->plugin = plugin;
 
 	gp->priv->scalemode = remmina_file_get_int(gp->priv->remmina_file, "scale", FALSE);
 	gp->priv->scaler_expand = remmina_file_get_int(gp->priv->remmina_file, "scaler_expand", FALSE);
+}
+
+GtkWindow* remmina_protocol_widget_get_gtkwindow(RemminaProtocolWidget *gp) {
+	return rcw_get_gtkwindow(gp->cnnobj);
+}
+
+GtkWidget *remmina_protocol_widget_gtkviewport(RemminaProtocolWidget *gp) {
+	return rcw_get_gtkviewport(gp->cnnobj);
 }
 
 GtkWidget *remmina_protocol_widget_new(void)

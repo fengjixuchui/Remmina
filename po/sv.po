@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-11-30 12:50+0000\n"
 "Last-Translator: theschitz <alex@theschitz.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -451,11 +451,11 @@ msgid_plural "%d passwords changed."
 msgstr[0] "%d lösenord ändrat."
 msgstr[1] "%d lösenord ändrades."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "Ange enligt format 'breddxhöjd'."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 #, fuzzy
 msgid "Change security settings"
 msgstr "Kvalitetsinställningar"
@@ -829,27 +829,27 @@ msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr ""
 "Varning: Detta tillägget kräver, GtkSocket, men det finns inte tillgängligt."
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "Post"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "Fil"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "Verktyg"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "Inställning"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "Hemlighet"
 
@@ -2836,7 +2836,7 @@ msgstr "Om"
 #, fuzzy
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2959,21 +2959,21 @@ msgstr "Tillägg"
 msgid "Last used"
 msgstr "Senast använd"
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 #, fuzzy
 msgid "Remote Desktop Client"
 msgstr "Remmina - Klient för fjärrskrivbord"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 msgid "New connection profile"
 msgstr "Ny anslutningsprofil"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 #, fuzzy
 msgid "Remmina main menu"
 msgstr "Remmina-datamapp"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr "Handlingar"
 

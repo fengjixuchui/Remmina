@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-12-10 22:33+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/remmina/remmina/"
@@ -429,11 +429,11 @@ msgid_plural "%d passwords changed."
 msgstr[0] "ססמה אחת הוחלפה."
 msgstr[1] "%d ססמאות הוחלפו."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "נא להקליד בצורה ‚רוחבxגובה’."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 msgid "Change security settings"
 msgstr "החלפת הגדרות אבטחה"
 
@@ -776,27 +776,27 @@ msgstr "הקובץ „%s” פגום, בלתי קריא או חסר."
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr "אזהרה: תוסף זה דורש את GtkSocket, אך הוא אינו זמין."
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "פרוטוקול"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "רשומה"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "קובץ"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "כלי"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "העדפה"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "סוד"
 
@@ -2659,9 +2659,16 @@ msgid "About"
 msgstr "על אודות"
 
 #: data/ui/remmina_about.glade:34
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+#| "Copyright © 2009–2014 Vic Lee\n"
+#| "More details in COPYING\n"
+#| "    "
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2766,19 +2773,19 @@ msgstr "תוסף"
 msgid "Last used"
 msgstr "שימוש אחרון"
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 msgid "Remote Desktop Client"
 msgstr "לקוח חיבורי שולחן עבודה מרוחקים"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 msgid "New connection profile"
 msgstr "פרופיל חיבור חדש"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 msgid "Remmina main menu"
 msgstr "התפריט הראשי של Remmina"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr "פעולות"
 

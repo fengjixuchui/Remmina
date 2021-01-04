@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-08-14 00:10+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/remmina/remmina/nl/"
@@ -444,11 +444,11 @@ msgid_plural "%d passwords changed."
 msgstr[0] "%d wachtwoord gewijzigd."
 msgstr[1] "%d wachtwoorden gewijzigd."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "Specificeer formaat ‘breedtexhoogte’."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 msgid "Change security settings"
 msgstr ""
 
@@ -817,27 +817,27 @@ msgstr ""
 "Waarschuwing: voor deze plug-in is GtkSocket vereist, maar deze is niet "
 "beschikbaar."
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "Protocol"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "Invoer"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "Bestand"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "Hulpmiddel"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "Voorkeur"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "Geheim"
 
@@ -2703,7 +2703,7 @@ msgstr "Over"
 #: data/ui/remmina_about.glade:34
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2805,22 +2805,22 @@ msgstr "Plugin"
 msgid "Last used"
 msgstr ""
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 #, fuzzy
 msgid "Remote Desktop Client"
 msgstr "Remmina client voor Bureaublad-op-afstand"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 #, fuzzy
 msgid "New connection profile"
 msgstr "VNC-verbinding mislukt: %s"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 #, fuzzy
 msgid "Remmina main menu"
 msgstr "Remmina Kiosk"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr "Acties"
 

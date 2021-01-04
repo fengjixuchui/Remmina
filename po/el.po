@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: remmina\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2020-12-30 11:27+0000\n"
+"POT-Creation-Date: 2021-01-04 08:14+0000\n"
 "PO-Revision-Date: 2020-10-28 16:14+0000\n"
 "Last-Translator: GChr <gchr.dev+github@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/remmina/remmina/el/"
@@ -445,11 +445,11 @@ msgid_plural "%d passwords changed."
 msgstr[0] "%d κωδικός πρόσβασης άλλαξε."
 msgstr[1] "%d κωδικοί πρόσβασης άλλαξαν."
 
-#: src/remmina_public.c:621
+#: src/remmina_public.c:624
 msgid "Please enter format 'widthxheight'."
 msgstr "Παρακαλώ εισάγετε με μορφή 'πλάτοςxύψος'."
 
-#: src/remmina_public.c:643
+#: src/remmina_public.c:646
 msgid "Change security settings"
 msgstr ""
 
@@ -818,27 +818,27 @@ msgstr ""
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr ""
 
-#: src/remmina_plugin_manager.c:69 src/remmina_file_editor.c:1610
+#: src/remmina_plugin_manager.c:71 src/remmina_file_editor.c:1610
 msgid "Protocol"
 msgstr "Πρωτόκολο"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Entry"
 msgstr "Καταχώρηση"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "File"
 msgstr "Αρχείο"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Tool"
 msgstr "Εργαλείο"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Preference"
 msgstr "Προτίμηση"
 
-#: src/remmina_plugin_manager.c:69
+#: src/remmina_plugin_manager.c:71
 msgid "Secret"
 msgstr "Απόρρητο"
 
@@ -2678,7 +2678,7 @@ msgstr "Σχετικά"
 #: data/ui/remmina_about.glade:34
 msgid ""
 "\n"
-"Copyright © 2014–2020 Antenore Gatta, Giovanni Panozzo.\n"
+"Copyright © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
 "Copyright © 2009–2014 Vic Lee\n"
 "More details in COPYING\n"
 "    "
@@ -2780,22 +2780,22 @@ msgstr ""
 msgid "Last used"
 msgstr "Τελευταία χρησιμοποιήθηκε"
 
-#: data/ui/remmina_main.glade:555
+#: data/ui/remmina_main.glade:554
 #, fuzzy
 msgid "Remote Desktop Client"
 msgstr "Διακομιστής απομακρυσμένης επιφάνειας εργασίας Remmina"
 
-#: data/ui/remmina_main.glade:563
+#: data/ui/remmina_main.glade:562
 #, fuzzy
 msgid "New connection profile"
 msgstr "Αποτυχία σύνδεσης VNC: %s"
 
-#: data/ui/remmina_main.glade:581
+#: data/ui/remmina_main.glade:580
 #, fuzzy
 msgid "Remmina main menu"
 msgstr "Μικροεφαρμογή Remmina"
 
-#: data/ui/remmina_main.glade:588
+#: data/ui/remmina_main.glade:587
 msgid "Actions"
 msgstr ""
 
