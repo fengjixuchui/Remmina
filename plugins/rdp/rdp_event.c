@@ -419,7 +419,10 @@ static gboolean remmina_rdp_event_delayed_monitor_layout(RemminaProtocolWidget *
 					REMMINA_PLUGIN_DEBUG("EVNT MON LAYOUT - physicalWidth: %i", rdp_event.monitor_layout.physicalWidth);
 					rdp_event.monitor_layout.physicalHeight = rfi->settings->MonitorDefArray[i].attributes.physicalHeight;
 					REMMINA_PLUGIN_DEBUG("EVNT MON LAYOUT - PhysicalHeight: %i", rdp_event.monitor_layout.physicalHeight);
-					rdp_event.monitor_layout.desktopOrientation = rdp_event.monitor_layout.desktopOrientation;
+					if (rfi->settings->MonitorDefArray[i].attributes.orientation)
+						rdp_event.monitor_layout.desktopOrientation = rfi->settings->MonitorDefArray[i].attributes.orientation;
+					else
+						rdp_event.monitor_layout.desktopOrientation = rdp_event.monitor_layout.desktopOrientation;
 					REMMINA_PLUGIN_DEBUG("EVNT MON LAYOUT - desktopOrientation: %i", rdp_event.monitor_layout.desktopOrientation);
 					rdp_event.monitor_layout.desktopScaleFactor = rdp_event.monitor_layout.desktopScaleFactor;
 					REMMINA_PLUGIN_DEBUG("EVNT MON LAYOUT - ScaleFactorflag: %i", rdp_event.monitor_layout.desktopScaleFactor);
@@ -541,6 +544,11 @@ static gboolean remmina_rdp_event_on_button(GtkWidget *widget, GdkEventButton *e
 	gint flag;
 	gboolean extended = FALSE;
 	RemminaPluginRdpEvent rdp_event = { 0 };
+	gint primary, secondary;
+
+	RemminaFile *remminafile;
+
+	remminafile = remmina_plugin_service->protocol_plugin_get_file(gp);
 
 	/* We bypass 2button-press and 3button-press events */
 	if ((event->type != GDK_BUTTON_PRESS) && (event->type != GDK_BUTTON_RELEASE))
@@ -548,15 +556,23 @@ static gboolean remmina_rdp_event_on_button(GtkWidget *widget, GdkEventButton *e
 
 	flag = 0;
 
+	if (remmina_plugin_service->file_get_int(remminafile, "left-handed", FALSE)) {
+		primary = PTR_FLAGS_BUTTON2;
+		secondary = PTR_FLAGS_BUTTON1;
+	} else {
+		primary = PTR_FLAGS_BUTTON1;
+		secondary = PTR_FLAGS_BUTTON2;
+	}
+
 	switch (event->button) {
 	case 1:
-		flag |= PTR_FLAGS_BUTTON1;
+		flag |= primary;
 		break;
 	case 2:
 		flag |= PTR_FLAGS_BUTTON3;
 		break;
 	case 3:
-		flag |= PTR_FLAGS_BUTTON2;
+		flag |= secondary;
 		break;
 	case 8:                 /* back */
 	case 97:                /* Xming */
@@ -609,7 +625,7 @@ static gboolean remmina_rdp_event_on_scroll(GtkWidget *widget, GdkEventScroll *e
 		break;
 
 	case GDK_SCROLL_DOWN:
-		flag = PTR_FLAGS_WHEEL | PTR_FLAGS_WHEEL_NEGATIVE | 0x0078;  // -120 (one scroll unit)
+		flag = PTR_FLAGS_WHEEL | 0x0188;  // -120 (one scroll unit) in 9 bits two's complement
 		break;
 
 #if GTK_CHECK_VERSION(3, 4, 0)
@@ -622,16 +638,10 @@ static gboolean remmina_rdp_event_on_scroll(GtkWidget *widget, GdkEventScroll *e
 
 		if (windows_delta > 255)
 			windows_delta = 255;
-		if (windows_delta < -255)
-			windows_delta = -255;
+		if (windows_delta < -256)
+			windows_delta = -256;
 
-		flag = PTR_FLAGS_WHEEL;
-
-		if (windows_delta < 0) {
-			windows_delta = -windows_delta;
-			flag |= PTR_FLAGS_WHEEL_NEGATIVE;
-		}
-		flag |= (short)windows_delta & 0xFF;
+		flag = PTR_FLAGS_WHEEL | ((short)windows_delta & WheelRotationMask);
 
 		break;
 #endif

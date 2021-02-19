@@ -268,7 +268,11 @@ static BOOL rf_process_event_queue(RemminaProtocolWidget *gp)
 					REMMINA_PLUGIN_DEBUG("Monitor %d physical width: %d", i, dcml[i].PhysicalWidth);
 					dcml[i].PhysicalHeight = rfi->settings->MonitorDefArray[i].attributes.physicalHeight;
 					REMMINA_PLUGIN_DEBUG("Monitor %d physical height: %d", i, dcml[i].PhysicalHeight);
-					dcml[i].Orientation = event->monitor_layout.desktopOrientation;
+					if (rfi->settings->MonitorDefArray[i].attributes.orientation)
+						dcml[i].Orientation = rfi->settings->MonitorDefArray[i].attributes.orientation;
+					else
+						dcml[i].Orientation = event->monitor_layout.desktopOrientation;
+					REMMINA_PLUGIN_DEBUG("Monitor %d orientation: %d", i, dcml[i].Orientation);
 					dcml[i].DesktopScaleFactor = event->monitor_layout.desktopScaleFactor;
 					dcml[i].DeviceScaleFactor = event->monitor_layout.deviceScaleFactor;
 				}
@@ -1215,12 +1219,6 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 	const gchar *s;
 	gchar *sm;
 	gchar *value;
-	gint rdpsnd_rate;
-	gint rdpsnd_channel;
-	char *rdpsnd_params[3];
-	int rdpsnd_nparams;
-	char rdpsnd_param1[16];
-	char rdpsnd_param2[16];
 	const gchar *cs;
 	RemminaFile *remminafile;
 	rfContext *rfi = GET_PLUGIN_DATA(gp);
@@ -1592,36 +1590,12 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 	}
 
 	/* Sound settings */
-
 	cs = remmina_plugin_service->file_get_string(remminafile, "sound");
 
 	if (g_strcmp0(cs, "remote") == 0) {
 		rfi->settings->RemoteConsoleAudio = TRUE;
 	} else if (g_str_has_prefix(cs, "local")) {
 		rfi->settings->AudioPlayback = TRUE;
-		rfi->settings->DeviceRedirection = TRUE;        /* rdpsnd requires rdpdr to be registered */
-
-		rdpsnd_nparams = 0;
-		rdpsnd_params[rdpsnd_nparams++] = "rdpsnd";
-
-		cs = strchr(cs, ',');
-		if (cs) {
-			rdpsnd_rate = atoi(cs + 1);
-			if (rdpsnd_rate > 1000 && rdpsnd_rate < 150000) {
-				snprintf(rdpsnd_param1, sizeof(rdpsnd_param1), "rate:%d", rdpsnd_rate);
-				rdpsnd_params[rdpsnd_nparams++] = rdpsnd_param1;
-				cs = strchr(cs + 1, ',');
-				if (cs) {
-					rdpsnd_channel = atoi(cs + 1);
-					if (rdpsnd_channel >= 1 && rdpsnd_channel <= 2) {
-						snprintf(rdpsnd_param2, sizeof(rdpsnd_param2), "channel:%d", rdpsnd_channel);
-						rdpsnd_params[rdpsnd_nparams++] = rdpsnd_param2;
-					}
-				}
-			}
-		}
-
-		freerdp_client_add_static_channel(rfi->settings, rdpsnd_nparams, (char **)rdpsnd_params);
 	} else {
 		/* Disable sound */
 		rfi->settings->AudioPlayback = FALSE;
@@ -1772,17 +1746,43 @@ static gboolean remmina_rdp_main(RemminaProtocolWidget *gp)
 	if (remmina_plugin_service->file_get_int(remminafile, "multimon", FALSE)) {
 		guint32 maxwidth = 0;
 		guint32 maxheight = 0;
+		gchar *monitorids;
+		guint32 i;
 		rfi->settings->UseMultimon = TRUE;
 		/* TODO Add an option for this */
 		rfi->settings->ForceMultimon = TRUE;
 		rfi->settings->Fullscreen = TRUE;
 
-		gchar *monitorids = g_strdup(remmina_plugin_service->file_get_string(remminafile, "monitorids"));
-		/* Otherwise we get all the attached monitors */
+		gchar *monitorids_string = g_strdup(remmina_plugin_service->file_get_string(remminafile, "monitorids"));
+		/* Otherwise we get all the attached monitors
+		 * monitorids may contains desktop orientation values.
+		 * But before we check if there are orientation attributes
+		 */
+		if (monitorids_string != NULL && monitorids_string[0] != '\0') {
+			if (g_strstr_len(monitorids_string, -1, ",") != NULL) {
+				if (g_strstr_len(monitorids_string, -1, ":") != NULL) {
+					/* We have an ID and an orientation degree */
+					gchar **temp_items;
+					gchar **rot_items;
+					temp_items = g_strsplit(monitorids_string, ",", -1);
+					for (i = 0; i < g_strv_length(temp_items); i++) {
+						rot_items = g_strsplit(temp_items[i], ":", -1);
+						if (i == 0)
+							monitorids = g_strdup(rot_items[0]);
+						else
+							monitorids = g_strdup_printf("%s,%s", monitorids, rot_items[0]);
+						rfi->settings->MonitorDefArray[atoi(rot_items[0])].attributes.orientation = atoi(rot_items[1]);
+						REMMINA_PLUGIN_DEBUG("Monitor n %d orientation: %d", i, rfi->settings->MonitorDefArray[atoi(rot_items[0])].attributes.orientation);
+					}
+				} else
+					monitorids = g_strdup(monitorids_string);
+			} else
+				monitorids = g_strdup(monitorids_string);
+		} else
+			monitorids = g_strdup(monitorids_string);
 		remmina_rdp_monitor_get(rfi, &monitorids, &maxwidth, &maxheight);
 		if (monitorids != NULL && monitorids[0] != '\0') {
 			gchar **items;
-			guint32 i;
 			items = g_strsplit(monitorids, ",", -1);
 			rfi->settings->NumMonitorIds = g_strv_length(items);
 			REMMINA_PLUGIN_DEBUG("NumMonitorIds: %d", rfi->settings->NumMonitorIds);
@@ -2417,9 +2417,6 @@ static gpointer sound_list[] =
 {
 	"off",		 N_("Off"),
 	"local",	 N_("Local"),
-	"local,11025,1", N_("Local - low quality"),
-	"local,22050,2", N_("Local - medium quality"),
-	"local,44100,2", N_("Local - high quality"),
 	"remote",	 N_("Remote"),
 	NULL
 };
@@ -2464,7 +2461,7 @@ static gchar microphone_tooltip[] =
 	   "  • sys:alsa");
 
 static gchar audio_tooltip[] =
-	N_("Options for redirection of audio ouput:\n"
+	N_("Options for redirection of audio output:\n"
 	   "  • [sys:<sys>,][dev:<dev>,][format:<format>,][rate:<rate>,]\n"
 	   "    [channel:<channel>] Audio output\n"
 	   "  • sys:pulse\n"
@@ -2489,6 +2486,18 @@ static gchar network_tooltip[] =
 	   "Using auto-detection is advised.\n"
 	   "If \"Auto-detect\" fails, choose the most appropriate option in the list.\n");
 
+static gchar monitorids_tooltip[] =
+	N_("Comma separated list of monitor IDs and desktop orientations:\n"
+	   "  • [<id>:<orientation-in-degrees>,]\n"
+	   "  • 0,1,2,3\n"
+	   "  • 0:270,1:90\n"
+	   "Orientations are specified in degrees, valid values are:\n"
+	   "  •   0 (landscape)\n"
+	   "  •  90 (portrait)\n"
+	   "  • 180 (landscape flipped)\n"
+	   "  • 270 (portrait flipped)\n"
+	   "\n");
+
 
 /* Array of RemminaProtocolSetting for basic settings.
  * Each item is composed by:
@@ -2501,13 +2510,14 @@ static gchar network_tooltip[] =
  */
 static const RemminaProtocolSetting remmina_rdp_basic_settings[] =
 {
-	{ REMMINA_PROTOCOL_SETTING_TYPE_SERVER,	    "server",	   NULL,			  FALSE, NULL,		  NULL						      },
-	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	    "username",	   N_("Username"),		  FALSE, NULL,		  NULL						      },
-	{ REMMINA_PROTOCOL_SETTING_TYPE_PASSWORD,   "password",	   N_("Password"),		  FALSE, NULL,		  NULL						      },
-	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	    "domain",	   N_("Domain"),		  FALSE, NULL,		  NULL						      },
-	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK,	    "multimon",	   N_("Enable multi monitor"),	  TRUE, NULL,		  NULL						      },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_SERVER,	    "server",	   NULL,			  FALSE, NULL,		  NULL									      	},
+	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	    "username",	   N_("Username"),		  FALSE, NULL,		  NULL									      	},
+	{ REMMINA_PROTOCOL_SETTING_TYPE_PASSWORD,   "password",	   N_("Password"),		  FALSE, NULL,		  NULL									      	},
+	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	    "domain",	   N_("Domain"),		  FALSE, NULL,		  NULL									      	},
+	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK,	    "left-handed", N_("Left-handed mouse support"), FALSE, NULL,		  N_("Swap left and right mouse buttons for left-handed mouse support")	},
+	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK,	    "multimon",	   N_("Enable multi monitor"),	  TRUE, NULL,		  NULL										},
 	{ REMMINA_PROTOCOL_SETTING_TYPE_CHECK,	    "span",	   N_("Span screen over multiple monitors"),	  TRUE, NULL,		  NULL						      },
-	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	    "monitorids",  N_("Monitor ID list"),	  FALSE, NULL,		  N_("Comma separated list of monitor IDs (0,1,2,4)") },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	    "monitorids",  N_("Monitor ID list"),	  FALSE, NULL,		  monitorids_tooltip },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_RESOLUTION, "resolution",  NULL,			  FALSE, NULL,		  NULL						      },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	    "colordepth",  N_("Colour depth"),		  FALSE, colordepth_list, NULL						      },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	    "network",	   N_("Network connection type"), FALSE, network_list,	  network_tooltip				      },
@@ -2531,7 +2541,7 @@ static const RemminaProtocolSetting remmina_rdp_advanced_settings[] =
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "gwtransp",		    N_("Gateway transport type"),			 FALSE, gwtransp_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "freerdp_log_level",	    N_("FreeRDP log level"),				 FALSE, log_level,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "freerdp_log_filters",    N_("FreeRDP log filters"),				 FALSE, NULL,		  N_("tag:level[,tag:level[,…]]")										 },
-	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "sound",		    N_("Sound"),					 FALSE, sound_list,	  NULL														 },
+	{ REMMINA_PROTOCOL_SETTING_TYPE_SELECT,	  "sound",		    N_("Audio output mode"),				 FALSE, sound_list,	  NULL														 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "audio-output",	    N_("Redirect local audio output"),			 TRUE,	NULL,		  audio_tooltip													 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "microphone",		    N_("Redirect local microphone"),			 TRUE,	NULL,		  microphone_tooltip												 },
 	{ REMMINA_PROTOCOL_SETTING_TYPE_TEXT,	  "timeout",		    N_("Connection timeout in ms"),			 TRUE,	NULL,		  timeout_tooltip												 },
