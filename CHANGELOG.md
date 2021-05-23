@@ -1,4 +1,93 @@
-# Changelog
+## v1.4.16
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.4.16...v1.4.17)
+
+* Fix build with musl libc [!2259](https://gitlab.com/Remmina/Remmina/merge_requests/2259) *@ncopa*
+* Fix typos [!2260](https://gitlab.com/Remmina/Remmina/merge_requests/2260) *@mfvescovi*
+* Improving CI cache [!2257](https://gitlab.com/Remmina/Remmina/merge_requests/2257) *@antenore*
+* Fix System Tray Icon Broken/Missing [!2261](https://gitlab.com/Remmina/Remmina/merge_requests/2261) *@antenore*
+* VNC quality deafults now to good [!2264](https://gitlab.com/Remmina/Remmina/merge_requests/2264) *@antenore*
+* Flatpak refactoring [!2262](https://gitlab.com/Remmina/Remmina/merge_requests/2262) *@antenore*
+* Adding Gateway websocket support [!2263](https://gitlab.com/Remmina/Remmina/merge_requests/2263) *@antenore*
+* Revert "Linking snap and flatpak to FreeRDP 2.3.1" [!2265](https://gitlab.com/Remmina/Remmina/merge_requests/2265) *@antenore*
+* Set FreeRDP config path to Remmina profiles path [!2266](https://gitlab.com/Remmina/Remmina/merge_requests/2266) *@antenore*
+
+## v1.4.16
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.4.15...v1.4.16)
+
+* Fix Data PATH for the FreeRDP files bcf24360e05d2f9b60f9f0adaf56dede66497a42 @antenore
+
+## v1.4.15
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.4.14...v1.4.15)
+
+* Fixing SSH plugin color palette initialization. [!2255](https://gitlab.com/Remmina/Remmina/merge_requests/2255) *@antenore*
+
+## v1.4.14
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.4.13...v1.4.14)
+
+* [VNC] - Ignore remote Bell option and other fixes [!2237](https://gitlab.com/Remmina/Remmina/merge_requests/2237) *@antenore*
+* Fixing color palette size for themed SSH [!2253](https://gitlab.com/Remmina/Remmina/merge_requests/2253) *@antenore*
+* Bump FreeRDP version to 2.3.2 [!2226](https://gitlab.com/Remmina/Remmina/merge_requests/2226) *@antenore*
+* Fixes search bar shortcuts wrong bahavior [!2227](https://gitlab.com/Remmina/Remmina/merge_requests/2227) *@antenore*
+* Honour theme settings when run from command line [!2251](https://gitlab.com/Remmina/Remmina/merge_requests/2251) *@antenore*
+* FTP UI improvements [!2228](https://gitlab.com/Remmina/Remmina/merge_requests/2228) *@antenore*
+* Experimental VNC plugin using GTK-VNC [!2248](https://gitlab.com/Remmina/Remmina/merge_requests/2248) *@antenore*
+* Config SSH tunnel username takes precedence. [!2231](https://gitlab.com/Remmina/Remmina/merge_requests/2231) *@matir*
+* Allow groups to be expanded and collapsed by using the keyboard [!2232](https://gitlab.com/Remmina/Remmina/merge_requests/2232) *@xsmile*
+* Fixing VNC repeater logic. [!2243](https://gitlab.com/Remmina/Remmina/merge_requests/2243) *@antenore*
+* Send text clipboard content as keystrokes [!2238](https://gitlab.com/Remmina/Remmina/merge_requests/2238) *@antenore*
+* scrolled viewport: explicitly recheck whether the timeout is active [!2233](https://gitlab.com/Remmina/Remmina/merge_requests/2233) *@cth451*
+* Resolve Host+Page_Down triggers search text in SSH [!2240](https://gitlab.com/Remmina/Remmina/merge_requests/2240) *@antenore*
+* UNIX sockets initial support [!2250](https://gitlab.com/Remmina/Remmina/merge_requests/2250) *@antenore*
+* Fixed wrong freerdp_settings function use [!2234](https://gitlab.com/Remmina/Remmina/merge_requests/2234) *@akallabeth*
+* Fixing RemminaConnectionWindow map/unmap events [!2245](https://gitlab.com/Remmina/Remmina/merge_requests/2245) *@antenore*
+* Spelling: Comma-separated, List monitor IDs [!2235](https://gitlab.com/Remmina/Remmina/merge_requests/2235) *@kingu*
+* Set Remmina specific FreeRDP config data folder [!2236](https://gitlab.com/Remmina/Remmina/merge_requests/2236) *@antenore*
+* Optional port connection instead of server [!2239](https://gitlab.com/Remmina/Remmina/merge_requests/2239) *@kingu*
+* Resolve "Use LZO compression for Snap to improve startup speed" [!2241](https://gitlab.com/Remmina/Remmina/merge_requests/2241) *@antenore*
+* Make wayland not mandatory during compile time [!2246](https://gitlab.com/Remmina/Remmina/merge_requests/2246) *@antenore*
+* Do not use alpha as it is not used for the Desktop [!2247](https://gitlab.com/Remmina/Remmina/merge_requests/2247) *@antenore*
+* Refactoring: Deprecations and warnings [!2249](https://gitlab.com/Remmina/Remmina/merge_requests/2249) *@antenore*
+* Removing unneeded widgets in the headerbar [!2252](https://gitlab.com/Remmina/Remmina/merge_requests/2252) *@antenore*
+
+## v1.4.13
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.4.12...v1.4.13)
+
+* Resolve "Can't build Remmina-v1.4.12 on openSUSE versions" [!2217](https://gitlab.com/Remmina/Remmina/merge_requests/2217) *@antenore*
+* Adding wayland include dirs [!2218](https://gitlab.com/Remmina/Remmina/merge_requests/2218) *@antenore*
+* Use freerdp_settings_get|set API [!2216](https://gitlab.com/Remmina/Remmina/merge_requests/2216) *@akallabeth*
+* Fixing Can't build Remmina-v1.4.12 on openSUSE versions / SPICE [!2219](https://gitlab.com/Remmina/Remmina/merge_requests/2219) *@antenore*
+* Fixed typo in reconnection attempt in the norwegian translation [!2221](https://gitlab.com/Remmina/Remmina/merge_requests/2221) *@ragnarstolsmark*
+* Change "The news are turned off" to the more grammatically correct "News is... [!2220](https://gitlab.com/Remmina/Remmina/merge_requests/2220) *@ncguk*
+* rdp: Allow autoreconnect for ERRINFO_GRAPHICS_SUBSYSTEM_FAILED [!2222](https://gitlab.com/Remmina/Remmina/merge_requests/2222) *@Fantu*
+* Disable cert file auth when libssh < 0.9.0 [!2223](https://gitlab.com/Remmina/Remmina/merge_requests/2223) *@antenore*
+* Removing redundant subtitle [!2224](https://gitlab.com/Remmina/Remmina/merge_requests/2224) *@antenore*
+* Removing redundant ssh_userauth_none [!2225](https://gitlab.com/Remmina/Remmina/merge_requests/2225) *@antenore*
+
+## v1.4.12
+[full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.4.11...v1.4.12)
+
+* Multi monitor support preview [!2184](https://gitlab.com/Remmina/Remmina/merge_requests/2184) *@antenore*
+* Resolve "Left-handed mouse support" [!2200](https://gitlab.com/Remmina/Remmina/merge_requests/2200) *@antenore*
+* Refactoring SSH themes [!2205](https://gitlab.com/Remmina/Remmina/merge_requests/2205) *@antenore*
+* Crystal clear sound made simple. [!2207](https://gitlab.com/Remmina/Remmina/merge_requests/2207) *@antenore*
+* Adding SSH certificate authentication [!2208](https://gitlab.com/Remmina/Remmina/merge_requests/2208) *@antenore*
+* Refactoring SSH tunnel authentication. #2414 [!2211](https://gitlab.com/Remmina/Remmina/merge_requests/2211) *@antenore*
+* Refactoring: GResource based UI elements [!2201](https://gitlab.com/Remmina/Remmina/merge_requests/2201) *@antenore*
+* Invalid connection option ":port" removed [!2193](https://gitlab.com/Remmina/Remmina/merge_requests/2193) *@kingu*
+* Add ifdefs for spice version less then 0.38 (fix #2408) [!2195](https://gitlab.com/Remmina/Remmina/merge_requests/2195) *@hadogenes*
+* Fix for #2408 building with older SPICE libraries [!2194](https://gitlab.com/Remmina/Remmina/merge_requests/2194) *@jweberhofer*
+* Spelling: Bug triaging and labeling labels reworked. [!2192](https://gitlab.com/Remmina/Remmina/merge_requests/2192) *@kingu*
+* Ignoring glib functions if glib version older then 2.56 [!2196](https://gitlab.com/Remmina/Remmina/merge_requests/2196) *@antenore*
+* Some refactoring and fixes for 1.4.11 [!2198](https://gitlab.com/Remmina/Remmina/merge_requests/2198) *@antenore*
+* Revert "rdp/event: Fix wheel value for GDK_SCROLL_DOWN events" [!2199](https://gitlab.com/Remmina/Remmina/merge_requests/2199) *@pnowack*
+* Fixing compiler errors related to Python plugin support on master [!2178](https://gitlab.com/Remmina/Remmina/merge_requests/2178) *@ToolsDevler*
+* Fixes for multi monitor and weblate [!2202](https://gitlab.com/Remmina/Remmina/merge_requests/2202) *@antenore*
+* Spelling: desktop [!2203](https://gitlab.com/Remmina/Remmina/merge_requests/2203) *@kingu*
+* Spelling: Colour [!2204](https://gitlab.com/Remmina/Remmina/merge_requests/2204) *@kingu*
+* Fixing memory leaks and minor bugs [!2206](https://gitlab.com/Remmina/Remmina/merge_requests/2206) *@antenore*
+* Fix minor typos [!2209](https://gitlab.com/Remmina/Remmina/merge_requests/2209) *@yurchor*
+* Typo fix, certificat -> certificate [!2210](https://gitlab.com/Remmina/Remmina/merge_requests/2210) *@yarons*
+* Improve pre-connection FreeRDP channel initializations [!2212](https://gitlab.com/Remmina/Remmina/merge_requests/2212) *@antenore*
 
 ## v1.4.11
 [full changelog](https://gitlab.com/Remmina/Remmina/compare/v1.4.10...v1.4.11)
@@ -646,102 +735,4 @@ typographic errors and translations.
 * flatpak: update libvncserver from 0.9.11 to 0.9.12 (by Denis Ollier)
 * flatpak: update nx-libs from 3.5.99.16 to 3.5.99.17 (by Denis Ollier)
 * flatpak: update six from 1.11.0 to 1.12.0 (by Denis Ollier)
-
-## [v1.2.32.1](https://gitlab.com/Remmina/Remmina/tags/v1.2.32.1) (2018-11-14)
-
-* Add desktop-gnome-platform and fix themes in SNAP, fixes issue #1730 and fixes missing SNAP localization (Giovanni Panozzo)
-* Fix SNAP icon (Giovanni Panozzo)
-* flatpak: update libssh from 0.8.2 to 0.8.3 (Denis Ollier)
-* flatpak: update libssh from 0.8.3 to 0.8.4 (Denis Ollier)
-* flatpak: update libssh from 0.8.4 to 0.8.5 (Denis Ollier)
-* flatpak: update lz4 from 1.8.2 to 1.8.3 (Denis Ollier)
-* flatpak: update pyparsing from 2.2.0 to 2.2.1 (Denis Ollier)
-* flatpak: update pyparsing from 2.2.1 to 2.2.2 (Denis Ollier)
-* flatpak: update pyparsing from 2.2.2 to 2.3.0 (Denis Ollier)
-* Implement smartcard name setting. Should fix #1737 (Antenore Gatta)
-* man+help: elaborate on file types of -connect and -edit cmd line options (Mikkel Kirkgaard Nielsen)
-* RDP: add FREERDP_ERROR_SERVER_DENIED_CONNECTION message (Giovanni Panozzo)
-* Removing X11Forwarding code as it is wrong and causing issues (Antenore Gatta)
-* Update fix tr.po (Serdar Sağlam)
-
-## [v1.2.32](https://gitlab.com/Remmina/Remmina/tags/v1.2.32) (2018-10-06)
-
-* Avoid to save last_success property if stats are not enabled. @antenore
-* GW auth data was saved in the server auth data. @antenore
-* Do not register socket plugins when X11 is not available. @antenore
-* Screenshot enhancements. @antenore
-* RDP GW authentication. @antenore
-* Adding global preference for search bar visibility. @antenore
-* Allow wayland backend again when GTK >= 3.22.27. @giox069
-* tr.po @TeknoMobil
-* Add option to honour https_proxy and http_proxy environment variable. @antenore
-* Force program name to app id. @antenore
-* Printing builds flags with remmina --full-version command option. @antenore
-* New plugin Simple Terminal. @antenore
-* Fix KB grabbing when switching workspace. @giox069
-* Dealing correcthly with some deprecations, getting rid of most of G_GNUC_BEGIN_IGNORE_DEPRECATIONS. @antenore
-* Improving file type hadling. @antenore
-* Adding error check on remmina_pref_save. @antenore
-* Many bug fixing as usual.
-
-## [v1.2.31.4](https://gitlab.com/Remmina/Remmina/tags/v1.2.31.4) (2018-08-24)
-
-This is a bug fixing release.
-
-**Fixed bugs:**
-
-* Fix KB grabbing when switching workspace.
-* Fix some possible crashes when reading a remminafile.
-* Fixes a crash deleting XDMCP profile.
-* Fixing libssh deprecations.
-
-**Implemented enhancements:**
-
-* Improving file type hadling.
-* flatpak: update libssh from 0.7.5 to 0.8.1
-* flatpak: update freerdp from 2.0.0-rc2 to 2.0.0-rc3
-* Snap: update to libssh 0.8.0.
-
-## [v1.2.31.3](https://gitlab.com/Remmina/Remmina/tags/v1.2.31.3) (2018-08-14)
-
-This is a bug fixing release.
-
-**Fixed bugs:**
-
-* Do not send stats if the remmina.pref file is read-only.
-* cmake: include libssh_threads only when available.
-* Set program class to REMMINA_APP_ID, fixes #1706.
-
-**Implemented enhancements:**
-
-* Implement send ctrl+alt+fn keys. Closes #1707.
-
-## [v1.2.31.1](https://gitlab.com/Remmina/Remmina/tags/v1.2.31.1) (2018-07-31)
-
-This is a bug fixing release.
-
-**Fixed bugs:**
-
-* Cannot minimize in fullscreen mode.
-* Crash with the RDP plugin.
-* Missing manual pages for Debian.
-
-**Closed issues:**
-
-* Minimize window doesn't minimize the window [\#1696](https://gitlab.com/Remmina/Remmina/issues/1696)
-* Minimize window button is disable, after connecting to RDS [\#1700](https://gitlab.com/Remmina/Remmina/issues/1700)
-
-## [v1.2.31](https://gitlab.com/Remmina/Remmina/tags/v1.2.31) (2018-07-28)
-
-This is the first release on GitLab and we are still moving and adapting tools and
-integrations, therefore this changelog is quite short than usually.
-
-Notables changes since the last release are:
-
-* Custom color schemes per profile for the SSH plugin (@denk_mal).
-* Flatpak updates and fixes (@larchunix)
-* Kiosk mode with integration in the login manager (@antenore).
-* New Icons (@antenore and @larchunix).
-* SFTP tool password fixes (@Feishi).
-* Several fixes around RDP and compilations issues (@giox069 and @larchunix).
 

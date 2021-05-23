@@ -1,321 +1,332 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the Remmina package.
-# Allan Nordhøy <epost@anotheragency.no>, 2020.
+# Allan Nordhøy <epost@anotheragency.no>, 2020, 2021.
+# phlostically <phlostically@mailinator.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: Remmina v1.4.3\n"
 "Report-Msgid-Bugs-To: l10n@lists.remmina.org\n"
-"POT-Creation-Date: 2021-02-19 11:31+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2021-05-21 13:49+0000\n"
+"PO-Revision-Date: 2021-05-10 12:11+0000\n"
+"Last-Translator: phlostically <phlostically@mailinator.com>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/remmina/"
+"remmina/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7-dev\n"
 
-#: src/remmina_protocol_widget.c:280
+#: src/remmina_protocol_widget.c:283 src/remmina_sftp_plugin.c:328
 msgid "Connect via SSH from a new terminal"
-msgstr ""
+msgstr "Konekti per SSH el nova terminalo"
 
-#: src/remmina_protocol_widget.c:286
+#: src/remmina_protocol_widget.c:290 src/remmina_ssh_plugin.c:829
+#: src/remmina_ssh_plugin.c:1440
 msgid "Open SFTP transfer…"
-msgstr ""
+msgstr "Malfermi transigon per SFTP…"
 
-#: src/remmina_protocol_widget.c:314
+#: src/remmina_protocol_widget.c:319
 msgid "Executing external commands…"
-msgstr ""
+msgstr "Rulante eksterajn komandojn…"
 
-#: src/remmina_protocol_widget.c:321
+#: src/remmina_protocol_widget.c:326
 #, c-format
 msgid "Connecting to “%s”…"
-msgstr ""
+msgstr "Konektante al “%s”…"
 
-#: src/remmina_protocol_widget.c:767 src/remmina_protocol_widget.c:885
+#: src/remmina_protocol_widget.c:907 src/remmina_protocol_widget.c:1030
 #, c-format
 msgid "Connecting to “%s” via SSH…"
-msgstr ""
+msgstr "Konektante al %s per SSH…"
 
-#: src/remmina_protocol_widget.c:948
+#: src/remmina_protocol_widget.c:1093
 #, c-format
 msgid "Awaiting incoming SSH connection on port %i…"
-msgstr ""
+msgstr "Atendante envenantan SSH-konekton ĉe pordo %i…"
 
-#: src/remmina_protocol_widget.c:1000
+#: src/remmina_protocol_widget.c:1145
 #, c-format
 msgid "The “%s” command is not available on the SSH server."
-msgstr ""
+msgstr "La komando “%s” ne estas disponebla ĉe la SSH-servilo."
 
-#: src/remmina_protocol_widget.c:1004
+#: src/remmina_protocol_widget.c:1149
 #, c-format
 msgid "Could not run the “%s” command on the SSH server (status = %i)."
-msgstr ""
+msgstr "Ne povis ruli la komandon “%s” ĉe la SSH-servilo (stato = %i)."
 
 #. TRANSLATORS: %s is a placeholder for an error message
-#: src/remmina_protocol_widget.c:1012
+#: src/remmina_protocol_widget.c:1157
 #, c-format
 msgid "Could not run command. %s"
-msgstr ""
+msgstr "Ne povis ruli komandon. %s"
 
-#: src/remmina_protocol_widget.c:1081
+#: src/remmina_protocol_widget.c:1226
 #, c-format
 msgid "Connecting to %s via SSH…"
-msgstr ""
+msgstr "Konektante al %s per SSH…"
 
-#: src/remmina_protocol_widget.c:1457 src/remmina_protocol_widget.c:1476
-#: src/remmina_ssh_plugin.c:1287 src/remmina_sftp_plugin.c:309
-#: src/remmina_sftp_plugin.c:344 src/remmina_file_editor.c:965
-#: plugins/www/www_plugin.c:872 plugins/rdp/rdp_plugin.c:2515
-#: data/ui/remmina_unlock.glade:116 data/ui/remmina_mpc.glade:236
-#: data/ui/remmina_preferences.glade:1682
+#: src/remmina_protocol_widget.c:1602 src/remmina_protocol_widget.c:1621
+#: src/remmina_ssh_plugin.c:1355 src/remmina_sftp_plugin.c:310
+#: src/remmina_sftp_plugin.c:346 src/remmina_file_editor.c:846
+#: src/remmina_file_editor.c:967 plugins/www/www_plugin.c:880
+#: plugins/rdp/rdp_plugin.c:2583 data/ui/remmina_unlock.glade:116
+#: data/ui/remmina_mpc.glade:236 data/ui/remmina_preferences.glade:1683
 msgid "Password"
-msgstr ""
+msgstr "Pasvorto"
 
-#: src/remmina_protocol_widget.c:1475
+#: src/remmina_protocol_widget.c:1620
 msgid "Type in SSH username and password."
-msgstr ""
+msgstr "Entajpu SSH-salutnomon kaj pasvorton."
 
-#: src/remmina_protocol_widget.c:1530 src/remmina_protocol_widget.c:1557
+#: src/remmina_protocol_widget.c:1675 src/remmina_protocol_widget.c:1702
 msgid "Fingerprint automatically accepted"
-msgstr ""
+msgstr "Fingropremaĵo aŭtomate akceptita"
 
-#: src/remmina_protocol_widget.c:1537
+#: src/remmina_protocol_widget.c:1682
 msgid "Certificate details:"
-msgstr ""
+msgstr "Detaloj pri la atestilo:"
 
-#: src/remmina_protocol_widget.c:1538 src/remmina_protocol_widget.c:1565
+#: src/remmina_protocol_widget.c:1683 src/remmina_protocol_widget.c:1710
 msgid "Subject:"
-msgstr ""
+msgstr "Temo:"
 
-#: src/remmina_protocol_widget.c:1539 src/remmina_protocol_widget.c:1566
+#: src/remmina_protocol_widget.c:1684 src/remmina_protocol_widget.c:1711
 msgid "Issuer:"
-msgstr ""
+msgstr "Eldoninto:"
 
-#: src/remmina_protocol_widget.c:1540
+#: src/remmina_protocol_widget.c:1685
 msgid "Fingerprint:"
-msgstr ""
+msgstr "Fingropremaĵo:"
 
-#: src/remmina_protocol_widget.c:1541
+#: src/remmina_protocol_widget.c:1686
 msgid "Accept certificate?"
-msgstr ""
+msgstr "Ĉu akcepti atestilon?"
 
-#: src/remmina_protocol_widget.c:1564
+#: src/remmina_protocol_widget.c:1709
 msgid "The certificate changed! Details:"
-msgstr ""
+msgstr "La atestilo ŝanĝiĝis! Detaloj:"
 
-#: src/remmina_protocol_widget.c:1567
+#: src/remmina_protocol_widget.c:1712
 msgid "Old fingerprint:"
-msgstr ""
+msgstr "Malnova fingropremaĵo:"
 
-#: src/remmina_protocol_widget.c:1568
+#: src/remmina_protocol_widget.c:1713
 msgid "New fingerprint:"
-msgstr ""
+msgstr "Nova fingropremaĵo:"
 
-#: src/remmina_protocol_widget.c:1569
+#: src/remmina_protocol_widget.c:1714
 msgid "Accept changed certificate?"
-msgstr ""
+msgstr "Ĉu akcepti ŝanĝitan atestilon?"
 
-#: src/remmina_protocol_widget.c:1711
+#: src/remmina_protocol_widget.c:1856
 #, c-format
 msgid "Listening on port %i for an incoming %s connection…"
-msgstr ""
+msgstr "Aŭskultante ĉe pordo %i por envenonta %s-konekto…"
 
-#: src/remmina_protocol_widget.c:1736
+#: src/remmina_protocol_widget.c:1881
 msgid "Could not authenticate, attempting reconnection…"
-msgstr ""
+msgstr "Aŭtentikigo ne sukcesis, provante rekonekton…"
 
-#: src/remmina_protocol_widget.c:1798 src/remmina_file_editor.c:356
-#: src/remmina_file_editor.c:917 data/ui/remmina_main.glade:485
+#: src/remmina_protocol_widget.c:1943 src/remmina_file_editor.c:346
+#: src/remmina_file_editor.c:917 data/ui/remmina_main.glade:478
 msgid "Server"
-msgstr ""
+msgstr "Servilo"
 
-#: src/remmina_protocol_widget.c:1815
+#: src/remmina_protocol_widget.c:1960
 #, c-format
 msgid "Install the %s protocol plugin first."
-msgstr ""
+msgstr "Vi devas antaŭe Instali la kromprogramon por la protolo %s."
 
 #: src/remmina_exec.c:475
 #, c-format
 msgid "Plugin %s is not registered."
-msgstr ""
+msgstr "Kromprogramo %s ne estas registrita."
 
-#: src/remmina_pref_dialog.c:90 src/remmina_file_editor.c:445
+#: src/remmina_pref_dialog.c:91 src/remmina_file_editor.c:435
 msgid "Resolutions"
-msgstr ""
+msgstr "Ekrandistingivoj"
 
-#: src/remmina_pref_dialog.c:90 src/remmina_file_editor.c:445
+#: src/remmina_pref_dialog.c:91 src/remmina_file_editor.c:435
 msgid "Configure the available resolutions"
-msgstr ""
+msgstr "Agordi la haveblajn ekrandistingivojn"
 
-#: src/remmina_pref_dialog.c:142
+#: src/remmina_pref_dialog.c:143
 msgid "Recent lists cleared."
-msgstr ""
+msgstr "Listo de ĵusaĵoj forviŝiĝis."
 
-#: src/remmina_pref_dialog.c:153 src/rcw.c:1934
+#: src/remmina_pref_dialog.c:154 src/rcw.c:1950
 #: data/ui/remmina_preferences.glade:251 data/ui/remmina_preferences.glade:261
 msgid "Keystrokes"
-msgstr ""
+msgstr "Klavofrapoj"
 
-#: src/remmina_pref_dialog.c:153
+#: src/remmina_pref_dialog.c:154
 msgid "Configure the keystrokes"
-msgstr ""
+msgstr "Agordi la klavofrapojn"
 
 #. TRANSLATORS: Do not translate libsodium, is the name of a library
-#: src/remmina_pref_dialog.c:486
+#: src/remmina_pref_dialog.c:487
 msgid "libsodium >= 1.9.0 is required to use master password"
-msgstr ""
+msgstr "libsodium >= 1.9.0 estas postulata por uzi la ĉefpasvorton"
 
-#: src/remmina_pref_dialog.c:802
+#: src/remmina_pref_dialog.c:804
 msgid "Picking a terminal colouring file replaces the file: "
 msgstr ""
+"Elekto de dosiero de terminala kolorskemo anstataŭigos la jenan dosieron: "
 
-#: src/remmina_pref_dialog.c:806
+#: src/remmina_pref_dialog.c:808
 msgid ""
 "This file contains the \"Custom\" terminal colour scheme selectable from the "
 "\"Advanced\" tab of terminal connections and editable in the \"Terminal\" "
 "tab in the settings."
 msgstr ""
+"Ĉi tiu dosiero enhavas la “Alian” terminalan kolorskemon elekteblan ĉe la "
+"langeto “Altnivela” pri terminalaj konektoj kaj modifebla ĉe la langeto "
+"“Terminalo” en la preferoj."
 
 #. TRANSLATORS: %s is a placeholder for an error message
-#: src/remmina_ssh_plugin.c:534
+#: src/remmina_ssh_plugin.c:539
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Eraro: %s"
 
-#: src/remmina_ssh_plugin.c:551
+#: src/remmina_ssh_plugin.c:556
 msgid "Terminal content saved in"
-msgstr ""
+msgstr "Terminala enhavo konservita en"
 
-#: src/remmina_ssh_plugin.c:805
+#: src/remmina_ssh_plugin.c:822
 msgid "Select All (host+A)"
-msgstr ""
+msgstr "Eleki Ĉion (gastiganto+A)"
 
-#: src/remmina_ssh_plugin.c:806
+#: src/remmina_ssh_plugin.c:823
 msgid "Copy (host+C)"
-msgstr ""
+msgstr "Kopii (gastiganto+C)"
 
-#: src/remmina_ssh_plugin.c:807
+#: src/remmina_ssh_plugin.c:824
 msgid "Paste (host+V)"
-msgstr ""
+msgstr "Alglui (gastiganto+V)"
 
-#: src/remmina_ssh_plugin.c:808
+#: src/remmina_ssh_plugin.c:825
 msgid "Save session to file"
-msgstr ""
+msgstr "Konservi sesion al dosiero"
 
-#: src/remmina_ssh_plugin.c:809
+#: src/remmina_ssh_plugin.c:826
 msgid "Increase font size (host+Page Up)"
-msgstr ""
+msgstr "Pligrandigi tiparon (gastiganto+Paĝosupren)"
 
-#: src/remmina_ssh_plugin.c:810
+#: src/remmina_ssh_plugin.c:827
 msgid "Decrease font size (host+Page Down)"
-msgstr ""
+msgstr "Malpligrandigi tiparon (gastiganto+Paĝomalsupren)"
 
-#: src/remmina_ssh_plugin.c:811
+#: src/remmina_ssh_plugin.c:828
 msgid "Find text (host+G)"
-msgstr ""
+msgstr "Serĉi tekston (gastiganto+G)"
 
-#: src/remmina_ssh_plugin.c:1288 src/remmina_ssh_plugin.c:1392
-#: src/remmina_sftp_plugin.c:310 src/remmina_sftp_plugin.c:346
-#: plugins/nx/nx_plugin.c:729
+#: src/remmina_ssh_plugin.c:1356 src/remmina_ssh_plugin.c:1461
+#: src/remmina_sftp_plugin.c:311 src/remmina_sftp_plugin.c:348
+#: src/remmina_file_editor.c:847 plugins/nx/nx_plugin.c:729
 msgid "SSH identity file"
-msgstr ""
+msgstr "SSH-identiga dosiero"
 
-#: src/remmina_ssh_plugin.c:1289 src/remmina_sftp_plugin.c:311
+#: src/remmina_ssh_plugin.c:1357 src/remmina_sftp_plugin.c:312
+#: src/remmina_file_editor.c:848
 msgid "SSH agent"
-msgstr ""
+msgstr "SSH-agento"
 
-#: src/remmina_ssh_plugin.c:1290 src/remmina_sftp_plugin.c:312
-#: src/remmina_file_editor.c:978
+#: src/remmina_ssh_plugin.c:1358 src/remmina_sftp_plugin.c:313
+#: src/remmina_file_editor.c:849
 msgid "Public key (automatic)"
-msgstr ""
+msgstr "Publika ŝlosilo (aŭtomata)"
 
-#: src/remmina_ssh_plugin.c:1291 src/remmina_sftp_plugin.c:313
+#: src/remmina_ssh_plugin.c:1359 src/remmina_sftp_plugin.c:314
+#: src/remmina_file_editor.c:850
 msgid "Kerberos (GSSAPI)"
-msgstr ""
+msgstr "Kerberos (GSSAPI)"
 
-#: src/remmina_ssh_plugin.c:1366 data/ui/remmina_main.glade:183
+#: src/remmina_ssh_plugin.c:1434 data/ui/remmina_main.glade:177
 msgid "Copy"
-msgstr ""
+msgstr "Kopii"
 
-#: src/remmina_ssh_plugin.c:1366
+#: src/remmina_ssh_plugin.c:1434
 msgid "_Copy"
-msgstr ""
+msgstr "_Kopii"
 
-#: src/remmina_ssh_plugin.c:1367
+#: src/remmina_ssh_plugin.c:1435
 msgid "Paste"
-msgstr ""
+msgstr "Alglui"
 
-#: src/remmina_ssh_plugin.c:1367
+#: src/remmina_ssh_plugin.c:1435
 msgid "_Paste"
-msgstr ""
+msgstr "_Alglui"
 
-#: src/remmina_ssh_plugin.c:1368
+#: src/remmina_ssh_plugin.c:1436
 msgid "Select all"
-msgstr ""
+msgstr "Elekti ĉion"
 
-#: src/remmina_ssh_plugin.c:1368
+#: src/remmina_ssh_plugin.c:1436
 msgid "_Select all"
-msgstr ""
+msgstr "_Elekti ĉion"
 
-#: src/remmina_ssh_plugin.c:1369 data/ui/remmina_preferences.glade:2388
+#: src/remmina_ssh_plugin.c:1437 data/ui/remmina_preferences.glade:2389
 msgid "Increase font size"
-msgstr ""
+msgstr "Pligrandigi tiparon"
 
-#: src/remmina_ssh_plugin.c:1369
+#: src/remmina_ssh_plugin.c:1437
 msgid "_Increase font size"
-msgstr ""
+msgstr "_Pligrandigi tiparon"
 
-#: src/remmina_ssh_plugin.c:1370 data/ui/remmina_preferences.glade:2401
+#: src/remmina_ssh_plugin.c:1438 data/ui/remmina_preferences.glade:2402
 msgid "Decrease font size"
-msgstr ""
+msgstr "Malpligrandigi tiparon"
 
-#: src/remmina_ssh_plugin.c:1370
+#: src/remmina_ssh_plugin.c:1438
 msgid "_Decrease font size"
-msgstr ""
+msgstr "_Malpligrandigi tiparon"
 
-#: src/remmina_ssh_plugin.c:1371
+#: src/remmina_ssh_plugin.c:1439
 msgid "Find text"
-msgstr ""
+msgstr "Serĉi tekston"
 
-#: src/remmina_ssh_plugin.c:1371
+#: src/remmina_ssh_plugin.c:1439
 msgid "_Find text"
-msgstr ""
+msgstr "_Serĉi tekston"
 
-#: src/remmina_ssh_plugin.c:1389 src/remmina_message_panel.c:330
-#: src/remmina_sftp_plugin.c:343 src/remmina_file_editor.c:955
-#: plugins/www/www_plugin.c:871 plugins/vnc/vnc_plugin.c:1879
-#: plugins/vnc/vnc_plugin.c:1899 plugins/rdp/rdp_plugin.c:2514
+#: src/remmina_ssh_plugin.c:1458 src/remmina_sftp_plugin.c:347
+#: src/remmina_file_editor.c:952
+msgid "Authentication type"
+msgstr "Tipo de aŭtentikigo"
+
+#: src/remmina_ssh_plugin.c:1459 src/remmina_message_panel.c:330
+#: src/remmina_sftp_plugin.c:345 src/remmina_file_editor.c:961
+#: plugins/www/www_plugin.c:879 plugins/vnc/vnc_plugin.c:1942
+#: plugins/vnc/vnc_plugin.c:1962 plugins/rdp/rdp_plugin.c:2582
 #: plugins/nx/nx_plugin.c:730 data/ui/remmina_mpc.glade:144
 msgid "Username"
-msgstr ""
+msgstr "Salutnomo"
 
-#: src/remmina_ssh_plugin.c:1390 plugins/vnc/vnc_plugin.c:1880
-#: plugins/vnc/vnc_plugin.c:1900 plugins/spice/spice_plugin.c:576
+#: src/remmina_ssh_plugin.c:1460 plugins/vnc/vnc_plugin.c:1943
+#: plugins/vnc/vnc_plugin.c:1963 plugins/spice/spice_plugin.c:666
 #: plugins/nx/nx_plugin.c:731
 msgid "User password"
-msgstr ""
+msgstr "Pasvorto de uzanto"
 
-#: src/remmina_ssh_plugin.c:1391 src/remmina_sftp_plugin.c:345
-msgid "Authentication type"
-msgstr ""
+#: src/remmina_ssh_plugin.c:1463 src/remmina_file_editor.c:979
+msgid "SSH certificate file"
+msgstr "SSH-atestila dosiero"
 
-#: src/remmina_ssh_plugin.c:1393
-msgid "SSH certificat file"
-msgstr ""
-
-#: src/remmina_ssh_plugin.c:1394 src/remmina_sftp_plugin.c:347
-#: src/remmina_file_editor.c:995
+#: src/remmina_ssh_plugin.c:1465 src/remmina_sftp_plugin.c:349
+#: src/remmina_file_editor.c:984
 msgid "Password to unlock private key"
-msgstr ""
+msgstr "Pasvorto por malŝlosi privatan ŝlosilon"
 
-#: src/remmina_ssh_plugin.c:1395 plugins/xdmcp/xdmcp_plugin.c:370
-#: plugins/rdp/rdp_plugin.c:2554 plugins/nx/nx_plugin.c:734
+#: src/remmina_ssh_plugin.c:1466 plugins/xdmcp/xdmcp_plugin.c:370
+#: plugins/rdp/rdp_plugin.c:2622 plugins/nx/nx_plugin.c:734
 msgid "Start-up program"
-msgstr ""
+msgstr "Starta programo"
 
-#: src/remmina_ssh_plugin.c:1400
+#: src/remmina_ssh_plugin.c:1471
 msgid ""
 "The filename can use the following placeholders:\n"
 "\n"
@@ -327,213 +338,240 @@ msgid ""
 "  • %g is substituted with Remmina profile group name\n"
 "  • %d is substituted with local date and time in ISO 8601 format\n"
 msgstr ""
+"La dosiernomo povas uzi jenajn variablojn:\n"
+"\n"
+"  •%h estos anstataŭigita per la nomo de servilo\n"
+"  •%t estos anstataŭigita per la nomo de SSH-servilo\n"
+"  •%u estos anstataŭigita per la salutnomo\n"
+"  •%U estos anstataŭigita per la SSH-salutnomo\n"
+"  •%p estos anstataŭigita per nomo de profilo ĉe Remmina\n"
+"  •%g estos anstataŭigita per nomo de profilgrupo ĉe Remmina\n"
+"  •%d estos anstataŭigita per la lokaj dato kaj horo laŭ ISO 8601\n"
 
-#: src/remmina_ssh_plugin.c:1422
+#: src/remmina_ssh_plugin.c:1493
 msgid "Terminal colour scheme"
-msgstr ""
+msgstr "Terminala kolorskemo"
 
-#: src/remmina_ssh_plugin.c:1423
+#: src/remmina_ssh_plugin.c:1494
 msgid "Character set"
-msgstr ""
+msgstr "Signaro"
 
-#: src/remmina_ssh_plugin.c:1424 src/remmina_sftp_plugin.c:348
+#: src/remmina_ssh_plugin.c:1495 src/remmina_sftp_plugin.c:350
 msgid "SSH Proxy Command"
-msgstr ""
+msgstr "SSH-Prokurila Komando"
 
-#: src/remmina_ssh_plugin.c:1425
+#: src/remmina_ssh_plugin.c:1496
 msgid "KEX (Key Exchange) algorithms"
-msgstr ""
+msgstr "Algoritmoj por interŝanĝo de ŝlosiloj (KEX)"
 
-#: src/remmina_ssh_plugin.c:1426
+#: src/remmina_ssh_plugin.c:1497
 msgid "Symmetric cipher client to server"
-msgstr ""
+msgstr "Simetria ĉifra kliento al servilo"
 
-#: src/remmina_ssh_plugin.c:1427
+#: src/remmina_ssh_plugin.c:1498
 msgid "Preferred server host key types"
-msgstr ""
+msgstr "Preferataj tipoj de ŝlosiloj de gastiganto"
 
-#: src/remmina_ssh_plugin.c:1428
+#: src/remmina_ssh_plugin.c:1499
 msgid "Folder for SSH session log"
-msgstr ""
+msgstr "Dosierujo por prokolado de SSH-sesio"
 
-#: src/remmina_ssh_plugin.c:1429
+#: src/remmina_ssh_plugin.c:1500
 msgid "Filename for SSH session log"
-msgstr ""
+msgstr "Dosiernomo por protokolado de SSH-sesio"
 
-#: src/remmina_ssh_plugin.c:1430
+#: src/remmina_ssh_plugin.c:1501
 msgid "Log SSH session when exiting Remmina"
-msgstr ""
+msgstr "Protokoli SSH-sesion kiam Remmina ĉesas"
 
-#: src/remmina_ssh_plugin.c:1431
+#: src/remmina_ssh_plugin.c:1502
 msgid "Audible terminal bell"
-msgstr ""
+msgstr "Aŭdebla terminala pepo"
 
-#: src/remmina_ssh_plugin.c:1432
+#: src/remmina_ssh_plugin.c:1503
 msgid "SSH compression"
-msgstr ""
+msgstr "SSH-densigo"
 
-#: src/remmina_ssh_plugin.c:1433
+#: src/remmina_ssh_plugin.c:1504
 msgid "Don't remember passwords"
-msgstr ""
+msgstr "Ne memori pasvortojn"
 
-#: src/remmina_ssh_plugin.c:1434
+#: src/remmina_ssh_plugin.c:1505
 msgid "Strict host key checking"
-msgstr ""
+msgstr "Strikta kontrolado de ŝlosilo de gastiganto"
 
-#: src/remmina_ssh_plugin.c:1448
+#: src/remmina_ssh_plugin.c:1519
 msgid "SSH - Secure Shell"
-msgstr ""
+msgstr "SSH - Sekura Ŝelo"
 
 #: src/remmina_applet_menu_item.c:121
 msgid "Discovered"
-msgstr ""
+msgstr "Malkovrita"
 
 #: src/remmina_applet_menu_item.c:126
 msgid "New Connection"
-msgstr ""
+msgstr "Nova Konekto"
 
 #: src/remmina_mpchange.c:234
 msgid "The passwords do not match"
-msgstr ""
+msgstr "La pasvortoj ne kongruas"
 
 #: src/remmina_mpchange.c:244
 msgid "Resetting passwords, please wait…"
-msgstr ""
+msgstr "Restarigante pasvortojn, bonvolu atendi…"
 
 #: src/remmina_mpchange.c:327
 msgid "The multi password changer requires a secrecy plugin.\n"
-msgstr ""
+msgstr "La plurpasvortoŝanĝilo postulas kromprogramon pri sekretoj.\n"
 
 #: src/remmina_mpchange.c:330
 msgid "The multi password changer requires a secrecy service.\n"
-msgstr ""
+msgstr "La plurpasvortoŝanĝilo postulas servon pri sekretoj.\n"
 
 #: src/remmina_mpchange.c:409
 #, c-format
 msgid "%d password changed."
 msgid_plural "%d passwords changed."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d pasvorto ŝanĝita."
+msgstr[1] "%d pasvortoj ŝanĝitaj."
 
-#: src/remmina_public.c:640
+#: src/remmina_public.c:345
+#, c-format
+msgid "Address is too long for UNIX socket_path: %s"
+msgstr "Adreso estas tro longa for dosierindiko al Uniksa konektinterfaco: %s"
+
+#: src/remmina_public.c:355
+#, c-format
+msgid "Creating UNIX socket failed: %s"
+msgstr "Malsukcesis kreado de Uniksa konektinterfaco: %s"
+
+#: src/remmina_public.c:361
+#, c-format
+msgid "Connecting to UNIX socket failed: %s"
+msgstr "Malsukcesis konektado al Uniksa konektinterfaco: %s"
+
+#: src/remmina_public.c:738
 msgid "Please enter format 'widthxheight'."
-msgstr ""
+msgstr "Bonvolu uzi la aranĝon 'larĝoxalto'."
 
-#: src/remmina_public.c:662
+#: src/remmina_public.c:760
 msgid "Change security settings"
-msgstr ""
+msgstr "Ŝanĝi agordojn pri sekureco"
 
 #. TRANSLATORS: translator-credits should be replaced with a formatted list of translators in your own language
 #: src/remmina_about.c:54
 msgid "translator-credits"
 msgstr ""
+"Listo de Esperantaj tradukintoj:\n"
+"phlostically"
 
 #: src/remmina_ftp_client.c:389
 msgid "Choose download location"
-msgstr ""
+msgstr "Elekti elŝutan lokon"
 
 #: src/remmina_ftp_client.c:529
 msgid "Are you sure to delete the selected files on server?"
 msgstr ""
+"Ĉu vi certas, ke vi volas forigi la elektitajn dosierojn for de la servilo?"
 
 #: src/remmina_ftp_client.c:586
 msgid "Choose a file to upload"
-msgstr ""
+msgstr "Elekti alŝutotan dosieron"
 
 #: src/remmina_ftp_client.c:593
 msgid "Upload folder"
-msgstr ""
+msgstr "Alŝuti dosierujon"
 
-#: src/remmina_ftp_client.c:649 src/remmina_ftp_client.c:771
+#: src/remmina_ftp_client.c:649 src/remmina_ftp_client.c:763
 msgid "Download"
-msgstr ""
+msgstr "Elŝuti"
 
-#: src/remmina_ftp_client.c:656 src/remmina_ftp_client.c:782
+#: src/remmina_ftp_client.c:656 src/remmina_ftp_client.c:770
 msgid "Upload"
-msgstr ""
+msgstr "Alŝuti"
 
 #: src/remmina_ftp_client.c:663
 msgid "_Delete"
-msgstr ""
+msgstr "_Forviŝi"
 
-#: src/remmina_ftp_client.c:750
+#: src/remmina_ftp_client.c:748
 msgid "Home"
-msgstr ""
+msgstr "Hejmo"
 
-#: src/remmina_ftp_client.c:752
+#: src/remmina_ftp_client.c:749
 msgid "Go to home folder"
-msgstr ""
+msgstr "Iri al hejmdosierujo"
 
-#: src/remmina_ftp_client.c:757
+#: src/remmina_ftp_client.c:753
 msgid "Up"
-msgstr ""
+msgstr "Supren"
+
+#: src/remmina_ftp_client.c:754
+msgid "Go to parent folder"
+msgstr "Iri al patra dosierujo"
+
+#: src/remmina_ftp_client.c:758 plugins/vnc/vnc_plugin.c:2000
+#: plugins/rdp/rdp_plugin.c:2666
+msgid "Refresh"
+msgstr "Reŝargi"
 
 #: src/remmina_ftp_client.c:759
-msgid "Go to parent folder"
-msgstr ""
-
-#: src/remmina_ftp_client.c:764 plugins/vnc/vnc_plugin.c:1936
-#: plugins/rdp/rdp_plugin.c:2595
-msgid "Refresh"
-msgstr ""
-
-#: src/remmina_ftp_client.c:766
 msgid "Refresh current folder"
-msgstr ""
+msgstr "Reŝargi aktualan dosierujon"
 
-#: src/remmina_ftp_client.c:773
+#: src/remmina_ftp_client.c:764
 msgid "Download from server"
-msgstr ""
+msgstr "Elŝuti el servilo"
 
-#: src/remmina_ftp_client.c:784
+#: src/remmina_ftp_client.c:771
 msgid "Upload to server"
-msgstr ""
+msgstr "Alŝuti al servilo"
 
-#: src/remmina_ftp_client.c:791 data/ui/remmina_main.glade:203
+#: src/remmina_ftp_client.c:775 data/ui/remmina_main.glade:197
 msgid "Delete"
-msgstr ""
+msgstr "Forviŝi"
 
-#: src/remmina_ftp_client.c:793
+#: src/remmina_ftp_client.c:776
 msgid "Delete files on server"
-msgstr ""
+msgstr "Forigi dosierojn for de servilo"
 
-#: src/remmina_ftp_client.c:921 src/remmina_ftp_client.c:990
+#: src/remmina_ftp_client.c:905 src/remmina_ftp_client.c:974
 msgid "Filename"
-msgstr ""
+msgstr "Dosiernomo"
 
-#: src/remmina_ftp_client.c:934 src/remmina_ftp_client.c:1019
+#: src/remmina_ftp_client.c:918 src/remmina_ftp_client.c:1003
 msgid "Size"
-msgstr ""
+msgstr "Grando"
 
-#: src/remmina_ftp_client.c:942
+#: src/remmina_ftp_client.c:926
 msgid "User"
-msgstr ""
+msgstr "Uzanto"
 
-#: src/remmina_ftp_client.c:948 src/remmina_file_editor.c:1560
-#: data/ui/remmina_main.glade:471 data/ui/remmina_mpc.glade:115
+#: src/remmina_ftp_client.c:932 src/remmina_file_editor.c:1515
+#: data/ui/remmina_main.glade:464 data/ui/remmina_mpc.glade:115
 msgid "Group"
-msgstr ""
+msgstr "Grupo"
 
-#: src/remmina_ftp_client.c:954
+#: src/remmina_ftp_client.c:938
 msgid "Permission"
-msgstr ""
+msgstr "Permeso"
 
-#: src/remmina_ftp_client.c:1006 plugins/rdp/rdp_plugin.c:2420
+#: src/remmina_ftp_client.c:990 plugins/rdp/rdp_plugin.c:2488
 msgid "Remote"
-msgstr ""
+msgstr "Fora"
 
-#: src/remmina_ftp_client.c:1013 plugins/rdp/rdp_plugin.c:2419
+#: src/remmina_ftp_client.c:997 plugins/rdp/rdp_plugin.c:2487
 msgid "Local"
-msgstr ""
+msgstr "Loka"
 
-#: src/remmina_ftp_client.c:1027
+#: src/remmina_ftp_client.c:1011
 msgid "Progress"
-msgstr ""
+msgstr "Progreso"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:86
 msgid "Show 'About'"
-msgstr ""
+msgstr "Montri 'Pri'"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:88
@@ -541,10 +579,12 @@ msgid ""
 "Connect either to a desktop described in a file (.remmina or a filetype "
 "supported by a plugin) or a supported URI (RDP, VNC, SSH or SPICE)"
 msgstr ""
+"Konekti al ekrano priskribita en dosiero (.rermmina aŭ dosiertipo subtenata "
+"de kromprogramo) aŭ subtenata retadreso (RDP, VNC, SSH, aŭ SPICE)"
 
 #: src/remmina.c:88 src/remmina.c:90 src/remmina.c:92
 msgid "FILE"
-msgstr ""
+msgstr "DOSIERO"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:90
@@ -552,6 +592,8 @@ msgid ""
 "Connect to a desktop described in a file (.remmina or a type supported by a "
 "plugin)"
 msgstr ""
+"Konekti al ekrano priskribita en dosiero (.rermmina aŭ dosiertipo subtenata "
+"de kromprogramo)"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:92
@@ -559,82 +601,84 @@ msgid ""
 "Edit desktop connection described in file (.remmina or type supported by "
 "plugin)"
 msgstr ""
+"Redakti konekton al ekrano priskribitan en dosiero (.remmina aŭ de tipo "
+"subtenata de kromprogramo)"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:95
 msgid "Start in kiosk mode"
-msgstr ""
+msgstr "Starti en enviciga reĝimo"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:97
 msgid "Create new connection profile"
-msgstr ""
+msgstr "Krei novan konektoprofilon"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:99
 msgid "Show preferences"
-msgstr ""
+msgstr "Montri preferojn"
 
 #: src/remmina.c:99
 msgid "TABINDEX"
-msgstr ""
+msgstr "LANGETINDICO"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:106
 msgid "Quit"
-msgstr ""
+msgstr "Ĉesigi"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:108
 msgid "Use default server name (for --new)"
-msgstr ""
+msgstr "Uzi implicitan servilan nomon (por --new)"
 
 #: src/remmina.c:108
 msgid "SERVER"
-msgstr ""
+msgstr "SERVILO"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:110
 msgid "Use default protocol (for --new)"
-msgstr ""
+msgstr "Uzi implicitan protokolon (por --new)"
 
 #: src/remmina.c:110
 msgid "PROTOCOL"
-msgstr ""
+msgstr "PROTOKOLO"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:112
 msgid "Start in tray"
-msgstr ""
+msgstr "Starti en pleto"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:114
 msgid "Show the application version"
-msgstr ""
+msgstr "Montri la version de la aplikaĵo"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:116
 msgid "Show version of the application and its plugins"
-msgstr ""
+msgstr "Montri la versiojn de la aplikaĵo kaj ĝiaj kromprogramoj"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:118
 msgid "Modify connection profile (requires --set-option)"
-msgstr ""
+msgstr "Modifi konektoprofilon (postulas --set-option)"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:120
 msgid "Set one or more profile settings, to be used with --update-profile"
-msgstr ""
+msgstr "Agordi unu aŭ plurajn profilojn, por uzo kune kun --update-profile"
 
 #: src/remmina.c:121
 msgid "Encrypt a password"
-msgstr ""
+msgstr "Ĉifri pasvorton"
 
 #. TRANSLATORS: Shown in terminal. Do not use characters that may be not supported on a terminal
 #: src/remmina.c:375
 msgid "- or protocol://username:encryptedpassword@host:port"
-msgstr ""
+msgstr "- aŭ protokolo://salutnomo:ĉifritapasvorto@gastiganto:pordo"
 
 #: src/remmina.c:378
 msgid ""
@@ -670,679 +714,736 @@ msgid ""
 "remmina --set-option username --set-option resolution_mode=2 --set-option "
 "password\n"
 msgstr ""
+"Ekzemploj:\n"
+"Por konekti per ekzistanta konektoprofilo, uzu la jenon:\n"
+"\n"
+"\tremmina -c DOSIERO.remmina\n"
+"\n"
+"Por rapide konekti per URI:\n"
+"\n"
+"\tremmina -c rdp://salutnomo@servilo\n"
+"\tremmina -c rdp://retadreso\\\\salutnomo@servilo\n"
+"\tremmina -c vnc://salutnomo@servilo\n"
+"\tremmina -c vnc://servilo?VncUsername=salutnomo\n"
+"\tremmina -c ssh://salutnomo@servilo\n"
+"\tremmina -c spice://servilo\n"
+"\n"
+"Por rapide konekti per URI kaj ĉifrita pasvorto:\n"
+"\n"
+"\tremmina -c rdp://salutnomo:ĉifrita-pasvorto@servilo\n"
+"\tremmina -c vnc://salutnomo:ĉifrita-pasvorto@servilo\n"
+"\tremmina -c vnc://servilo?VncUsername =salutnomo\\&VncPassword=ĉifrita-"
+"pasvorto\n"
+"\n"
+"Por ĉifri pasvorton por uzo kun reteja adreso:\n"
+"\n"
+"\tremmina --encrypt-password\n"
+"\n"
+"Por ĝisdatigi salutnomon kaj pasvorton kaj agordi malsaman ekrandistingivan "
+"reĝimon de konektoprofilo de Remmina, uzu la jenon:\n"
+"\n"
+"\techo \"salutnomo\\npasvorto\" | remmina --update-profile /DOSIER/INDIKO/"
+"UMO.remmina --set-option username --set-option resolution_mode=2 --set-"
+"option password\n"
 
 #: src/remmina_icon.c:139
 msgid "Open Main Window"
-msgstr ""
+msgstr "Malfermi Ĉeffenestron"
 
-#: src/remmina_icon.c:144 data/ui/remmina_main.glade:260
+#: src/remmina_icon.c:144 data/ui/remmina_main.glade:254
 msgid "_Preferences"
-msgstr ""
+msgstr "_Preferoj"
 
 #: src/remmina_icon.c:149
 msgid "_About"
-msgstr ""
+msgstr "_Pri"
 
 #: src/remmina_icon.c:159
 msgid "Enable Service Discovery"
-msgstr ""
+msgstr "Ŝalti Malkovradon de Servoj"
 
-#: src/remmina_icon.c:171 data/ui/remmina_main.glade:411
+#: src/remmina_icon.c:171 data/ui/remmina_main.glade:404
 msgid "_Quit"
-msgstr ""
+msgstr "_Forlasi"
 
 #. TRANSLATORS: Applet name as per the Freedesktop Desktop entry specification https://specifications.freedesktop.org/desktop-entry-spec/latest/
 #. TRANSLATORS: Applet Name as per the Freedesktop Desktop entry specification https://specifications.freedesktop.org/desktop-entry-spec/latest/
 #: src/remmina_icon.c:354 src/remmina_icon.c:529
 msgid "Remmina Applet"
-msgstr ""
+msgstr "Aplikaĵeto Remmina"
 
 #. TRANSLATORS: Applet comment/description as per the Freedesktop Desktop entry specification https://specifications.freedesktop.org/desktop-entry-spec/latest/
 #: src/remmina_icon.c:356 src/remmina_icon.c:531
 msgid "Connect to remote desktops through the applet menu"
-msgstr ""
+msgstr "Konekti al foraj ekranoj per la aplikaĵeta menuo"
 
-#: src/remmina_icon.c:470 src/remmina_icon.c:471 src/remmina_main.c:1318
+#: src/remmina_icon.c:470 src/remmina_icon.c:471 src/remmina_main.c:1334
 msgid "Remmina Remote Desktop Client"
-msgstr ""
+msgstr "Forakomputila Kliento Remmina"
 
-#: src/rcw.c:653
+#: src/rcw.c:655
 #, c-format
 msgid ""
 "Are you sure you want to close %i active connections in the current window?"
 msgstr ""
+"Ĉu vi certas, ke vi volas fermi %i aktivajn konektojn en la nuna fenestro?"
 
-#: src/rcw.c:1387
+#: src/rcw.c:1391
 msgid "Viewport fullscreen mode"
-msgstr ""
+msgstr "Viduja plenekrana reĝimo"
 
-#: src/rcw.c:1395 data/ui/remmina_preferences.glade:646
+#: src/rcw.c:1399 data/ui/remmina_preferences.glade:647
 msgid "Scrolled fullscreen"
-msgstr ""
+msgstr "Rulumita plenekrana reĝimo"
 
-#: src/rcw.c:1480
+#: src/rcw.c:1484
 msgid "Keep aspect ratio when scaled"
-msgstr ""
+msgstr "Konservu proporcion dum skalŝanĝado"
 
-#: src/rcw.c:1488
+#: src/rcw.c:1492
 msgid "Fill client window when scaled"
-msgstr ""
+msgstr "Plenigi klientan fenestron dum skalŝanĝado"
 
-#: src/rcw.c:2049
+#: src/rcw.c:1971
+msgid "Send clipboard content as keystrokes"
+msgstr "Sendi enhavon de tondujo kiel klavofrapojn"
+
+#: src/rcw.c:2071
 msgid "Turn off scaling to avoid screenshot distortion."
-msgstr ""
+msgstr "Malŝalti skalŝanĝadon por eviti distordon de ekrankopio."
 
-#: src/rcw.c:2109 plugins/www/www_plugin.c:840
+#: src/rcw.c:2131 plugins/www/www_plugin.c:848
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Ekrankopio farita"
 
-#: src/rcw.c:2190
-msgid "Resize the window to fit in remote resolution"
-msgstr ""
+#: src/rcw.c:2212
+msgid "Open the Remmina main window"
+msgstr "Malfermi la ĉeffenestron de Remmina"
 
-#: src/rcw.c:2201
-msgid "Toggle fullscreen mode"
-msgstr ""
-
-#: src/rcw.c:2247 data/ui/remmina_preferences.glade:1299
-#: data/ui/remmina_preferences.glade:1309
-msgid "Multi monitor"
-msgstr ""
-
-#: src/rcw.c:2263
-msgid "Toggle dynamic resolution update"
-msgstr ""
-
-#: src/rcw.c:2273
-msgid "Toggle scaled mode"
-msgstr ""
-
-#: src/rcw.c:2313 data/ui/remmina_preferences.glade:1043
-msgid "Switch tab pages"
-msgstr ""
-
-#: src/rcw.c:2323
-msgid "Grab all keyboard events"
-msgstr ""
-
-#: src/rcw.c:2333
-msgid "Preferences"
-msgstr ""
-
-#: src/rcw.c:2342
-msgid "_Tools"
-msgstr ""
-
-#: src/rcw.c:2343 data/ui/remmina_main.glade:213
-msgid "Tools"
-msgstr ""
-
-#: src/rcw.c:2356
+#: src/rcw.c:2221
 msgid "Duplicate current connection"
-msgstr ""
+msgstr "Duobligi aktualan konekton"
 
-#: src/rcw.c:2367 data/ui/remmina_preferences.glade:1236
-#: data/ui/remmina_preferences.glade:1246
+#: src/rcw.c:2238
+msgid "Resize the window to fit in remote resolution"
+msgstr "Aligrandigi la fenestron por kongruo kun fora ekrandistingivo"
+
+#: src/rcw.c:2249
+msgid "Toggle fullscreen mode"
+msgstr "Baskuligi plenekranan reĝimon"
+
+#: src/rcw.c:2295 data/ui/remmina_preferences.glade:1300
+#: data/ui/remmina_preferences.glade:1310
+msgid "Multi monitor"
+msgstr "Plurmonitora"
+
+#: src/rcw.c:2311
+msgid "Toggle dynamic resolution update"
+msgstr "Baskuligi dinamikan ĝisdatigon de ekrandistingivo"
+
+#: src/rcw.c:2321
+msgid "Toggle scaled mode"
+msgstr "Baskuligi skalŝanĝan reĝimon"
+
+#: src/rcw.c:2361 data/ui/remmina_preferences.glade:1044
+msgid "Switch tab pages"
+msgstr "Ŝanĝi langetajn paĝojn"
+
+#: src/rcw.c:2371
+msgid "Grab all keyboard events"
+msgstr "Preni ĉiujn klavajn eventojn"
+
+#: src/rcw.c:2381
+msgid "Preferences"
+msgstr "Preferoj"
+
+#: src/rcw.c:2390
+msgid "_Tools"
+msgstr "_Iloj"
+
+#: src/rcw.c:2391 data/ui/remmina_main.glade:207
+msgid "Tools"
+msgstr "Iloj"
+
+#: src/rcw.c:2404 data/ui/remmina_preferences.glade:1237
+#: data/ui/remmina_preferences.glade:1247
 msgid "Screenshot"
-msgstr ""
+msgstr "Ekrankopio"
 
-#: src/rcw.c:2381 data/ui/remmina_preferences.glade:1146
+#: src/rcw.c:2418 data/ui/remmina_preferences.glade:1147
 msgid "Minimize window"
-msgstr ""
+msgstr "Minimumigi fenestron"
 
-#: src/rcw.c:2391 data/ui/remmina_preferences.glade:1176
+#: src/rcw.c:2428 data/ui/remmina_preferences.glade:1177
 msgid "Disconnect"
-msgstr ""
+msgstr "Malkonekti"
 
-#: src/rcw.c:4113
+#: src/rcw.c:4195
 #, c-format
 msgid "The file “%s” is corrupted, unreadable, or could not be found."
-msgstr ""
+msgstr "La dosiero “%s” estas koruptita, ne legebla, aŭ ne trovebla."
 
-#: src/rcw.c:4278
+#: src/rcw.c:4363
 msgid "Warning: This plugin requires GtkSocket, but it’s not available."
 msgstr ""
+"Averto: Ĉi tiu kromprogramo postulas GtkSocket, sed ĝi ne estas disponebla."
 
-#: src/remmina_plugin_manager.c:73 src/remmina_file_editor.c:1578
+#: src/remmina_plugin_manager.c:73 src/remmina_file_editor.c:1533
 msgid "Protocol"
-msgstr ""
+msgstr "Protokolo"
 
 #: src/remmina_plugin_manager.c:73
 msgid "Entry"
-msgstr ""
+msgstr "Ero"
 
 #: src/remmina_plugin_manager.c:73
 msgid "File"
-msgstr ""
+msgstr "Dosiero"
 
 #: src/remmina_plugin_manager.c:73
 msgid "Tool"
-msgstr ""
+msgstr "Ilo"
 
 #: src/remmina_plugin_manager.c:73
 msgid "Preference"
-msgstr ""
+msgstr "Prefero"
 
 #: src/remmina_plugin_manager.c:73
 msgid "Secret"
-msgstr ""
+msgstr "Sekreto"
 
-#: src/remmina_plugin_manager.c:455 data/ui/remmina_main.glade:331
+#: src/remmina_plugin_manager.c:456 data/ui/remmina_main.glade:305
 msgid "Plugins"
-msgstr ""
+msgstr "Kromprogramoj"
 
-#: src/remmina_plugin_manager.c:455 src/remmina_message_panel.c:452
-#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:150
+#: src/remmina_plugin_manager.c:456 src/remmina_message_panel.c:452
+#: src/remmina_message_panel.c:621 src/remmina_file_editor.c:152
 msgid "_OK"
-msgstr ""
+msgstr "_Bone"
 
-#: src/remmina_plugin_manager.c:473 src/remmina_file_editor.c:1535
-#: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:449
+#: src/remmina_plugin_manager.c:474 src/remmina_file_editor.c:1490
+#: plugins/nx/nx_session_manager.c:204 data/ui/remmina_main.glade:442
 msgid "Name"
-msgstr ""
+msgstr "Nomo"
 
-#: src/remmina_plugin_manager.c:479 plugins/nx/nx_session_manager.c:183
+#: src/remmina_plugin_manager.c:480 plugins/nx/nx_session_manager.c:183
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
-#: src/remmina_plugin_manager.c:485
+#: src/remmina_plugin_manager.c:486
 msgid "Description"
-msgstr ""
+msgstr "Priskribo"
 
-#: src/remmina_plugin_manager.c:491
+#: src/remmina_plugin_manager.c:492
 msgid "Version"
-msgstr ""
+msgstr "Versio"
 
 #: src/remmina_main.c:662
 #, c-format
 msgid "Total %i item."
 msgid_plural "Total %i items."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Totale %i ero."
+msgstr[1] "Totale %i eroj."
 
-#: src/remmina_main.c:843
+#: src/remmina_main.c:854
 #, c-format
 msgid "Are you sure you want to delete “%s”?"
-msgstr ""
+msgstr "Ĉu vi certas, ke vi volas forigi “%s”?"
 
-#: src/remmina_main.c:966
+#: src/remmina_main.c:975
 #, c-format
 msgid ""
 "Unable to import:\n"
 "%s"
 msgstr ""
+"Ne povis enporti:\n"
+"%s"
 
-#: src/remmina_main.c:992 data/ui/remmina_main.glade:291
+#: src/remmina_main.c:1001 data/ui/remmina_main.glade:285
 msgid "Import"
-msgstr ""
+msgstr "Enporti"
 
-#: src/remmina_main.c:1015 src/remmina_file_editor.c:1418
+#: src/remmina_main.c:1024 src/remmina_file_editor.c:1373
 msgid "_Save"
-msgstr ""
+msgstr "_Konservi"
 
-#: src/remmina_main.c:1021
+#: src/remmina_main.c:1030
 msgid "This protocol does not support exporting."
-msgstr ""
+msgstr "Ĉi tiu protokolo ne subtenas elportadon."
 
-#: src/remmina_main.c:1320
+#: src/remmina_main.c:1336
 msgid "Remmina Kiosk"
-msgstr ""
+msgstr "Remmina (Enviciga Reĝimo)"
 
 #: src/remmina_key_chooser.h:38
 msgid "Shift+"
-msgstr ""
+msgstr "Majusklig+"
 
 #: src/remmina_key_chooser.h:39
 msgid "Ctrl+"
-msgstr ""
+msgstr "Stir+"
 
 #: src/remmina_key_chooser.h:40
 msgid "Alt+"
-msgstr ""
+msgstr "Alt+"
 
 #: src/remmina_key_chooser.h:41
 msgid "Super+"
-msgstr ""
+msgstr "Super+"
 
 #: src/remmina_key_chooser.h:42
 msgid "Hyper+"
-msgstr ""
+msgstr "Hiper+"
 
 #: src/remmina_key_chooser.h:43
 msgid "Meta+"
-msgstr ""
+msgstr "Meta+"
 
 #: src/remmina_key_chooser.h:44
 msgid "<None>"
-msgstr ""
+msgstr "<Nenio>"
 
 #. TRANSLATORS: The placeholder %s is a directory path
 #: src/remmina_sftp_client.c:173
 #, c-format
 msgid "Could not create the folder “%s”."
-msgstr ""
+msgstr "Ne povis krei la dosierujon “%s”."
 
 #. TRANSLATORS: The placeholder %s is a file path
 #: src/remmina_sftp_client.c:181 src/remmina_sftp_client.c:202
 #, c-format
 msgid "Could not create the file “%s”."
-msgstr ""
+msgstr "Ne povis krei la dosieron “%s”."
 
 #. TRANSLATORS: The placeholders %s are a file path, and an error message.
 #: src/remmina_sftp_client.c:220
 #, c-format
 msgid "Could not open the file “%s” on the server. %s"
-msgstr ""
+msgstr "Ne povis malfermi la dosieron “%s” ĉe la servilo. %s"
 
 #: src/remmina_sftp_client.c:242
 #, c-format
 msgid "Could not save the file “%s”."
-msgstr ""
+msgstr "Ne povis konservi la dosieron “%s”."
 
 #: src/remmina_sftp_client.c:281 src/remmina_sftp_client.c:698
 #: src/remmina_sftp_client.c:761
 #, c-format
 msgid "Could not open the folder “%s”. %s"
-msgstr ""
+msgstr "Ne povis malfermi la dosierujon “%s”. %s"
 
 #: src/remmina_sftp_client.c:385
 #, c-format
 msgid "Could not create the folder “%s” on the server. %s"
-msgstr ""
+msgstr "Ne povis krei la dosierujon “%s” ĉe la servilo. %s"
 
 #: src/remmina_sftp_client.c:413 src/remmina_sftp_client.c:435
 #, c-format
 msgid "Could not create the file “%s” on the server. %s"
-msgstr ""
+msgstr "Ne povis krei la dosieron “%s” ĉe la servilo. %s"
 
 #: src/remmina_sftp_client.c:456
 #, c-format
 msgid "Could not open the file “%s”."
-msgstr ""
+msgstr "Ne povis malfermi la dosieron “%s”."
 
 #: src/remmina_sftp_client.c:476
 #, c-format
 msgid "Could not write to the file “%s” on the server. %s"
-msgstr ""
+msgstr "Ne povis skribi sur la dosieron “%s” ĉe la servilo. %s"
 
 #: src/remmina_sftp_client.c:716
 #, c-format
 msgid "Could not read from the folder. %s"
-msgstr ""
+msgstr "Ne povis legi la dosierujon. %s"
 
 #: src/remmina_sftp_client.c:823
 msgid "Are you sure you want to cancel the file transfer in progress?"
-msgstr ""
+msgstr "Ĉu vi certas, ke vi volas nuligi la aktualan transigon de dosiero?"
 
 #: src/remmina_sftp_client.c:857
 #, c-format
 msgid "Could not delete “%s”. %s"
-msgstr ""
+msgstr "Ne povis forviŝi “%s”. %s"
 
 #: src/remmina_sftp_client.c:942
 msgid "The file exists already"
-msgstr ""
+msgstr "La dosiero jam ekzistas"
 
 #: src/remmina_sftp_client.c:945
 msgid "Resume"
-msgstr ""
+msgstr "Daŭrigi"
 
 #: src/remmina_sftp_client.c:946
 msgid "Overwrite"
-msgstr ""
+msgstr "Superskribi"
 
 #: src/remmina_sftp_client.c:947 src/remmina_message_panel.c:457
-#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:149
-#: src/remmina_file_editor.c:1410 plugins/spice/spice_plugin_file_transfer.c:84
+#: src/remmina_message_panel.c:629 src/remmina_file_editor.c:151
+#: src/remmina_file_editor.c:1365 plugins/spice/spice_plugin_file_transfer.c:84
 #: plugins/nx/nx_session_manager.c:156 data/ui/remmina_spinner.glade:8
 #: data/ui/remmina_spinner.glade:9 data/ui/remmina_key_chooser.glade:8
 #: data/ui/remmina_key_chooser.glade:9
 msgid "_Cancel"
-msgstr ""
+msgstr "_Nuligi"
 
 #: src/remmina_sftp_client.c:964
 msgid "The following file already exists in the target folder:"
-msgstr ""
+msgstr "La jena dosiero jam ekzistas en la cela dosierujo:"
 
 #: src/remmina_message_panel.c:163 data/ui/remmina_unlock.glade:46
 #: data/ui/remmina_mpc.glade:46
 msgid "Cancel"
-msgstr ""
+msgstr "Nuligi"
 
 #: src/remmina_message_panel.c:199 data/ui/remmina_snap_info_dialog.glade:28
 #: data/ui/remmina_news.glade:33 data/ui/remmina_preferences.glade:51
 #: data/ui/remmina_string_list.glade:8 data/ui/remmina_string_list.glade:9
 #: data/ui/remmina_string_list.glade:63
 msgid "Close"
-msgstr ""
+msgstr "Fermi"
 
 #: src/remmina_message_panel.c:260
 msgid "Yes"
-msgstr ""
+msgstr "Jes"
 
 #: src/remmina_message_panel.c:267
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
-#: src/remmina_message_panel.c:391 plugins/rdp/rdp_plugin.c:2516
+#: src/remmina_message_panel.c:391 plugins/rdp/rdp_plugin.c:2584
 #: data/ui/remmina_mpc.glade:172
 msgid "Domain"
-msgstr ""
+msgstr "Retejo"
 
 #: src/remmina_message_panel.c:420
 msgid "Save password"
-msgstr ""
+msgstr "Konservi pasvorton"
 
 #: src/remmina_message_panel.c:513
 msgid "Enter certificate authentication files"
-msgstr ""
+msgstr "Entajpu dosierojn de atestilo-aŭtentikigo"
 
 #: src/remmina_message_panel.c:525
 msgid "CA Certificate File"
-msgstr ""
+msgstr "Dosiero de atestilo de atestila aŭtoritato (CA)"
 
 #: src/remmina_message_panel.c:547
 msgid "CA CRL File"
 msgstr ""
+"Dosiero de atestilo-eksvalidiga listo (CRL) de atestila aŭtoritato (CA)"
 
 #: src/remmina_message_panel.c:569
 msgid "Client Certificate File"
-msgstr ""
+msgstr "Dosiero de Klienta Atestilo"
 
 #: src/remmina_message_panel.c:591
 msgid "Client Certificate Key"
-msgstr ""
+msgstr "Ŝlosilo de Klienta Atestilo"
 
-#: src/remmina_sftp_plugin.c:322
+#: src/remmina_sftp_plugin.c:323
 msgid "Show Hidden Files"
-msgstr ""
+msgstr "Montri Kaŝitajn Dosierojn"
 
-#: src/remmina_sftp_plugin.c:324
+#: src/remmina_sftp_plugin.c:325
 msgid "Overwrite all files"
-msgstr ""
+msgstr "Superskribi ĉiujn dosierojn"
 
-#: src/remmina_sftp_plugin.c:326
+#: src/remmina_sftp_plugin.c:327
 msgid "Resume all file transfers"
-msgstr ""
+msgstr "Rekomenci ĉiujn dosiertransigojn"
 
-#: src/remmina_sftp_plugin.c:357
+#: src/remmina_sftp_plugin.c:359
 msgid "SFTP - Secure File Transfer"
-msgstr ""
+msgstr "SFTP - Sekura Dosiertransigo"
 
 #: src/remmina_ssh.c:236
 #, c-format
 msgid "Could not authenticate with TOTP/OTP/2FA. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi per TOTP/OTP/2FA. %s"
 
-#: src/remmina_ssh.c:295 src/remmina_ssh.c:672
+#: src/remmina_ssh.c:295 src/remmina_ssh.c:676
 #, c-format
 msgid "Could not authenticate with SSH password. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi per SSH-pasvorto. %s"
 
-#: src/remmina_ssh.c:321 src/remmina_ssh.c:384
+#: src/remmina_ssh.c:322 src/remmina_ssh.c:389
 msgid "No saved SSH passphrase supplied. Asking user to enter it."
 msgstr ""
+"Neniu konservita SSH-pasfrazo estis provizita. Petante uzanton entajpi ĝin."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:326 src/remmina_ssh.c:363 src/remmina_ssh.c:389
-#: src/remmina_ssh.c:428 src/remmina_ssh.c:742
+#: src/remmina_ssh.c:327 src/remmina_ssh.c:368 src/remmina_ssh.c:394
+#: src/remmina_ssh.c:433 src/remmina_ssh.c:746
 #, c-format
 msgid "Could not authenticate with public SSH key. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi per publika SSH-ŝlosilo. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:334
+#: src/remmina_ssh.c:336
 #, c-format
 msgid "SSH certificate cannot be imported. %s"
-msgstr ""
+msgstr "Ne povis enporti SSH-atestilon. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:343
+#: src/remmina_ssh.c:345
 #, c-format
-msgid "SSH certificate cannot be copied into the privatekey. %s"
-msgstr ""
+msgid "SSH certificate cannot be copied into the private SSH key. %s"
+msgstr "SSH-atestilo ne povas esti kopiita en la privatan SSH-ŝlosilon. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:353
+#: src/remmina_ssh.c:355
 #, c-format
-msgid "Authentication with SSH certificate failed. %s"
-msgstr ""
+msgid "Could not authenticate using SSH certificate. %s"
+msgstr "Ne povis aŭtentikigi per SSH-atestilo. %s"
 
-#: src/remmina_ssh.c:364
+#: src/remmina_ssh.c:369
 msgid "SSH identity file not selected."
-msgstr ""
+msgstr "SSH-identiga dosiero ne elektita."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:375
+#: src/remmina_ssh.c:380
 #, c-format
 msgid "Public SSH key cannot be imported. %s"
-msgstr ""
+msgstr "Ne povis enporti SSH-ŝlosilon. %s"
 
-#: src/remmina_ssh.c:473
+#: src/remmina_ssh.c:478
 #, c-format
 msgid "Could not authenticate automatically with public SSH key. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi aŭtomate per publika SSH-ŝlosilo. %s"
 
-#: src/remmina_ssh.c:518
+#: src/remmina_ssh.c:523
 #, c-format
 msgid "Could not authenticate automatically with SSH agent. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi aŭtomate per SSH-agento. %s"
 
-#: src/remmina_ssh.c:564 src/remmina_ssh.c:852
+#: src/remmina_ssh.c:569 src/remmina_ssh.c:856
 #, c-format
 msgid "Could not authenticate with SSH GSSAPI/Kerberos. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi per SSH GSSAPI/Kerberos. %s"
 
-#: src/remmina_ssh.c:593
+#: src/remmina_ssh.c:598
 msgid "The public SSH key changed!"
-msgstr ""
+msgstr "La publika SSH-ŝlosilo ŝanĝiĝis!"
 
-#: src/remmina_ssh.c:707
+#: src/remmina_ssh.c:711
 #, c-format
 msgid "Could not authenticate with keyboard-interactive. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi per keyboard-interactive. %s"
 
-#: src/remmina_ssh.c:809
+#: src/remmina_ssh.c:813
 #, c-format
 msgid "Could not authenticate with automatic public SSH key. %s"
-msgstr ""
+msgstr "Ne povis aŭtentikigi per aŭtomata publika SSH-ŝlosilo. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:917
+#: src/remmina_ssh.c:921
 #, c-format
 msgid "Could not fetch the server's public SSH key. %s"
-msgstr ""
+msgstr "Ne povis akiri publikan SSH-ŝlosilon de servilo. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:924
+#: src/remmina_ssh.c:928
 #, c-format
 msgid "Could not fetch public SSH key. %s"
-msgstr ""
+msgstr "Ne povis akiri publikan SSH-ŝlosilon. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:932
+#: src/remmina_ssh.c:936
 #, c-format
 msgid "Could not fetch checksum of the public SSH key. %s"
-msgstr ""
+msgstr "Ne povis akiri kontrolsumon de la publika SSH-ŝlosilo. %s"
 
-#: src/remmina_ssh.c:945
+#: src/remmina_ssh.c:949
 msgid "The server is unknown. The public key fingerprint is:"
-msgstr ""
+msgstr "La servilo estas nekonata. Jen la fingropremaĵo de la publika ŝlosilo:"
 
-#: src/remmina_ssh.c:947 src/remmina_ssh.c:953
+#: src/remmina_ssh.c:951 src/remmina_ssh.c:957
 msgid "Do you trust the new public key?"
-msgstr ""
+msgstr "Ĉu vi fidas la novan publikan ŝlosilon?"
 
-#: src/remmina_ssh.c:950
+#: src/remmina_ssh.c:954
 msgid ""
 "Warning: The server has changed its public key. This means you are either "
 "under attack,\n"
 "or the administrator has changed the key. The new public key fingerprint is:"
 msgstr ""
+"Averto: La servilo ŝanĝis sian publikan ŝlosilon. Ĉi tio signifas, ke vi "
+"estas aŭ atakata,\n"
+"aŭ la administranto ŝanĝis la ŝlosilon. Jen la fingropremaĵo de la nova "
+"publika ŝlosilo:"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:975
+#: src/remmina_ssh.c:979
 #, c-format
 msgid "Could not check list of known SSH hosts. %s"
-msgstr ""
+msgstr "Ne povis kontroli liston de konataj SSH-gastigantoj. %s"
 
-#: src/remmina_ssh.c:984
+#: src/remmina_ssh.c:988
 msgid "SSH password"
-msgstr ""
+msgstr "SSH-pasvorto"
 
-#: src/remmina_ssh.c:991 src/remmina_ssh.c:1035
+#: src/remmina_ssh.c:995 src/remmina_ssh.c:1039
 msgid "SSH private key passphrase"
-msgstr ""
+msgstr "Pasfrazo de privata SSH-ŝlosilo"
 
-#: src/remmina_ssh.c:996
+#: src/remmina_ssh.c:1000
 msgid "SSH Kerberos/GSSAPI"
-msgstr ""
+msgstr "SSH Kerberos/GSSAPI"
 
-#: src/remmina_ssh.c:1001
+#: src/remmina_ssh.c:1005
 msgid "Enter TOTP/OTP/2FA code"
-msgstr ""
+msgstr "Entajpu kodon de TOTP/OTP/2FA"
 
-#: src/remmina_ssh.c:1031 src/remmina_ssh.c:1057
+#: src/remmina_ssh.c:1035 src/remmina_ssh.c:1061
 msgid "SSH tunnel credentials"
-msgstr ""
+msgstr "Akreditiloj de SSH-tunelo"
 
-#: src/remmina_ssh.c:1031 src/remmina_ssh.c:1057 plugins/nx/nx_plugin.c:203
+#: src/remmina_ssh.c:1035 src/remmina_ssh.c:1061 plugins/nx/nx_plugin.c:203
 msgid "SSH credentials"
-msgstr ""
+msgstr "SSH-akreditiloj"
 
-#: src/remmina_ssh.c:1108
+#: src/remmina_ssh.c:1112
 msgid "Keyboard interactive login, TOTP/OTP/2FA"
-msgstr ""
+msgstr "Klavara interaga ensaluto per TOTP/OTP/2FA"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1329
+#: src/remmina_ssh.c:1337
 #, c-format
 msgid "Could not start SSH session. %s"
-msgstr ""
+msgstr "Ne povis komenci SSH-sesion. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1735 src/remmina_ssh.c:1798
+#: src/remmina_ssh.c:1743 src/remmina_ssh.c:1806
 #, c-format
 msgid "Could not create channel. %s"
-msgstr ""
+msgstr "Ne povis krei kanalon. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1746
+#: src/remmina_ssh.c:1754
 #, c-format
 msgid "Could not connect to SSH tunnel. %s"
-msgstr ""
+msgstr "Ne povis konekti al SSH-tunelo. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1813 src/remmina_ssh.c:2437
+#: src/remmina_ssh.c:1821 src/remmina_ssh.c:2445
 #, c-format
 msgid "Could not open channel. %s"
-msgstr ""
+msgstr "Ne povis malfermi kanalon. %s"
 
-#: src/remmina_ssh.c:1819
+#: src/remmina_ssh.c:1827
 #, c-format
 msgid "Could not run %s on SSH server."
-msgstr ""
+msgstr "Ne povis ruli la komandon %s ĉe la SSH-servilo."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:1857 src/remmina_ssh.c:1878 src/remmina_ssh.c:1887
+#: src/remmina_ssh.c:1865 src/remmina_ssh.c:1886 src/remmina_ssh.c:1895
 #, c-format
 msgid "Could not request port forwarding. %s"
-msgstr ""
+msgstr "Ne povis peti plusendon de pordo. %s"
 
-#: src/remmina_ssh.c:1922
+#: src/remmina_ssh.c:1930
 msgid "The server did not respond."
-msgstr ""
+msgstr "La servilo ne respondis."
 
-#: src/remmina_ssh.c:1965
+#: src/remmina_ssh.c:1973
 #, c-format
 msgid "Cannot connect to local port %i."
-msgstr ""
+msgstr "Ne povas konekti al loka pordo %i."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2015
+#: src/remmina_ssh.c:2023
 #, c-format
 msgid "Could not write to SSH channel. %s"
-msgstr ""
+msgstr "Ne povis skribi al SSH-kanalo. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2022
+#: src/remmina_ssh.c:2030
 #, c-format
 msgid "Could not read from tunnel listening socket. %s"
-msgstr ""
+msgstr "Ne povis legi el tunela aŭskulta konektinterfaco. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2042
+#: src/remmina_ssh.c:2050
 #, c-format
 msgid "Could not poll SSH channel. %s"
-msgstr ""
+msgstr "Ne povis enketi SSH-kanalon. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2049
+#: src/remmina_ssh.c:2057
 #, c-format
 msgid "Could not read SSH channel in a non-blocking way. %s"
-msgstr ""
+msgstr "Ne povis legi SSH-kanalon sen blokado. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2068
+#: src/remmina_ssh.c:2076
 #, c-format
 msgid "Could not send data to tunnel listening socket. %s"
-msgstr ""
+msgstr "Ne povis sendi datenon al tunela aŭskulta konektinterfaco. %s"
 
-#: src/remmina_ssh.c:2170
+#: src/remmina_ssh.c:2178
 msgid "Assign a destination port."
-msgstr ""
+msgstr "Asigni celan pordon."
 
-#: src/remmina_ssh.c:2177
+#: src/remmina_ssh.c:2185
 msgid "Could not create socket."
-msgstr ""
+msgstr "Ne povis krei konektinterfacon."
 
-#: src/remmina_ssh.c:2187
+#: src/remmina_ssh.c:2195
 msgid "Could not bind server socket to local port."
-msgstr ""
+msgstr "Ne povis ligi servilan konektinterfacon al loka konektinterfaco."
 
-#: src/remmina_ssh.c:2193
+#: src/remmina_ssh.c:2201
 msgid "Could not listen to local port."
-msgstr ""
+msgstr "Ne povis aŭskulti al loka pordo."
 
 #. TRANSLATORS: Do not translate pthread
-#: src/remmina_ssh.c:2203 src/remmina_ssh.c:2220 src/remmina_ssh.c:2237
-#: src/remmina_ssh.c:2255
+#: src/remmina_ssh.c:2211 src/remmina_ssh.c:2228 src/remmina_ssh.c:2245
+#: src/remmina_ssh.c:2263
 msgid "Could not start pthread."
-msgstr ""
+msgstr "Ne povis startigi pthread."
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2347
+#: src/remmina_ssh.c:2355
 #, c-format
 msgid "Could not create SFTP session. %s"
-msgstr ""
+msgstr "Ne povis krei SFTP-sesion. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2352
+#: src/remmina_ssh.c:2360
 #, c-format
 msgid "Could not start SFTP session. %s"
-msgstr ""
+msgstr "Ne povis startigi SFTP-sesion. %s"
 
 #. TRANSLATORS: The placeholder %s is an error message
-#: src/remmina_ssh.c:2467
+#: src/remmina_ssh.c:2475
 #, c-format
 msgid "Could not request shell. %s"
-msgstr ""
+msgstr "Ne povis peti ŝelon. %s"
 
-#: src/remmina_ssh.c:2560
+#: src/remmina_ssh.c:2568
 msgid "Could not create PTY device."
-msgstr ""
+msgstr "Ne povis krei PTY-aparaton."
 
 #: src/remmina_file_editor.c:60
 msgid ""
-"<tt><big>Supported formats\n"
+"<big>Supported formats\n"
 "• server\n"
-"• server:port\n"
-"• [server]:port</big></tt>"
+"• server[:port]\n"
+"VNC additional formats\n"
+"• ID:repeater ID number\n"
+"• unix:///path/socket.sock</big>"
 msgstr ""
+"<big>Subtenataj aranĝoj:\n"
+" • servilo\n"
+" • servilo[:pordo]\n"
+"Pliaj aranĝoj por VNC\n"
+" • ID:numero-de-ripetilo\n"
+" • unix:///dosierindiko/konektingo.sock</big>"
 
-#: src/remmina_file_editor.c:67
+#: src/remmina_file_editor.c:69
 msgid ""
-"<tt><big>• command in PATH args %h\n"
+"<big>• command in PATH args %h\n"
 "• /path/to/foo -options %h %u\n"
 "• %h is substituted with the server name\n"
 "• %t is substituted with the SSH server name\n"
@@ -1353,777 +1454,965 @@ msgid ""
 "• %d is substituted with local date and time in ISO 8601 format\n"
 "Do not run in background if you want the command to be executed before "
 "connecting.\n"
-"</big></tt>"
+"</big>"
 msgstr ""
+"<big>• komando en PATH-argumentoj %h\n"
+"• /dosierindiko/al/umo -opcioj %h %u\n"
+"•%h estos anstataŭigita per la nomo de servilo\n"
+"•%t estos anstataŭigita per la nomo de SSH-servilo\n"
+"•%u estos anstataŭigita per la salutnomo\n"
+"•%U estos anstataŭigita per la SSH-salutnomo\n"
+"•%p estos anstataŭigita per nomo de profilo ĉe Remmina\n"
+"•%g estos anstataŭigita per nomo de profilgrupo ĉe Remmina\n"
+"•%d estos anstataŭigita per la lokaj dato kaj horo laŭ ISO 8601\n"
+"Ne rulu fone se vi deziras, ke la komando ruliĝu antaŭ konekto.\n"
+"</big>"
 
-#: src/remmina_file_editor.c:81
+#: src/remmina_file_editor.c:83
 msgid ""
-"<tt><big>Supported formats\n"
+"<big>Supported formats\n"
 "• server\n"
-"• server:port\n"
-"• [server]:port\n"
-"• username@server:port (SSH protocol only)</big></tt>"
+"• server[:port]\n"
+"• username@server[:port] (SSH protocol only)</big>"
 msgstr ""
+"<big>Subtenataj aranĝoj\n"
+"• servilo\n"
+"• servilo[:pordo]\n"
+"• salutnomo@servilo[:pordo] (nur por la protokolo SSH)</big>"
 
-#: src/remmina_file_editor.c:147
+#: src/remmina_file_editor.c:149
 msgid "Choose a Remote Desktop Server"
-msgstr ""
+msgstr "Elektu servilon de fora ekrano"
 
-#: src/remmina_file_editor.c:380
+#: src/remmina_file_editor.c:370
 #, c-format
 msgid "Browse the network to find a %s server"
-msgstr ""
+msgstr "Trarigardi la reton por trovi servilon de %s"
 
-#: src/remmina_file_editor.c:481
+#: src/remmina_file_editor.c:471
 msgid "Resolution"
-msgstr ""
+msgstr "Ekrandistingivo"
 
-#: src/remmina_file_editor.c:488
+#: src/remmina_file_editor.c:478
 msgid "Use initial window size"
-msgstr ""
+msgstr "Uzi aprioran fenestrograndon"
 
-#: src/remmina_file_editor.c:492
+#: src/remmina_file_editor.c:482
 msgid "Use client resolution"
-msgstr ""
+msgstr "Uzi klientan ekrandistingivon"
 
-#: src/remmina_file_editor.c:503 src/remmina_file_editor.c:897
+#: src/remmina_file_editor.c:493 src/remmina_file_editor.c:897
 msgid "Custom"
-msgstr ""
+msgstr "Alia"
 
-#: src/remmina_file_editor.c:727
+#: src/remmina_file_editor.c:717
 msgid "Keyboard mapping"
-msgstr ""
+msgstr "Klavarmapo"
 
-#: src/remmina_file_editor.c:827
+#: src/remmina_file_editor.c:817
 msgid "Behavior"
-msgstr ""
+msgstr "Konduto"
 
-#: src/remmina_file_editor.c:830
+#: src/remmina_file_editor.c:820
 msgid "Execute a Command"
-msgstr ""
+msgstr "Ruli Komandon"
 
-#: src/remmina_file_editor.c:834
+#: src/remmina_file_editor.c:824
 msgid "Before connecting"
-msgstr ""
+msgstr "Antaŭ konekto"
 
-#: src/remmina_file_editor.c:836
+#: src/remmina_file_editor.c:826
 msgid "command %h %u %t %U %p %g --option"
-msgstr ""
+msgstr "komando %h %u %t %U %p %g --opcio"
 
-#: src/remmina_file_editor.c:841
+#: src/remmina_file_editor.c:831
 msgid "After connecting"
-msgstr ""
+msgstr "Post konekto"
 
-#: src/remmina_file_editor.c:843
+#: src/remmina_file_editor.c:833
 msgid "/path/to/command -opt1 arg %h %u %t -opt2 %U %p %g"
-msgstr ""
+msgstr "/dosierindiko/al/komando -opcio1 argumento %h %u %t -opcio2 %U %p %g"
 
-#: src/remmina_file_editor.c:847
+#: src/remmina_file_editor.c:837
 msgid "Start-up"
-msgstr ""
+msgstr "Starto"
 
-#: src/remmina_file_editor.c:850
+#: src/remmina_file_editor.c:840
 msgid "Auto-start this profile"
-msgstr ""
+msgstr "Aŭtomate startigi laŭ ĉi tiu profilo"
 
 #: src/remmina_file_editor.c:870
 msgid "SSH Tunnel"
-msgstr ""
+msgstr "SSH-Tunelo"
 
 #: src/remmina_file_editor.c:871
 msgid "Enable SSH tunnel"
-msgstr ""
+msgstr "Ŝalti SSH-tunelon"
 
 #: src/remmina_file_editor.c:878
 msgid "Tunnel via loopback address"
-msgstr ""
+msgstr "Tunelo per retrosenda adreso"
 
 #: src/remmina_file_editor.c:888
 #, c-format
 msgid "Same server at port %i"
-msgstr ""
+msgstr "Sama servilo ĉe pordo %i"
 
-#: src/remmina_file_editor.c:938 plugins/rdp/rdp_plugin.c:2555
+#: src/remmina_file_editor.c:938 plugins/rdp/rdp_plugin.c:2623
 msgid "Start-up path"
-msgstr ""
+msgstr "Dosierindiko de starto"
 
 #: src/remmina_file_editor.c:947
 msgid "SSH Authentication"
-msgstr ""
+msgstr "SSH-Aŭtentikigo"
 
-#: src/remmina_file_editor.c:959
-msgid "SSH agent (automatic)"
-msgstr ""
-
-#: src/remmina_file_editor.c:984
+#: src/remmina_file_editor.c:973
 msgid "SSH private key file"
-msgstr ""
+msgstr "Dosiero de privata SSH-ŝlosilo"
 
-#: src/remmina_file_editor.c:989
-msgid "SSH certificate file"
-msgstr ""
-
-#: src/remmina_file_editor.c:1071
+#: src/remmina_file_editor.c:1037
 msgid "Basic"
-msgstr ""
+msgstr "Baznivela"
 
-#: src/remmina_file_editor.c:1077
+#: src/remmina_file_editor.c:1043
 msgid "Advanced"
-msgstr ""
+msgstr "Altnivela"
 
-#: src/remmina_file_editor.c:1088
+#: src/remmina_file_editor.c:1054
 msgid "Notes"
-msgstr ""
+msgstr "Notoj"
 
-#: src/remmina_file_editor.c:1338
+#: src/remmina_file_editor.c:1293
 msgid "Default settings saved."
-msgstr ""
+msgstr "Agordoj implicitigitaj."
 
-#: src/remmina_file_editor.c:1408
+#: src/remmina_file_editor.c:1363
 msgid "Remote Connection Profile"
-msgstr ""
+msgstr "Fora Konektoprofilo"
 
-#: src/remmina_file_editor.c:1414
+#: src/remmina_file_editor.c:1369
 msgid "Save as Default"
-msgstr ""
+msgstr "Konservi kiel Impliciton"
 
-#: src/remmina_file_editor.c:1415
+#: src/remmina_file_editor.c:1370
 msgid "Use the current settings as the default for all new connection profiles"
 msgstr ""
+"Uzi la aktualajn agordojn kiel implicitojn por ĉiuj novaj konektoprofiloj"
 
-#: src/remmina_file_editor.c:1423 data/ui/remmina_main.glade:166
+#: src/remmina_file_editor.c:1378 data/ui/remmina_main.glade:160
 msgid "Connect"
-msgstr ""
+msgstr "Konekti"
 
-#: src/remmina_file_editor.c:1426
+#: src/remmina_file_editor.c:1381
 msgid "_Save and Connect"
-msgstr ""
+msgstr "_Konservi kaj Konekti"
 
-#: src/remmina_file_editor.c:1549
+#: src/remmina_file_editor.c:1504
 msgid "Quick Connect"
-msgstr ""
+msgstr "Rapida Konekto"
 
-#: src/remmina_file_editor.c:1573
+#: src/remmina_file_editor.c:1528
 #, c-format
 msgid "Use '%s' as subgroup delimiter"
-msgstr ""
+msgstr "Uzi ‘%s’ kiel disigilon de subgrupoj"
 
-#: src/remmina_file_editor.c:1639 src/remmina_file_editor.c:1657
+#: src/remmina_file_editor.c:1594 src/remmina_file_editor.c:1612
 #, c-format
 msgid "Could not find the file “%s”."
-msgstr ""
+msgstr "Ne povis trovi la dosieron “%s”."
 
 #: src/remmina_chat_window.c:178
 #, c-format
 msgid "Chat with %s"
-msgstr ""
+msgstr "Babili kun %s"
 
 #: src/remmina_chat_window.c:230
 msgid "_Send"
-msgstr ""
+msgstr "_Sendi"
 
 #: src/remmina_chat_window.c:240
 msgid "_Clear"
+msgstr "_Vakigi"
+
+#: plugins/gvnc/gvnc_plugin_config.h:40
+msgid "Remmina VNC plugin for GNOME and KVM"
+msgstr "VNC-Kromprogramo de Remmina por GNOME kaj KVM"
+
+#: plugins/gvnc/gvnc_plugin.c:477
+#, c-format
+msgid "Unsupported authentication type %u"
+msgstr "Nesubtenata tipo de aŭtentikigo %u"
+
+#: plugins/gvnc/gvnc_plugin.c:489
+#, c-format
+msgid "Authentication failure: %s"
+msgstr "Malsukceso de aŭtentikigo: %s"
+
+#: plugins/gvnc/gvnc_plugin.c:539 plugins/vnc/vnc_plugin.c:820
+msgid "Enter VNC authentication credentials"
+msgstr "Entajpu akreditilojn de VNC-aŭtentikigo"
+
+#: plugins/gvnc/gvnc_plugin.c:820
+msgid "Use server settings"
+msgstr "Uzi sistemajn agordojn"
+
+#: plugins/gvnc/gvnc_plugin.c:821
+msgid "True colour (24 bits)"
+msgstr "Vera koloro (24 bitoj bildere)"
+
+#: plugins/gvnc/gvnc_plugin.c:822
+msgid "High colour (16 bits)"
+msgstr "Altkvalita koloro (16 bitoj bildere)"
+
+#: plugins/gvnc/gvnc_plugin.c:823
+msgid "Low colour (8 bits)"
+msgstr "Malaltkvalita koloro (8 bitoj bildere)"
+
+#: plugins/gvnc/gvnc_plugin.c:824
+msgid "Ultra low colour (3 bits)"
+msgstr "Malaltegkvalita koloro (3 bitoj bildere)"
+
+#: plugins/gvnc/gvnc_plugin.c:839
+msgid "VNC password"
+msgstr "Pasvorto de VNC"
+
+#: plugins/gvnc/gvnc_plugin.c:840 plugins/vnc/vnc_plugin.c:1944
+#: plugins/vnc/vnc_plugin.c:1964 plugins/xdmcp/xdmcp_plugin.c:369
+#: plugins/rdp/rdp_plugin.c:2590
+msgid "Colour depth"
+msgstr "Nombro de kolorbitoj"
+
+#: plugins/gvnc/gvnc_plugin.c:841
+msgid "Use JPEG Compression"
+msgstr "Uzi JPEG-densigon"
+
+#: plugins/gvnc/gvnc_plugin.c:841
+msgid "This might not work on all VNC servers"
+msgstr "Ĉi tio eble ne funkcios por iuj VNC-serviloj"
+
+#: plugins/gvnc/gvnc_plugin.c:842
+msgid "Enable GTK-VNC debug"
+msgstr "Ŝalti erarserĉadon de GTK-VNC"
+
+#: plugins/gvnc/gvnc_plugin.c:857 plugins/gvnc/gvnc_plugin.c:871
+#: plugins/spice/spice_plugin.c:693 plugins/spice/spice_plugin.c:706
+msgid "No clipboard sync"
+msgstr "Sen sinkronigo de tondujo"
+
+#: plugins/gvnc/gvnc_plugin.c:858 plugins/www/www_plugin.c:904
+#: plugins/vnc/vnc_plugin.c:1987 plugins/spice/spice_plugin.c:694
+#: plugins/rdp/rdp_plugin.c:2644 plugins/nx/nx_plugin.c:752
+msgid "Forget passwords after use"
+msgstr "Forgesi pasvortojn post uzo"
+
+#: plugins/gvnc/gvnc_plugin.c:859 plugins/vnc/vnc_plugin.c:1986
+msgid "Ignore remote bell messages"
+msgstr "Ignori forajn pepajn mesaĝojn"
+
+#: plugins/gvnc/gvnc_plugin.c:860 plugins/spice/spice_plugin.c:695
+msgid "Enable audio channel"
+msgstr "Ŝalti sonkanalon"
+
+#: plugins/gvnc/gvnc_plugin.c:861 plugins/gvnc/gvnc_plugin.c:870
+#: plugins/vnc/vnc_plugin.c:1982 plugins/vnc/vnc_plugin.c:1998
+#: plugins/spice/spice_plugin.c:697 plugins/spice/spice_plugin.c:705
+msgid "View only"
+msgstr "Nurlega"
+
+#: plugins/gvnc/gvnc_plugin.c:862
+msgid "Shared connection"
+msgstr "Komuna konekto"
+
+#: plugins/gvnc/gvnc_plugin.c:862
+msgid ""
+"If the server should try to share the desktop by leaving other clients "
+"connected"
 msgstr ""
+"Se la servilo provos komunigi la labortablon, lasante aliajn klientojn "
+"konektitaj"
+
+#: plugins/gvnc/gvnc_plugin.c:872
+msgid "Send Ctrl+Alt+_Del"
+msgstr "Sendi Stir+Alt+_Forig"
+
+#: plugins/gvnc/gvnc_plugin.c:873
+msgid "Send Ctrl+Alt+_Backspace"
+msgstr "Sendi Stir+Alt+_Retro"
+
+#: plugins/gvnc/gvnc_plugin.c:874
+msgid "Send Ctrl+Alt+_F1"
+msgstr "Sendi Stir+Alt+_F1"
+
+#: plugins/gvnc/gvnc_plugin.c:875
+msgid "Send Ctrl+Alt+_F2"
+msgstr "Sendi Stir+Alt+_F2"
+
+#: plugins/gvnc/gvnc_plugin.c:876
+msgid "Send Ctrl+Alt+_F3"
+msgstr "Sendi Stir+Alt+_F3"
+
+#: plugins/gvnc/gvnc_plugin.c:877
+msgid "Send Ctrl+Alt+_F4"
+msgstr "Sendi Stir+Alt+_F4"
+
+#: plugins/gvnc/gvnc_plugin.c:878
+msgid "Send Ctrl+Alt+_F5"
+msgstr "Sendi Stir+Alt+_F5"
+
+#: plugins/gvnc/gvnc_plugin.c:879
+msgid "Send Ctrl+Alt+_F6"
+msgstr "Sendi Stir+Alt+_F6"
+
+#: plugins/gvnc/gvnc_plugin.c:880
+msgid "Send Ctrl+Alt+_F7"
+msgstr "Sendi Stir+Alt+_F7"
+
+#: plugins/gvnc/gvnc_plugin.c:881
+msgid "Send Ctrl+Alt+_F8"
+msgstr "Sendi Stir+Alt+_F8"
+
+#: plugins/gvnc/gvnc_plugin.c:882
+msgid "Send Ctrl+Alt+_F9"
+msgstr "Sendi Stir+Alt+_F9"
+
+#: plugins/gvnc/gvnc_plugin.c:883
+msgid "Send Ctrl+Alt+_F10"
+msgstr "Sendi Stir+Alt+_F10"
+
+#: plugins/gvnc/gvnc_plugin.c:884
+msgid "Send Ctrl+Alt+_F11"
+msgstr "Sendi Stir+Alt+_F11"
+
+#: plugins/gvnc/gvnc_plugin.c:885
+msgid "Send Ctrl+Alt+_F12"
+msgstr "Sendi Stir+Alt+_F12"
+
+#: plugins/gvnc/gvnc_plugin.c:887
+msgid "Reboot remote host"
+msgstr "Restartigi foran gastiganton"
+
+#: plugins/gvnc/gvnc_plugin.c:888
+msgid "Reset remote host (hard reboot)"
+msgstr "Restartigi foran gastiganton (malvarma restarto)"
+
+#: plugins/gvnc/gvnc_plugin.c:889
+msgid "Shutdown remote host"
+msgstr "Malŝalti foran gastiganton"
 
 #: plugins/exec/exec_plugin_config.h:41
 msgid "Execute a command"
-msgstr ""
+msgstr "Ruli komandon"
 
 #: plugins/exec/exec_plugin.c:160
 msgid "You did not set any command to be executed"
-msgstr ""
+msgstr "Vi ne specifis rulotan komandon"
 
 #: plugins/exec/exec_plugin.c:206
 msgid ""
 "Warning: Running a command synchronously may cause Remmina not to respond.\n"
 "Do you really want to continue?"
 msgstr ""
+"Averto: Ruli komandon sinkrone povas kaŭzi ke Remmina ne respondos.\n"
+"Ĉu vi certe volas daŭrigi?"
 
 #: plugins/exec/exec_plugin.c:266
 msgid "Command"
-msgstr ""
+msgstr "Komando"
 
 #: plugins/exec/exec_plugin.c:267
 msgid "Asynchronous execution"
-msgstr ""
+msgstr "Nesinkrona rulado"
 
-#: plugins/www/www_plugin.c:97
+#: plugins/www/www_plugin.c:98
 msgid "File downloaded"
-msgstr ""
+msgstr "Dosiero elŝutita"
 
-#: plugins/www/www_plugin.c:566
+#: plugins/www/www_plugin.c:574
 msgid "Enter WWW authentication credentials"
-msgstr ""
+msgstr "Entajpu akreditilojn de TTT-aŭtentikigo"
 
-#: plugins/www/www_plugin.c:870
+#: plugins/www/www_plugin.c:878
 msgid "URL"
-msgstr ""
+msgstr "Reteja adreso"
 
-#: plugins/www/www_plugin.c:870
+#: plugins/www/www_plugin.c:878
 msgid "http://address or https://address"
-msgstr ""
-
-#: plugins/www/www_plugin.c:887
-msgid "User agent"
-msgstr ""
-
-#: plugins/www/www_plugin.c:888
-msgid "Proxy URL"
-msgstr ""
-
-#: plugins/www/www_plugin.c:888
-msgid "E.g. https://example.org, socks://mysocks:1080"
-msgstr ""
-
-#: plugins/www/www_plugin.c:889
-msgid "Turn on Java support"
-msgstr ""
-
-#: plugins/www/www_plugin.c:890
-msgid "Turn on smooth scrolling"
-msgstr ""
-
-#: plugins/www/www_plugin.c:891
-msgid "Turn on spatial navigation"
-msgstr ""
-
-#: plugins/www/www_plugin.c:892
-msgid "Turn on plugin support"
-msgstr ""
-
-#: plugins/www/www_plugin.c:893
-msgid "Turn on WebGL support"
-msgstr ""
-
-#: plugins/www/www_plugin.c:894
-msgid "Turn on HTML5 audio support"
-msgstr ""
+msgstr "http://adreso aŭ https://adreso"
 
 #: plugins/www/www_plugin.c:895
-msgid "Ignore TLS errors"
-msgstr ""
+msgid "User agent"
+msgstr "Uzanto-agento"
 
-#: plugins/www/www_plugin.c:896 plugins/vnc/vnc_plugin.c:1923
-#: plugins/spice/spice_plugin.c:604 plugins/rdp/rdp_plugin.c:2576
-#: plugins/nx/nx_plugin.c:752
-msgid "Forget passwords after use"
-msgstr ""
+#: plugins/www/www_plugin.c:896
+msgid "Proxy URL"
+msgstr "Adreso de prokurilo"
+
+#: plugins/www/www_plugin.c:896
+msgid "E.g. https://example.org, socks://mysocks:1080"
+msgstr "Ekz. https://ekzemplo.org, socks://miasocks:1080"
+
+#: plugins/www/www_plugin.c:897
+msgid "Turn on Java support"
+msgstr "Ebligi subtenon de Java"
 
 #: plugins/www/www_plugin.c:898
+msgid "Turn on smooth scrolling"
+msgstr "Ŝalti glatan rulumadon"
+
+#: plugins/www/www_plugin.c:899
+msgid "Turn on spatial navigation"
+msgstr "Ŝalti spacan navigadon"
+
+#: plugins/www/www_plugin.c:900
+msgid "Turn on plugin support"
+msgstr "Ebligi ŝaltadon de kromprogramoj"
+
+#: plugins/www/www_plugin.c:901
+msgid "Turn on WebGL support"
+msgstr "Ŝalti WebGL"
+
+#: plugins/www/www_plugin.c:902
+msgid "Turn on HTML5 audio support"
+msgstr "Ŝalti HTML5-sonelementon"
+
+#: plugins/www/www_plugin.c:903
+msgid "Ignore TLS errors"
+msgstr "Ignori erarojn pri TLS"
+
+#: plugins/www/www_plugin.c:906
 msgid "Turn on Web Inspector"
-msgstr ""
+msgstr "Ŝalti Retinspektilon"
 
 #: plugins/www/www_config.h:43
 msgid "Remmina web-browser plugin"
-msgstr ""
+msgstr "Kromprogramo de Remmina por TTT-legilo"
 
 #: plugins/secret/src/glibsecret_plugin.c:188
 msgid "Secured password storage in the GNOME keyring"
-msgstr ""
+msgstr "Sekura konservado de pasvortoj per GNOME-ŝlosilaro"
 
 #: plugins/tool_hello_world/plugin_config.h:40
 msgid "Hello, World!"
-msgstr ""
+msgstr "Saluton, Mondo!"
 
-#: plugins/vnc/vnc_plugin.c:753
+#: plugins/vnc/vnc_plugin.c:767
 msgid "Enter VNC password"
-msgstr ""
+msgstr "Entajpu pasvorton de VNC"
 
-#: plugins/vnc/vnc_plugin.c:806
-msgid "Enter VNC authentication credentials"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:909
+#: plugins/vnc/vnc_plugin.c:931
 msgid "Unable to connect to VNC server"
-msgstr ""
+msgstr "Ne povis konekti al VNC-servilo"
 
-#: plugins/vnc/vnc_plugin.c:910
+#: plugins/vnc/vnc_plugin.c:932
 #, c-format
 msgid "Couldn’t convert '%s' to host address"
-msgstr ""
+msgstr "Ne povis konverti ‘%s’ al adreso de gastiganto"
 
-#: plugins/vnc/vnc_plugin.c:911
+#: plugins/vnc/vnc_plugin.c:933
 #, c-format
 msgid "VNC connection failed: %s"
-msgstr ""
+msgstr "VNC-konekto malsukcesis: %s"
 
-#: plugins/vnc/vnc_plugin.c:912
+#: plugins/vnc/vnc_plugin.c:934
 msgid "Your connection has been rejected."
-msgstr ""
+msgstr "Via konekto estis rifuzita."
 
-#: plugins/vnc/vnc_plugin.c:938
+#: plugins/vnc/vnc_plugin.c:960
 #, c-format
 msgid "The VNC server requested an unknown authentication method. %s"
-msgstr ""
+msgstr "La VNC-servilo petis nekonatan metodon de aŭtentikigo. %s"
 
-#: plugins/vnc/vnc_plugin.c:940
+#: plugins/vnc/vnc_plugin.c:962
 msgid "Please retry after turning on encryption for this profile."
-msgstr ""
+msgstr "Bonvolu reprovi post ŝalto de ĉifrado de ĉi tiu profilo."
 
-#: plugins/vnc/vnc_plugin.c:1850 plugins/rdp/rdp_plugin.c:2369
+#: plugins/vnc/vnc_plugin.c:1904 plugins/rdp/rdp_plugin.c:2437
 msgid "True colour (32 bpp)"
-msgstr ""
+msgstr "Vera koloro (32 bitoj bildere)"
 
-#: plugins/vnc/vnc_plugin.c:1851 plugins/rdp/rdp_plugin.c:2371
+#: plugins/vnc/vnc_plugin.c:1905 plugins/rdp/rdp_plugin.c:2439
 msgid "High colour (16 bpp)"
-msgstr ""
+msgstr "Altkvalita koloro (16 bitoj bildere)"
 
-#: plugins/vnc/vnc_plugin.c:1852 plugins/rdp/rdp_plugin.c:2373
+#: plugins/vnc/vnc_plugin.c:1906 plugins/rdp/rdp_plugin.c:2441
 msgid "256 colours (8 bpp)"
-msgstr ""
+msgstr "256 koloroj (8 bitoj bildere)"
 
-#: plugins/vnc/vnc_plugin.c:1859 plugins/rdp/rdp_plugin.c:2397
-#: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:713
-msgid "Best (slowest)"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1860 plugins/rdp/rdp_plugin.c:2396
+#: plugins/vnc/vnc_plugin.c:1913 plugins/rdp/rdp_plugin.c:2464
 #: plugins/rdp/rdp_settings.c:271 plugins/nx/nx_plugin.c:712
 msgid "Good"
-msgstr ""
+msgstr "Bone"
 
-#: plugins/vnc/vnc_plugin.c:1861 plugins/rdp/rdp_plugin.c:2395
+#: plugins/vnc/vnc_plugin.c:1914 plugins/rdp/rdp_plugin.c:2465
+#: plugins/rdp/rdp_settings.c:273 plugins/nx/nx_plugin.c:713
+msgid "Best (slowest)"
+msgstr "Plej bone (plej malrapide)"
+
+#: plugins/vnc/vnc_plugin.c:1915 plugins/rdp/rdp_plugin.c:2463
 #: plugins/rdp/rdp_settings.c:269 plugins/nx/nx_plugin.c:711
 msgid "Medium"
-msgstr ""
+msgstr "Mezbone"
 
-#: plugins/vnc/vnc_plugin.c:1862 plugins/rdp/rdp_plugin.c:2394
+#: plugins/vnc/vnc_plugin.c:1916 plugins/rdp/rdp_plugin.c:2462
 #: plugins/rdp/rdp_settings.c:267 plugins/nx/nx_plugin.c:710
 msgid "Poor (fastest)"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1878
-msgid "Repeater"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1881 plugins/vnc/vnc_plugin.c:1901
-#: plugins/xdmcp/xdmcp_plugin.c:369 plugins/rdp/rdp_plugin.c:2522
-msgid "Colour depth"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1882 plugins/vnc/vnc_plugin.c:1902
-#: plugins/rdp/rdp_plugin.c:2539 plugins/nx/nx_plugin.c:733
-msgid "Quality"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1898
-msgid "Listen on port"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1918
-msgid "Show remote cursor"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1919 plugins/vnc/vnc_plugin.c:1934
-#: plugins/spice/spice_plugin.c:607 plugins/spice/spice_plugin.c:615
-msgid "View only"
-msgstr ""
-
-#: plugins/vnc/vnc_plugin.c:1920 plugins/rdp/rdp_plugin.c:2573
-msgid "Turn off clipboard sync"
-msgstr ""
+msgstr "Malbone (plej rapide)"
 
 #: plugins/vnc/vnc_plugin.c:1921
+msgid ""
+"Connect to VNC using a repeater:\n"
+"  • The server field must contain the repeater ID, e.g. ID:123456789\n"
+"  • The repeater field have to be set to the repeater IP and port, like:\n"
+"    10.10.10.12:5901\n"
+"  • From the remote VNC server, you will connect to\n"
+"    the repeater, e.g. with x11vnc:\n"
+"    x11vnc -connect repeater=ID:123456789+10.10.10.12:5500"
+msgstr ""
+"Konekti al VNC-servilo per ripetilo:\n"
+"  • La servila kampo devas enhavi la numeron de la ripetilo, ekz. "
+"ID:123456789\n"
+"  • La ripetila kampo devas esti la ripetilaj IP-adreso kaj pordo, ekz:\n"
+"  10.10.10.12:5901\n"
+"  • Konektu la foran VNC-servilon al la ripetilo, ekz. per x11vnc:\n"
+"  x11vnc -connect repeater=ID:123456789+10.10.10.12:5500"
+
+#: plugins/vnc/vnc_plugin.c:1941
+msgid "Repeater"
+msgstr "Ripetilo"
+
+#: plugins/vnc/vnc_plugin.c:1945 plugins/vnc/vnc_plugin.c:1965
+#: plugins/rdp/rdp_plugin.c:2607 plugins/nx/nx_plugin.c:733
+msgid "Quality"
+msgstr "Kvalito"
+
+#: plugins/vnc/vnc_plugin.c:1961
+msgid "Listen on port"
+msgstr "Aŭskulti al pordo"
+
+#: plugins/vnc/vnc_plugin.c:1981
+msgid "Show remote cursor"
+msgstr "Montri foran kursoron"
+
+#: plugins/vnc/vnc_plugin.c:1983 plugins/rdp/rdp_plugin.c:2641
+msgid "Turn off clipboard sync"
+msgstr "Malŝalti sinkronigon de tondujo"
+
+#: plugins/vnc/vnc_plugin.c:1984
 msgid "Turn off encryption"
-msgstr ""
+msgstr "Malŝalti ĉifradon"
 
-#: plugins/vnc/vnc_plugin.c:1922 plugins/vnc/vnc_plugin.c:1935
+#: plugins/vnc/vnc_plugin.c:1985 plugins/vnc/vnc_plugin.c:1999
 msgid "Prevent local interaction on the server"
-msgstr ""
+msgstr "Malhelpi lokan interagon ĉe la servilo"
 
-#: plugins/vnc/vnc_plugin.c:1937
+#: plugins/vnc/vnc_plugin.c:2001
 msgid "Open Chat…"
-msgstr ""
+msgstr "Malfermi Babililon…"
 
-#: plugins/vnc/vnc_plugin.c:1938 plugins/spice/spice_plugin.c:617
-#: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2599
+#: plugins/vnc/vnc_plugin.c:2002 plugins/spice/spice_plugin.c:707
+#: plugins/xdmcp/xdmcp_plugin.c:381 plugins/rdp/rdp_plugin.c:2670
 msgid "Send Ctrl+Alt+Delete"
-msgstr ""
+msgstr "Sendi Stir+Alt+Forig"
 
 #: plugins/vnc/vnc_plugin.h:41
 msgid "Remmina VNC Plugin"
-msgstr ""
+msgstr "VNC-Kromprogramo por Remmina"
 
 #: plugins/vnc/vnc_plugin.h:46
 msgid "Remmina VNC listener Plugin"
-msgstr ""
+msgstr "VNC-aŭskulta kromprogramo por Remmina"
 
-#: plugins/spice/spice_plugin_usb.c:51 plugins/spice/spice_plugin.c:618
+#: plugins/spice/spice_plugin_usb.c:51 plugins/spice/spice_plugin.c:708
 msgid "Select USB devices for redirection"
-msgstr ""
+msgstr "Elektu alidirektotajn USB-aparatojn"
 
 #: plugins/spice/spice_plugin_usb.c:54
 msgid "_Close"
-msgstr ""
+msgstr "_Fermi"
 
 #: plugins/spice/spice_plugin_usb.c:94
 msgid "USB redirection error"
-msgstr ""
+msgstr "Eraro pri USB-alidirektado"
 
-#: plugins/spice/spice_plugin.c:261
+#: plugins/spice/spice_plugin.c:351
 msgid "Enter SPICE password"
-msgstr ""
+msgstr "Entajpu pasvorton de SPICE"
 
-#: plugins/spice/spice_plugin.c:296
+#: plugins/spice/spice_plugin.c:386
 #, c-format
 msgid "Disconnected from the SPICE server “%s”."
-msgstr ""
+msgstr "Malkonektiĝis el SPICE-servilo “%s”."
 
-#: plugins/spice/spice_plugin.c:312
+#: plugins/spice/spice_plugin.c:402
 msgid "TLS connection error."
-msgstr ""
+msgstr "Eraro pri TLS-konekto."
 
-#: plugins/spice/spice_plugin.c:318
+#: plugins/spice/spice_plugin.c:408
 msgid "Connection to the SPICE server dropped."
-msgstr ""
+msgstr "Perdiĝis konekto al SPICE-servilo."
 
-#: plugins/spice/spice_plugin.c:526 plugins/spice/spice_plugin.c:544
+#: plugins/spice/spice_plugin.c:616 plugins/spice/spice_plugin.c:634
 #: plugins/xdmcp/xdmcp_plugin.c:348
 msgid "Default"
-msgstr ""
+msgstr "Aprioro"
 
-#: plugins/spice/spice_plugin.c:545 plugins/rdp/rdp_plugin.c:2418
-#: data/ui/remmina_preferences.glade:719
+#: plugins/spice/spice_plugin.c:635 plugins/rdp/rdp_plugin.c:2486
+#: data/ui/remmina_preferences.glade:720
 msgid "Off"
-msgstr ""
+msgstr "Malŝaltita"
 
-#: plugins/spice/spice_plugin.c:546
+#: plugins/spice/spice_plugin.c:636
 msgid "Auto GLZ"
-msgstr ""
+msgstr "Aŭtomata GLZ"
 
-#: plugins/spice/spice_plugin.c:547
+#: plugins/spice/spice_plugin.c:637
 msgid "Auto LZ"
-msgstr ""
+msgstr "Aŭtomata LZ"
 
-#: plugins/spice/spice_plugin.c:560
+#: plugins/spice/spice_plugin.c:650
 msgid "Disable video overlay if videos are not displayed properly.\n"
-msgstr ""
+msgstr "Malŝaltu video-surmeton se filmetoj ne montriĝas ĝuste.\n"
 
-#: plugins/spice/spice_plugin.c:577
+#: plugins/spice/spice_plugin.c:667
 msgid "Use TLS encryption"
-msgstr ""
+msgstr "Ŝalti TLS-ĉifradon"
 
-#: plugins/spice/spice_plugin.c:578
+#: plugins/spice/spice_plugin.c:668
 msgid "Server CA certificate"
-msgstr ""
+msgstr "Servila atestilo el atestila aŭtoritato"
 
-#: plugins/spice/spice_plugin.c:579 plugins/rdp/rdp_plugin.c:2524
+#: plugins/spice/spice_plugin.c:669 plugins/rdp/rdp_plugin.c:2592
 msgid "Share folder"
-msgstr ""
+msgstr "Kunhavigi dosierujon"
 
-#: plugins/spice/spice_plugin.c:596
+#: plugins/spice/spice_plugin.c:686
 msgid "Prefered video codec"
-msgstr ""
+msgstr "Preferata videa dosierformo"
 
-#: plugins/spice/spice_plugin.c:597
+#: plugins/spice/spice_plugin.c:687
 msgid "Turn off GStreamer overlay"
-msgstr ""
+msgstr "Malŝalti GStreamer-surmeton"
 
-#: plugins/spice/spice_plugin.c:600
+#: plugins/spice/spice_plugin.c:690
 msgid "Prefered image compression"
-msgstr ""
+msgstr "Preferata bilda dosierformo"
 
-#: plugins/spice/spice_plugin.c:603 plugins/spice/spice_plugin.c:616
-msgid "No clipboard sync"
-msgstr ""
-
-#: plugins/spice/spice_plugin.c:605
-msgid "Enable audio channel"
-msgstr ""
-
-#: plugins/spice/spice_plugin.c:606
+#: plugins/spice/spice_plugin.c:696
 msgid "Share smart card"
-msgstr ""
+msgstr "Kunhavigi saĝkarton"
 
-#: plugins/spice/spice_plugin.c:629
+#: plugins/spice/spice_plugin.c:719
 msgid "SPICE - Simple Protocol for Independent Computing Environments"
-msgstr ""
+msgstr "SPICE - Simpla Protokolo por Sendependaj Komputomedioj"
 
 #: plugins/spice/spice_plugin_file_transfer.c:82
 msgid "File Transfers"
-msgstr ""
+msgstr "Dosiertransigoj"
 
 #: plugins/spice/spice_plugin_file_transfer.c:219
 msgid "Transfer error"
-msgstr ""
+msgstr "Eraro pri transigo"
 
 #: plugins/spice/spice_plugin_file_transfer.c:220
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: plugins/spice/spice_plugin_file_transfer.c:223
 msgid "Transfer completed"
-msgstr ""
+msgstr "Transigo finiĝis"
 
 #: plugins/spice/spice_plugin_file_transfer.c:224
 #, c-format
 msgid "The %s file has been transferred"
-msgstr ""
+msgstr "La dosiero %s estis transigita"
 
 #: plugins/xdmcp/xdmcp_plugin.c:97
 msgid "Ran out of available local X display numbers."
-msgstr ""
+msgstr "Elĉerpiĝis disponeblaj lokaj X-ekrannumeroj."
 
 #: plugins/xdmcp/xdmcp_plugin.c:264 plugins/nx/nx_plugin.c:617
 #, c-format
 msgid ""
 "The protocol “%s” is unavailable because GtkSocket only works under X.Org."
 msgstr ""
+"La protokolo “%s” ne estas disponebla ĉar GtkSocket funkcias nur sub X.Org."
 
 #: plugins/xdmcp/xdmcp_plugin.c:349
 msgid "Grayscale"
-msgstr ""
+msgstr "Grizoskalo"
 
 #: plugins/xdmcp/xdmcp_plugin.c:350
 msgid "256 colours"
-msgstr ""
+msgstr "256 koloroj"
 
 #: plugins/xdmcp/xdmcp_plugin.c:351
 msgid "High colour (16 bit)"
-msgstr ""
+msgstr "Altkvalita koloro (16 bitoj bildere)"
 
 #: plugins/xdmcp/xdmcp_plugin.c:352
 msgid "True colour (24 bit)"
-msgstr ""
+msgstr "Vera koloro (24 bitoj bildere)"
 
 #: plugins/xdmcp/xdmcp_plugin.c:371 plugins/nx/nx_plugin.c:751
 msgid "Use local cursor"
-msgstr ""
+msgstr "Uzi lokan kursoron"
 
 #: plugins/xdmcp/xdmcp_plugin.c:372
 msgid "Disconnect after first session"
-msgstr ""
+msgstr "Malkonekti post la unua sesio"
 
 #: plugins/xdmcp/xdmcp_plugin.c:373
 msgid "Listen for TCP connections"
-msgstr ""
+msgstr "Aŭskulti pri TCP-konektoj"
 
 #: plugins/xdmcp/xdmcp_plugin.c:391
 msgid "XDMCP - X Remote Session"
-msgstr ""
+msgstr "XDMCP - Fora X-Sesio"
 
 #: plugins/st/st_plugin.c:238
 msgid "Terminal Emulator"
-msgstr ""
+msgstr "Terminalimitilo"
 
 #: plugins/st/st_plugin.c:239
 msgid "Command to be executed"
-msgstr ""
+msgstr "Rulota komando"
 
 #: plugins/st/st_plugin.c:254
 msgid "Detached window"
-msgstr ""
+msgstr "Malkroĉita fenestro"
 
 #: plugins/st/st_plugin_config.h:43
 msgid "Remmina simple terminal"
-msgstr ""
+msgstr "Simpla terminalo de Remmina"
 
-#: plugins/rdp/rdp_plugin.c:703 plugins/rdp/rdp_plugin.c:768
+#: plugins/rdp/rdp_plugin.c:738 plugins/rdp/rdp_plugin.c:803
 msgid "Enter RDP authentication credentials"
-msgstr ""
+msgstr "Entajpu akreditilojn de RDP-aŭtentikigo"
 
-#: plugins/rdp/rdp_plugin.c:776
+#: plugins/rdp/rdp_plugin.c:811
 msgid "Enter RDP gateway authentication credentials"
-msgstr ""
+msgstr "Entajpu akreditilojn de aŭtentikigo de RDP-kluzo"
 
-#: plugins/rdp/rdp_plugin.c:1936
+#: plugins/rdp/rdp_plugin.c:2004
 #, c-format
 msgid ""
 "Could not access the RDP server “%s”.\n"
 "Account locked out."
 msgstr ""
+"Ne povis atingi la RDP-servilon “%s”.\n"
+"Konto ŝlosita."
 
-#: plugins/rdp/rdp_plugin.c:1943
+#: plugins/rdp/rdp_plugin.c:2011
 #, c-format
 msgid ""
 "Could not access the RDP server “%s”.\n"
 "Account expired."
 msgstr ""
+"Ne povis atingi la RDP-servilon “%s”.\n"
+"Konto eksvalidiĝis."
 
-#: plugins/rdp/rdp_plugin.c:1950
+#: plugins/rdp/rdp_plugin.c:2018
 #, c-format
 msgid ""
 "Could not access the RDP server “%s”.\n"
 "Password expired."
 msgstr ""
+"Ne povis atingi la RDP-servilon “%s”.\n"
+"Pasvorto eksvalidiĝis."
 
-#: plugins/rdp/rdp_plugin.c:1957
+#: plugins/rdp/rdp_plugin.c:2025
 #, c-format
 msgid ""
 "Could not access the RDP server “%s”.\n"
 "Account disabled."
 msgstr ""
+"Ne povis atingi la RDP-servilon “%s”.\n"
+"Konto malaktiviĝis."
 
-#: plugins/rdp/rdp_plugin.c:1963
+#: plugins/rdp/rdp_plugin.c:2031
 #, c-format
 msgid ""
 "Could not access the RDP server “%s”.\n"
 "Insufficient user privileges."
 msgstr ""
+"Ne povis atingi la RDP-servilon “%s”.\n"
+"Nesufiĉaj privilegioj de uzanto."
 
-#: plugins/rdp/rdp_plugin.c:1971
+#: plugins/rdp/rdp_plugin.c:2039
 #, c-format
 msgid ""
 "Could not access the RDP server “%s”.\n"
 "Account restricted."
 msgstr ""
+"Ne povis atingi la RDP-servilon “%s”.\n"
+"Konto limigita."
 
-#: plugins/rdp/rdp_plugin.c:1979
+#: plugins/rdp/rdp_plugin.c:2047
 #, c-format
 msgid ""
 "Could not access the RDP server “%s”.\n"
 "Change user password before connecting."
 msgstr ""
+"Ne povis atingi la RDP-servilon “%s”.\n"
+"Ŝanĝu pasvorton de uzanto antaŭ konekto."
 
-#: plugins/rdp/rdp_plugin.c:1984
+#: plugins/rdp/rdp_plugin.c:2052
 #, c-format
 msgid "Lost connection to the RDP server “%s”."
-msgstr ""
+msgstr "Perdiĝis konekto al la RDP-servilo “%s”."
 
-#: plugins/rdp/rdp_plugin.c:1987
+#: plugins/rdp/rdp_plugin.c:2055
 #, c-format
 msgid "Could not find the address for the RDP server “%s”."
-msgstr ""
+msgstr "Ne povis trovi la adreson de la RDP-servilo “%s”."
 
-#: plugins/rdp/rdp_plugin.c:1991
+#: plugins/rdp/rdp_plugin.c:2059
 #, c-format
 msgid ""
 "Could not connect to the RDP server “%s” via TLS. Check that client and "
 "server support a common TLS version."
 msgstr ""
+"Ne povis konekti al la RDP-servilo “%s” per TLS. Kontrolu, ĉu la kliento kaj "
+"la servilo subtenas komunan TLS-version."
 
 #. TRANSLATORS: the placeholder may be either an IP/FQDN or a server hostname
-#: plugins/rdp/rdp_plugin.c:1995
+#: plugins/rdp/rdp_plugin.c:2063
 #, c-format
 msgid ""
 "Unable to establish a connection to the RDP server “%s”. Check \"Security "
 "protocol negotiation\"."
 msgstr ""
+"Ne povis konekti al la RDP-servilo “%s”. Kontrolu pri “Negocado de sekureca "
+"protokolo”."
 
-#: plugins/rdp/rdp_plugin.c:2003
+#: plugins/rdp/rdp_plugin.c:2071
 #, c-format
 msgid "Cannot connect to the RDP server “%s”."
-msgstr ""
+msgstr "Ne povis konekti al la RDP-servilo “%s”."
 
-#: plugins/rdp/rdp_plugin.c:2006
+#: plugins/rdp/rdp_plugin.c:2074
 msgid "Could not start libfreerdp-gdi."
-msgstr ""
+msgstr "Ne povis startigi libfreerdp-gdi."
 
-#: plugins/rdp/rdp_plugin.c:2009
+#: plugins/rdp/rdp_plugin.c:2077
 #, c-format
 msgid ""
 "You requested a H.264 GFX mode for the server “%s”, but your libfreerdp does "
 "not support H.264. Please use a non-AVC colour depth setting."
 msgstr ""
+"Vi petis efektreĝimon H.264 por la servilo “%s”, sed via libfreerdp ne "
+"subtenas H.264. Bonvolu uzi ne-AVC-koloran agordon."
 
-#: plugins/rdp/rdp_plugin.c:2016
+#: plugins/rdp/rdp_plugin.c:2084
 #, c-format
 msgid "The “%s” server refused the connection."
-msgstr ""
+msgstr "La servilo “%s” rifuzis la konekton."
 
-#: plugins/rdp/rdp_plugin.c:2021
+#: plugins/rdp/rdp_plugin.c:2089
 #, c-format
 msgid ""
 "The Remote Desktop Gateway “%s” denied the user \"%s\\%s\" access due to "
 "policy."
 msgstr ""
+"La Forakomputila Kluzo “%s” malpermesis la atingon de la uzanto “%s\\%s” pro "
+"reguloj."
 
-#: plugins/rdp/rdp_plugin.c:2031
+#: plugins/rdp/rdp_plugin.c:2099
 #, c-format
 msgid "Cannot connect to the “%s” RDP server."
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2363
-msgid "Automatic (32 bpp) (Server chooses its best format)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2364
-msgid "GFX AVC444 (32 bpp)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2365
-msgid "GFX AVC420 (32 bpp)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2366
-msgid "GFX RFX (32 bpp)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2367
-msgid "GFX RFX Progressive (32 bpp)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2368
-msgid "RemoteFX (32 bpp)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2370
-msgid "True colour (24 bpp)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2372
-msgid "High colour (15 bpp)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2404 data/ui/remmina_preferences.glade:682
-msgid "None"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2405
-msgid "Auto-detect"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2406
-msgid "Modem"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2407
-msgid "Low performance broadband"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2408
-msgid "Satellite"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2409
-msgid "High performance broadband"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2410
-msgid "WAN"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2411
-msgid "LAN"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2427
-msgid "Automatic negotiation"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2428
-msgid "NLA protocol security"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2429
-msgid "TLS protocol security"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2430
-msgid "RDP protocol security"
-msgstr ""
+msgstr "Ne povis konekti al la RDP-servilo “%s”."
 
 #: plugins/rdp/rdp_plugin.c:2431
-msgid "NLA extended protocol security"
-msgstr ""
+msgid "Automatic (32 bpp) (Server chooses its best format)"
+msgstr "Aŭtomate (32 bitoj bildere) (Servilo elektas laŭplaĉe)"
 
-#: plugins/rdp/rdp_plugin.c:2444
+#: plugins/rdp/rdp_plugin.c:2432
+msgid "GFX AVC444 (32 bpp)"
+msgstr "GFX AVC444 (32 bitoj bildere)"
+
+#: plugins/rdp/rdp_plugin.c:2433
+msgid "GFX AVC420 (32 bpp)"
+msgstr "GFX AVC420 (32 bitoj bildere)"
+
+#: plugins/rdp/rdp_plugin.c:2434
+msgid "GFX RFX (32 bpp)"
+msgstr "GFX RFX (32 bitoj bildere)"
+
+#: plugins/rdp/rdp_plugin.c:2435
+msgid "GFX RFX Progressive (32 bpp)"
+msgstr "GFX RFX Progresada (32 bitoj bildere)"
+
+#: plugins/rdp/rdp_plugin.c:2436
+msgid "RemoteFX (32 bpp)"
+msgstr "Vera koloro (32 bitoj bildere)"
+
+#: plugins/rdp/rdp_plugin.c:2438
+msgid "True colour (24 bpp)"
+msgstr "Vera koloro (24 bitoj bildere)"
+
+#: plugins/rdp/rdp_plugin.c:2440
+msgid "High colour (15 bpp)"
+msgstr "Altkvalita koloro (15 bitoj bildere)"
+
+#: plugins/rdp/rdp_plugin.c:2472 data/ui/remmina_preferences.glade:683
+msgid "None"
+msgstr "Nenio"
+
+#: plugins/rdp/rdp_plugin.c:2473
+msgid "Auto-detect"
+msgstr "Aŭtomate diveni"
+
+#: plugins/rdp/rdp_plugin.c:2474
+msgid "Modem"
+msgstr "Modemo"
+
+#: plugins/rdp/rdp_plugin.c:2475
+msgid "Low performance broadband"
+msgstr "Malbona larĝkapacita konekto"
+
+#: plugins/rdp/rdp_plugin.c:2476
+msgid "Satellite"
+msgstr "Satelito"
+
+#: plugins/rdp/rdp_plugin.c:2477
+msgid "High performance broadband"
+msgstr "Bona larĝkapacita konekto"
+
+#: plugins/rdp/rdp_plugin.c:2478
+msgid "WAN"
+msgstr "Malloka reto (WAN)"
+
+#: plugins/rdp/rdp_plugin.c:2479
+msgid "LAN"
+msgstr "Loka reto (LAN)"
+
+#: plugins/rdp/rdp_plugin.c:2495
+msgid "Automatic negotiation"
+msgstr "Aŭtomata negocado"
+
+#: plugins/rdp/rdp_plugin.c:2496
+msgid "NLA protocol security"
+msgstr "NLA-protokola sekureco"
+
+#: plugins/rdp/rdp_plugin.c:2497
+msgid "TLS protocol security"
+msgstr "TLS-protokola sekureco"
+
+#: plugins/rdp/rdp_plugin.c:2498
+msgid "RDP protocol security"
+msgstr "RDP-protokola sekureco"
+
+#: plugins/rdp/rdp_plugin.c:2499
+msgid "NLA extended protocol security"
+msgstr "NLA-etendita protokola sekureco"
+
+#: plugins/rdp/rdp_plugin.c:2512
 msgid "2600 (Windows XP), 7601 (Windows Vista/7), 9600 (Windows 8 and newer)"
 msgstr ""
+"2600 (Windows XP), 7601 (Windows Vista/7), 9600 (Windows 8 kaj pli novaj)"
 
-#: plugins/rdp/rdp_plugin.c:2447
+#: plugins/rdp/rdp_plugin.c:2515
 msgid ""
 "Used i.a. by terminal services in a smart card channel to distinguish client "
 "capabilities:\n"
@@ -2133,8 +2422,15 @@ msgid ""
 "  • >= 7065: Windows 8 and newer: SCardGetReaderIcon(),\n"
 "    SCardGetDeviceTypeId()"
 msgstr ""
+"Uzita i.a. de terminalaj servoj en saĝkarta kanalo por distingi klientajn "
+"kapablojn:\n"
+"  • < 4034: bazaj saĝkartaj funkcioj de Windows XP\n"
+"  • 4034-7064: Windows Vista/7: SCardReadCache(),\n"
+"    SCardWriteCache(), SCardGetTransmitCount()\n"
+"  • >= 7065: Windows 8 kaj pli novaj: SCardGetReaderIcon(),\n"
+"    SCardGetDeviceTypeId()"
 
-#: plugins/rdp/rdp_plugin.c:2455
+#: plugins/rdp/rdp_plugin.c:2523
 msgid ""
 "Options for redirection of audio input:\n"
 "  • [sys:<sys>,][dev:<dev>,][format:<format>,][rate:<rate>,]\n"
@@ -2144,8 +2440,15 @@ msgid ""
 "  • sys:oss,dev:1,format:1\n"
 "  • sys:alsa"
 msgstr ""
+"Opcioj pri alidirektado de sona enigo:\n"
+"  • [sys:<sistemo>,][dev:<aparato>,][format:<aranĝo>,][rate:<rapido>,]\n"
+"    [channel:<kanalo>] Sona enigo (mikrofono)\n"
+"  • sys:pulse\n"
+"  • format:1\n"
+"  • sys:oss,dev:1,format:1\n"
+"  • sys:alsa"
 
-#: plugins/rdp/rdp_plugin.c:2464
+#: plugins/rdp/rdp_plugin.c:2532
 msgid ""
 "Options for redirection of audio output:\n"
 "  • [sys:<sys>,][dev:<dev>,][format:<format>,][rate:<rate>,]\n"
@@ -2155,32 +2458,51 @@ msgid ""
 "  • sys:oss,dev:1,format:1\n"
 "  • sys:alsa"
 msgstr ""
+"Opcioj pri alidirektado de sona eligo:\n"
+"  • [sys:<sistemo>,][dev:<aparato>,][format:<aranĝo>,][rate:<rapido>,]\n"
+"    [channel:<kanalo>] Eligo de sono\n"
+"  • sys:pulse\n"
+"  • format:1\n"
+"  • sys:oss,dev:1,format:1\n"
+"  • sys:alsa"
 
-#: plugins/rdp/rdp_plugin.c:2474
+#: plugins/rdp/rdp_plugin.c:2542
 msgid ""
 "Options for redirection of USB device:\n"
 "  • [dbg,][id:<vid>:<pid>#…,][addr:<bus>:<addr>#…,][auto]\n"
 "  • auto\n"
 "  • id:054c:0268#4669:6e6b,addr:04:0c"
 msgstr ""
+"Opcioj pri alidirektado de USB-aparato:\n"
+"  • [dbg,][id:<vendistonumero>:<produktonumero>#…,][addr:<buso>:<adreso>#…,]"
+"[auto]\n"
+"  • auto\n"
+"  • id:054c:0268#4669:6e6b,addr:04:0c"
 
-#: plugins/rdp/rdp_plugin.c:2480
+#: plugins/rdp/rdp_plugin.c:2548
 msgid ""
 "Advanced setting for high latency links:\n"
 "Adjusts the connection timeout. Use if your connection times out.\n"
 "The highest possible value is 600000 ms (10 minutes).\n"
 msgstr ""
+"Altnivela agordo por longa respondotempo:\n"
+"Agordi la tempolimon de konekto. Uzu tion, se via konekto perdiĝadas pro "
+"tempolimo.\n"
+"La plej longa ebla valoro estas 600000 milisekundoj (10 minutoj).\n"
 
-#: plugins/rdp/rdp_plugin.c:2485
+#: plugins/rdp/rdp_plugin.c:2553
 msgid ""
 "Performance optimisations based on the network connection type:\n"
 "Using auto-detection is advised.\n"
 "If \"Auto-detect\" fails, choose the most appropriate option in the list.\n"
 msgstr ""
+"Optimumigo de rendimento bazita sur la tipo de reta konekto:\n"
+"Oni rekomendas uzi aŭtomatan divenon.\n"
+"Se “Aŭtomate diveni” malsukcesas, elektu la plej taŭgan opcion en la listo.\n"
 
-#: plugins/rdp/rdp_plugin.c:2490
+#: plugins/rdp/rdp_plugin.c:2558
 msgid ""
-"Comma separated list of monitor IDs and desktop orientations:\n"
+"Comma-separated list of monitor IDs and desktop orientations:\n"
 "  • [<id>:<orientation-in-degrees>,]\n"
 "  • 0,1,2,3\n"
 "  • 0:270,1:90\n"
@@ -2191,386 +2513,403 @@ msgid ""
 "  • 270 (portrait flipped)\n"
 "\n"
 msgstr ""
+"Kome disigita listo de identigiloj de monitoroj kaj ekranorientiĝoj:\n"
+"  • [<identigilo>:<orientiĝo-en-gradoj>,]\n"
+"  • 0,1,2,3\n"
+"  • 0:270,1:90\n"
+"Orientiĝoj specifiĝas en gradoj; jen validaj valoroj:\n"
+"  •   0 (horizontale)\n"
+"  •  90 (vertikale)\n"
+"  • 180 (horizontale renversite)\n"
+"  • 270 (vertikale renversite)\n"
+"\n"
 
-#: plugins/rdp/rdp_plugin.c:2517
+#: plugins/rdp/rdp_plugin.c:2585
 msgid "Left-handed mouse support"
-msgstr ""
+msgstr "Subteno de maldekstramanula muso"
 
-#: plugins/rdp/rdp_plugin.c:2517
+#: plugins/rdp/rdp_plugin.c:2585
 msgid "Swap left and right mouse buttons for left-handed mouse support"
 msgstr ""
+"Interŝanĝi dekstran kaj maldekstran musobutonojn por maldekstramanula muso"
 
-#: plugins/rdp/rdp_plugin.c:2518
+#: plugins/rdp/rdp_plugin.c:2586
 msgid "Enable multi monitor"
-msgstr ""
+msgstr "Ebligi plurmonitorecon"
 
-#: plugins/rdp/rdp_plugin.c:2519
+#: plugins/rdp/rdp_plugin.c:2587
 msgid "Span screen over multiple monitors"
-msgstr ""
+msgstr "Montri ekranon sur pluraj monitoroj"
 
-#: plugins/rdp/rdp_plugin.c:2520
-msgid "Monitor ID list"
-msgstr ""
+#: plugins/rdp/rdp_plugin.c:2588
+msgid "List monitor IDs"
+msgstr "Listo de identigiloj de monitoroj"
 
-#: plugins/rdp/rdp_plugin.c:2523
+#: plugins/rdp/rdp_plugin.c:2591
 msgid "Network connection type"
-msgstr ""
+msgstr "Tipo de reta konekto"
 
-#: plugins/rdp/rdp_plugin.c:2540
+#: plugins/rdp/rdp_plugin.c:2608
 msgid "Security protocol negotiation"
-msgstr ""
+msgstr "Negocado de sekureca protokolo"
 
-#: plugins/rdp/rdp_plugin.c:2541
+#: plugins/rdp/rdp_plugin.c:2609
 msgid "Gateway transport type"
-msgstr ""
+msgstr "Tipo de kluza transporto"
 
-#: plugins/rdp/rdp_plugin.c:2542
+#: plugins/rdp/rdp_plugin.c:2610
 msgid "FreeRDP log level"
-msgstr ""
+msgstr "Nivelo de protokolado por FreeRDP"
 
-#: plugins/rdp/rdp_plugin.c:2543
+#: plugins/rdp/rdp_plugin.c:2611
 msgid "FreeRDP log filters"
-msgstr ""
+msgstr "Protokolfiltrilo de FreeRDP"
 
-#: plugins/rdp/rdp_plugin.c:2543
+#: plugins/rdp/rdp_plugin.c:2611
 msgid "tag:level[,tag:level[,…]]"
-msgstr ""
+msgstr "etikedo:nivelo[,etikedo:nivelo[,…]]"
 
-#: plugins/rdp/rdp_plugin.c:2544
+#: plugins/rdp/rdp_plugin.c:2612
 msgid "Audio output mode"
-msgstr ""
+msgstr "Reĝimo de sona eligo"
 
-#: plugins/rdp/rdp_plugin.c:2545
+#: plugins/rdp/rdp_plugin.c:2613
 msgid "Redirect local audio output"
-msgstr ""
+msgstr "Alidirekti lokan sonan eligon"
 
-#: plugins/rdp/rdp_plugin.c:2546
+#: plugins/rdp/rdp_plugin.c:2614
 msgid "Redirect local microphone"
-msgstr ""
+msgstr "Alidirekti lokan mikrofonon"
 
-#: plugins/rdp/rdp_plugin.c:2547
+#: plugins/rdp/rdp_plugin.c:2615
 msgid "Connection timeout in ms"
-msgstr ""
+msgstr "Tempolimo de konekto en milisekundoj"
 
-#: plugins/rdp/rdp_plugin.c:2548
+#: plugins/rdp/rdp_plugin.c:2616
 msgid "Remote Desktop Gateway server"
-msgstr ""
+msgstr "Servilo de Forakomputila Kluzo"
 
-#: plugins/rdp/rdp_plugin.c:2549
+#: plugins/rdp/rdp_plugin.c:2617
 msgid "Remote Desktop Gateway username"
-msgstr ""
+msgstr "Salutnomo de Forakomputila Kluzo"
 
-#: plugins/rdp/rdp_plugin.c:2550
+#: plugins/rdp/rdp_plugin.c:2618
 msgid "Remote Desktop Gateway password"
-msgstr ""
+msgstr "Pasvorto de Forakomputila Kluzo"
 
-#: plugins/rdp/rdp_plugin.c:2551
+#: plugins/rdp/rdp_plugin.c:2619
 msgid "Remote Desktop Gateway domain"
-msgstr ""
+msgstr "Reteja adreso de Forakomputila Kluzo"
 
-#: plugins/rdp/rdp_plugin.c:2552
+#: plugins/rdp/rdp_plugin.c:2620
 msgid "Client name"
-msgstr ""
+msgstr "Klienta nomo"
 
-#: plugins/rdp/rdp_plugin.c:2553
+#: plugins/rdp/rdp_plugin.c:2621
 msgid "Client build"
-msgstr ""
+msgstr "Versio de kliento"
 
-#: plugins/rdp/rdp_plugin.c:2556
+#: plugins/rdp/rdp_plugin.c:2624
 msgid "Load balance info"
-msgstr ""
+msgstr "Informo pri ŝarĝodistribuado"
 
-#: plugins/rdp/rdp_plugin.c:2557
+#: plugins/rdp/rdp_plugin.c:2625
 msgid "Override printer drivers"
-msgstr ""
+msgstr "Anstataŭigi presilajn pelilojn"
 
-#: plugins/rdp/rdp_plugin.c:2557
+#: plugins/rdp/rdp_plugin.c:2625
 msgid ""
 "\"Samsung_CLX-3300_Series\":\"Samsung CLX-3300 Series PS\";\"Canon MF410\":"
 "\"Canon MF410 Series UFR II\""
 msgstr ""
+"\"Samsung_CLX-3300_Series\":\"Samsung CLX-3300 Series PS\";\"Canon MF410\":"
+"\"Canon MF410 Series UFR II\""
 
-#: plugins/rdp/rdp_plugin.c:2558
+#: plugins/rdp/rdp_plugin.c:2626
 msgid "USB device redirection"
-msgstr ""
+msgstr "Alidirektado de USB-aparato"
 
-#: plugins/rdp/rdp_plugin.c:2559
+#: plugins/rdp/rdp_plugin.c:2627
 msgid "Local serial name"
-msgstr ""
+msgstr "Nomo de loka seria konektejo"
 
-#: plugins/rdp/rdp_plugin.c:2559
+#: plugins/rdp/rdp_plugin.c:2627
 msgid "COM1, COM2, etc."
-msgstr ""
+msgstr "COM1, COM2, ktp."
 
-#: plugins/rdp/rdp_plugin.c:2560
+#: plugins/rdp/rdp_plugin.c:2628
 msgid "Local serial driver"
-msgstr ""
+msgstr "Pelilo de loka seria konektejo"
 
-#: plugins/rdp/rdp_plugin.c:2560
+#: plugins/rdp/rdp_plugin.c:2628
 msgid "Serial"
-msgstr ""
+msgstr "Seria konektejo"
 
-#: plugins/rdp/rdp_plugin.c:2561
+#: plugins/rdp/rdp_plugin.c:2629
 msgid "Local serial path"
-msgstr ""
+msgstr "Dosierindiko de loka seria konektejo"
 
-#: plugins/rdp/rdp_plugin.c:2561
+#: plugins/rdp/rdp_plugin.c:2629
 msgid "/dev/ttyS0, /dev/ttyS1, etc."
-msgstr ""
+msgstr "/dev/ttyS0, /dev/ttyS1, ktp."
 
-#: plugins/rdp/rdp_plugin.c:2562
+#: plugins/rdp/rdp_plugin.c:2630
 msgid "Local parallel name"
-msgstr ""
+msgstr "Loka paralela nomo"
 
-#: plugins/rdp/rdp_plugin.c:2563
+#: plugins/rdp/rdp_plugin.c:2631
 msgid "Local parallel device"
-msgstr ""
+msgstr "Loka paralela aparato"
 
-#: plugins/rdp/rdp_plugin.c:2564
+#: plugins/rdp/rdp_plugin.c:2632
 msgid "Name of smart card"
-msgstr ""
+msgstr "Nomo de saĝkarto"
 
-#: plugins/rdp/rdp_plugin.c:2565
+#: plugins/rdp/rdp_plugin.c:2633
 msgid "Dynamic virtual channel"
-msgstr ""
+msgstr "Dinamika virtuala kanalo"
 
-#: plugins/rdp/rdp_plugin.c:2565 plugins/rdp/rdp_plugin.c:2566
+#: plugins/rdp/rdp_plugin.c:2633 plugins/rdp/rdp_plugin.c:2634
 msgid "<channel>[,<options>]"
-msgstr ""
+msgstr "<kanalo>[,<opcioj>]"
 
-#: plugins/rdp/rdp_plugin.c:2566
+#: plugins/rdp/rdp_plugin.c:2634
 msgid "Static virtual channel"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2567
-msgid "Prefer IPv6 AAAA record over IPv4 A record"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2568
-msgid "Share printers"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2569
-msgid "Share serial ports"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2570
-msgid "(SELinux) permissive mode for serial ports"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2571
-msgid "Share parallel ports"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2572
-msgid "Share a smart card"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2574
-msgid "Ignore certificate"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2575
-msgid "Use the old license workflow"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2575
-msgid "It disables CAL and hwId is set to 0"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2577
-msgid "Attach to console (2003/2003 R2)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2578
-msgid "Turn off fast-path"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2579
-msgid "Server detection using Remote Desktop Gateway"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2581
-msgid "Use system proxy settings"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2583
-msgid "Turn off automatic reconnection"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2584
-msgid "Relax order checks"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2585
-msgid "Glyph cache"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2586
-msgid "Enable multitransport protocol (UDP)"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2586
-msgid "Using the UDP protocol may improve performance"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2587
-msgid "Use base credentials for gateway too"
-msgstr ""
-
-#: plugins/rdp/rdp_plugin.c:2612
-msgid "RDP - Remote Desktop Protocol"
-msgstr ""
+msgstr "Statika virtuala kanalo"
 
 #: plugins/rdp/rdp_plugin.c:2635
+msgid "Prefer IPv6 AAAA record over IPv4 A record"
+msgstr "Preferi AAAA-rikordon de IPv6 ol A-rikordon de IPv4"
+
+#: plugins/rdp/rdp_plugin.c:2636
+msgid "Share printers"
+msgstr "Kunhavigi presilojn"
+
+#: plugins/rdp/rdp_plugin.c:2637
+msgid "Share serial ports"
+msgstr "Kunhavigi seriajn konektejojn"
+
+#: plugins/rdp/rdp_plugin.c:2638
+msgid "(SELinux) permissive mode for serial ports"
+msgstr "(SELinux) permesema reĝimo pri seriaj konektejoj"
+
+#: plugins/rdp/rdp_plugin.c:2639
+msgid "Share parallel ports"
+msgstr "Kunhavigi palalelajn konektejojn"
+
+#: plugins/rdp/rdp_plugin.c:2640
+msgid "Share a smart card"
+msgstr "Kunhavigi saĝkarton"
+
+#: plugins/rdp/rdp_plugin.c:2642
+msgid "Ignore certificate"
+msgstr "Ignori atestilon"
+
+#: plugins/rdp/rdp_plugin.c:2643
+msgid "Use the old license workflow"
+msgstr "Uzi la malnovan laborfluon pri permesilo"
+
+#: plugins/rdp/rdp_plugin.c:2643
+msgid "It disables CAL and hwId is set to 0"
+msgstr "Tio malŝaltas CAL kaj igas ke hwId estos 0"
+
+#: plugins/rdp/rdp_plugin.c:2645
+msgid "Attach to console (2003/2003 R2)"
+msgstr "Alkroĉi al konzolo (2003/2003 R2)"
+
+#: plugins/rdp/rdp_plugin.c:2646
+msgid "Turn off fast-path"
+msgstr "Malŝalti rapidan vojon"
+
+#: plugins/rdp/rdp_plugin.c:2647
+msgid "Server detection using Remote Desktop Gateway"
+msgstr "Servilo-trovado per Forakomputila Kluzo"
+
+#: plugins/rdp/rdp_plugin.c:2649
+msgid "Use system proxy settings"
+msgstr "Uzi sistemajn agordojn pri prokurilo"
+
+#: plugins/rdp/rdp_plugin.c:2651
+msgid "Turn off automatic reconnection"
+msgstr "Malŝalti aŭtomatan rekonektadon"
+
+#: plugins/rdp/rdp_plugin.c:2652
+msgid "Relax order checks"
+msgstr "Malŝalti striktan kontrolon de ordo"
+
+#: plugins/rdp/rdp_plugin.c:2653
+msgid "Glyph cache"
+msgstr "Staplo de signobildoj"
+
+#: plugins/rdp/rdp_plugin.c:2654
+msgid "Enable multitransport protocol (UDP)"
+msgstr "Ŝalti plurtransportan protokolon (UDP)"
+
+#: plugins/rdp/rdp_plugin.c:2654
+msgid "Using the UDP protocol may improve performance"
+msgstr "Uzo de la protokolo UDP povas plibonigi rendimenton"
+
+#: plugins/rdp/rdp_plugin.c:2655
+msgid "Use base credentials for gateway too"
+msgstr "Uzi bazajn akreditilojn ankaŭ por kluzo"
+
+#: plugins/rdp/rdp_plugin.c:2657
+msgid "Enable Gateway websockets support"
+msgstr ""
+
+#: plugins/rdp/rdp_plugin.c:2683
+msgid "RDP - Remote Desktop Protocol"
+msgstr "RDP - Forakomputila Protokolo"
+
+#: plugins/rdp/rdp_plugin.c:2708
 msgid "RDP - RDP File Handler"
-msgstr ""
+msgstr "RDP - Dosiertraktilo de RDP"
 
-#: plugins/rdp/rdp_plugin.c:2650
+#: plugins/rdp/rdp_plugin.c:2723
 msgid "RDP - Preferences"
-msgstr ""
+msgstr "RDP - Preferoj"
 
-#: plugins/rdp/rdp_plugin.c:2703
+#: plugins/rdp/rdp_plugin.c:2776
 msgid "Export connection in Windows .rdp file format"
-msgstr ""
+msgstr "Elporti konekton laŭ dosierformo .rdp de Windows"
 
 #: plugins/rdp/rdp_settings.c:200
 msgid "<Auto-detect>"
-msgstr ""
+msgstr "<Aŭtomata diveno>"
 
 #: plugins/rdp/rdp_settings.c:232
 msgid "<Not set>"
-msgstr ""
+msgstr "<Ne agordita>"
 
 #: plugins/rdp/rdp_settings.c:265
 msgid "<Choose a quality level to edit…>"
-msgstr ""
+msgstr "<Elektu redaktotan kvalitonivelon…>"
 
 #: plugins/rdp/rdp_settings.c:416
 msgid "Keyboard layout"
-msgstr ""
+msgstr "Klavarfasono"
 
 #: plugins/rdp/rdp_settings.c:441
 msgid "Use client keyboard mapping"
-msgstr ""
+msgstr "Uzi klientan klavarmapon"
 
 #: plugins/rdp/rdp_settings.c:451
 msgid "Quality settings"
-msgstr ""
+msgstr "Agordoj pri kvalito"
 
 #: plugins/rdp/rdp_settings.c:471
 msgid "Wallpaper"
-msgstr ""
+msgstr "Ekranfono"
 
 #: plugins/rdp/rdp_settings.c:478
 msgid "Window drag"
-msgstr ""
+msgstr "Treno de fenestro"
 
 #: plugins/rdp/rdp_settings.c:485
 msgid "Menu animation"
-msgstr ""
+msgstr "Moviĝo de menuo"
 
 #: plugins/rdp/rdp_settings.c:492
 msgid "Theme"
-msgstr ""
+msgstr "Etoso"
 
 #: plugins/rdp/rdp_settings.c:499
 msgid "Cursor shadow"
-msgstr ""
+msgstr "Kursora ombro"
 
 #: plugins/rdp/rdp_settings.c:506
 msgid "Cursor blinking"
-msgstr ""
+msgstr "Kursorblinkado"
 
 #: plugins/rdp/rdp_settings.c:513
 msgid "Font smoothing"
-msgstr ""
+msgstr "Glatigo de tiparo"
 
 #: plugins/rdp/rdp_settings.c:520
 msgid "Composition"
-msgstr ""
+msgstr "Kunmeto"
 
 #: plugins/rdp/rdp_settings.c:530
 msgid "Remote scale factor"
-msgstr ""
+msgstr "Fora skalfaktoro"
 
 #: plugins/rdp/rdp_settings.c:543
 msgid "Desktop scale factor %"
-msgstr ""
+msgstr "Ekrana skalfaktoro %"
 
 #: plugins/rdp/rdp_settings.c:554
 msgid "Device scale factor %"
-msgstr ""
+msgstr "Aparata skalfaktoro %"
 
 #: plugins/rdp/rdp_settings.c:576
 msgid "Desktop orientation"
-msgstr ""
+msgstr "Ekranorientiĝo"
 
-#: plugins/rdp/rdp_event.c:332
+#: plugins/rdp/rdp_event.c:343
 #, c-format
 msgid "Reconnection attempt %d of %d…"
-msgstr ""
+msgstr "Rekonekto-provo n-ro %d el %d…"
 
 #: plugins/nx/nx_session_manager.c:98
 msgid "Terminating…"
-msgstr ""
+msgstr "Haltigante…"
 
 #: plugins/nx/nx_session_manager.c:143
 #, c-format
 msgid "NX sessions on %s"
-msgstr ""
+msgstr "NX-sesioj ĉe %s"
 
 #: plugins/nx/nx_session_manager.c:147
 msgid "Attach"
-msgstr ""
+msgstr "Alkroĉi"
 
 #: plugins/nx/nx_session_manager.c:151
 msgid "Restore"
-msgstr ""
+msgstr "Restaŭri"
 
 #: plugins/nx/nx_session_manager.c:152
 msgid "Start"
-msgstr ""
+msgstr "Startigi"
 
 #: plugins/nx/nx_session_manager.c:158
 msgid "Terminate"
-msgstr ""
+msgstr "Haltigi"
 
 #: plugins/nx/nx_session_manager.c:190
 msgid "Display"
-msgstr ""
+msgstr "Montrejo"
 
 #: plugins/nx/nx_session_manager.c:197
 msgid "Status"
-msgstr ""
+msgstr "Stato"
 
 #: plugins/nx/nx_plugin.c:206
 msgid "Password for private SSH key"
-msgstr ""
+msgstr "Pasvorto por privata SSH-ŝlosilo"
 
 #: plugins/nx/nx_plugin.c:376
 msgid "Enter NX authentication credentials"
-msgstr ""
+msgstr "Entajpu akreditilojn de NX-aŭtentikigo"
 
 #: plugins/nx/nx_plugin.c:749
 msgid "Disable clipboard sync"
-msgstr ""
+msgstr "Malŝalti sinkronigon de tondujo"
 
 #: plugins/nx/nx_plugin.c:750
 msgid "Disable encryption"
-msgstr ""
+msgstr "Malŝalti ĉifradon"
 
 #: plugins/nx/nx_plugin.c:760
 msgid "Send Ctrl+Alt+Del"
-msgstr ""
+msgstr "Sendi Stir+Alt+Forig"
 
 #: plugins/nx/nx_plugin.c:770
 msgid "NX - NX Technology"
-msgstr ""
+msgstr "NX - NX-Tekniko"
 
 #: plugins/kwallet/src/kwallet_plugin_main.c:118
 msgid "Secured password storage in KWallet"
-msgstr ""
+msgstr "Sekura konservado de pasvortoj per KWallet"
 
 #: plugins/telepathy/telepathy_channel_handler.c:237
 #, c-format
@@ -2578,46 +2917,48 @@ msgid ""
 "%s wants to share their desktop.\n"
 "Do you accept?"
 msgstr ""
+"%s volas kunhavigi sian ekranon.\n"
+"Ĉu vi akceptas?"
 
 #: plugins/telepathy/telepathy_channel_handler.c:240
 msgid "Desktop sharing invitation"
-msgstr ""
+msgstr "Invito por kunhavigi ekranon"
 
 #: plugins/telepathy/telepathy_plugin.c:57
 msgid "Telepathy - Desktop Sharing"
-msgstr ""
+msgstr "Telepathy - Kunhavigo de Ekrano"
 
 #: data/ui/remmina_search.glade:61 data/ui/remmina_search_popover.glade:56
 msgid "Search"
-msgstr ""
+msgstr "Serĉi"
 
 #: data/ui/remmina_search.glade:75 data/ui/remmina_search_popover.glade:70
 msgid "Search for previous occurrence"
-msgstr ""
+msgstr "Serĉi la antaŭan aperon"
 
 #: data/ui/remmina_search.glade:98 data/ui/remmina_search_popover.glade:93
 msgid "Search for next occurrence"
-msgstr ""
+msgstr "Serĉi la venontan aperon"
 
 #: data/ui/remmina_search.glade:130 data/ui/remmina_search_popover.glade:125
 msgid "Toggle search options"
-msgstr ""
+msgstr "Baskuligi opciojn pri serĉado"
 
 #: data/ui/remmina_search.glade:191 data/ui/remmina_search_popover.glade:186
 msgid "_Match case"
-msgstr ""
+msgstr "_Uskleca kongruo"
 
 #: data/ui/remmina_search.glade:208 data/ui/remmina_search_popover.glade:203
 msgid "Match _entire word only"
-msgstr ""
+msgstr "Kongruo de nur _tutaj vortoj"
 
 #: data/ui/remmina_search.glade:225 data/ui/remmina_search_popover.glade:220
 msgid "Match as _regular expression"
-msgstr ""
+msgstr "Kongruo laŭ _regula esprimo"
 
 #: data/ui/remmina_search.glade:242 data/ui/remmina_search_popover.glade:237
 msgid "_Wrap around"
-msgstr ""
+msgstr "Ĉ_irkaŭfluo"
 
 #: data/ui/remmina_snap_info_dialog.glade:71
 msgid ""
@@ -2628,6 +2969,12 @@ msgid ""
 "Some Remmina functions need to be set up to work properly.\n"
 "</span>\n"
 msgstr ""
+"<big><b>Snap-pako de Remmina</b></big>\n"
+"\n"
+"<span>\n"
+"Remmina funkcias en via sistemo kiel Snap-pako.\n"
+"Kelkaj funkcioj de Remmina estas agordendaj por ĝusta funkciado.\n"
+"</span>\n"
 
 #: data/ui/remmina_snap_info_dialog.glade:120
 msgid ""
@@ -2636,10 +2983,14 @@ msgid ""
 "the appropriate permissions to Remmina. As an alternative you can enter the "
 "following commands in a terminal window:"
 msgstr ""
+"Por ebligi kelkajn gravajn funkciojn, kiel konservadon de pasvortoj en vian "
+"ŝlosilaron kaj kunhavigon de RDP-presiloj, bonvolu malfermi vian "
+"aplikaĵvendejon kaj doni la taŭgajn permesojn al Remmina. Alternative vi "
+"povas terminale ruli la jenajn komandojn:"
 
 #: data/ui/remmina_snap_info_dialog.glade:167
 msgid "<big>Permissions</big>"
-msgstr ""
+msgstr "<big>Permesoj</big>"
 
 #: data/ui/remmina_snap_info_dialog.glade:202
 msgid ""
@@ -2647,22 +2998,25 @@ msgid ""
 "profiles are saved inside the Snap file system by default. You can change "
 "the location in the Remmina preferences."
 msgstr ""
+"Ĉar Snap-pakoj estas limigitaj disde la cetero de la sistemo, Remmina-"
+"profiloj estas apriore konservitaj ene de la Snap-dosiersistemo. Vi povas "
+"ŝanĝi la lokon ĉe la preferoj de Remmina."
 
 #: data/ui/remmina_snap_info_dialog.glade:222
 msgid "Change where Remmina profiles are stored"
-msgstr ""
+msgstr "Ŝanĝi la lokon, kie konserviĝas profiloj de Remmina"
 
 #: data/ui/remmina_snap_info_dialog.glade:261
 msgid "<big>Snap settings</big>"
-msgstr ""
+msgstr "<big>Agordoj pri Snap</big>"
 
 #: data/ui/remmina_snap_info_dialog.glade:274
 msgid "Do not show this message again"
-msgstr ""
+msgstr "Ne montru ĉi tiun mesaĝon denove"
 
-#: data/ui/remmina_about.glade:30 data/ui/remmina_main.glade:402
+#: data/ui/remmina_about.glade:30 data/ui/remmina_main.glade:395
 msgid "About"
-msgstr ""
+msgstr "Pri"
 
 #: data/ui/remmina_about.glade:34
 msgid ""
@@ -2672,146 +3026,137 @@ msgid ""
 "More details in COPYING\n"
 "    "
 msgstr ""
+"\n"
+"Kopirajtoj © 2014–2021 Antenore Gatta, Giovanni Panozzo.\n"
+"Kopirajtoj © 2009–2014 Vic Lee\n"
+"Pliaj detaloj en COPYING\n"
+"    "
 
 #: data/ui/remmina_about.glade:40
 msgid "Website"
-msgstr ""
+msgstr "Retejo"
 
 #: data/ui/remmina_main.glade:35
 msgid "Hide or show the search bar"
-msgstr ""
+msgstr "Kaŝi aŭ montri la serĉobreton"
 
 #: data/ui/remmina_main.glade:41
 msgid "Add a new connection profile"
-msgstr ""
+msgstr "Aldoni novan konektoprofilon"
 
 #: data/ui/remmina_main.glade:47
-msgid "Show the Remmina changelog."
-msgstr ""
-
-#: data/ui/remmina_main.glade:53
 msgid "Switch from grouped to list view"
-msgstr ""
+msgstr "Ŝanĝi de grupa vido al lista vido"
 
-#: data/ui/remmina_main.glade:85
+#: data/ui/remmina_main.glade:79
 msgid "Select the protocol to use with the quick connect bar."
-msgstr ""
+msgstr "Elektu la protokolon uzotan por la rapidkonekta breto."
 
-#: data/ui/remmina_main.glade:103
+#: data/ui/remmina_main.glade:97
 msgid "Search string or server name/IP address for “Quick Connect”"
-msgstr ""
+msgstr "Serĉi tekston aŭ servilan nomon/IP-adreson por “Rapida Konekto”"
 
-#: data/ui/remmina_main.glade:107 data/ui/remmina_main.glade:109
+#: data/ui/remmina_main.glade:101 data/ui/remmina_main.glade:103
 msgid "Server name or IP address"
-msgstr ""
+msgstr "Nomo de servilo aŭ IP-adreso"
 
-#: data/ui/remmina_main.glade:108 data/ui/remmina_main.glade:110
+#: data/ui/remmina_main.glade:102 data/ui/remmina_main.glade:104
 #: data/ui/remmina_preferences.glade:216
 msgid "Clear"
-msgstr ""
+msgstr "Malplenigi"
 
-#: data/ui/remmina_main.glade:193
+#: data/ui/remmina_main.glade:187
 msgid "Edit"
-msgstr ""
+msgstr "Redakti"
 
-#: data/ui/remmina_main.glade:223
+#: data/ui/remmina_main.glade:217
 msgid "Collapse all"
-msgstr ""
+msgstr "Maletendi ĉion"
 
-#: data/ui/remmina_main.glade:233
+#: data/ui/remmina_main.glade:227
 msgid "Expand all"
-msgstr ""
+msgstr "Etendi ĉion"
 
-#: data/ui/remmina_main.glade:271
+#: data/ui/remmina_main.glade:265
 msgid "Multi password changer"
-msgstr ""
+msgstr "Plurpasvortoŝanĝilo"
 
-#: data/ui/remmina_main.glade:281
+#: data/ui/remmina_main.glade:275
 msgid "Debugging"
-msgstr ""
+msgstr "Sencimigo"
 
-#: data/ui/remmina_main.glade:301
+#: data/ui/remmina_main.glade:295
 msgid "Export"
-msgstr ""
+msgstr "Elporti"
 
-#: data/ui/remmina_main.glade:311
-msgid "News"
-msgstr ""
-
-#: data/ui/remmina_main.glade:321
+#: data/ui/remmina_main.glade:322
 msgid "Make Remmina your default remote desktop client"
-msgstr ""
+msgstr "Igi Remmina via implicita forakomputila kliento"
+
+#: data/ui/remmina_main.glade:338
+msgid "News"
+msgstr "Novaĵoj"
 
 #: data/ui/remmina_main.glade:348
 msgid "Homepage"
-msgstr ""
+msgstr "Ĉefretejo"
 
 #: data/ui/remmina_main.glade:358
 msgid "Donations"
-msgstr ""
+msgstr "Donacoj"
 
 #: data/ui/remmina_main.glade:368
 msgid "Wiki"
-msgstr ""
+msgstr "Vikio"
 
 #. Remmina community website
 #: data/ui/remmina_main.glade:378
 msgid "Community"
-msgstr ""
+msgstr "Komunumo"
 
-#: data/ui/remmina_main.glade:499
+#: data/ui/remmina_main.glade:492
 msgid "Plugin"
-msgstr ""
+msgstr "Kromprogramo"
 
-#: data/ui/remmina_main.glade:513
+#: data/ui/remmina_main.glade:506
 msgid "Last used"
-msgstr ""
+msgstr "Laste uzita"
 
-#: data/ui/remmina_main.glade:554
-msgid "Remote Desktop Client"
-msgstr ""
-
-#: data/ui/remmina_main.glade:562
+#: data/ui/remmina_main.glade:555
 msgid "New connection profile"
-msgstr ""
+msgstr "Nova konektoprofilo"
 
-#: data/ui/remmina_main.glade:574
+#: data/ui/remmina_main.glade:567
 msgid "Show search bar"
-msgstr ""
+msgstr "Montri serĉobreton"
 
-#: data/ui/remmina_main.glade:607
+#: data/ui/remmina_main.glade:587
 msgid "Remmina main menu"
-msgstr ""
+msgstr "Ĉefmenuo de Remmina"
 
-#: data/ui/remmina_main.glade:614
+#: data/ui/remmina_main.glade:594
 msgid "Actions"
-msgstr ""
+msgstr "Agoj"
 
-#: data/ui/remmina_main.glade:629
+#: data/ui/remmina_main.glade:609
 msgid "Toggle view"
-msgstr ""
-
-#: data/ui/remmina_main.glade:642 data/ui/remmina_preferences.glade:765
-msgid ""
-"If a GTK theme includes a dark variant, it will be used instead of the "
-"configured theme."
-msgstr ""
+msgstr "Baskuligi vidon"
 
 #: data/ui/remmina_unlock.glade:60
 msgid "Unlock"
-msgstr ""
+msgstr "Malŝlosi"
 
 #: data/ui/remmina_unlock.glade:94
 msgid "Unlock Remmina"
-msgstr ""
+msgstr "Malŝlosu Remmina"
 
-#: data/ui/remmina_unlock.glade:128 data/ui/remmina_preferences.glade:1585
+#: data/ui/remmina_unlock.glade:128 data/ui/remmina_preferences.glade:1586
 msgid "Master password"
-msgstr ""
+msgstr "Ĉefpasvorto"
 
 #: data/ui/remmina_spinner.glade:54
 msgid "Please wait…"
-msgstr ""
+msgstr "Bonvolu atendi…"
 
 #: data/ui/remmina_news.glade:75
 msgid ""
@@ -2831,49 +3176,72 @@ msgid ""
 "release notes\"><i>Visit the website to read the release notes</i></a>.\n"
 "</span>"
 msgstr ""
+"<big><b>La novaĵoj estas malŝaltitaj</b></big>\n"
+"\n"
+"<span>\n"
+"Ŝalto de novaĵoj kaŭzas, ke la programo konektos al Remmina-servilo por "
+"elŝuti la liverajn notojn.\n"
+"</span>\n"
+"\n"
+"<span>\n"
+"Versio-kontrolado estas nur ŝaltebla dum tradukado.\n"
+"</span>\n"
+"\n"
+"<span>\n"
+"<a href=\"https://gitlab.com/Remmina/Remmina/-/tags/\" title=\"Liveraj notoj "
+"pri Remmina\"><i>Vizitu la retejon por legi la liverajn notojn.</i></a>\n"
+"</span>"
 
 #. The star (*) is a reference to privacy consent
-#: data/ui/remmina_news.glade:130 data/ui/remmina_preferences.glade:544
+#: data/ui/remmina_news.glade:130 data/ui/remmina_preferences.glade:545
 msgid ""
 "Send <b><a href=\"https://remmina.gitlab.io/remminadoc.gitlab.io/"
 "remmina__stats_8c.html#details\" title=\"Remmina usage statistics"
 "\">anonymous</a></b> statistics. (*)"
 msgstr ""
+"Sendi <b><a href=\"https://remmina.gitlab.io/remminadoc.gitlab.io/"
+"remmina__stats_8c.html#details\" title=\"Statistikoj pri uzado de Remmina"
+"\">anonimajn</a></b> statistikojn. (*)"
 
 #: data/ui/remmina_news.glade:142 data/ui/remmina_news.glade:195
 msgid "Send anonymous statistics"
-msgstr ""
+msgstr "Sendi anonimajn statistikojn"
 
 #: data/ui/remmina_news.glade:156
 msgid "Use as default remote desktop client"
-msgstr ""
+msgstr "Uzi kiel implicitan forakomputilan klienton"
 
 #: data/ui/remmina_news.glade:165
 msgid "Apply"
-msgstr ""
+msgstr "Apliki"
 
 #: data/ui/remmina_news.glade:169
 msgid "Allow Remmina to automatically open .rdp and .remmina files."
 msgstr ""
+"Permesu al Remmina aŭtomate malfermi dosierojn de tipoj .rdp kaj .remmina."
 
 #. The star (*) is a reference to privacy consent
-#: data/ui/remmina_news.glade:183 data/ui/remmina_preferences.glade:559
+#: data/ui/remmina_news.glade:183 data/ui/remmina_preferences.glade:560
 msgid ""
 "Fetch news from <a href=\"https://remmina.org\" title=\"Remmina news site"
 "\">remmina.org</a> (*)"
 msgstr ""
+"Preni novaĵojn el <a href=\"https://remmina.org\" title=\"Retejo de novaĵoj "
+"pri Remmina\">remmina.org</a> (*)"
 
-#: data/ui/remmina_news.glade:208 data/ui/remmina_preferences.glade:526
+#: data/ui/remmina_news.glade:208 data/ui/remmina_preferences.glade:527
 msgid ""
 "* By enabling statistics and/or news you consent to send and fetch data to/"
 "from remmina.org"
 msgstr ""
+"* Per ŝalto de statistikoj kaj/aŭ novaĵoj, vi konsentas datentransmision el/"
+"al remmina.org"
 
 #: data/ui/remmina_news.glade:231
 msgid "<big>Take part</big>"
-msgstr ""
+msgstr "<big>Partoprenu</big>"
 
-#. Pay attention to thr quoting charachters as they may break the pango layout. If in doubt and cannot test, copy and paste the symbols from the English string.
+#. Pay attention to the quoting characters as they may break the pango layout. If in doubt and cannot test, copy and paste the symbols from the English string.
 #: data/ui/remmina_news.glade:257
 msgid ""
 "<span>\n"
@@ -2883,119 +3251,125 @@ msgid ""
 "Remmina.</b>\n"
 "</span>\n"
 msgstr ""
+"<span>\n"
+"<b>Ni dankas vin pro elekto de libera programaro; <a href=\"https://remmina."
+"org/donations/\" title=\"Kie estas la mono, Lebowski? "
+"“blblblblblb”\">donacoj ankaŭ feliĉigas nin</a>, kaj plue helpas nin "
+"plibonigi Remmina.</b>\n"
+"</span>\n"
 
 #: data/ui/remmina_news.glade:277
 msgid "<big>Contribute</big>"
-msgstr ""
+msgstr "<big>Kontribuu</big>"
 
 #: data/ui/remmina_mpc.glade:14
 msgid "<span weight='bold' size='larger'>Multi Password Changer</span>"
-msgstr ""
+msgstr "<span weight='bold' size='larger'>Plurpasvortoŝanĝilo</span>"
 
 #: data/ui/remmina_mpc.glade:32
 msgid "Change"
-msgstr ""
+msgstr "Ŝanĝi"
 
 #: data/ui/remmina_mpc.glade:201
 msgid "Selection criteria"
-msgstr ""
+msgstr "Kriterioj de elekto"
 
 #: data/ui/remmina_mpc.glade:261
 msgid "Confirm password"
-msgstr ""
+msgstr "Konfirmi pasvorton"
 
 #: data/ui/remmina_mpc.glade:294
 msgid "Set new password"
-msgstr ""
+msgstr "Agordi novan pasvorton"
 
 #. A column table with multiple check-boxes
 #: data/ui/remmina_mpc.glade:331
 msgctxt "Multi password changer"
 msgid "Select"
-msgstr ""
+msgstr "Elekti"
 
 #: data/ui/remmina_mpc.glade:343
 msgctxt "Multi password changer table"
 msgid "Name"
-msgstr ""
+msgstr "Nomo"
 
 #: data/ui/remmina_mpc.glade:354
 msgctxt "Multi password changer table"
 msgid "Group"
-msgstr ""
+msgstr "Grupo"
 
 #: data/ui/remmina_mpc.glade:365
 msgctxt "Multi password changer table"
 msgid "Domain\\Username"
-msgstr ""
+msgstr "Retejo\\Salutnomo"
 
 #: data/ui/remmina_preferences.glade:32
 msgid "Remmina Preferences"
-msgstr ""
+msgstr "Preferoj pri Remmina"
 
 #: data/ui/remmina_preferences.glade:95
 msgid "Double-click action"
-msgstr ""
+msgstr "Ago de duobla alklako"
 
 #: data/ui/remmina_preferences.glade:110
 msgid "Open connection"
-msgstr ""
+msgstr "Malfermi konekton"
 
 #: data/ui/remmina_preferences.glade:111
 msgid "Edit settings"
-msgstr ""
+msgstr "Redakti agordojn"
 
 #: data/ui/remmina_preferences.glade:127
 msgid "Scaling quality"
-msgstr ""
+msgstr "Kvalito de skalŝanĝado"
 
 #: data/ui/remmina_preferences.glade:142
 msgid "Nearest"
-msgstr ""
+msgstr "Plejproksime"
 
 #: data/ui/remmina_preferences.glade:143
 msgid "Tiles"
-msgstr ""
+msgstr "Kaheloj"
 
 #: data/ui/remmina_preferences.glade:144
 msgid "Bilinear"
-msgstr ""
+msgstr "Dulineare"
 
 #: data/ui/remmina_preferences.glade:145
 msgid "Hyper"
-msgstr ""
+msgstr "Hiper"
 
 #: data/ui/remmina_preferences.glade:161
 msgid "Step size for auto-scroll"
-msgstr ""
+msgstr "Paŝogrando de aŭtomata rulumado"
 
 #: data/ui/remmina_preferences.glade:191
 msgid "Maximal amount of recent items"
-msgstr ""
+msgstr "Maksimuma nombro de ĵusaĵoj"
 
 #: data/ui/remmina_preferences.glade:236
 msgid "Screen resolutions"
-msgstr ""
+msgstr "Ekrandistingivoj"
 
 #: data/ui/remmina_preferences.glade:282
 msgid "Folder for screenshots"
-msgstr ""
+msgstr "Dosierujo de ekrankopioj"
 
 #: data/ui/remmina_preferences.glade:294
 msgid "Choose a folder to save screenshots from Remmina in."
-msgstr ""
+msgstr "Elektu dosierujon por konservi ekrankopiojn per Remmina."
 
-#: data/ui/remmina_preferences.glade:298
+#: data/ui/remmina_preferences.glade:298 data/ui/remmina_preferences.glade:383
 msgid "Select a folder"
-msgstr ""
+msgstr "Elektu dosierujon"
 
 #: data/ui/remmina_preferences.glade:309
 msgid "Set up"
-msgstr ""
+msgstr "Agordi"
 
 #: data/ui/remmina_preferences.glade:330
 msgid "Screenshot filenames"
-msgstr ""
+msgstr "Dosiernomoj de ekrankopioj"
 
 #: data/ui/remmina_preferences.glade:342
 msgid ""
@@ -3003,37 +3377,49 @@ msgid ""
 "%h Server name/IP\n"
 "%Y Year, %m Month, %d Day, %H Hour, %M Minute, %S Seconds (UTC time)\n"
 msgstr ""
+"%p Nomo de profilo\n"
+"%h Nomo/IP-adreso de servilo\n"
+"%Y Jaro, %m Monato, %d Tago, %H Horo, %M Minuto, %S Sekundo (laŭ UTK)\n"
 
 #: data/ui/remmina_preferences.glade:361
 msgid ""
 "The folder connection profiles are saved in, it defaults to the XDG_USER_DATA"
 msgstr ""
+"La dosierujo kiu konservos konektoprofilojn; la implicito estas XDG_USER_DATA"
 
 #. The folder where profiles are saved
 #: data/ui/remmina_preferences.glade:366
 msgid "Remmina data folder"
-msgstr ""
+msgstr "Datendosierujo de Remmina"
 
-#: data/ui/remmina_preferences.glade:395
+#: data/ui/remmina_preferences.glade:378
+#, fuzzy
+#| msgid "Choose a folder to save screenshots from Remmina in."
+msgid "Choose a folder to save connection profiles from Remmina in."
+msgstr "Elektu dosierujon por konservi ekrankopiojn per Remmina."
+
+#: data/ui/remmina_preferences.glade:396
 msgid "Remember last view for each connection"
-msgstr ""
+msgstr "Memori lastan vidreĝimon por ĉiu konekto"
 
 #. The star (*) is a reference to privacy consent
-#: data/ui/remmina_preferences.glade:399
+#: data/ui/remmina_preferences.glade:400
 msgid "Remember last view mode"
-msgstr ""
+msgstr "Memori lastan vidreĝimon"
 
-#: data/ui/remmina_preferences.glade:439
+#: data/ui/remmina_preferences.glade:440
 msgid ""
 "Set a custom filename for your Remmina connection profiles, using a "
 "formatting string."
 msgstr ""
+"Uzi personecigitan dosiernomon por viaj konektoprofiloj de Remmina, laŭ "
+"aranĝoteksto."
 
-#: data/ui/remmina_preferences.glade:443
+#: data/ui/remmina_preferences.glade:444
 msgid "Template for profile filenames"
-msgstr ""
+msgstr "Ŝablono de profilaj dosiernomoj"
 
-#: data/ui/remmina_preferences.glade:455
+#: data/ui/remmina_preferences.glade:456
 msgid ""
 "%G Group name (slash will be converted to - automatically)\n"
 "%P Protocol name\n"
@@ -3042,445 +3428,487 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
+"%G Nomo de grupo (suprenstreko (/) konvertiĝos aŭtomate al streketo (-))\n"
+"%P Nomo de protokolo\n"
+"%N Nomo de konekto\n"
+"%h Nomo/IP-adreso de gastiganto\n"
+"\n"
+"\n"
 
-#: data/ui/remmina_preferences.glade:477
+#: data/ui/remmina_preferences.glade:478
 msgid "Only save generated screenshots, don't copy them to clipboard."
-msgstr ""
+msgstr "Konservi nur generitajn ekrankopiojn, ne kopiante ilin en tondujon."
 
-#: data/ui/remmina_preferences.glade:482
+#: data/ui/remmina_preferences.glade:483
 msgid "Prevent screenshots from entering clipboard"
-msgstr ""
+msgstr "Malhelpi kopiadon de ekrankopioj en tondujon"
 
-#: data/ui/remmina_preferences.glade:575
+#: data/ui/remmina_preferences.glade:576
 msgid "Options"
-msgstr ""
+msgstr "Opcioj"
 
-#: data/ui/remmina_preferences.glade:591
+#: data/ui/remmina_preferences.glade:592
 msgid "Always show tabs"
-msgstr ""
+msgstr "Ĉiam montri langetojn"
 
-#: data/ui/remmina_preferences.glade:608
+#: data/ui/remmina_preferences.glade:609
 msgid "Hide the toolbar shown in the tabbed interface"
-msgstr ""
+msgstr "Kaŝi la ilobreton montratan en la langeta interfaco"
 
-#: data/ui/remmina_preferences.glade:629
+#: data/ui/remmina_preferences.glade:630
 msgid "Default view"
-msgstr ""
-
-#: data/ui/remmina_preferences.glade:644
-msgid "Automatic"
-msgstr ""
+msgstr "Apriora vido"
 
 #: data/ui/remmina_preferences.glade:645
+msgid "Automatic"
+msgstr "Aŭtomata"
+
+#: data/ui/remmina_preferences.glade:646
 msgid "Scrolled window"
-msgstr ""
+msgstr "Rulumita fenestro"
 
-#: data/ui/remmina_preferences.glade:647
+#: data/ui/remmina_preferences.glade:648
 msgid "Viewport fullscreen"
-msgstr ""
+msgstr "Viduja plenekrana reĝimo"
 
-#: data/ui/remmina_preferences.glade:663
+#: data/ui/remmina_preferences.glade:664
 msgid "Tabs"
-msgstr ""
-
-#: data/ui/remmina_preferences.glade:679
-msgid "By group"
-msgstr ""
+msgstr "Langetoj"
 
 #: data/ui/remmina_preferences.glade:680
-msgid "By protocol"
-msgstr ""
+msgid "By group"
+msgstr "Laŭ grupo"
 
 #: data/ui/remmina_preferences.glade:681
+msgid "By protocol"
+msgstr "Laŭ protokolo"
+
+#: data/ui/remmina_preferences.glade:682
 msgid "Per connection"
-msgstr ""
+msgstr "Po unu por konekto"
 
-#: data/ui/remmina_preferences.glade:693
+#: data/ui/remmina_preferences.glade:694
 msgid "Fullscreen on the same screen as the connection window"
-msgstr ""
-
-#: data/ui/remmina_preferences.glade:717
-msgid "Peeking"
-msgstr ""
+msgstr "Plenekrana reĝimo sur la sama ekrano kiel la konekta fenestro"
 
 #: data/ui/remmina_preferences.glade:718
+msgid "Peeking"
+msgstr "Kaŝrigarde"
+
+#: data/ui/remmina_preferences.glade:719
 msgid "Hidden"
-msgstr ""
+msgstr "Kaŝita"
 
-#: data/ui/remmina_preferences.glade:734
+#: data/ui/remmina_preferences.glade:735
 msgid "Fullscreen toolbar visibility"
-msgstr ""
+msgstr "Videbleco de ilobretoj dum plenekrana reĝimo"
 
-#: data/ui/remmina_preferences.glade:744
+#: data/ui/remmina_preferences.glade:745
 msgid "Hide the search bar shown in the main window"
-msgstr ""
+msgstr "Kaŝi la serĉobreton montratan en la ĉeffenestro"
 
-#: data/ui/remmina_preferences.glade:761
+#: data/ui/remmina_preferences.glade:762
 msgid "Prefer dark theme"
-msgstr ""
+msgstr "Preferi malhelan etoson"
 
-#: data/ui/remmina_preferences.glade:785
+#: data/ui/remmina_preferences.glade:766
+msgid ""
+"If a GTK theme includes a dark variant, it will be used instead of the "
+"configured theme."
+msgstr ""
+"Se GTK-etoso inkluzivas malhelan varianton, ĝi estos uzata anstataŭ la "
+"agordita etoso."
+
+#: data/ui/remmina_preferences.glade:786
 msgid "“Grab all keyboard events” status colour"
-msgstr ""
+msgstr "Statokoloro de “Preni ĉiujn klavajn eventojn”"
 
-#: data/ui/remmina_preferences.glade:796
+#: data/ui/remmina_preferences.glade:797
 msgid ""
 "Hexadecimal- or colour names (red, #ff0000).\n"
 "It changes the background colour of connection names in the Remmina "
 "connection toolbar (when in fullscreen)."
 msgstr ""
+"Deksesumaj kodoj aŭ anglalingvaj kolornomoj (red, # ff0000).\n"
+"Tio ŝanĝos la fonkoloron de konektonomoj en la konekto-ilobreto de Remmina "
+"(dum plenekrana reĝimo)."
 
-#: data/ui/remmina_preferences.glade:832
+#: data/ui/remmina_preferences.glade:833
 msgid "Appearance"
-msgstr ""
+msgstr "Aspekto"
 
-#: data/ui/remmina_preferences.glade:849
+#: data/ui/remmina_preferences.glade:850
 msgid "Show new connection on top of the menu"
-msgstr ""
+msgstr "Montri novan konekton ĉe la supro de la menuo"
 
-#: data/ui/remmina_preferences.glade:867
+#: data/ui/remmina_preferences.glade:868
 msgid "Hide total count shown in the group menu"
-msgstr ""
+msgstr "Kaŝi totalan kalkulon montratan en la grupa menuo"
 
-#: data/ui/remmina_preferences.glade:884
+#: data/ui/remmina_preferences.glade:885
 msgid "No tray icon"
-msgstr ""
+msgstr "Sen pleta ikono"
 
-#: data/ui/remmina_preferences.glade:902
+#: data/ui/remmina_preferences.glade:903
 msgid "Start in tray upon user login"
-msgstr ""
+msgstr "Starti en breto post ensaluto"
 
-#: data/ui/remmina_preferences.glade:929
+#: data/ui/remmina_preferences.glade:930
 msgid "Applet"
-msgstr ""
+msgstr "Aplikaĵeto"
 
-#: data/ui/remmina_preferences.glade:952
+#: data/ui/remmina_preferences.glade:953
 msgid "Host key"
-msgstr ""
+msgstr "Klavo de gastiganto"
 
-#: data/ui/remmina_preferences.glade:983
+#: data/ui/remmina_preferences.glade:984
 msgid "Show/hide fullscreen"
-msgstr ""
+msgstr "Baskuligi plenekranan reĝimon"
 
-#: data/ui/remmina_preferences.glade:1013
+#: data/ui/remmina_preferences.glade:1014
 msgid "Auto-fit window"
-msgstr ""
+msgstr "Aŭtomate adapti al fenestro"
 
-#: data/ui/remmina_preferences.glade:1086
+#: data/ui/remmina_preferences.glade:1087
 msgid "Apply/remove scaling"
-msgstr ""
+msgstr "Uzi/ne uzi skalŝanĝadon"
 
-#: data/ui/remmina_preferences.glade:1116
+#: data/ui/remmina_preferences.glade:1117
 msgid "Grab keyboard"
-msgstr ""
+msgstr "Preni klavaron"
 
-#: data/ui/remmina_preferences.glade:1206
+#: data/ui/remmina_preferences.glade:1207
 msgid "Show/hide toolbar"
-msgstr ""
+msgstr "Montri/kaŝi ilobreton"
 
-#: data/ui/remmina_preferences.glade:1267
-#: data/ui/remmina_preferences.glade:1277
+#: data/ui/remmina_preferences.glade:1268
+#: data/ui/remmina_preferences.glade:1278
 msgid "View-only mode"
-msgstr ""
+msgstr "Nurvida reĝimo"
 
-#: data/ui/remmina_preferences.glade:1335
+#: data/ui/remmina_preferences.glade:1336
 msgid "Keyboard"
-msgstr ""
+msgstr "Klavaro"
 
-#: data/ui/remmina_preferences.glade:1356
+#: data/ui/remmina_preferences.glade:1357
 msgid "Local SSH port"
-msgstr ""
+msgstr "Loka SSH-pordo"
 
-#: data/ui/remmina_preferences.glade:1380
+#: data/ui/remmina_preferences.glade:1381
 msgid "Parse ~/.ssh/config"
-msgstr ""
-
-#: data/ui/remmina_preferences.glade:1404
-msgid "No logging at all"
-msgstr ""
+msgstr "Sintaksanalizi ~/.ssh/config"
 
 #: data/ui/remmina_preferences.glade:1405
-msgid "Rare conditions or warnings"
-msgstr ""
+msgid "No logging at all"
+msgstr "Neniu protokolado"
 
 #: data/ui/remmina_preferences.glade:1406
-msgid "API-accessible entrypoints"
-msgstr ""
+msgid "Rare conditions or warnings"
+msgstr "Maloftaj kondiĉoj aŭ avertoj"
 
 #: data/ui/remmina_preferences.glade:1407
-msgid "Lower level protocol info, packet level"
-msgstr ""
+msgid "API-accessible entrypoints"
+msgstr "API-atingeblaj enirpunktoj"
 
 #: data/ui/remmina_preferences.glade:1408
+msgid "Lower level protocol info, packet level"
+msgstr "Malsupranivela protokola informo, paketnivela"
+
+#: data/ui/remmina_preferences.glade:1409
 msgid "Function entering and leaving"
-msgstr ""
+msgstr "Eniro kaj eliro de funkcioj"
 
-#: data/ui/remmina_preferences.glade:1424
+#: data/ui/remmina_preferences.glade:1425
 msgid "SSH log level"
-msgstr ""
+msgstr "Nivelo de protokolado pri SSH"
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
-#: data/ui/remmina_preferences.glade:1491
+#: data/ui/remmina_preferences.glade:1492
 msgid "Seconds of connection idleness before TCP keepalive probes are sent."
-msgstr ""
+msgstr "Sekundoj da konekta senokupeco antaŭ sendo de vivodaŭrigaj sondaĵoj."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
-#: data/ui/remmina_preferences.glade:1507
+#: data/ui/remmina_preferences.glade:1508
 msgid "Seconds between each keepalive probe."
-msgstr ""
+msgstr "Sekundoj inter vivodaŭrigaj sondaĵoj."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
-#: data/ui/remmina_preferences.glade:1523
+#: data/ui/remmina_preferences.glade:1524
 msgid ""
 "Number of keepalive probes sent via TCP connection before it is dropped."
 msgstr ""
+"Nombro de vivodaŭrigaj sondaĵoj.sendotaj per TCP-konekto antaŭ konektoperdo."
 
 #. http://man7.org/linux/man-pages/man7/tcp.7.html
-#: data/ui/remmina_preferences.glade:1539
+#: data/ui/remmina_preferences.glade:1540
 msgid ""
 "Amount of milliseconds to attempt acknowledging data before closing the "
 "corresponding TCP connection forcibly."
 msgstr ""
+"Nombro de milisekundoj, dum kiu proviĝos kvitancado de dateno antaŭ ol "
+"perforta fermo de la TCP-konekto."
 
-#: data/ui/remmina_preferences.glade:1562
+#: data/ui/remmina_preferences.glade:1563
 msgid "SSH options"
-msgstr ""
+msgstr "Opcioj pri SSH"
 
-#: data/ui/remmina_preferences.glade:1600
-#: data/ui/remmina_preferences.glade:1616
-#: data/ui/remmina_preferences.glade:1782
+#: data/ui/remmina_preferences.glade:1601
+#: data/ui/remmina_preferences.glade:1617
+#: data/ui/remmina_preferences.glade:1783
 msgid "Use secret key authentication for some widgets"
-msgstr ""
+msgstr "Uzi aŭtentikigon per sekreta ŝlosilo por kelkaj fenestraĵoj"
 
-#: data/ui/remmina_preferences.glade:1620
+#: data/ui/remmina_preferences.glade:1621
 msgid "Use master password"
-msgstr ""
+msgstr "Uzi ĉefpasvorton"
 
-#: data/ui/remmina_preferences.glade:1633
+#: data/ui/remmina_preferences.glade:1634
 msgid "Automatic lock interval"
-msgstr ""
+msgstr "Intervalo de aŭtomata ŝlosado"
 
-#: data/ui/remmina_preferences.glade:1644
+#: data/ui/remmina_preferences.glade:1645
 msgid "Master password validity in seconds"
-msgstr ""
+msgstr "Valideco de ĉefpasvorto en sekundoj"
 
-#: data/ui/remmina_preferences.glade:1665
+#: data/ui/remmina_preferences.glade:1666
 msgid "File encryption"
-msgstr ""
+msgstr "Ĉifrado de dosieroj"
 
-#: data/ui/remmina_preferences.glade:1696
+#: data/ui/remmina_preferences.glade:1697
 msgid "Repeat the password"
-msgstr ""
+msgstr "Ripetu la pasvorton"
 
-#: data/ui/remmina_preferences.glade:1750
+#: data/ui/remmina_preferences.glade:1751
 msgid "Fingerprints and certificates"
-msgstr ""
+msgstr "Fingropremaĵoj kaj atestiloj"
 
-#: data/ui/remmina_preferences.glade:1765
+#: data/ui/remmina_preferences.glade:1766
 msgid "Automatically accept all fingerprints and certificates"
-msgstr ""
+msgstr "Aŭtomate akcepti ĉiujn fingropremaĵojn kaj atestilojn"
 
-#: data/ui/remmina_preferences.glade:1771
+#: data/ui/remmina_preferences.glade:1772
 msgid "Trust all fingerprints and certificates"
-msgstr ""
+msgstr "Fidi ĉiujn fingropremaĵojn kaj atestilojn"
 
-#: data/ui/remmina_preferences.glade:1806
+#: data/ui/remmina_preferences.glade:1807
 msgid "Security"
-msgstr ""
+msgstr "Sekureco"
 
-#: data/ui/remmina_preferences.glade:1829
+#: data/ui/remmina_preferences.glade:1830
 msgid "Terminal font"
-msgstr ""
+msgstr "Tiparo de terminalo"
 
-#: data/ui/remmina_preferences.glade:1842
+#: data/ui/remmina_preferences.glade:1843
 msgid "Scrollback lines"
-msgstr ""
+msgstr "Nombro de retrorulumeblaj linioj"
 
-#: data/ui/remmina_preferences.glade:1909
+#: data/ui/remmina_preferences.glade:1910
 msgid "Shortcut for copying to clipboard"
-msgstr ""
+msgstr "Fulmoklavo por kopiado en tondujon"
 
-#: data/ui/remmina_preferences.glade:1922
+#: data/ui/remmina_preferences.glade:1923
 msgid "Shortcut for pasting from clipboard"
-msgstr ""
+msgstr "Fulmoklavo por algluado el tondujon"
 
-#: data/ui/remmina_preferences.glade:1935
+#: data/ui/remmina_preferences.glade:1936
 msgid "Select all shortcuts"
-msgstr ""
+msgstr "Fulmoklavo por elekti ĉion"
 
-#: data/ui/remmina_preferences.glade:1949
-#: data/ui/remmina_preferences.glade:1967
-#: data/ui/remmina_preferences.glade:1985
-#: data/ui/remmina_preferences.glade:2415
-#: data/ui/remmina_preferences.glade:2433
-#: data/ui/remmina_preferences.glade:2464
+#: data/ui/remmina_preferences.glade:1950
+#: data/ui/remmina_preferences.glade:1968
+#: data/ui/remmina_preferences.glade:1986
+#: data/ui/remmina_preferences.glade:2416
+#: data/ui/remmina_preferences.glade:2434
+#: data/ui/remmina_preferences.glade:2465
 msgid "(Host key+)"
-msgstr ""
+msgstr "(Klavo de gastiganto+)"
 
-#: data/ui/remmina_preferences.glade:2002
+#: data/ui/remmina_preferences.glade:2003
 msgid "Use default system font"
-msgstr ""
+msgstr "Uzi implicitan sisteman tiparon"
 
-#: data/ui/remmina_preferences.glade:2026
+#: data/ui/remmina_preferences.glade:2027
 msgid ""
 "Selecting “SGR 1” also switches to the bright counterparts of the first 8 "
 "palette colours (in addition to making text bold)."
 msgstr ""
+"Elektado de “SGR 1” ankaŭ ŝanĝas kolorojn al la helaj koloroj respondantaj "
+"al la unuaj 8 paletraj koloroj (krom ankaŭ grasigo de teksto)."
 
-#: data/ui/remmina_preferences.glade:2041
+#: data/ui/remmina_preferences.glade:2042
 msgid "Allow using bright colours with bold text"
-msgstr ""
+msgstr "Permesi helajn kolorojn kun grasa teksto"
 
-#: data/ui/remmina_preferences.glade:2055
+#: data/ui/remmina_preferences.glade:2056
 msgid "Colour theme"
-msgstr ""
+msgstr "Koloretoso"
 
-#: data/ui/remmina_preferences.glade:2066
+#: data/ui/remmina_preferences.glade:2067
 msgid ""
 "Choose a colour scheme file. Usually available in /usr/share/remmina/theme. "
 "https://github.com/mbadolato/iTerm2-Color-Schemes has more details."
 msgstr ""
+"Elektu koloretosan dosieron. Ordinare disponeblan ĉe /usr/share/remmina/"
+"theme. Vidu la paĝon https://github.com/mbadolato/iTerm2-Color-Schemes por "
+"pli da detaloj."
 
-#: data/ui/remmina_preferences.glade:2069
+#: data/ui/remmina_preferences.glade:2070
 msgid "Pick a terminal colouring file"
-msgstr ""
+msgstr "Elekti dosieron de terminalaj koloroj"
 
-#: data/ui/remmina_preferences.glade:2084
+#: data/ui/remmina_preferences.glade:2085
 msgid "Bright colours"
-msgstr ""
+msgstr "Helaj koloroj"
 
-#: data/ui/remmina_preferences.glade:2096
+#: data/ui/remmina_preferences.glade:2097
 msgid "Pick a light black colour"
-msgstr ""
+msgstr "Elektu helan nigron"
 
-#: data/ui/remmina_preferences.glade:2108
+#: data/ui/remmina_preferences.glade:2109
 msgid "Pick a light red colour"
-msgstr ""
+msgstr "Elektu helan ruĝon"
 
-#: data/ui/remmina_preferences.glade:2120
+#: data/ui/remmina_preferences.glade:2121
 msgid "Pick a bright green colour"
-msgstr ""
+msgstr "Elektu helan verdon"
 
-#: data/ui/remmina_preferences.glade:2132
+#: data/ui/remmina_preferences.glade:2133
 msgid "Pick a bright yellow colour"
-msgstr ""
+msgstr "Elektu helan flavon"
 
-#: data/ui/remmina_preferences.glade:2144
+#: data/ui/remmina_preferences.glade:2145
 msgid "Pick a bright blue colour"
-msgstr ""
+msgstr "Elektu helan bluon"
 
-#: data/ui/remmina_preferences.glade:2156
+#: data/ui/remmina_preferences.glade:2157
 msgid "Pick a light magenta colour"
-msgstr ""
+msgstr "Elektu helan malvokoloron"
 
-#: data/ui/remmina_preferences.glade:2168
+#: data/ui/remmina_preferences.glade:2169
 msgid "Pick a light cyan colour"
-msgstr ""
+msgstr "Elektu helan cejanbluon"
 
-#: data/ui/remmina_preferences.glade:2181
+#: data/ui/remmina_preferences.glade:2182
 msgid "Pick a light white colour"
-msgstr ""
+msgstr "Elektu helan blankon"
 
-#: data/ui/remmina_preferences.glade:2193
+#: data/ui/remmina_preferences.glade:2194
 msgid "Pick a black colour"
-msgstr ""
+msgstr "Elektu nigron"
 
-#: data/ui/remmina_preferences.glade:2205
+#: data/ui/remmina_preferences.glade:2206
 msgid "Pick a red colour"
-msgstr ""
+msgstr "Elektu ruĝon"
 
-#: data/ui/remmina_preferences.glade:2217
+#: data/ui/remmina_preferences.glade:2218
 msgid "Pick a green colour"
-msgstr ""
+msgstr "Elektu verdon"
 
-#: data/ui/remmina_preferences.glade:2229
+#: data/ui/remmina_preferences.glade:2230
 msgid "Pick a yellow colour"
-msgstr ""
+msgstr "Elektu flavon"
 
-#: data/ui/remmina_preferences.glade:2241
+#: data/ui/remmina_preferences.glade:2242
 msgid "Pick a blue colour"
-msgstr ""
+msgstr "Elektu bluon"
 
-#: data/ui/remmina_preferences.glade:2253
+#: data/ui/remmina_preferences.glade:2254
 msgid "Pick a magenta colour"
-msgstr ""
+msgstr "Elektu malvokoloron"
 
-#: data/ui/remmina_preferences.glade:2265
+#: data/ui/remmina_preferences.glade:2266
 msgid "Pick a cyan colour"
-msgstr ""
+msgstr "Elektu cejanbluon"
 
-#: data/ui/remmina_preferences.glade:2278
+#: data/ui/remmina_preferences.glade:2279
 msgid "Pick a white colour"
-msgstr ""
+msgstr "Elektu blankon"
 
-#: data/ui/remmina_preferences.glade:2291
+#: data/ui/remmina_preferences.glade:2292
 msgid "Normal colours"
-msgstr ""
+msgstr "Normalaj koloroj"
 
-#: data/ui/remmina_preferences.glade:2304
-#: data/ui/remmina_preferences.glade:2318
+#: data/ui/remmina_preferences.glade:2305
+#: data/ui/remmina_preferences.glade:2319
 msgid "Cursor colour"
-msgstr ""
+msgstr "Kursora koloro"
 
-#: data/ui/remmina_preferences.glade:2332
-#: data/ui/remmina_preferences.glade:2346
+#: data/ui/remmina_preferences.glade:2333
+#: data/ui/remmina_preferences.glade:2347
 msgid "Background colour"
-msgstr ""
+msgstr "Fona koloro"
 
-#: data/ui/remmina_preferences.glade:2361
-#: data/ui/remmina_preferences.glade:2375
+#: data/ui/remmina_preferences.glade:2362
+#: data/ui/remmina_preferences.glade:2376
 msgid "Foreground colour"
-msgstr ""
+msgstr "Malfona koloro"
 
-#: data/ui/remmina_preferences.glade:2450
+#: data/ui/remmina_preferences.glade:2451
 msgid "Search text"
-msgstr ""
+msgstr "Serĉi tekston"
 
-#: data/ui/remmina_preferences.glade:2480
-#: data/ui/remmina_preferences.glade:2494
+#: data/ui/remmina_preferences.glade:2482
+#: data/ui/remmina_preferences.glade:2496
 msgid "Bold colour"
-msgstr ""
+msgstr "Grasa koloro"
 
-#: data/ui/remmina_preferences.glade:2508
-#: data/ui/remmina_preferences.glade:2548
+#: data/ui/remmina_preferences.glade:2510
+#: data/ui/remmina_preferences.glade:2550
 msgid "Highlight colour"
-msgstr ""
+msgstr "Emfaza koloro"
 
-#: data/ui/remmina_preferences.glade:2521
-#: data/ui/remmina_preferences.glade:2563
+#: data/ui/remmina_preferences.glade:2523
+#: data/ui/remmina_preferences.glade:2565
 msgid "Highlight foreground colour"
-msgstr ""
+msgstr "Emfaza malfona koloro"
 
-#: data/ui/remmina_preferences.glade:2534
-#: data/ui/remmina_preferences.glade:2578
+#: data/ui/remmina_preferences.glade:2536
+#: data/ui/remmina_preferences.glade:2580
 msgid "Cursor foreground colour"
-msgstr ""
+msgstr "Kursora malfona koloro"
 
-#: data/ui/remmina_preferences.glade:2597
+#: data/ui/remmina_preferences.glade:2599
 msgid "Terminal"
-msgstr ""
+msgstr "Terminalo"
 
 #: data/ui/remmina_string_list.glade:14 data/ui/remmina_string_list.glade:158
 msgid "Add"
-msgstr ""
+msgstr "Aldoni"
 
 #: data/ui/remmina_string_list.glade:20 data/ui/remmina_string_list.glade:137
 #: data/ui/remmina_key_chooser.glade:14 data/ui/remmina_key_chooser.glade:15
 msgid "_Remove"
-msgstr ""
+msgstr "_Forigi"
 
 #: data/ui/remmina_string_list.glade:26 data/ui/remmina_string_list.glade:116
 msgid "Move up"
-msgstr ""
+msgstr "Movi supren"
 
 #: data/ui/remmina_string_list.glade:32 data/ui/remmina_string_list.glade:95
 msgid "Move down"
-msgstr ""
+msgstr "Movi suben"
 
 #: data/ui/remmina_key_chooser.glade:23
 msgid "Choose a new key"
-msgstr ""
+msgstr "Elekti novan klavon"
 
 #: data/ui/remmina_key_chooser.glade:82
 msgid "Please press the new key…"
-msgstr ""
+msgstr "Bonvolu premi la novan klavon…"
+
+#~ msgid "Show the Remmina changelog."
+#~ msgstr "Montri ŝanĝoprotokolon de Remmina."
+
+#~ msgid ""
+#~ "<tt><big>Supported formats\n"
+#~ "• server\n"
+#~ "• server:port\n"
+#~ "• server:[port]</big></tt>"
+#~ msgstr ""
+#~ "<tt><big>Subtenataj aranĝoj\n"
+#~ "• servilo\n"
+#~ "• servilo:pordo\n"
+#~ "• servilo:[pordo]</big></tt>"
+
+#~ msgid "Remote Desktop Client"
+#~ msgstr "Forakomputila Kliento"

@@ -314,7 +314,8 @@ remmina_ssh_auth_pubkey(RemminaSSH *ssh, RemminaProtocolWidget *gp, RemminaFile 
 	REMMINA_DEBUG("SSH certificate file: %s", ssh->certfile);
 	REMMINA_DEBUG("SSH private key file: %s", ssh->privkeyfile);
 	if (ssh->certfile != NULL) {
-		/* First we import the certificate */
+#if LIBSSH_VERSION_INT >= SSH_VERSION_INT(0, 9, 0)
+		/* First we import the private key */
 		if (ssh_pki_import_privkey_file(ssh->privkeyfile, (ssh->passphrase ? ssh->passphrase : ""),
 						NULL, NULL, &key) != SSH_OK) {
 			if (ssh->passphrase == NULL || ssh->passphrase[0] == '\0') {
@@ -326,8 +327,9 @@ remmina_ssh_auth_pubkey(RemminaSSH *ssh, RemminaProtocolWidget *gp, RemminaFile 
 			remmina_ssh_set_error(ssh, _("Could not authenticate with public SSH key. %s"));
 			return REMMINA_SSH_AUTH_AUTHFAILED_RETRY_AFTER_PROMPT;
 		}
-		REMMINA_DEBUG ("SSH privatekey file imported correctly");
-		ret = ssh_pki_import_cert_file 	(ssh->certfile, &cert ) 	;
+		REMMINA_DEBUG ("Imported private SSH key file");
+		/* First we import the certificate */
+		ret = ssh_pki_import_cert_file(ssh->certfile, &cert );
 		if (ret != SSH_OK) {
 			REMMINA_DEBUG ("Certificate import returned: %d", ret);
 			// TRANSLATORS: The placeholder %s is an error message
@@ -340,22 +342,25 @@ remmina_ssh_auth_pubkey(RemminaSSH *ssh, RemminaProtocolWidget *gp, RemminaFile 
 		if (ret != SSH_OK) {
 			REMMINA_DEBUG ("Copy certificate into a key returned: %d", ret);
 			// TRANSLATORS: The placeholder %s is an error message
-			remmina_ssh_set_error(ssh, _("SSH certificate cannot be copied into the privatekey. %s"));
+			remmina_ssh_set_error(ssh, _("SSH certificate cannot be copied into the private SSH key. %s"));
 			ssh_key_free(cert);
 			return REMMINA_SSH_AUTH_FATAL_ERROR;
 		}
-		REMMINA_DEBUG ("%s certificate copied into the privatekey", ssh->certfile);
+		REMMINA_DEBUG ("%s certificate copied into the private SSH key", ssh->certfile);
 		/* We try to authenticate */
 		ret = ssh_userauth_try_publickey(ssh->session, NULL, cert);
 		if (ret != SSH_AUTH_SUCCESS && ret != SSH_AUTH_AGAIN ) {
 			REMMINA_DEBUG ("Trying to authenticate with the new key returned: %d", ret);
 			// TRANSLATORS: The placeholder %s is an error message
-			remmina_ssh_set_error(ssh, _("Authentication with SSH certificate failed. %s"));
+			remmina_ssh_set_error(ssh, _("Could not authenticate using SSH certificate. %s"));
 			ssh_key_free(key);
 			ssh_key_free(cert);
 			return REMMINA_SSH_AUTH_FATAL_ERROR;
 		}
 		REMMINA_DEBUG ("Authentication with a certificate file works, we can authenticate");
+#else
+		REMMINA_DEBUG ("lbssh >= 0.9.0 is required to authenticate with certificate file");
+#endif
 		/* if it goes well we authenticate (later on) with the key, not the cert*/
 	} else {
 		if (ssh->privkeyfile == NULL) {
@@ -618,7 +623,6 @@ remmina_ssh_auth(RemminaSSH *ssh, const gchar *password, RemminaProtocolWidget *
 	 *
 	 * And than test both the method and the option selected by the user
 	 */
-	ssh_userauth_none(ssh->session, NULL);
 	method = ssh_userauth_list(ssh->session, NULL);
 	REMMINA_DEBUG("Methods supported by server: %s%s%s%s%s%s%s",
 		      (method & SSH_AUTH_METHOD_NONE) ? "SSH_AUTH_METHOD_NONE " : "",
@@ -661,7 +665,7 @@ remmina_ssh_auth(RemminaSSH *ssh, const gchar *password, RemminaProtocolWidget *
 					break;
 				case SSH_AUTH_METHOD_INTERACTIVE:
 					ssh->auth = SSH_AUTH_KBDINTERACTIVE;
-					//REMMINA_DEBUG("Interactve auth method not implemented: %d", ssh->auth);
+					//REMMINA_DEBUG("Interactive auth method not implemented: %d", ssh->auth);
 					break;
 				case SSH_AUTH_METHOD_UNKNOWN:
 				default:
@@ -694,7 +698,7 @@ remmina_ssh_auth(RemminaSSH *ssh, const gchar *password, RemminaProtocolWidget *
 					break;
 				case SSH_AUTH_METHOD_INTERACTIVE:
 					ssh->auth = SSH_AUTH_KBDINTERACTIVE;
-					//REMMINA_DEBUG("Interactve auth method not implemented: %d", ssh->auth);
+					//REMMINA_DEBUG("Interactive auth method not implemented: %d", ssh->auth);
 					break;
 				case SSH_AUTH_METHOD_UNKNOWN:
 				default:
@@ -728,7 +732,7 @@ remmina_ssh_auth(RemminaSSH *ssh, const gchar *password, RemminaProtocolWidget *
 					break;
 				case SSH_AUTH_METHOD_INTERACTIVE:
 					ssh->auth = SSH_AUTH_KBDINTERACTIVE;
-					//REMMINA_DEBUG("Interactve auth method not implemented: %d", ssh->auth);
+					//REMMINA_DEBUG("Interactive auth method not implemented: %d", ssh->auth);
 					break;
 				case SSH_AUTH_METHOD_UNKNOWN:
 				default:
@@ -762,7 +766,7 @@ remmina_ssh_auth(RemminaSSH *ssh, const gchar *password, RemminaProtocolWidget *
 					break;
 				case SSH_AUTH_METHOD_INTERACTIVE:
 					ssh->auth = SSH_AUTH_KBDINTERACTIVE;
-					//REMMINA_DEBUG("Interactve auth method not implemented: %d", ssh->auth);
+					//REMMINA_DEBUG("Interactive auth method not implemented: %d", ssh->auth);
 					break;
 				case SSH_AUTH_METHOD_UNKNOWN:
 				default:
@@ -795,7 +799,7 @@ remmina_ssh_auth(RemminaSSH *ssh, const gchar *password, RemminaProtocolWidget *
 						break;
 					case SSH_AUTH_METHOD_INTERACTIVE:
 						ssh->auth = SSH_AUTH_KBDINTERACTIVE;
-						//REMMINA_DEBUG("Interactve auth method not implemented: %d", ssh->auth);
+						//REMMINA_DEBUG("Interactive auth method not implemented: %d", ssh->auth);
 						break;
 					case SSH_AUTH_METHOD_UNKNOWN:
 					default:
@@ -838,7 +842,7 @@ remmina_ssh_auth(RemminaSSH *ssh, const gchar *password, RemminaProtocolWidget *
 					break;
 				case SSH_AUTH_METHOD_INTERACTIVE:
 					ssh->auth = SSH_AUTH_KBDINTERACTIVE;
-					//REMMINA_DEBUG("Interactve auth method not implemented: %d", ssh->auth);
+					//REMMINA_DEBUG("Interactive auth method not implemented: %d", ssh->auth);
 					break;
 				case SSH_AUTH_METHOD_UNKNOWN:
 				default:
@@ -1232,14 +1236,18 @@ remmina_ssh_init_session(RemminaSSH *ssh)
 		REMMINA_DEBUG("Setting SSH_OPTIONS_HOST to ssh->tunnel_entrance_host is 127.0.0.1,");
 		ssh_options_set(ssh->session, SSH_OPTIONS_HOST, ssh->tunnel_entrance_host);
 	}
-	rc = ssh_options_get(ssh->session, SSH_OPTIONS_USER, &parsed_config);
-	if (rc == SSH_OK) {
-		ssh->user = g_strdup(parsed_config);
-		ssh_string_free_char(parsed_config);
-	} else {
-		REMMINA_DEBUG("Parsing ssh_config for SSH_OPTIONS_USER returned an error: %s", ssh_get_error(ssh->session));
-	}
-	ssh_options_set(ssh->session, SSH_OPTIONS_USER, ssh->user);
+	if (!ssh->user || *ssh->user == 0) {
+    rc = ssh_options_get(ssh->session, SSH_OPTIONS_USER, &parsed_config);
+    if (rc == SSH_OK) {
+      if (ssh->user)
+        g_free(ssh->user);
+      ssh->user = g_strdup(parsed_config);
+      ssh_string_free_char(parsed_config);
+    } else {
+      REMMINA_DEBUG("Parsing ssh_config for SSH_OPTIONS_USER returned an error: %s", ssh_get_error(ssh->session));
+    }
+  }
+  ssh_options_set(ssh->session, SSH_OPTIONS_USER, ssh->user);
 	REMMINA_DEBUG("SSH_OPTIONS_USER is now %s", ssh->user);
 
 	/* SSH_OPTIONS_PROXYCOMMAND */
